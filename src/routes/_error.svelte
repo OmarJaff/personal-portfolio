@@ -17,7 +17,7 @@
   }
 
   .st0 {
-    font-family: 'nixieOne';
+    font-family: 'Nixie One';
   }
   .st1 {
     font-size: 83.0285px;
@@ -173,7 +173,7 @@
       </g>
     </svg>
   {:else}
-    <h1 class="font-nixieOne text-vived-red">{status}</h1>
+    <h1 class=" font-nixieOne text-vived-red">{status}</h1>
   {/if}
   <div class="message font-raleway text-4xl px-4 py-2 break-all flex">
     <p>{error.message}</p>

@@ -1,24 +1,13 @@
 <script>
-  import Header from '../components/Header.svelte'
-  import Nav from '../components/Nav.svelte'
   import Portfolio from '../components/PortfolioStyle.svelte'
   import Title from '../components/Title.svelte'
-  let isMenuOpen = false
-  const handleMenuToggle = event => {
-    isMenuOpen = event.detail.isMenuOpened
-  }
 </script>
 
 <svelte:head>
   <title>Omar Jaff</title>
 </svelte:head>
 
-<Nav {isMenuOpen} />
-<div class="flex w-full flex-col h-screen ">
-  <div class="flex w-full">
-
-    <Header on:menuToggled={handleMenuToggle} />
-  </div>
+<div class="flex w-full flex-col h-full ">
 
   <div class="flex w-full flex-col items-center my-12">
     <h1 class="text-white text-4xl">
@@ -34,9 +23,5 @@
         <Title />
       </div>
     </div>
-  </div>
-
-  <div class="flex flex-col ">
-    <h1 class="text-white">...</h1>
   </div>
 </div>
