@@ -1,60 +1,93 @@
 <script>
-	export let segment;
+  export let segment
+  export let isMenuOpen = false
+  import { slide, fly } from 'svelte/transition'
+  import SocialIcons from '../components/SocialIcons.svelte'
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+  .gradiantStyle {
+    background: rgb(26, 28, 51);
+    background: linear-gradient(
+      180deg,
+      rgb(32, 34, 61) 100%,
+      rgba(254, 47, 77, 0.8687850140056023) 140%
+    );
+  }
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+  .activeClass:after {
+    content: '';
+    background-image: radial-gradient(ellipse at top, #fe2f4d 0, #1a1c33 80%);
+    align-self: center;
+    width: 50%;
+    height: 3px;
+  }
+  .hover-class:hover {
+    color: #cbd5e0;
+  }
+  .hover-class {
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
 </style>
 
-<nav>
-	<ul>
-		<li><a class:selected='{segment === undefined}' href='.'>home</a></li>
-		<li><a class:selected='{segment === "about"}' href='about'>about</a></li>
+{#if isMenuOpen}
+  <div
+    class=" gradiantStyle h-screen w-screen absolute z-50"
+    transition:slide|local={{ duration: 400 }}>
 
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class:selected='{segment === "blog"}' href='blog'>blog</a></li>
-	</ul>
-</nav>
+    <nav
+      class="flex w-full justify-center top-0 text-white font-nixieOne text-4xl
+      lg:text-5xl xl:text-6xl">
+      <ul
+        class="absolute flex flex-col items-center h-full justify-center "
+        transition:slide|local={{ duration: 500 }}>
+        <li class="my-2 border-gray-100 ">
+          <a
+            class:selected={segment === undefined}
+            class="flex flex-col activeClass hover-class "
+            href=".">
+            Home
+          </a>
+        </li>
+        <li class="my-4">
+          <a
+            class:selected={segment === 'about'}
+            class=" flex flex-col hover-class"
+            href="about">
+            About Me
+          </a>
+        </li>
+        <li class="my-4">
+          <a
+            class:selected={segment === 'about'}
+            class="flex flex-col hover-class"
+            href="about">
+            Skills
+          </a>
+        </li>
+        <li class="my-4">
+          <a
+            class:selected={segment === 'about'}
+            class="flex flex-col hover-class "
+            href="about">
+            Projects
+          </a>
+        </li>
+        <li class="my-4">
+          <a
+            class:selected={segment === 'about'}
+            class="flex flex-col hover-class"
+            href="about">
+            Contact Me
+          </a>
+        </li>
+        <div class=" mt-10 flex sm:hidden ">
+          <SocialIcons />
+        </div>
+      </ul>
+
+    </nav>
+
+  </div>
+{/if}

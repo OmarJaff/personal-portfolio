@@ -1,7 +1,14 @@
+<style>
+
+</style>
+
 <svelte:head>
-	<title>About</title>
+  <title>About Omar</title>
 </svelte:head>
 
-<h1>About this site</h1>
-
-<p>This is the 'about' page. There's not much here.</p>
+<div class=" flex flex-col">
+  <h1 class=" text-6xl font-nixieOne text-white">OMAR S. JAFF</h1>
+  <h2 class=" font-semibold font-raleway text-white">
+    Web developer and designer
+  </h2>
+</div>

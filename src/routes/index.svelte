@@ -1,46 +1,42 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
+<script>
+  import Header from '../components/Header.svelte'
+  import Nav from '../components/Nav.svelte'
+  import Portfolio from '../components/PortfolioStyle.svelte'
+  import Title from '../components/Title.svelte'
+  let isMenuOpen = false
+  const handleMenuToggle = event => {
+    isMenuOpen = event.detail.isMenuOpened
+  }
+</script>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Omar Jaff</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<Nav {isMenuOpen} />
+<div class="flex w-full flex-col h-screen ">
+  <div class="flex w-full">
 
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
+    <Header on:menuToggled={handleMenuToggle} />
+  </div>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+  <div class="flex w-full flex-col items-center my-12">
+    <h1 class="text-white text-4xl">
+      <Portfolio />
+    </h1>
+    <div class="flex flex-col items-center my-20 lg:my-24">
+      <h2
+        class="font-nixieOne text-white text-3xl sm:text-4xl md:text-5xl
+        lg:text-6xl">
+        OMAR S. JAFF
+      </h2>
+      <div class="my-2">
+        <Title />
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col ">
+    <h1 class="text-white">...</h1>
+  </div>
+</div>
