@@ -8,7 +8,7 @@
   <title>Omar Jaff</title>
 </svelte:head>
 
-<div class="flex w-full flex-col h-full ">
+<div class="flex w-full flex-col h-full justify-center ">
 
   <div class="flex w-full flex-col items-center my-12">
     <h1 class="text-white text-4xl">
