@@ -13,7 +13,7 @@
         opacity: [0, 1],
         translateZ: 0,
         easing: 'easeOutExpo',
-        duration: 600,
+        duration: 800,
         delay: (el, i) => 70 * (i + 1),
       })
       .add({
@@ -21,7 +21,7 @@
         scaleX: [0, 0.7],
         opacity: [0.5, 1],
         easing: 'easeOutExpo',
-        duration: 500,
+        duration: 400,
         delay: (el, i, l) => 80 * (l - i),
       })
   })
@@ -29,12 +29,18 @@
 
 <style>
   .ml1 {
-    font-size: 7rem;
+    font-size: 10rem;
   }
 
   .ml1 .letter {
     display: inline-block;
     line-height: 1em;
+  }
+  .letter {
+    text-shadow: 2px -2px 0 #fe2f4d;
+  }
+  .letterO {
+    text-shadow: 2px -2px 0 #ffffff;
   }
 
   .ml1 .text-wrapper {
@@ -48,13 +54,17 @@
   .ml1 .line {
     opacity: 0;
     position: absolute;
-
     width: 30%;
+  }
+  .line1 {
+    box-shadow: 2px -1px 0 #ffffff;
+  }
+  .line2 {
+    box-shadow: 2px -1px 0 #fe2f4d;
   }
 
   .ml1 .line1 {
     transform-origin: right 0 0;
-
     top: 0;
   }
   .ml1 .line2 {
@@ -97,7 +107,7 @@
   }
   @media only screen and (min-width: 1024px) {
     .ml1 {
-      font-size: 4.5rem;
+      font-size: 5.5rem;
     }
     .line {
       height: 1px;
@@ -105,7 +115,7 @@
   }
   @media only screen and (min-width: 1280px) {
     .ml1 {
-      font-size: 6.5rem;
+      font-size: 8rem;
     }
     .line {
       height: 1px;
@@ -113,18 +123,18 @@
   }
 </style>
 
-<h1 class=" ml1 font-nixieOne">
-  <span class="text-wrapper">
-    <span class="line line1 bg-vived-red right-0 " />
-    <span class="letter text-vived-red ">P</span>
-    <span class="letter">O</span>
-    <span class="letter text-vived-red">R</span>
-    <span class="letter text-vived-red">T</span>
-    <span class="letter text-vived-red">F</span>
-    <span class="letter">O</span>
-    <span class="letter text-vived-red">L</span>
-    <span class="letter text-vived-red">I</span>
-    <span class="letter">O</span>
-    <span class="line line2 left-0 bg-white w-56 " />
+<h1 class=" ml1">
+  <span class="text-wrapper font-nixieOne">
+    <span class="line line1 bg-dark-blue right-0 " />
+    <span class="letter text-dark-blue ">P</span>
+    <span class="letter text-dark-blue letterO ">O</span>
+    <span class="letter text-dark-blue">R</span>
+    <span class="letter text-dark-blue">T</span>
+    <span class="letter text-dark-blue">F</span>
+    <span class="letter text-dark-blue letterO">O</span>
+    <span class="letter text-dark-blue">L</span>
+    <span class="letter text-dark-blue">I</span>
+    <span class="letter text-dark-blue letterO">O</span>
+    <span class="line line2 left-0 bg-dark-blue w-56 " />
   </span>
 </h1>

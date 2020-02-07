@@ -20,7 +20,7 @@
         OMAR S. JAFF
       </h2>
       <div class="my-2">
-        <Title />
+        <!-- <Title /> -->
       </div>
     </div>
   </div>
