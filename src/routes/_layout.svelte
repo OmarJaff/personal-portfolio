@@ -1,7 +1,7 @@
 <script>
   import Nav from '../components/Nav.svelte'
   import Header from '../components/Header.svelte'
-
+  import Contact from './contact.svelte'
   export let segment
   let isMenuOpen = false
 
