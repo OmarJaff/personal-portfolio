@@ -14,13 +14,13 @@
     <h1 class="text-white text-4xl">
       <Portfolio />
     </h1>
+
     <div
-      class="flex my-16 lg:my-20 w-full justify-center font-nixieOne text-white
-      text-3xl">
+      class="flex mt-16 w-full justify-center font-nixieOne text-white text-3xl">
       <MyFullName />
-      <div class="my-2">
-        <!-- <Title /> -->
-      </div>
+    </div>
+    <div class=" my-2">
+      <Title />
     </div>
   </div>
 </div>

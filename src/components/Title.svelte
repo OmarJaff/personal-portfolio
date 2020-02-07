@@ -1,94 +1,93 @@
 <script>
-  import { onMount } from 'svelte'
-  class TextScramble {
-    constructor(el) {
-      this.el = el
-      this.chars = '!<>-_\\/[]{*________'
-      this.update = this.update.bind(this)
-    }
-    setText(newText) {
-      const oldText = this.el.innerText
-      const length = Math.max(oldText.length, newText.length)
-      const promise = new Promise(resolve => (this.resolve = resolve))
-      this.queue = []
-      for (let i = 0; i < length; i++) {
-        const from = oldText[i] || ''
-        const to = newText[i] || ''
-        const start = Math.floor(Math.random() * 40)
-        const end = start + Math.floor(Math.random() * 40)
-        this.queue.push({ from, to, start, end })
-      }
-      cancelAnimationFrame(this.frameRequest)
-      this.frame = 0
-      this.update()
-      return promise
-    }
-    update() {
-      let output = ''
-      let complete = 0
-      for (let i = 0, n = this.queue.length; i < n; i++) {
-        let { from, to, start, end, char } = this.queue[i]
-        if (this.frame >= end) {
-          complete++
-          output += to
-        } else if (this.frame >= start) {
-          if (!char || Math.random() < 0.28) {
-            char = this.randomChar()
-            this.queue[i].char = char
-          }
-          output += `<span class="dud">${char}</span>`
-        } else {
-          output += from
-        }
-      }
-      this.el.innerHTML = output
-      if (complete === this.queue.length) {
-        this.resolve()
-      } else {
-        this.frameRequest = requestAnimationFrame(this.update)
-        this.frame++
-      }
-    }
-    randomChar() {
-      return this.chars[Math.floor(Math.random() * this.chars.length)]
-    }
-  }
 
-  const phrases = ['Web Developer', 'Web Designer', 'Web Tranier']
-
-  onMount(() => {
-    const el = document.querySelector('.text')
-    const fx = new TextScramble(el)
-    let counter = 0
-    const next = () => {
-      fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 800)
-      })
-      counter = (counter + 1) % phrases.length
-    }
-    next()
-  })
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400i&display=swap');
-
-  .container {
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  .web p {
+    float: left;
+    margin-right: 0.3em;
   }
-  .text {
-    font-weight: 100;
-    font-size: 2.5rem;
-    font-family: 'Anonymous Pro', monospace;
+  .web b {
+    float: left;
+    overflow: hidden;
+    position: relative;
 
-    color: #ffffff;
+    top: 0px;
+  }
+  .web .innerIam {
+    color: #fff;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move 5s ease-in-out;
+
+    animation-iteration-count: infinite;
+    /*animation-delay*/
+    animation-delay: 3s;
+  }
+
+  @media only screen and (min-width: 641px) {
+    @keyframes move {
+      0% {
+        top: 0;
+      }
+      20% {
+        top: 0;
+      }
+      40% {
+        top: -56px;
+      }
+      60% {
+        top: -56px;
+      }
+      80% {
+        top: -107px;
+      }
+      90% {
+        top: -107px;
+      }
+      /* 60% {
+        top: -150px;
+      }
+      80% {
+        top: -200px;
+      } */
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    @keyframes move {
+      0% {
+        top: 0;
+      }
+      20% {
+        top: 0;
+      }
+      40% {
+        top: -30px;
+      }
+      60% {
+        top: -30px;
+      }
+      80% {
+        top: -60px;
+      }
+      90% {
+        top: -60px;
+      }
+    }
   }
 </style>
 
-<div class="container">
-  <div class="text " />
+<div class="ml-2 md:ml-6 text-white font-nixieOne text-xl sm:text-4xl web ">
+  <p class="text-vived-red">Web</p>
+  <b>
+    <div class="innerIam font-nixieOne flex flex-col h-8 sm:h-12">
+      <span class="font-nixieOne">developer</span>
+
+      <span>designer</span>
+
+      <span>trainer</span>
+    </div>
+  </b>
 </div>
