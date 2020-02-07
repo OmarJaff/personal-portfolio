@@ -1,6 +1,7 @@
 <script>
   import Portfolio from '../components/PortfolioStyle.svelte'
   import Title from '../components/Title.svelte'
+  import MyFullName from '../components/MyFullName.svelte'
 </script>
 
 <svelte:head>
@@ -13,12 +14,10 @@
     <h1 class="text-white text-4xl">
       <Portfolio />
     </h1>
-    <div class="flex flex-col items-center my-20 lg:my-24">
-      <h2
-        class="font-nixieOne text-white text-3xl sm:text-4xl md:text-5xl
-        lg:text-6xl">
-        OMAR S. JAFF
-      </h2>
+    <div
+      class="flex my-16 lg:my-20 w-full justify-center font-nixieOne text-white
+      text-3xl">
+      <MyFullName />
       <div class="my-2">
         <!-- <Title /> -->
       </div>

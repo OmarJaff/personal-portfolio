@@ -111,7 +111,7 @@
   <title>{status}</title>
 </svelte:head>
 
-<div id="container" class=" flex flex-col items-center h-screen justify-center">
+<div id="container" class=" flex flex-col items-center h-full justify-center">
   {#if status === 404}
     <svg
       x="0px"
