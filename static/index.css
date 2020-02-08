@@ -3787,7 +3787,7 @@ body {
 }
 
 .font-nixieOne {
-  font-family: "Nixie One", cursive, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans;
+  font-family: "Nixie One", Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
 }
 
 .font-raleway {
@@ -14275,7 +14275,7 @@ body {
   }
 
   .sm\:font-nixieOne {
-    font-family: "Nixie One", cursive, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans;
+    font-family: "Nixie One", Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
   }
 
   .sm\:font-raleway {
@@ -24764,7 +24764,7 @@ body {
   }
 
   .md\:font-nixieOne {
-    font-family: "Nixie One", cursive, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans;
+    font-family: "Nixie One", Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
   }
 
   .md\:font-raleway {
@@ -35253,7 +35253,7 @@ body {
   }
 
   .lg\:font-nixieOne {
-    font-family: "Nixie One", cursive, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans;
+    font-family: "Nixie One", Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
   }
 
   .lg\:font-raleway {
@@ -45742,7 +45742,7 @@ body {
   }
 
   .xl\:font-nixieOne {
-    font-family: "Nixie One", cursive, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans;
+    font-family: "Nixie One", Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
   }
 
   .xl\:font-raleway {

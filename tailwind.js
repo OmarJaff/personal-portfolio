@@ -10,13 +10,12 @@ module.exports = {
       fontFamily: {
         nixieOne: [
           '"Nixie One"',
-          'cursive',
+          'Noto Sans',
           'sans-serif',
           'Segoe UI',
           'Roboto',
           'Helvetica Neue',
           'Arial',
-          'Noto Sans',
         ],
         raleway: ['Raleway', 'sans-serif', 'Roboto', 'Arial'],
         fenix: ['Fenix', 'serif'],
