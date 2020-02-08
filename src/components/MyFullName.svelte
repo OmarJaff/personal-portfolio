@@ -9,11 +9,11 @@
     white-space: nowrap;
   }
   .animatingOmar {
-    animation: showup 6s;
+    animation: showup 5s;
   }
 
   .spananimation {
-    animation: slidein 6s ease;
+    animation: slidein 5s ease;
   }
   @keyframes showup {
     0% {

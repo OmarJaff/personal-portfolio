@@ -20,5 +20,3 @@
 <main>
   <slot />
 </main>
-
-<ScrollIcon />

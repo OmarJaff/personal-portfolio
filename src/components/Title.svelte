@@ -5,7 +5,7 @@
 <style>
   .web p {
     float: left;
-    margin-right: 0.3em;
+    margin-right: 1.5rem;
   }
   .web b {
     float: left;
@@ -24,7 +24,7 @@
 
     animation-iteration-count: infinite;
     /*animation-delay*/
-    animation-delay: 3s;
+    animation-delay: 2s;
   }
 
   @media only screen and (min-width: 641px) {
@@ -79,11 +79,11 @@
   }
 </style>
 
-<div class="ml-2 md:ml-6 text-white font-nixieOne text-xl sm:text-4xl web ">
+<div class=" ml-2 md:ml-6 text-white font-nixieOne text-xl sm:text-4xl web ">
   <p class="text-vived-red">Web</p>
   <b>
-    <div class="innerIam font-nixieOne flex flex-col h-8 sm:h-12">
-      <span class="font-nixieOne">developer</span>
+    <div class="innerIam flex flex-col h-8 sm:h-12 font-nixieOne font-light">
+      <span>developer</span>
 
       <span>designer</span>
 

@@ -2,6 +2,7 @@
   import Portfolio from '../components/PortfolioStyle.svelte'
   import Title from '../components/Title.svelte'
   import MyFullName from '../components/MyFullName.svelte'
+  import ScrollIcon from '../components/ScrollDownIcon.svelte'
 </script>
 
 <svelte:head>
@@ -23,4 +24,5 @@
       <Title />
     </div>
   </div>
+  <ScrollIcon />
 </div>

@@ -1,7 +1,4 @@
 <style>
-  .custpmstyle {
-    bottom: 20px;
-  }
   .arrows {
     width: 60px;
     height: 72px;
@@ -17,6 +14,38 @@
     stroke-width: 1px;
     animation: arrow 2s infinite;
     -webkit-animation: arrow 2s infinite;
+  }
+  .animating-border {
+    border-left: 1px solid white;
+    height: 0;
+    animation: border-height 0.2s ease forwards;
+    animation-delay: 1.5s;
+  }
+  .scroll-title-opacity {
+    opacity: 0;
+    animation: scroll-title 0.3s ease forwards;
+  }
+
+  @keyframes scroll-title {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes border-height {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 70px;
+    }
   }
 
   @keyframes arrow {
@@ -60,24 +89,31 @@
   }
 </style>
 
-<div class="flex font-col topstyle my-12 justify-center ">
+<div class=" hidden sm:block flex font-col topstyle my-12 justify-center ">
 
-  <svg class="arrows">
-    <!-- <path class="a1" d="M0 0 L30 32 L60 0" /> -->
+  <svg class="arrows cursor-pointer">
     <path class="a2" d="M0 20 L30 52 L60 20" />
     <path class="a3" d="M0 40 L30 72 L60 40" />
   </svg>
 
 </div>
 <div
-  class="flex font-nixione border-l-2 border-white mx-6 sm:mx-8 custpmstyle
-  leading-7 ">
-  <div class="flex items-center">
-    <span class=" text-white w-32 text-center">
-      Scroll &
-      <span class="text-vived-red ">Read</span>
-      About
-      <span class="text-vived-red">me</span>
+  class=" absolute left-0 right-0 bottom-0 top-auto animating-border
+  font-nixione mx-6 sm:mx-8 sm:leading-7 ">
+  <div class="flex items-center h-16 scroll-title-opacity fixed ">
+    <span
+      class=" text-white w-12 sm:w-24 text-center text-vived-red text-sm
+      sm:font-normal ml-0 sm:ml-2 ">
+
+      <span class="text-white hidden sm:block">
+        <span class="hidden sm:inline-block text-vived-red">Scroll</span>
+        & Read
+      </span>
+
+      <span class="text-vived-red ">
+        <span class=" text-white">About</span>
+        Me
+      </span>
     </span>
 
   </div>
