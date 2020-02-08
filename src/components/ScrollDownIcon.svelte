@@ -91,7 +91,7 @@
 
 <div class=" hidden sm:block flex font-col topstyle my-12 justify-center ">
 
-  <svg class="arrows cursor-pointer">
+  <svg class="arrows ">
     <path class="a2" d="M0 20 L30 52 L60 20" />
     <path class="a3" d="M0 40 L30 72 L60 40" />
   </svg>

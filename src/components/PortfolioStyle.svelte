@@ -72,7 +72,7 @@
     bottom: 0;
   }
 
-  @media only screen and (max-width: 400px) {
+  /* @media only screen and (max-width: 400px) {
     .ml1 {
       font-size: 2rem;
     }
@@ -105,25 +105,27 @@
       height: 1px;
     }
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1624px) {
     .ml1 {
       font-size: 5.5rem;
     }
     .line {
       height: 1px;
     }
-  }
-  @media only screen and (min-width: 1280px) {
-    .ml1 {
-      font-size: 8rem;
+  } */
+  @media (min-width: 1024px) {
+    .portfolio-font-size {
+      font-size: 6rem;
     }
-    .line {
-      height: 1px;
+  }
+  @media only screen and (min-width: 1625px) {
+    .portfolio-font-size {
+      font-size: 8rem;
     }
   }
 </style>
 
-<h1 class=" ml1">
+<h1 class=" text-4xl sm:text-6xl portfolio-font-size ">
   <span class="text-wrapper font-nixieOne">
     <span class="line line1 bg-dark-blue right-0 " />
     <span class="letter text-dark-blue ">P</span>
