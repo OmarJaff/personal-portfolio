@@ -1,35 +1,40 @@
 <script>
   import anime from 'animejs/lib/anime.es.js'
   import { onMount } from 'svelte'
-
-  onMount(() => {
-    let textWrapper = document.querySelector('.ml1 .letters')
-
-    anime
-      .timeline({ loop: false })
-      .add({
-        targets: '.ml1 .letter',
-        scale: [0.3, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: 'easeOutExpo',
-        duration: 800,
-        delay: (el, i) => 70 * (i + 1),
-      })
-      .add({
-        targets: '.ml1 .line',
-        scaleX: [0, 0.7],
-        opacity: [0.5, 1],
-        easing: 'easeOutExpo',
-        duration: 400,
-        delay: (el, i, l) => 80 * (l - i),
-      })
-  })
 </script>
 
 <style>
-  .ml1 {
-    font-size: 10rem;
+  .focus-in-expand {
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
   }
 
   .ml1 .letter {
@@ -51,11 +56,24 @@
     padding-bottom: 0.15em;
   }
 
-  .ml1 .line {
-    opacity: 0;
+  .line {
+    opacity: 1;
     position: absolute;
-    width: 30%;
+    width: 0;
+    height: 1px;
+    animation: 0.4s line-animation ease forwards;
+    animation-delay: 1.4s;
   }
+
+  @keyframes line-animation {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 20%;
+    }
+  }
+
   .line1 {
     box-shadow: 2px -1px 0 #ffffff;
   }
@@ -72,47 +90,6 @@
     bottom: 0;
   }
 
-  /* @media only screen and (max-width: 400px) {
-    .ml1 {
-      font-size: 2rem;
-    }
-    .line {
-      height: 1px;
-    }
-  }
-
-  @media only screen and (min-width: 401px) {
-    .ml1 {
-      font-size: 2.5rem;
-    }
-    .line {
-      height: 1px;
-    }
-  }
-  @media only screen and (min-width: 640px) {
-    .ml1 {
-      font-size: 3rem;
-    }
-    .line {
-      height: 1px;
-    }
-  }
-  @media only screen and (min-width: 700px) {
-    .ml1 {
-      font-size: 3.5rem;
-    }
-    .line {
-      height: 1px;
-    }
-  }
-  @media only screen and (min-width: 1624px) {
-    .ml1 {
-      font-size: 5.5rem;
-    }
-    .line {
-      height: 1px;
-    }
-  } */
   @media (min-width: 1024px) {
     .portfolio-font-size {
       font-size: 6rem;
@@ -125,9 +102,9 @@
   }
 </style>
 
-<h1 class=" text-4xl sm:text-6xl portfolio-font-size ">
-  <span class="text-wrapper font-nixieOne">
-    <span class="line line1 bg-dark-blue right-0 " />
+<h1 class=" text-4xl sm:text-6xl portfolio-font-size ml1 overflow-hidden ">
+  <span class="text-wrapper font-nixieOne ml1 focus-in-expand ">
+    <span class="line line1 bg-white right-0 " />
     <span class="letter text-dark-blue ">P</span>
     <span class="letter text-dark-blue letterO ">O</span>
     <span class="letter text-dark-blue">R</span>
@@ -137,6 +114,6 @@
     <span class="letter text-dark-blue">L</span>
     <span class="letter text-dark-blue">I</span>
     <span class="letter text-dark-blue letterO">O</span>
-    <span class="line line2 left-0 bg-dark-blue w-56 " />
+    <span class="line line2 left-0 " />
   </span>
 </h1>
