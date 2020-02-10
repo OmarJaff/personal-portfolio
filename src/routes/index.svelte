@@ -3,6 +3,8 @@
   import Title from '../components/Title.svelte'
   import MyFullName from '../components/MyFullName.svelte'
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
+  import PageToggleLines from '../components/PageToggleLines.svelte'
+  import ScrollDowmFlag from '../components/ScrollDownFlag.svelte'
 </script>
 
 <svelte:head>
@@ -24,5 +26,12 @@
       <Title />
     </div>
   </div>
+  <div
+    class="flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0 sm:h-full
+    justify-center ">
+    <PageToggleLines />
+
+  </div>
   <ScrollIcon />
+  <ScrollDowmFlag />
 </div>

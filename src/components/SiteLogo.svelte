@@ -3,12 +3,42 @@
   let x
 </script>
 
+<style>
+  .blink-2:hover {
+    -webkit-animation: blink-2 0.9s both;
+    animation: blink-2 0.9s both;
+  }
+
+  @-webkit-keyframes blink-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
 <svelte:window bind:innerWidth={x} />
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center ">
 
   {#if x > 640}
     <svg
-      class="-my-2"
+      class="-my-2 blink-2"
       width="58"
       height="51"
       xmlns="http://www.w3.org/2000/svg">

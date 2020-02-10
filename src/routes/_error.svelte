@@ -180,7 +180,7 @@
   </div>
   <p class="text-white font-raleway my-2">
     Back to
-    <a href="." class="text-vived-red">Home Page</a>
+    <a href="./" class="text-vived-red z-50 cursor-pointer">Home Page</a>
   </p>
   <div class=" my-12">
     <SiteLogo />

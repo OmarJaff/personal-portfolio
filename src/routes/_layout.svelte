@@ -16,12 +16,7 @@
 <div class="flex w-full">
   <Header on:menuToggled={handleMenuToggle} />
 </div>
-<div
-  class="flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0 sm:h-full
-  justify-center ">
-  <PageToggleLines />
 
-</div>
 <main>
   <slot />
 </main>
