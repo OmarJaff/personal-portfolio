@@ -29,6 +29,45 @@
     transition: 0.2s;
     transition-timing-function: ease-in-out;
   }
+  .scale-in-ver-bottom {
+    -webkit-animation: scale-in-ver-bottom 0.5s
+      cubic-bezier(0.82, 0.26, 0.2, 1.14) both;
+    animation: scale-in-ver-bottom 0.5s cubic-bezier(0.82, 0.26, 0.2, 1.14) both;
+    animation-delay: 0.2s;
+  }
+
+  @-webkit-keyframes scale-in-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
 </style>
 
 {#if isMenuOpen}
@@ -40,9 +79,9 @@
       class="flex w-full justify-center top-0 text-white font-nixieOne text-4xl
       lg:text-5xl xl:text-6xl">
       <ul
-        class="absolute flex flex-col items-center h-full justify-center "
-        transition:slide|local={{ duration: 500 }}>
-        <li class="my-2 border-gray-100 ">
+        class="absolute flex flex-col items-center h-full justify-center
+        scale-in-ver-bottom">
+        <li class="my-2 border-gray-100">
           <a
             class:selected={segment === undefined}
             class="flex flex-col activeClass hover-class "
@@ -50,7 +89,7 @@
             Home
           </a>
         </li>
-        <li class="my-4">
+        <li class="my-2 md:my-4">
           <a
             class:selected={segment === 'about'}
             class=" flex flex-col hover-class"
@@ -58,7 +97,7 @@
             About Me
           </a>
         </li>
-        <li class="my-4">
+        <li class="my-2 md:my-4">
           <a
             class:selected={segment === 'about'}
             class="flex flex-col hover-class"
@@ -66,7 +105,7 @@
             Skills
           </a>
         </li>
-        <li class="my-4">
+        <li class="my-2 md:my-4">
           <a
             class:selected={segment === 'about'}
             class="flex flex-col hover-class "
@@ -74,7 +113,7 @@
             Projects
           </a>
         </li>
-        <li class="my-4">
+        <li class="my-2 md:my-4">
           <a
             class:selected={segment === 'about'}
             class="flex flex-col hover-class"

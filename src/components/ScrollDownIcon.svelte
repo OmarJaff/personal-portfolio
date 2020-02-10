@@ -89,9 +89,9 @@
   }
 </style>
 
-<div class=" hidden sm:block flex font-col topstyle my-12 justify-center ">
+<div class=" sm:block flex font-col topstyle my-12 justify-center ">
 
-  <svg class="arrows ">
+  <svg class="arrows my-16 lg:my-0 ">
     <path class="a2" d="M0 20 L30 52 L60 20" />
     <path class="a3" d="M0 40 L30 72 L60 40" />
   </svg>

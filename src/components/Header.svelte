@@ -17,8 +17,11 @@
     transition: 0.2s;
     transition-timing-function: ease-in-out;
   }
-  .hover-class:hover {
-    color: #cbd5e0;
+  .hover-twitter:hover {
+    color: #1da1f3;
+  }
+  .hover-linkedin:hover {
+    color: #1da1f3;
   }
 </style>
 
@@ -38,7 +41,7 @@
               style="margin-top:2px;"
               width="30"
               height="23"
-              class=" hover-class text-white fill-current "
+              class="hover-class hover-twitter text-white fill-current "
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M29.2556 3.1798c-.9168.3784-1.9243.6005-2.9137.7569.472-.074
