@@ -13,7 +13,8 @@
 </script>
 
 <Nav {isMenuOpen} {segment} />
-<div class="flex w-full">
+
+<div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
   <Header on:menuToggled={handleMenuToggle} />
 </div>
 

@@ -72,7 +72,7 @@
 
 {#if isMenuOpen}
   <div
-    class=" gradiantStyle h-screen w-screen absolute z-50"
+    class=" gradiantStyle h-screen w-screen fixed inset-0 z-50 "
     transition:slide|local={{ duration: 400 }}>
 
     <nav

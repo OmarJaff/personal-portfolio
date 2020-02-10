@@ -5,6 +5,7 @@
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
   import PageToggleLines from '../components/PageToggleLines.svelte'
   import ScrollDowmFlag from '../components/ScrollDownFlag.svelte'
+  import About from '../components/About.svelte'
 </script>
 
 <svelte:head>
@@ -13,7 +14,7 @@
 
 <div class="flex w-full flex-col h-full justify-center ">
 
-  <div class="flex w-full flex-col items-center my-12">
+  <div class="flex w-full flex-col items-center my-32">
     <h1 class="text-white text-4xl">
       <Portfolio />
     </h1>
@@ -30,8 +31,10 @@
     class="flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0 sm:h-full
     justify-center ">
     <PageToggleLines />
-
   </div>
   <ScrollIcon />
   <ScrollDowmFlag />
+  <section class="my-64">
+    <About />
+  </section>
 </div>

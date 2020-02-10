@@ -35,8 +35,8 @@
 
 <div
   class=" absolute left-0 right-0 bottom-0 top-auto animating-border
-  font-nixione mx-6 sm:mx-8 sm:leading-7 ">
-  <div class="flex items-center h-16 scroll-title-opacity fixed ">
+  font-nixione mx-6 sm:mx-8 sm:leading-7 fixed ">
+  <div class="flex items-center h-16 scroll-title-opacity ">
     <span
       class=" text-white w-12 sm:w-24 text-center text-vived-red text-sm
       sm:font-normal ml-0 sm:ml-2 ">
