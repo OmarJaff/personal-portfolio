@@ -1,3 +1,7 @@
+<script>
+  let y
+</script>
+
 <style>
   .arrows {
     width: 60px;
@@ -57,7 +61,11 @@
   }
 </style>
 
-<div class=" sm:block flex font-col topstyle my-12 justify-center ">
+<svelte:window bind:scrollY={y} />
+
+<div
+  class="{y > 0 ? ' fadeOut' : 'fadeIn'} animated fast sm:block flex font-col
+  topstyle my-12 justify-center ">
 
   <svg class="arrows my-16 lg:my-0 ">
     <path class="a2" d="M0 20 L30 52 L60 20" />

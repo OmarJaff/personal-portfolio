@@ -11,7 +11,6 @@
 <svelte:head>
   <title>Omar Jaff</title>
 </svelte:head>
-
 <div class="flex w-full flex-col h-full justify-center ">
 
   <div class="flex w-full flex-col items-center my-32">
@@ -32,8 +31,10 @@
     justify-center ">
     <PageToggleLines />
   </div>
+
   <ScrollIcon />
   <ScrollDowmFlag />
+
   <section class="my-64">
     <About />
   </section>
