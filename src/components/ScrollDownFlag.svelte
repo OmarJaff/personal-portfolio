@@ -10,7 +10,7 @@
     animation-delay: 1;
   }
   .animating-out {
-    animation: animating-border-out 0.2s ease forwards;
+    animation: animating-border-out 0.1s ease forwards;
   }
   .scroll-title-opacity-in {
     opacity: 0;

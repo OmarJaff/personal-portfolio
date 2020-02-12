@@ -61,7 +61,7 @@
 
 <ul
   class="flex flex-col sm:flex-col transform sm:transform-none -rotate-90
-  translate-y-16 translate-x-3 sm:w-0 sm:fixed ">
+  translate-y-16 translate-x-3 sm:w-0 fixed bottom-0 sm:bottom-auto ">
   <div class="scale-in-hor-left flex flex-col-reverse sm:flex-col">
     <li class="bg-white w-4 sm:w-10 xl:w-12 active-class line-hight my-4" />
     <li class="bg-white w-4 sm:w-10 xl:w-12 line-hight my-4" />
