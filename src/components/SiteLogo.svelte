@@ -4,53 +4,9 @@
 </script>
 
 <style>
-  /* .blink-2:hover {
-    -webkit-animation: blink-2 0.9s both;
-    animation: blink-2 0.9s both;
-  }
-
-  @-webkit-keyframes blink-2 {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes blink-2 {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 1;
-    }
-  } */
-  .text-shadow-drop-bottom:hover {
-    -webkit-animation: text-shadow-drop-bottom 0.6s both;
-    animation: text-shadow-drop-bottom 0.6s both;
-  }
-
-  @-webkit-keyframes text-shadow-drop-bottom {
-    0% {
-      text-shadow: 0 0 0 rgba(190, 38, 38, 0);
-    }
-    100% {
-      text-shadow: 0 6px 18px rgba(201, 32, 32, 0.35);
-    }
-  }
-  @keyframes text-shadow-drop-bottom {
-    0% {
-      text-shadow: 0 0 0 rgba(233, 11, 11, 0);
-    }
-    100% {
-      text-shadow: 0 6px 18px rgba(241, 1, 1, 0.35);
-    }
+  .swing:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
   }
 </style>
 
@@ -59,7 +15,7 @@
 
   {#if x > 640}
     <svg
-      class="-my-2 text-shadow-drop-bottom"
+      class="-my-2 swing"
       width="58"
       height="51"
       xmlns="http://www.w3.org/2000/svg">
