@@ -182,12 +182,16 @@
     Back to
     <a href="./" class="text-vived-red z-50 cursor-pointer">Home Page</a>
   </p>
+  {#if dev && error.stack}
+    <div class="text-white flex justify-center">
+      <p class="flex justify-center leading-snug p-4 m-4 text-sm h-auto w-64">
+        {error.stack}
+      </p>
+
+    </div>
+  {/if}
   <div class=" my-12">
     <SiteLogo />
 
   </div>
 </div>
-
-{#if dev && error.stack}
-  <pre>{error.stack}</pre>
-{/if}

@@ -10,6 +10,7 @@
 
 <svelte:head>
   <title>Omar Jaff</title>
+
 </svelte:head>
 <div class="flex w-full flex-col h-full justify-center ">
 
@@ -17,7 +18,6 @@
     <h1 class="text-white text-4xl">
       <Portfolio />
     </h1>
-
     <div
       class="flex mt-16 w-full justify-center font-nixieOne text-white text-3xl">
       <MyFullName />
@@ -35,7 +35,7 @@
   <ScrollIcon />
   <ScrollDowmFlag />
 
-  <section class="my-64">
+  <section class="my-64 headline ">
     <About />
   </section>
 </div>
