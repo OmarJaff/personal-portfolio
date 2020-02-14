@@ -54,7 +54,7 @@
           <a
             class:selected={segment === 'about'}
             class=" flex flex-col hover-class"
-            href="about">
+            href="#about">
             About Me
           </a>
         </li>

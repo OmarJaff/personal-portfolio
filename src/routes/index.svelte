@@ -35,7 +35,7 @@
   <ScrollIcon />
   <ScrollDowmFlag />
 
-  <section class="my-64 headline ">
+  <section id="about" class="mx-4 ">
     <About />
   </section>
 </div>

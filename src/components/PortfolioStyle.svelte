@@ -78,7 +78,7 @@
     box-shadow: 2px -1px 0 #ffffff;
   }
   .line2 {
-    box-shadow: 2px -1px 0 #fe2f4d;
+    box-shadow: 2px -1px 0 #ffffff;
   }
 
   .ml1 .line1 {
@@ -104,7 +104,7 @@
 
 <h1 class=" text-4xl sm:text-6xl portfolio-font-size ml1 overflow-hidden ">
   <span class="text-wrapper font-nixieOne ml1 focus-in-expand ">
-    <span class="line line1 bg-white right-0 " />
+    <span class="line line1 right-0 bg-vived-red " />
     <span class="letter text-dark-blue ">P</span>
     <span class="letter text-dark-blue letterO ">O</span>
     <span class="letter text-dark-blue">R</span>
