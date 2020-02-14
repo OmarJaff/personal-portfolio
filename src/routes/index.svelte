@@ -35,7 +35,7 @@
   <ScrollIcon />
   <ScrollDowmFlag />
 
-  <section id="about" class="mx-4 ">
+  <section id="about" class="mx-4 flex justify-center my-64">
     <About />
   </section>
 </div>
