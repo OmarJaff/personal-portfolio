@@ -52,12 +52,12 @@
 
   .arrows path.a2 {
     animation-delay: -0.5s;
-    -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+    -webkit-animation-delay: -0.5s;
   }
 
   .arrows path.a3 {
     animation-delay: 0s;
-    -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+    -webkit-animation-delay: 0s;
   }
 </style>
 
@@ -71,5 +71,4 @@
     <path class="a2" d="M0 20 L30 52 L60 20" />
     <path class="a3" d="M0 40 L30 72 L60 40" />
   </svg>
-
 </div>

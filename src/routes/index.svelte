@@ -29,18 +29,16 @@
       </div>
     </div>
   </section>
-  <!-- <div
+  <div
     class="flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0 sm:h-full
     justify-center z-40 ">
     <PageToggleLines />
   </div>
 
   <ScrollIcon />
-  <ScrollDowmFlag /> -->
-
-  <section
-    id="about"
-    class=" flex justify-center sm:items-center mx-10 sm:mx-32">
-    <About />
-  </section>
+  <ScrollDowmFlag />
 </div>
+
+<section id="about" class=" flex justify-center sm:items-center mx-10 sm:mx-32">
+  <About />
+</section>
