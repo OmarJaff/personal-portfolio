@@ -17,7 +17,7 @@
 
   .activeClass:after {
     content: '';
-    background-image: radial-gradient(ellipse at top, #fe2f4d 0, #1a1c33 80%);
+    background-image: radial-gradient(ellipse at top, #fe2f4d 0, #20223d 80%);
     align-self: center;
     width: 50%;
     height: 3px;
@@ -38,7 +38,7 @@
 
     <nav
       class="flex w-full justify-center top-0 text-white font-nixieOne text-4xl
-      lg:text-5xl xl:text-6xl">
+      xl:text-5xl">
       <ul
         class="absolute flex flex-col items-center h-full justify-center
         animated fadeInUp faster ">

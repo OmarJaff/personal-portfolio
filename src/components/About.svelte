@@ -12,21 +12,30 @@
   .w-custom {
     width: 24rem;
   }
-  @media only screen and (min-width: 640px) and (max-width: 1023px) {
+  @media only screen and (min-width: 640px) and (max-width: 1279px) {
     .w-custom {
       width: 28rem;
     }
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1280px) {
     .w-custom {
-      width: 40rem;
+      width: 64rem;
+    }
+    .pictuer-width {
+      width: 35rem;
+    }
+    .text-width {
+      width: 35rem;
     }
     .h-custom {
-      height: 23rem;
+      height: 20rem;
+    }
+    .text-h-custom {
+      height: 20rem;
     }
     .top-custom {
-      top: 20rem;
-      left: 6rem;
+      top: 4rem;
+      left: 32rem;
     }
     .left-picture {
       right: 8rem;
@@ -43,26 +52,27 @@
   <title>About Omar</title>
 </svelte:head>
 <div class="flex flex-col w-custom ">
-  <div class="flex relative mb-16 justify-center sm:justify-start">
+  <div class="flex relative mb-12 justify-center sm:justify-start">
     <PageTitle title="About Omar" />
   </div>
-  <div class="flex flex-col w-auto w-full lg:flex-row relative ">
+  <div class="flex flex-col w-auto lg:flex-row relative ">
     <div
-      class=" flex lg:h-auto lg:w-11/12 left-0 lg:absolute z-10 photo-shadow
+      class=" flex pictuer-width lg:h-auto left-0 lg:absolute z-10 photo-shadow
       left-picture h-custom">
       <img
         class="fill-current relative "
         src="web-developer-omar-jaff.jpg"
-        alt="two computer screens with web development code on them" />
+        alt="a web developer person character with a laptop and other symbols of
+        code and programming" />
     </div>
     <div
-      class=" w-auto flex justify-end md:absolute top-custom h-auto mb-20
-      md:w-11/12">
+      class=" text-width text-h-custom flex xl:justify-end xl:absolute
+      top-custom h-auto mb-20 ">
       <div class="custom-shadow ">
 
         <p
-          class="text-white font-thin p-6 md:pt-20 break-normal text-justify
-          sm:text-xl leading-7 lg:leading-normal lg:text-2xl font-raleway">
+          class="text-white font-thin p-6 xl:ml-12 sm:text-lg font-mono
+          font-thin text-justify ">
           Hi ! I am a front-end web developer and user interface (UI) designer.
           I have about two years of experience in web development field and have
           worked on independent projects with other freelancer teams using the
@@ -73,7 +83,7 @@
           <span class="text-vived-red">CV</span>
           by clicking
           <a href="#home" class="text-vived-red">here</a>
-          .
+
         </p>
       </div>
 

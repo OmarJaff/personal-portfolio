@@ -8,6 +8,10 @@
   import About from '../components/About.svelte'
 </script>
 
+<style>
+
+</style>
+
 <svelte:head>
   <title>Omar Jaff</title>
 
@@ -41,6 +45,6 @@
 
 <section
   id="about"
-  class=" flex justify-center sm:items-center mx-10 sm:mx-32 ">
+  class=" flex justify-center sm:items-center mx-10 xl:mx-32 w-auto">
   <About />
 </section>
