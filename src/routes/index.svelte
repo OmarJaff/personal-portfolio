@@ -39,6 +39,8 @@
   <ScrollDowmFlag />
 </div>
 
-<section id="about" class=" flex justify-center sm:items-center mx-10 sm:mx-32">
+<section
+  id="about"
+  class=" flex justify-center sm:items-center mx-10 sm:mx-32 ">
   <About />
 </section>

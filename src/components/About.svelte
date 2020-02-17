@@ -19,11 +19,14 @@
   }
   @media only screen and (min-width: 1024px) {
     .w-custom {
-      width: 64rem;
+      width: 40rem;
+    }
+    .h-custom {
+      height: 23rem;
     }
     .top-custom {
-      top: 33rem;
-      left: 8rem;
+      top: 20rem;
+      left: 6rem;
     }
     .left-picture {
       right: 8rem;
@@ -39,25 +42,27 @@
 <svelte:head>
   <title>About Omar</title>
 </svelte:head>
-<div class="flex flex-col w-custom">
+<div class="flex flex-col w-custom ">
   <div class="flex relative mb-16 justify-center sm:justify-start">
     <PageTitle title="About Omar" />
   </div>
-  <div class="flex flex-col w-auto w-full lg:flex-row relative">
+  <div class="flex flex-col w-auto w-full lg:flex-row relative ">
     <div
-      class=" flex lg:h-auto lg:w-10/12 lg:absolute z-10 photo-shadow
-      left-picture">
+      class=" flex lg:h-auto lg:w-11/12 left-0 lg:absolute z-10 photo-shadow
+      left-picture h-custom">
       <img
         class="fill-current relative "
         src="web-developer-omar-jaff.jpg"
         alt="two computer screens with web development code on them" />
     </div>
-    <div class=" w-auto flex justify-end lg:absolute top-custom h-auto">
+    <div
+      class=" w-auto flex justify-end md:absolute top-custom h-auto mb-20
+      md:w-11/12">
       <div class="custom-shadow ">
 
         <p
-          class="text-white font-thin p-4 break-normal text-justify sm:text-xl
-          leading-7 lg:leading-9 lg:text-2xl">
+          class="text-white font-thin p-6 md:pt-20 break-normal text-justify
+          sm:text-xl leading-7 lg:leading-normal lg:text-2xl font-raleway">
           Hi ! I am a front-end web developer and user interface (UI) designer.
           I have about two years of experience in web development field and have
           worked on independent projects with other freelancer teams using the
