@@ -10,14 +10,17 @@
     animation-delay: 1;
   }
   .animating-out {
-    animation: animating-border-out 0.1s ease forwards;
+    border-left: 1px solid white;
+    height: 70px;
+    animation: animating-border-out 0.1s ease-out forwards;
   }
   .scroll-title-opacity-in {
     opacity: 0;
     animation: scroll-title 0.3s ease forwards;
   }
   .scroll-title-opacity-out {
-    animation: scroll-title-out 0.2s ease forwards;
+    opacity: 70px;
+    animation: scroll-title-out 0.2s ease-out forwards;
   }
   @keyframes border-height {
     from {
