@@ -6,6 +6,7 @@
   import PageToggleLines from '../components/PageToggleLines.svelte'
   import ScrollDowmFlag from '../components/ScrollDownFlag.svelte'
   import About from '../components/About.svelte'
+  import Skills from '../components/Skills.svelte'
 </script>
 
 <style>
@@ -43,8 +44,17 @@
   <ScrollDowmFlag />
 </div>
 
-<section
-  id="about"
-  class=" flex justify-center sm:items-center mx-10 xl:mx-32 w-auto">
-  <About />
-</section>
+<div class="flex flex-col h-screen justify-between w-full">
+
+  <div
+    id="about"
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10">
+    <About />
+  </div>
+
+  <div
+    id="skills"
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-6">
+    <Skills />
+  </div>
+</div>

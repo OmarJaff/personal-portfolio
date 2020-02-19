@@ -14,12 +14,16 @@
   }
   @media only screen and (min-width: 640px) and (max-width: 1279px) {
     .w-custom {
-      width: 28rem;
+      width: 34rem;
+    }
+    .top-custom-2 {
+      top: 21rem;
     }
   }
   @media only screen and (min-width: 1280px) {
     .w-custom {
       width: 64rem;
+      top: 30rem;
     }
     .pictuer-width {
       width: 35rem;
@@ -55,10 +59,10 @@
   <div class="flex relative mb-12 justify-center sm:justify-start">
     <PageTitle title="About Omar" />
   </div>
-  <div class="flex flex-col w-auto lg:flex-row relative ">
+  <div class="flex flex-col w-auto relative ">
     <div
-      class=" flex pictuer-width lg:h-auto left-0 lg:absolute z-10 photo-shadow
-      left-picture h-custom">
+      class=" flex pictuer-width lg:h-auto left-0 z-10 photo-shadow left-picture
+      h-custom">
       <img
         class="fill-current relative "
         src="web-developer-omar-jaff.jpg"
@@ -67,8 +71,8 @@
     </div>
     <div
       class=" text-width text-h-custom flex xl:justify-end xl:absolute
-      top-custom h-auto mb-20 ">
-      <div class="custom-shadow ">
+      top-custom h-auto top-custom-2">
+      <div class="custom-shadow">
 
         <p
           class="text-white font-thin p-6 xl:ml-12 sm:text-lg font-mono
