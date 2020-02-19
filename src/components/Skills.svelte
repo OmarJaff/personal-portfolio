@@ -24,7 +24,7 @@
   <div class="flex relative mb-12 justify-center sm:justify-start">
     <PageTitle title="My Skills" />
   </div>
-  <div class="flex justify-around flex-wrap w-full ">
+  <div class="flex justify-around flex-wrap lg:flex-no-wrap ">
 
     <SkillsIconTemplate
       title="fast"
