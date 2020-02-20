@@ -1,6 +1,8 @@
 <script>
   import { onMount } from 'svelte'
-  import Chart from 'Chart.js'
+  import Chart from 'chart.js'
+  import deferred from 'chartjs-plugin-deferred'
+
   const yLabels = {
     0: 'Novice',
     1: 'Basic',
@@ -8,13 +10,22 @@
     3: 'High',
     4: 'Master',
   }
+
   onMount(() => {
     let ctx = document.getElementById('myChart').getContext('2d')
-
-    Chart.defaults.global.defaultFontColor = 'rgb(255,255,255,0.6)'
+    Chart.defaults.global.defaultFontColor = 'rgb(255,255,255,0.8)'
+    Chart.defaults.global.defaultFontFamily =
+      "Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+    Chart.defaults.global.defaultFontSize = '12'
+    Chart.defaults.global.tooltips.enabled = false
+    Chart.defaults.global.animation.duration = 2000
+    Chart.defaults.global.animation.easing = 'easeOutElastic'
+    Chart.defaults.global.plugins.deferred.delay = 100
+    Chart.defaults.global.plugins.deferred.xOffset = 150
+    Chart.defaults.global.plugins.deferred.yOffset = '50%'
     let chart = new Chart(ctx, {
       type: 'bar',
-
+      plugin: [deferred],
       data: {
         labels: [
           'HTML',
@@ -32,25 +43,12 @@
         ],
         datasets: [
           {
-            label: '',
-            backgroundColor: 'rgb(254,47,77,0.1)',
-            borderColor: 'rgb(254,47,77)',
-            borderWidth: 1,
-            data: [
-              3.8,
-              3.2,
-              2.9,
-              2.9,
-              2.5,
-              1.9,
-              1.2,
-              1.3,
-              3.1,
-              1.9,
-              3.4,
-              2.8,
-              4,
-            ],
+            backgroundColor: 'rgb(254,47,77,0.2)',
+            borderColor: 'rgb(254,47,77,0.8)',
+            hoverBorderColor: 'rgb(254,47,77,1)',
+            barPercentage: 0.5,
+            borderWidth: 1.5,
+            data: [3.2, 3, 2.5, 2.8, 2.5, 1.9, 1, 1.1, 3, 2, 3, 2, 4],
           },
         ],
       },
@@ -60,14 +58,25 @@
         },
         title: {
           display: true,
-          text: 'My web development skills chart',
+          text: 'My web development skills',
           fontColor: '#fff',
-          fontStyle: 'light',
-          fontSize: '14',
+          fontSize: '16',
         },
         scales: {
+          xAxes: [
+            {
+              gridLines: {
+                display: false,
+              },
+            },
+          ],
           yAxes: [
             {
+              stacked: true,
+              gridLines: {
+                display: true,
+                color: 'rgba(255,255,255,0.2)',
+              },
               ticks: {
                 beginAtZero: true,
                 callback: function(value, index, values) {
@@ -77,6 +86,13 @@
             },
           ],
         },
+        // plugin: {
+        //   deferred: {
+        //     xOffset: 150, // defer until 150px of the canvas width are inside the viewport
+        //     yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+        //     delay: 500, // delay of 500 ms after the canvas is considered inside the viewport
+        //   },
+        // },
       },
     })
   })
@@ -90,10 +106,6 @@
   }
 </style>
 
-<canvas
-  id="myChart"
-  aria-label="my skill's chart"
-  height="130"
-  class="custom-shadow">
+<canvas id="myChart" aria-label="my skill's chart" class="custom-shadow">
   <p class="text-white">Unfortunately, Your browser does not support canvas!</p>
 </canvas>
