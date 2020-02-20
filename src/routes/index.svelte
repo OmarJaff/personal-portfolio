@@ -48,13 +48,15 @@
 
   <div
     id="about"
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10">
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-20
+    lg:mt-48">
     <About />
   </div>
 
   <div
     id="skills"
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-6">
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
+    lg:mt-56">
     <Skills />
   </div>
 </div>
