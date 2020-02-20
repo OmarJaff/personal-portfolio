@@ -8,9 +8,9 @@
     height: 1px;
   }
   .custom-shadow {
-    -webkit-box-shadow: 11px 10px 10px -1px rgba(0, 0, 0, 0.46);
-    -moz-box-shadow: 11px 10px 10px -1px rgba(0, 0, 0, 0.46);
-    box-shadow: 11px 10px 10px -1px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+    box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
   }
 </style>
 
@@ -23,7 +23,7 @@
     </div>
     <span class=" line w-1/3 bg-white inset-0 absolute top-auto " />
   </div>
-  <div class="my-3 flex flex-col p-4 w-48 ">
+  <div class="my-3 flex flex-col p-2 w-48 ">
     <h2 class="text-white font-mono font-semibold flex justify-center ">
       {title.toUpperCase()}
     </h2>
