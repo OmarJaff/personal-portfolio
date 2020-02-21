@@ -22,7 +22,7 @@
 </style>
 
 <div class="flex flex-col w-custom">
-  <div class="flex relative mb-12 justify-center sm:justify-start">
+  <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="My Skills" />
   </div>
   <div class="flex justify-around flex-wrap xl:flex-no-wrap relative ">

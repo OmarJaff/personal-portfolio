@@ -7,6 +7,7 @@
   import ScrollDowmFlag from '../components/ScrollDownFlag.svelte'
   import About from '../components/About.svelte'
   import Skills from '../components/Skills.svelte'
+  import Projects from '../components/Projects.svelte'
 </script>
 
 <style>
@@ -58,5 +59,11 @@
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <Skills />
+  </div>
+  <div
+    id="skills"
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
+    lg:mt-56">
+    <Projects />
   </div>
 </div>

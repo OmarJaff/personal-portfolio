@@ -41,7 +41,7 @@
   }
 
   .line-hight {
-    height: 2px;
+    height: 4px;
   }
   .active-class {
     background-color: #fe2f4d;
