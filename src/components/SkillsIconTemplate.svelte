@@ -23,13 +23,13 @@
     </div>
     <span class=" line w-1/3 bg-white inset-0 absolute top-auto " />
   </div>
-  <div class="my-3 flex flex-col p-2 w-48 ">
-    <h2 class="text-white font-mono font-semibold flex justify-center ">
+  <div class="my-3 flex flex-col p-2 w-48 font-mono ">
+    <h2 class="text-white font-semibold flex justify-center ">
       {title.toUpperCase()}
     </h2>
     <p
-      class="text-white flex justify-center font-thin font-mono text-center
-      text-xs sm:text-sm">
+      class="text-white flex justify-center font-thin text-center text-xs
+      sm:text-sm">
       {description}
     </p>
   </div>
