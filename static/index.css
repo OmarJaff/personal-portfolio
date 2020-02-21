@@ -3798,6 +3798,10 @@ body {
   font-family: Fenix, serif;
 }
 
+.font-robotoMono {
+  font-family: "Roboto Mono", sans-serif, Arial;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -14284,6 +14288,10 @@ body {
 
   .sm\:font-fenix {
     font-family: Fenix, serif;
+  }
+
+  .sm\:font-robotoMono {
+    font-family: "Roboto Mono", sans-serif, Arial;
   }
 
   .sm\:font-hairline {
@@ -24775,6 +24783,10 @@ body {
     font-family: Fenix, serif;
   }
 
+  .md\:font-robotoMono {
+    font-family: "Roboto Mono", sans-serif, Arial;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -35264,6 +35276,10 @@ body {
     font-family: Fenix, serif;
   }
 
+  .lg\:font-robotoMono {
+    font-family: "Roboto Mono", sans-serif, Arial;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -45751,6 +45767,10 @@ body {
 
   .xl\:font-fenix {
     font-family: Fenix, serif;
+  }
+
+  .xl\:font-robotoMono {
+    font-family: "Roboto Mono", sans-serif, Arial;
   }
 
   .xl\:font-hairline {

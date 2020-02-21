@@ -29,7 +29,7 @@
     </h2>
     <p
       class="text-white flex justify-center font-thin font-mono text-center
-      text-sm">
+      text-xs sm:text-sm">
       {description}
     </p>
   </div>

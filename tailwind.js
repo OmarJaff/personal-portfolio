@@ -19,6 +19,7 @@ module.exports = {
         ],
         raleway: ['Raleway', 'sans-serif', 'Roboto', 'Arial'],
         fenix: ['Fenix', 'serif'],
+        robotoMono: ['"Roboto Mono"', 'sans-serif', 'Arial'],
       },
     },
   },
