@@ -13,10 +13,12 @@
 
   onMount(() => {
     let ctx = document.getElementById('myChart').getContext('2d')
+    ctx.height = '1000'
+
     Chart.defaults.global.defaultFontColor = 'rgb(255,255,255,0.8)'
     Chart.defaults.global.defaultFontFamily =
       "Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
-    Chart.defaults.global.defaultFontSize = '12'
+    Chart.defaults.global.defaultFontSize = '14'
     Chart.defaults.global.tooltips.enabled = false
     Chart.defaults.global.animation.duration = 2000
     Chart.defaults.global.animation.easing = 'easeOutElastic'
@@ -32,35 +34,38 @@
           'CSS',
           'JavaScript',
           'Vue.JS',
-          'Svelte',
+          'Nuxt.JS',
           'Quasar',
+          'Svelte',
           'PHP',
           'Laravel',
           'TailwindCSS',
           'Bootstrap',
           'Figma',
-          'Adobe xd',
         ],
         datasets: [
           {
-            backgroundColor: 'rgb(254,47,77,0.2)',
-            borderColor: 'rgb(254,47,77,0.8)',
+            backgroundColor: 'rgb(255,77,90,0.5)',
+            borderColor: 'rgb(254,47,77,1)',
             hoverBorderColor: 'rgb(254,47,77,1)',
             barPercentage: 0.5,
-            borderWidth: 1.5,
-            data: [3, 3, 2.5, 2.8, 2.5, 1.9, 1, 1.1, 3, 2, 3, 2, 4],
+            borderWidth: 1,
+            data: [3, 3, 2.5, 2.8, 2.5, 2, 2.5, 1, 1, 3, 2, 3, 4],
           },
         ],
       },
       options: {
+        maintainAspectRatio: false,
+
         legend: {
           display: false,
         },
         title: {
-          display: true,
-          text: 'My web development skills',
-          fontColor: '#fff',
+          display: false,
+          text: 'Web Skills',
+
           fontSize: '16',
+          fontFamily: 'nixiOne',
         },
         scales: {
           xAxes: [
@@ -86,13 +91,6 @@
             },
           ],
         },
-        // plugin: {
-        //   deferred: {
-        //     xOffset: 150, // defer until 150px of the canvas width are inside the viewport
-        //     yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-        //     delay: 500, // delay of 500 ms after the canvas is considered inside the viewport
-        //   },
-        // },
       },
     })
   })
@@ -104,8 +102,16 @@
     -moz-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
     box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
   }
+  .custom-h {
+    height: 550px;
+    width: 100%;
+  }
 </style>
 
-<canvas id="myChart" aria-label="my skill's chart" class="custom-shadow">
+<canvas
+  id="myChart"
+  dir="rtl"
+  aria-label="my skill's chart"
+  class="custom-shadow custom-h ">
   <p class="text-white">Unfortunately, Your browser does not support canvas!</p>
 </canvas>
