@@ -59,7 +59,7 @@
   <div class="flex flex-col w-auto relative items-center sm:items-start ">
     <div
       class=" flex pictuer-width lg:h-auto left-0 z-10 photo-shadow left-picture
-      h-custom w-full">
+      h-custom w-full bg-dark-blue">
       <svg
         width="878"
         height="481"
@@ -155,17 +155,20 @@
     <div
       class=" text-width text-h-custom flex xl:justify-end xl:absolute
       top-custom h-auto top-custom-2 font-mono ">
-      <div class="custom-shadow h-full w-full ">
-        <h1 class="text-white font-semibold flex justify-center p-2 text-base ">
+      <div class="custom-shadow h-full w-full flex flex-col justify-between ">
+        <h1
+          class="text-white font-semibold flex justify-center p-2 text-base
+          lg:p-4 lg:text-xl xl:text-2xl xl:-mb-10 ">
           ONLINE SHOPPING SYSTEM
         </h1>
         <p
           class="text-white flex justify-center text-justify font-thin
-          text-center text-sm p-3 ">
+          text-center text-sm px-6 py-2 sm:text-lg xl:ml-12 xl:px-5 xl:py-0
+          xl:leading-loose xl:text-left ">
           Developing a system for ordering items online and monitoring the
           shipping statuses in an efficient pattern.
         </p>
-        <div class="flex w-full p-3 bg-dark-blue-deep">
+        <div class="flex w-full py-3 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
           <span
             class="flex text-vived-red font-thin text-xs items-center
             flex-shrink-0">
