@@ -1,6 +1,6 @@
 <script>
-  export let projectTitle = null
-  export let projectDescription = ''
+  export let containerTitle = ''
+  export let containerDescription = ''
   export let techIconsPresent = true
 </script>
 
@@ -48,25 +48,30 @@
   <div
     class=" flex pictuer-width lg:h-auto left-0 z-10 photo-shadow left-picture
     h-custom w-full bg-dark-blue">
-    <slot name="projectDesign" />
+    <slot name="containerDesign" />
   </div>
   <div
     class=" text-width text-h-custom flex xl:justify-end xl:absolute top-custom
     h-auto top-custom-2 font-mono ">
     <div class="custom-shadow h-full w-full flex flex-col justify-between ">
-      {#if projectTitle}
+      {#if containerTitle}
         <h1
           class="text-white font-semibold flex justify-center p-2 text-base
           lg:p-4 lg:text-xl xl:text-2xl xl:-mb-10 ">
-          {projectTitle.toUpperCase()}
+          {containerTitle.toUpperCase()}
         </h1>
       {/if}
-      <p
-        class="text-white flex justify-center text-justify font-thin text-center
-        text-sm px-6 py-2 sm:text-lg xl:ml-12 xl:px-5 xl:py-0 xl:leading-8
-        xl:text-left ">
-        {projectDescription}
-      </p>
+      {#if containerDescription}
+        <p
+          class="text-white flex justify-center text-justify font-thin
+          text-center text-sm px-6 py-2 sm:text-lg xl:ml-12 xl:px-5 xl:py-0
+          xl:leading-8 xl:text-left ">
+          {containerDescription}
+        </p>
+      {:else}
+        <slot name="aboutMe" />
+      {/if}
+
       {#if techIconsPresent === true}
         <div class="flex w-full py-3 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
           <span

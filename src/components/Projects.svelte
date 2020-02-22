@@ -25,13 +25,13 @@
     <PageTitle title="Featured Projects" />
   </div>
   <ProjectContainer
-    projectTitle="online shopping system"
-    projectDescription="This is an online system for ordering items from other
+    containerTitle="online shopping system"
+    containerDescription="This is an online system for ordering items from other
     global shopping systems such as amazone and ebay. The main goal of this
     system is to enable customers from inside of kurdistan to order items online
     and to monitor the shipping state of thier items in an efficient pattern.">
     <svg
-      slot="projectDesign"
+      slot="containerDesign"
       width="878"
       height="481"
       viewBox="0 0 878 481"
