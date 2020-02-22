@@ -99,28 +99,6 @@
       }
     }
   }
-  /* @media only screen and (min-width: 641px) {
-    @keyframes move {
-      0% {
-        top: 0;
-      }
-      20% {
-        top: 0;
-      }
-      40% {
-        top: -33px;
-      }
-      60% {
-        top: -30px;
-      }
-      80% {
-        top: -60px;
-      }
-      90% {
-        top: -60px;
-      }
-    }
-  } */
 </style>
 
 <div

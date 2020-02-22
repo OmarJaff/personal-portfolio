@@ -16,7 +16,6 @@
 
 <svelte:head>
   <title>Omar Jaff</title>
-
 </svelte:head>
 <div class="flex flex-col justify-center h-screen w-full ">
   <section class="flex h-full w-full my-48">
