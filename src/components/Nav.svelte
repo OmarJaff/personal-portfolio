@@ -29,37 +29,6 @@
     transition: 0.2s;
     transition-timing-function: ease-in-out;
   }
-  .focus-in-expand {
-    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.77, 0, 0.175, 1) both;
-    animation: focus-in-expand 0.8s cubic-bezier(0.77, 0, 0.175, 1) both;
-  }
-
-  @-webkit-keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
 </style>
 
 {#if isMenuOpen}
@@ -74,7 +43,7 @@
         <li class="my-2 border-gray-100 ">
           <a
             class:selected={segment === undefined}
-            class="flex flex-col activeClass hover-class focus-in-expand"
+            class="flex flex-col activeClass hover-class "
             href=".">
             Home
           </a>
@@ -82,7 +51,7 @@
         <li class="my-2 md:my-4 ">
           <a
             class:selected={segment === 'about'}
-            class=" flex flex-col hover-class focus-in-expand"
+            class=" flex flex-col hover-class "
             href="#about">
             About Me
           </a>
@@ -90,7 +59,7 @@
         <li class="my-2 md:my-4 ">
           <a
             class:selected={segment === 'about'}
-            class="flex flex-col hover-class focus-in-expand"
+            class="flex flex-col hover-class "
             href="about">
             Skills
           </a>
@@ -98,7 +67,7 @@
         <li class="my-2 md:my-4 ">
           <a
             class:selected={segment === 'about'}
-            class="flex flex-col hover-class focus-in-expand "
+            class="flex flex-col hover-class "
             href="about">
             Projects
           </a>
@@ -106,12 +75,12 @@
         <li class="my-2 md:my-4 ">
           <a
             class:selected={segment === 'about'}
-            class="flex flex-col hover-class focus-in-expand"
+            class="flex flex-col hover-class "
             href="about">
             Contact Me
           </a>
         </li>
-        <div class=" mt-10 flex sm:hidden focus-in-expand">
+        <div class=" mt-10 flex sm:hidden ">
           <SocialIcons />
         </div>
       </ul>
