@@ -8,9 +8,6 @@
     overflow: hidden;
     white-space: nowrap;
   }
-  .animatingOmar {
-    animation: showup 5s;
-  }
 
   .spananimation {
     animation: slidein 5s ease;
