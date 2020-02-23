@@ -330,6 +330,7 @@
           fill="white" />
       </svg>
     </SkillsIconTemplate>
+
   </div>
   <div class="flex w-full my-20">
     <SkillsChart />

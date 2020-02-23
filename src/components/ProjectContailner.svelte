@@ -44,7 +44,9 @@
   }
 </style>
 
-<div class="flex flex-col w-auto relative items-center sm:items-start ">
+<div
+  class="{containerTitle ? ' xl:mb-40 mb-12' : ''} flex flex-col w-auto relative
+  items-center sm:items-start ">
   <div
     class=" flex pictuer-width lg:h-auto left-0 z-10 photo-shadow left-picture
     h-custom w-full bg-dark-blue">

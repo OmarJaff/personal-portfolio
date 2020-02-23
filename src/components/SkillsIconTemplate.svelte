@@ -15,7 +15,8 @@
 </style>
 
 <div
-  class="flex sm:flex-col mx-4 justify-center items-center w-full sm:w-auto ">
+  class="flex sm:flex-col mx-4 justify-center items-center w-full sm:w-auto my-1
+  sm:my-0 ">
   <div class="custom-shadow w-24 h-24 xl:w-32 xl:h-32 relative flex ">
     <span class=" line w-1/3 bg-vived-red inset-0 left-auto absolute " />
     <div class="flex flex-col justify-center w-full h-full items-center">
