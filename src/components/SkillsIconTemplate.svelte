@@ -30,7 +30,7 @@
     </h2>
     <p
       class="text-white flex justify-center font-thin text-center text-xs
-      sm:text-sm">
+      sm:text-sm opacity-75">
       {description}
     </p>
   </div>

@@ -58,8 +58,8 @@
     <div class="custom-shadow h-full w-full flex flex-col justify-between ">
       {#if containerTitle}
         <h1
-          class="text-white font-semibold flex justify-center p-2 text-base
-          lg:p-4 lg:text-xl xl:text-2xl xl:-mb-10 ">
+          class="text-white flex justify-center p-2 text-base lg:p-4 lg:text-xl
+          xl:text-2xl xl:-mb-10 ">
           {containerTitle.toUpperCase()}
         </h1>
       {/if}
@@ -67,7 +67,7 @@
         <p
           class="text-white flex justify-center text-justify font-thin
           text-center text-sm px-6 py-2 sm:text-lg xl:ml-12 xl:px-5 xl:py-0
-          xl:leading-8 xl:text-left ">
+          xl:leading-8 opacity-75 h-full xl:my-10 ">
           {containerDescription}
         </p>
       {:else}
@@ -78,7 +78,7 @@
         <div class="flex w-full py-3 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
           <span
             class="flex text-vived-red font-thin text-xs items-center
-            flex-shrink-0 sm:text-sm">
+            flex-shrink-0 sm:text-sm opacity-75">
             Technologies Used:
           </span>
           <slot name="techIcons" />

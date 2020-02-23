@@ -36,7 +36,7 @@
       code and programming" />
     <p
       class="text-white font-thin p-6 xl:ml-12 tex font-mono font-thin
-      text-justify text-base sm:text-lg "
+      text-justify text-base sm:text-lg opacity-75 "
       slot="aboutMe">
       Hi ! I am a front-end web developer and user interface (UI) designer. I
       have about two years of experience in web development field and have
