@@ -11,6 +11,14 @@
     box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
   }
 
+  @media only screen and (max-width: 1279px) {
+    .custom-shadow-all {
+      -webkit-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
+      -moz-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
+      box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
+    }
+  }
+
   @media only screen and (min-width: 640px) and (max-width: 1279px) {
     .top-custom-2 {
       top: 21rem;
@@ -46,7 +54,7 @@
 
 <div
   class="{containerTitle ? ' xl:mb-40 mb-12' : ''} flex flex-col w-auto relative
-  items-center sm:items-start ">
+  items-center sm:items-start custom-shadow-all ">
   <div
     class=" flex pictuer-width lg:h-auto left-0 z-10 photo-shadow left-picture
     h-custom w-full bg-dark-blue">
@@ -75,7 +83,7 @@
       {/if}
 
       {#if techIconsPresent === true}
-        <div class="flex w-full py-3 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
+        <div class="flex w-full py-2 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
           <span
             class="flex text-vived-red font-thin text-xs items-center
             flex-shrink-0 sm:text-sm opacity-75">
