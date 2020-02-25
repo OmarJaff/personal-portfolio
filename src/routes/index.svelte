@@ -9,6 +9,7 @@
   import Skills from '../components/Skills.svelte'
   import Projects from '../components/Projects.svelte'
   import ContactForm from '../components/ContactForm.svelte'
+  import Footer from '../components/Footer.svelte'
 </script>
 
 <style>
@@ -70,5 +71,11 @@
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <ContactForm />
+  </div>
+  <div
+    id="contact"
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
+    lg:mt-56 relative">
+    <Footer />
   </div>
 </div>

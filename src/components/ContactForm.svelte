@@ -29,7 +29,7 @@
   }
 </style>
 
-<div class="flex flex-col w-custom mb-48">
+<div class="flex flex-col w-custom">
   <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="Contact me" />
   </div>
@@ -73,7 +73,7 @@
           placeholder="Subject" />
         <textarea
           type="text"
-          id="email"
+          id="message"
           name="email"
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
           w-full my-1 sm:my-2 h-24 sm:text-base xl:text-lg"

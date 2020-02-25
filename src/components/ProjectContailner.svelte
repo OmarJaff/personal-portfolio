@@ -66,7 +66,7 @@
     <div class="custom-shadow h-full w-full flex flex-col justify-between ">
       {#if containerTitle}
         <h1
-          class="text-white flex justify-center p-1 text-base lg:p-4 lg:text-xl
+          class="text-white flex justify-center text-base p-4 lg:text-xl
           xl:text-2xl xl:-mb-10 ">
           {containerTitle.toUpperCase()}
         </h1>
