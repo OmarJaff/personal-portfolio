@@ -1064,6 +1064,10 @@ body {
   background-color: #FF4D5A;
 }
 
+.bg-form-input-gray {
+  background-color: #666877;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -1456,6 +1460,10 @@ body {
   background-color: #FF4D5A;
 }
 
+.hover\:bg-form-input-gray:hover {
+  background-color: #666877;
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -1846,6 +1854,10 @@ body {
 
 .focus\:bg-vived-red-lighter:focus {
   background-color: #FF4D5A;
+}
+
+.focus\:bg-form-input-gray:focus {
+  background-color: #666877;
 }
 
 .bg-bottom {
@@ -2320,6 +2332,10 @@ body {
   border-color: #FF4D5A;
 }
 
+.border-form-input-gray {
+  border-color: #666877;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -2712,6 +2728,10 @@ body {
   border-color: #FF4D5A;
 }
 
+.hover\:border-form-input-gray:hover {
+  border-color: #666877;
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -3102,6 +3122,10 @@ body {
 
 .focus\:border-vived-red-lighter:focus {
   border-color: #FF4D5A;
+}
+
+.focus\:border-form-input-gray:focus {
+  border-color: #666877;
 }
 
 .rounded-none {
@@ -6472,6 +6496,10 @@ body {
   color: #FF4D5A;
 }
 
+.placeholder-form-input-gray::placeholder {
+  color: #666877;
+}
+
 .focus\:placeholder-transparent:focus::placeholder {
   color: transparent;
 }
@@ -6862,6 +6890,10 @@ body {
 
 .focus\:placeholder-vived-red-lighter:focus::placeholder {
   color: #FF4D5A;
+}
+
+.focus\:placeholder-form-input-gray:focus::placeholder {
+  color: #666877;
 }
 
 .pointer-events-none {
@@ -7530,6 +7562,10 @@ body {
   color: #FF4D5A;
 }
 
+.text-form-input-gray {
+  color: #666877;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -7922,6 +7958,10 @@ body {
   color: #FF4D5A;
 }
 
+.hover\:text-form-input-gray:hover {
+  color: #666877;
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -8312,6 +8352,10 @@ body {
 
 .focus\:text-vived-red-lighter:focus {
   color: #FF4D5A;
+}
+
+.focus\:text-form-input-gray:focus {
+  color: #666877;
 }
 
 .text-xs {
@@ -11600,6 +11644,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .sm\:bg-form-input-gray {
+    background-color: #666877;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -11992,6 +12040,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .sm\:hover\:bg-form-input-gray:hover {
+    background-color: #666877;
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -12382,6 +12434,10 @@ body {
 
   .sm\:focus\:bg-vived-red-lighter:focus {
     background-color: #FF4D5A;
+  }
+
+  .sm\:focus\:bg-form-input-gray:focus {
+    background-color: #666877;
   }
 
   .sm\:bg-bottom {
@@ -12856,6 +12912,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .sm\:border-form-input-gray {
+    border-color: #666877;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -13248,6 +13308,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .sm\:hover\:border-form-input-gray:hover {
+    border-color: #666877;
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -13638,6 +13702,10 @@ body {
 
   .sm\:focus\:border-vived-red-lighter:focus {
     border-color: #FF4D5A;
+  }
+
+  .sm\:focus\:border-form-input-gray:focus {
+    border-color: #666877;
   }
 
   .sm\:rounded-none {
@@ -17008,6 +17076,10 @@ body {
     color: #FF4D5A;
   }
 
+  .sm\:placeholder-form-input-gray::placeholder {
+    color: #666877;
+  }
+
   .sm\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -17398,6 +17470,10 @@ body {
 
   .sm\:focus\:placeholder-vived-red-lighter:focus::placeholder {
     color: #FF4D5A;
+  }
+
+  .sm\:focus\:placeholder-form-input-gray:focus::placeholder {
+    color: #666877;
   }
 
   .sm\:pointer-events-none {
@@ -18066,6 +18142,10 @@ body {
     color: #FF4D5A;
   }
 
+  .sm\:text-form-input-gray {
+    color: #666877;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -18458,6 +18538,10 @@ body {
     color: #FF4D5A;
   }
 
+  .sm\:hover\:text-form-input-gray:hover {
+    color: #666877;
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -18848,6 +18932,10 @@ body {
 
   .sm\:focus\:text-vived-red-lighter:focus {
     color: #FF4D5A;
+  }
+
+  .sm\:focus\:text-form-input-gray:focus {
+    color: #666877;
   }
 
   .sm\:text-xs {
@@ -22137,6 +22225,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .md\:bg-form-input-gray {
+    background-color: #666877;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -22529,6 +22621,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .md\:hover\:bg-form-input-gray:hover {
+    background-color: #666877;
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -22919,6 +23015,10 @@ body {
 
   .md\:focus\:bg-vived-red-lighter:focus {
     background-color: #FF4D5A;
+  }
+
+  .md\:focus\:bg-form-input-gray:focus {
+    background-color: #666877;
   }
 
   .md\:bg-bottom {
@@ -23393,6 +23493,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .md\:border-form-input-gray {
+    border-color: #666877;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -23785,6 +23889,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .md\:hover\:border-form-input-gray:hover {
+    border-color: #666877;
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -24175,6 +24283,10 @@ body {
 
   .md\:focus\:border-vived-red-lighter:focus {
     border-color: #FF4D5A;
+  }
+
+  .md\:focus\:border-form-input-gray:focus {
+    border-color: #666877;
   }
 
   .md\:rounded-none {
@@ -27545,6 +27657,10 @@ body {
     color: #FF4D5A;
   }
 
+  .md\:placeholder-form-input-gray::placeholder {
+    color: #666877;
+  }
+
   .md\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -27935,6 +28051,10 @@ body {
 
   .md\:focus\:placeholder-vived-red-lighter:focus::placeholder {
     color: #FF4D5A;
+  }
+
+  .md\:focus\:placeholder-form-input-gray:focus::placeholder {
+    color: #666877;
   }
 
   .md\:pointer-events-none {
@@ -28603,6 +28723,10 @@ body {
     color: #FF4D5A;
   }
 
+  .md\:text-form-input-gray {
+    color: #666877;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -28995,6 +29119,10 @@ body {
     color: #FF4D5A;
   }
 
+  .md\:hover\:text-form-input-gray:hover {
+    color: #666877;
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -29385,6 +29513,10 @@ body {
 
   .md\:focus\:text-vived-red-lighter:focus {
     color: #FF4D5A;
+  }
+
+  .md\:focus\:text-form-input-gray:focus {
+    color: #666877;
   }
 
   .md\:text-xs {
@@ -32674,6 +32806,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .lg\:bg-form-input-gray {
+    background-color: #666877;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -33066,6 +33202,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .lg\:hover\:bg-form-input-gray:hover {
+    background-color: #666877;
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -33456,6 +33596,10 @@ body {
 
   .lg\:focus\:bg-vived-red-lighter:focus {
     background-color: #FF4D5A;
+  }
+
+  .lg\:focus\:bg-form-input-gray:focus {
+    background-color: #666877;
   }
 
   .lg\:bg-bottom {
@@ -33930,6 +34074,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .lg\:border-form-input-gray {
+    border-color: #666877;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -34322,6 +34470,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .lg\:hover\:border-form-input-gray:hover {
+    border-color: #666877;
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -34712,6 +34864,10 @@ body {
 
   .lg\:focus\:border-vived-red-lighter:focus {
     border-color: #FF4D5A;
+  }
+
+  .lg\:focus\:border-form-input-gray:focus {
+    border-color: #666877;
   }
 
   .lg\:rounded-none {
@@ -38082,6 +38238,10 @@ body {
     color: #FF4D5A;
   }
 
+  .lg\:placeholder-form-input-gray::placeholder {
+    color: #666877;
+  }
+
   .lg\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -38472,6 +38632,10 @@ body {
 
   .lg\:focus\:placeholder-vived-red-lighter:focus::placeholder {
     color: #FF4D5A;
+  }
+
+  .lg\:focus\:placeholder-form-input-gray:focus::placeholder {
+    color: #666877;
   }
 
   .lg\:pointer-events-none {
@@ -39140,6 +39304,10 @@ body {
     color: #FF4D5A;
   }
 
+  .lg\:text-form-input-gray {
+    color: #666877;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -39532,6 +39700,10 @@ body {
     color: #FF4D5A;
   }
 
+  .lg\:hover\:text-form-input-gray:hover {
+    color: #666877;
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -39922,6 +40094,10 @@ body {
 
   .lg\:focus\:text-vived-red-lighter:focus {
     color: #FF4D5A;
+  }
+
+  .lg\:focus\:text-form-input-gray:focus {
+    color: #666877;
   }
 
   .lg\:text-xs {
@@ -43211,6 +43387,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .xl\:bg-form-input-gray {
+    background-color: #666877;
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -43603,6 +43783,10 @@ body {
     background-color: #FF4D5A;
   }
 
+  .xl\:hover\:bg-form-input-gray:hover {
+    background-color: #666877;
+  }
+
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -43993,6 +44177,10 @@ body {
 
   .xl\:focus\:bg-vived-red-lighter:focus {
     background-color: #FF4D5A;
+  }
+
+  .xl\:focus\:bg-form-input-gray:focus {
+    background-color: #666877;
   }
 
   .xl\:bg-bottom {
@@ -44467,6 +44655,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .xl\:border-form-input-gray {
+    border-color: #666877;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -44859,6 +45051,10 @@ body {
     border-color: #FF4D5A;
   }
 
+  .xl\:hover\:border-form-input-gray:hover {
+    border-color: #666877;
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -45249,6 +45445,10 @@ body {
 
   .xl\:focus\:border-vived-red-lighter:focus {
     border-color: #FF4D5A;
+  }
+
+  .xl\:focus\:border-form-input-gray:focus {
+    border-color: #666877;
   }
 
   .xl\:rounded-none {
@@ -48619,6 +48819,10 @@ body {
     color: #FF4D5A;
   }
 
+  .xl\:placeholder-form-input-gray::placeholder {
+    color: #666877;
+  }
+
   .xl\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -49009,6 +49213,10 @@ body {
 
   .xl\:focus\:placeholder-vived-red-lighter:focus::placeholder {
     color: #FF4D5A;
+  }
+
+  .xl\:focus\:placeholder-form-input-gray:focus::placeholder {
+    color: #666877;
   }
 
   .xl\:pointer-events-none {
@@ -49677,6 +49885,10 @@ body {
     color: #FF4D5A;
   }
 
+  .xl\:text-form-input-gray {
+    color: #666877;
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -50069,6 +50281,10 @@ body {
     color: #FF4D5A;
   }
 
+  .xl\:hover\:text-form-input-gray:hover {
+    color: #666877;
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -50459,6 +50675,10 @@ body {
 
   .xl\:focus\:text-vived-red-lighter:focus {
     color: #FF4D5A;
+  }
+
+  .xl\:focus\:text-form-input-gray:focus {
+    color: #666877;
   }
 
   .xl\:text-xs {

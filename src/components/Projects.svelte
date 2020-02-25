@@ -1,5 +1,4 @@
 <script>
-  import { beforUpdate } from 'svelte'
   import PageTitle from './PageTitle.svelte'
   import ProjectContainer from './ProjectContailner.svelte'
 
@@ -23,7 +22,7 @@
   }
 </style>
 
-<div class="flex flex-col w-custom mb-48">
+<div class="flex flex-col w-custom">
   <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="Featured Projects" />
   </div>

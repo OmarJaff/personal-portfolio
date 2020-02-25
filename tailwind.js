@@ -7,6 +7,7 @@ module.exports = {
         'dark-blue-deep': '#12142A',
         'vived-red': '#FE2F4D',
         'vived-red-lighter': '#FF4D5A',
+        'form-input-gray': '#666877',
       },
       fontFamily: {
         nixieOne: [

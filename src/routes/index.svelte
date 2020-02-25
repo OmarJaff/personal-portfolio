@@ -8,6 +8,7 @@
   import About from '../components/About.svelte'
   import Skills from '../components/Skills.svelte'
   import Projects from '../components/Projects.svelte'
+  import ContactForm from '../components/ContactForm.svelte'
 </script>
 
 <style>
@@ -43,7 +44,6 @@
   <ScrollIcon />
   <ScrollDowmFlag />
 </div>
-
 <div class="flex flex-col h-screen justify-between w-full">
 
   <div
@@ -60,9 +60,15 @@
     <Skills />
   </div>
   <div
-    id="skills"
+    id="projects"
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <Projects />
+  </div>
+  <div
+    id="contact"
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
+    lg:mt-56">
+    <ContactForm />
   </div>
 </div>
