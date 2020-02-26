@@ -1,7 +1,6 @@
 <script>
   import Nav from '../components/Nav.svelte'
   import Header from '../components/Header.svelte'
-  import Contact from './contact.svelte'
   export let segment
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
   import PageToggleLines from '../components/PageToggleLines.svelte'

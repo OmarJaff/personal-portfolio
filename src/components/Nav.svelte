@@ -1,8 +1,10 @@
 <script>
   export let segment
   export let isMenuOpen = false
+  import { onMount } from 'svelte'
   import { slide, fly } from 'svelte/transition'
   import SocialIcons from '../components/SocialIcons.svelte'
+  let mainNavLinks
 </script>
 
 <style>
@@ -58,25 +60,25 @@
         </li>
         <li class="my-2 md:my-4 ">
           <a
-            class:selected={segment === 'about'}
+            class:selected={segment === 'skills'}
             class="flex flex-col hover-class "
-            href="about">
+            href="#skills">
             Skills
           </a>
         </li>
         <li class="my-2 md:my-4 ">
           <a
-            class:selected={segment === 'about'}
+            class:selected={segment === 'projects'}
             class="flex flex-col hover-class "
-            href="about">
+            href="#projects">
             Projects
           </a>
         </li>
         <li class="my-2 md:my-4 ">
           <a
-            class:selected={segment === 'about'}
+            class:selected={segment === 'contact'}
             class="flex flex-col hover-class "
-            href="about">
+            href="#contact">
             Contact Me
           </a>
         </li>

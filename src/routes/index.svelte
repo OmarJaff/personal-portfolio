@@ -5,11 +5,11 @@
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
   import PageToggleLines from '../components/PageToggleLines.svelte'
   import ScrollDowmFlag from '../components/ScrollDownFlag.svelte'
-  import About from '../components/About.svelte'
-  import Skills from '../components/Skills.svelte'
-  import Projects from '../components/Projects.svelte'
-  import ContactForm from '../components/ContactForm.svelte'
-  import Footer from '../components/Footer.svelte'
+  import About from '../components/sections/About.svelte'
+  import Skills from '../components/sections/Skills.svelte'
+  import Projects from '../components/sections/Projects.svelte'
+  import ContactForm from '../components/sections/ContactForm.svelte'
+  import Footer from '../components/sections/Footer.svelte'
 </script>
 
 <style>
@@ -23,9 +23,9 @@
   <section class="flex h-full w-full my-48">
 
     <div class="flex w-full flex-col items-center ">
-      <h1 class="text-white text-4xl">
+      <div class="text-white text-4xl">
         <Portfolio />
-      </h1>
+      </div>
       <div
         class="flex mt-16 w-full justify-center font-nixieOne text-white
         text-3xl">
@@ -73,7 +73,6 @@
     <ContactForm />
   </div>
   <div
-    id="contact"
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56 relative">
     <Footer />

@@ -1,6 +1,6 @@
 <script>
-  import PageTitle from './PageTitle.svelte'
-  import ProjectContainer from './ProjectContailner.svelte'
+  import PageTitle from '../PageTitle.svelte'
+  import ProjectContainer from '../ProjectContailner.svelte'
 
   import SvelteTooltip from 'svelte-tooltip'
 </script>

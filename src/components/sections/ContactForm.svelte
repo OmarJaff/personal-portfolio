@@ -1,5 +1,5 @@
 <script>
-  import PageTitle from './PageTitle.svelte'
+  import PageTitle from '../PageTitle.svelte'
 </script>
 
 <style>
@@ -55,33 +55,33 @@
           required
           name="fullname"
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          w-full my-1 sm:my-2 sm:text-base xl:text-lg "
+          w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Full Name" />
         <input
           type="email"
           id="email"
           name="email"
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          w-full my-1 sm:my-2 sm:text-base xl:text-lg "
+          w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Your Email" />
         <input
           type="subject"
           id="subject"
           name="subject"
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          w-full my-1 sm:my-2 sm:text-base xl:text-lg "
+          w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Subject" />
         <textarea
           type="text"
           id="message"
           name="email"
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          w-full my-1 sm:my-2 h-24 sm:text-base xl:text-lg"
+          w-full my-1 sm:my-2 h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4"
           placeholder="Your Message" />
         <div class="w-full flex justify-end">
 
           <button
-            class="text-white text-xs bg-dark-blue-deep h-8 w-24 w-1/3
+            class="text-white text-xs bg-dark-blue-deep h-8 sm:h-12 w-24 w-1/3
             buttom-shadow sm:text-base xl:text-lg sm:h-10 mt-2 ">
             Submit
           </button>

@@ -1,5 +1,5 @@
 <script>
-  import ScoialIcons from '../components/SocialIcons.svelte'
+  import ScoialIcons from '../../components/SocialIcons.svelte'
 
   let currentYear = new Date()
 </script>
