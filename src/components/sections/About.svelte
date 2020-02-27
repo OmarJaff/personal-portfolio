@@ -12,6 +12,7 @@
       width: 34rem;
     }
   }
+
   @media only screen and (min-width: 1280px) {
     .w-custom {
       width: 64rem;
@@ -20,6 +21,7 @@
   }
 </style>
 
+''
 <svelte:head>
   <title>About Omar</title>
 </svelte:head>
@@ -46,7 +48,7 @@
       functional user interfaces. You may also have a look at my
       <span class="text-vived-red">CV</span>
       by clicking
-      <a href="#home" class="text-vived-red">here</a>
+      <a href="#home" class="text-vived-red ">here</a>
 
     </p>
   </ProjectContainer>
