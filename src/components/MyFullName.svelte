@@ -64,7 +64,7 @@
   }
 </style>
 
-<div class=" sm:text-4xl lg:text-6xl animated fadeIn slow px-3 md:px-6">
+<div class=" sm:text-4xl lg:text-6xl animated fadeIn fast px-3 md:px-6">
   OMAR
 </div>
 <div>

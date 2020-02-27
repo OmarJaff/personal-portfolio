@@ -12,7 +12,7 @@ module.exports = {
       },
       fontFamily: {
         nixieOne: [
-          '"Nixie One"',
+          'Nixie One',
           'Noto Sans',
           'sans-serif',
           'Segoe UI',
