@@ -16,6 +16,14 @@
     -moz-box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
     box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
   }
+  .hover-class {
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .hover-class:hover {
+    background-color: #1f223d;
+    color: #1f223d;
+  }
   @media only screen and (min-width: 640px) and (max-width: 1279px) {
     .w-custom {
       width: 34rem;
@@ -82,14 +90,15 @@
         <div class="w-full flex justify-end">
 
           <button
-            class="text-white text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/3
-            buttom-shadow sm:text-base xl:text-xl sm:h-10 mt-2 flex
-            justify-center items-center">
+            class=" text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/3 buttom-shadow
+            sm:text-base xl:text-xl sm:h-10 mt-2 flex justify-center
+            items-center hover-class ">
             <svg
               width="20"
               height="16"
               viewBox="0 0 20 16"
-              class="h-3 w-4 mx-1 sm:h-5 sm:w-4 sm:mx-2 xl:h-4 xl:w-5"
+              class="h-3 w-4 mx-1 sm:h-5 sm:w-4 sm:mx-2 xl:h-4 xl:w-5
+              fill-current"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M1 4L8.8906 9.2604C9.5624 9.7083 10.4376 9.7083 11.1094
@@ -102,7 +111,7 @@
                 stroke-linejoin="round" />
             </svg>
 
-            <span class="mx-1">Send</span>
+            <span class="mx-1 text-white">Send</span>
           </button>
         </div>
       </form>
