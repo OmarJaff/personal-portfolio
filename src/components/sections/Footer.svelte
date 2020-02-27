@@ -22,11 +22,13 @@
 
 <div
   class="line-shadow absolute w-full flex items-center justify-center h-2
-  flex-wrap">
+  flex-wrap ">
 
   <span class=" bg-vived-red bg-gradiant custom-height w-11/12" />
 
-  <div class="flex flex-col relative h-40 w-full items-center justify-around">
+  <div
+    class="flex flex-col relative h-40 w-full items-center justify-around mb-5
+    sm:mb-0">
     <ScoialIcons IconSize="h-4 sm:h-5 xl:h-8" IconColor="text-vived-red" />
     <span class=" text-form-input-gray text-xs sm:text-sm">
       <span class="text-vived-red">&copy; {currentYear.getFullYear()}</span>

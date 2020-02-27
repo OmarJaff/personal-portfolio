@@ -83,7 +83,7 @@
       {/if}
 
       {#if techIconsPresent === true}
-        <div class="flex w-full py-2 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
+        <div class="flex w-full py-4 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
           <span
             class="flex text-vived-red font-thin text-xs items-center
             flex-shrink-0 sm:text-sm opacity-75">
