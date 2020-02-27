@@ -27,9 +27,11 @@
   <span class=" bg-vived-red bg-gradiant custom-height w-11/12" />
 
   <div
-    class="flex flex-col relative h-40 w-full items-center justify-around mb-5
-    sm:mb-0">
-    <ScoialIcons IconSize="h-4 sm:h-5 xl:h-8" IconColor="text-vived-red" />
+    class="flex flex-col relative h-40 w-full items-center justify-center
+    sm:justify-around mb-5 sm:mb-0">
+    <ScoialIcons
+      IconSize="h-4 sm:h-5 xl:h-8 my-5 sm:my-0"
+      IconColor="text-vived-red" />
     <span class=" text-form-input-gray text-xs sm:text-sm">
       <span class="text-vived-red">&copy; {currentYear.getFullYear()}</span>
       Omar Jaff - All rights reserved.

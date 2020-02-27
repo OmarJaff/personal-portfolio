@@ -29,8 +29,8 @@
       {title.toUpperCase()}
     </h2>
     <p
-      class="text-white flex justify-center font-thin text-center text-xs
-      sm:text-sm opacity-75">
+      class="text-text-white-lighter flex justify-center font-thin text-center
+      text-xs sm:text-sm ">
       {description}
     </p>
   </div>

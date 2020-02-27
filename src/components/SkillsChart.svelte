@@ -15,7 +15,7 @@
     let ctx = document.getElementById('myChart').getContext('2d')
     ctx.height = '1000'
 
-    Chart.defaults.global.defaultFontColor = 'rgb(255,255,255,0.8)'
+    Chart.defaults.global.defaultFontColor = 'rgb(224,225,235)'
     Chart.defaults.global.defaultFontFamily =
       "Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
     Chart.defaults.global.defaultFontSize = '14'

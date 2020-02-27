@@ -73,9 +73,9 @@
       {/if}
       {#if containerDescription}
         <p
-          class="text-white flex justify-center text-justify font-thin
-          text-center text-sm px-6 py-2 sm:text-lg xl:ml-12 xl:px-5 xl:py-0
-          xl:leading-8 opacity-75 h-full xl:my-10 ">
+          class=" text-text-white-lighter flex justify-center text-justify
+          font-thin text-center text-sm px-6 py-2 sm:text-lg xl:ml-12 xl:px-5
+          xl:py-0 xl:leading-8 h-full xl:my-10 ">
           {containerDescription}
         </p>
       {:else}
@@ -86,7 +86,7 @@
         <div class="flex w-full py-4 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
           <span
             class="flex text-vived-red font-thin text-xs items-center
-            flex-shrink-0 sm:text-sm opacity-75">
+            flex-shrink-0 sm:text-sm">
             Technologies Used:
           </span>
           <slot name="techIcons" />
