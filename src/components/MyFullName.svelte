@@ -64,9 +64,7 @@
   }
 </style>
 
-<div class=" sm:text-4xl lg:text-6xl animated fadeIn fast px-3 md:px-6">
-  OMAR
-</div>
+<div class="sm:text-4xl lg:text-6xl px-3 md:px-6">OMAR</div>
 <div>
   <span class="spananimation sm:text-4xl lg:text-6xl ">S. JAFF</span>
 </div>

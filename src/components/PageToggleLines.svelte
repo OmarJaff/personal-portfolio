@@ -9,22 +9,6 @@
     animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
-  @-webkit-keyframes scale-in-hor-left {
-    0% {
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transform-origin: 0% 0%;
-      transform-origin: 0% 0%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-      -webkit-transform-origin: 0% 0%;
-      transform-origin: 0% 0%;
-      opacity: 1;
-    }
-  }
   @keyframes scale-in-hor-left {
     0% {
       -webkit-transform: scaleX(0);
@@ -63,10 +47,10 @@
   class="flex flex-col sm:flex-col transform sm:transform-none -rotate-90
   translate-y-16 translate-x-3 sm:w-0 fixed bottom-0 sm:bottom-auto ">
   <div class="scale-in-hor-left flex flex-col-reverse sm:flex-col">
-    <li class="bg-white w-4 sm:w-10 xl:w-12 active-class line-hight my-4" />
-    <li class="bg-white w-4 sm:w-10 xl:w-12 line-hight my-4" />
-    <li class="bg-white w-4 sm:w-10 xl:w-12 line-hight my-4" />
-    <li class="bg-white w-4 sm:w-10 xl:w-12 line-hight my-4" />
-    <li class="bg-white w-4 sm:w-10 xl:w-12 line-hight my-4" />
+    <li class="bg-white sm:w-10 xl:w-12 active-class line-hight my-4" />
+    <li class="bg-white sm:w-10 xl:w-12 line-hight my-4" />
+    <li class="bg-white sm:w-10 xl:w-12 line-hight my-4" />
+    <li class="bg-white sm:w-10 xl:w-12 line-hight my-4" />
+    <li class="bg-white sm:w-10 xl:w-12 line-hight my-4" />
   </div>
 </ul>

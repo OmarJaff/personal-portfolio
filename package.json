@@ -3,7 +3,7 @@
   "description": "OMAR",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
+    "dev": "sapper dev --no-hot",
     "build": "SET NODE_ENV=development sapper build  build:tailwind",
     "export": "sapper export",
     "start": "node __sapper__/build",
