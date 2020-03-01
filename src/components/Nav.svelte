@@ -10,6 +10,7 @@
   const menueClosed = () => {
     dispatch('closeMenu')
   }
+
   onMount(() => {
     let elm = document.querySelector('#main-header')
     var ms = new MenuSpy(elm, {
@@ -65,7 +66,8 @@
   <div
     class="{isMenuOpen ? ' slideInDown' : slideUpClass} animated faster
     transform -translate-y-full gradiantStyle h-screen w-screen fixed inset-0
-    z-50 ">
+    z-50"
+    id="sidebar">
     <nav
       class="flex w-full justify-center top-0 text-white font-nixieOne text-4xl
       xl:text-5xl">
@@ -81,16 +83,44 @@
           </a>
         </li>
         <li class="my-2 md:my-4 flex flex-col centerized ">
-          <a class=" flex flex-col hover-class " href="#about">About Me</a>
+          <a
+            class=" flex flex-col hover-class"
+            href="#about"
+            on:click={() => {
+              menueClosed()
+            }}>
+            About Me
+          </a>
         </li>
         <li class="my-2 md:my-4 flex flex-col centerized ">
-          <a class="flex flex-col hover-class " href="#skills">Skills</a>
+          <a
+            class="flex flex-col hover-class "
+            href="#skills"
+            on:click={() => {
+              menueClosed()
+            }}>
+            Skills
+          </a>
         </li>
         <li class="my-2 md:my-4 flex flex-col centerized ">
-          <a class="flex flex-col hover-class " href="#projects">Projects</a>
+          <a
+            class="flex flex-col hover-class "
+            href="#projects"
+            on:click={() => {
+              menueClosed()
+            }}>
+            Projects
+          </a>
         </li>
         <li class="my-2 md:my-4 flex flex-col centerized ">
-          <a class="flex flex-col hover-class " href="#contact">Contact Me</a>
+          <a
+            class="flex flex-col hover-class "
+            href="#contact"
+            on:click={() => {
+              menueClosed()
+            }}>
+            Contact Me
+          </a>
         </li>
         <div class=" mt-10 flex sm:hidden ">
           <SocialIcons />

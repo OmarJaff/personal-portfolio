@@ -3,7 +3,6 @@
   import SiteLogo from './SiteLogo.svelte'
   import HumbergerIcon from '../components/HumbergurIcon.svelte'
   const dispatch = createEventDispatcher()
-
   export let menuClass = ''
   const openMenue = () => {
     dispatch('menuToggled')

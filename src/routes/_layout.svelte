@@ -4,13 +4,26 @@
   import { onMount } from 'svelte'
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
   import PageToggleLines from '../components/PageToggleLines.svelte'
+  import {
+    disableBodyScroll,
+    enableBodyScroll,
+    clearAllBodyScrollLocks,
+  } from 'body-scroll-lock'
+
   let menuClass = ''
   let isMenuOpen = false
-  let slideUpClass = 'slideOutUp'
+  let slideUpClass = ''
+  let targetElement
+  onMount(() => {
+    targetElement = document.querySelector('#sidebar')
+  })
 
   const handleMenuToggle = () => {
     isMenuOpen = !isMenuOpen
-    isMenuOpen ? (menuClass = 'active') : (menuClass = 'not-active')
+    isMenuOpen
+      ? ((menuClass = 'active'), disableBodyScroll(targetElement))
+      : ((menuClass = 'not-active'), enableBodyScroll(targetElement))
+    slideUpClass = 'slideOutUp'
   }
 </script>
 
@@ -20,10 +33,11 @@
   on:closeMenu={() => {
     isMenuOpen = false
     menuClass = 'not-active'
+    enableBodyScroll(targetElement)
   }} />
 
 <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
-  <Header on:menuToggled={handleMenuToggle} {menuClass} {isMenuOpen} />
+  <Header on:menuToggled={handleMenuToggle} {menuClass} />
 </div>
 
 <main>
