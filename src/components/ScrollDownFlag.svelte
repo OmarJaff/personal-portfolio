@@ -7,7 +7,7 @@
     border-left: 1px solid white;
     height: 0;
     animation: border-height 0.3s ease forwards;
-    animation-delay: 1;
+    animation-delay: 0.2s;
   }
   .animating-out {
     border-left: 1px solid white;
@@ -19,7 +19,7 @@
     animation: scroll-title 0.3s ease forwards;
   }
   .scroll-title-opacity-out {
-    opacity: 70px;
+    opacity: 1;
     animation: scroll-title-out 0.2s ease-out forwards;
   }
   @keyframes border-height {
@@ -69,13 +69,13 @@
 
 <div
   class="{y > 0 ? 'animating-out' : 'animating-border-in'} absolute left-0
-  right-0 bottom-0 top-auto font-nixione mx-6 sm:mx-8 sm:leading-7 fixed ">
+  right-0 bottom-0 top-auto mx-6 sm:mx-8 sm:leading-7 fixed ">
   <div
     class="{y > 0 ? 'scroll-title-opacity-out' : 'scroll-title-opacity-in'} flex
     items-center h-16 ">
     <span
       class="text-white w-12 sm:w-24 text-center text-vived-red text-sm
-      sm:font-normal ml-0 sm:ml-2 ">
+      sm:font-normal ml-0 sm:ml-2 font-fenix">
 
       <span class="text-white hidden sm:block">
         <span class="hidden sm:inline-block text-vived-red">Scroll</span>

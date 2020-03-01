@@ -10,6 +10,7 @@
   }
 
   .spananimation {
+    will-change: auto;
     animation: slidein 5s ease;
   }
   @keyframes showup {

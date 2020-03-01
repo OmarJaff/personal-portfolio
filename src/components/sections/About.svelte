@@ -21,7 +21,6 @@
   }
 </style>
 
-''
 <svelte:head>
   <title>About Omar</title>
 </svelte:head>

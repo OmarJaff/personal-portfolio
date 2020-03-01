@@ -20,7 +20,6 @@ module.exports = {
           'Helvetica Neue',
           'Arial',
         ],
-        raleway: ['Raleway', 'sans-serif', 'Roboto', 'Arial'],
         fenix: ['Fenix', 'serif'],
         robotoMono: ['"Roboto Mono"', 'sans-serif', 'Arial'],
       },

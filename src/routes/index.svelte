@@ -13,22 +13,22 @@
 </script>
 
 <style>
-
+  .font-all {
+    font-family: 'Nixie One', 'Noto Sans', 'sans-serif', 'Segoe UI', 'Roboto';
+  }
 </style>
 
 <svelte:head>
   <title>Omar Jaff</title>
 </svelte:head>
-<div class="flex flex-col justify-center h-screen w-full ">
+<div id="home" class="flex flex-col justify-center h-screen w-full font-all ">
   <section class="flex h-full w-full my-48">
 
     <div class="flex w-full flex-col items-center ">
       <div class="text-white text-4xl">
         <Portfolio />
       </div>
-      <div
-        class="flex mt-16 w-full justify-center font-nixieOne text-white
-        text-3xl">
+      <div class="flex mt-16 w-full justify-center text-white text-3xl">
         <MyFullName />
       </div>
       <div class=" my-2">
@@ -46,29 +46,28 @@
   <ScrollDowmFlag />
 </div>
 <div class="flex flex-col h-screen justify-between w-full">
-
   <div
     id="about"
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-20
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto py-4 mt-20
     lg:mt-48">
     <About />
   </div>
 
   <div
     id="skills"
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
+    class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <Skills />
   </div>
   <div
     id="projects"
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
+    class=" py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <Projects />
   </div>
   <div
     id="contact"
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
+    class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <ContactForm />
   </div>

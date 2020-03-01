@@ -396,7 +396,7 @@
       </g>
       <defs>
         <filter
-          id="filter0_d"
+          id="filter0_ddd"
           x="17.3912"
           y="22.7961"
           width="58.517"
@@ -449,7 +449,7 @@
             fill="url(#paint0_linear)" />
           <defs>
             <linearGradient
-              id="paint0_linear"
+              id="paint0_linear222"
               x1="8.79674e-06"
               y1="-189.331"
               x2="355.47"
@@ -1200,7 +1200,7 @@
             fill="white" />
           <defs>
             <linearGradient
-              id="paint0_linear"
+              id="paint0_linear22"
               x1="207.131"
               y1="2.80079"
               x2="207.131"

@@ -33,7 +33,8 @@
 
       <div class="hidden sm:flex">
         <div class="flex mx-8 -my-1">
-          <a href="goo" class="mx-2">
+          <a href="https://www.twitter.com" rel="twitter account" class="mx-2">
+            <span class="sr-only">click to my twitter account</span>
             <svg
               style="margin-top:2px;"
               width="30"
@@ -66,7 +67,11 @@
                 0-.0494-.118 0z" />
             </svg>
           </a>
-          <a href="ff" class="mx-2">
+          <a
+            href="https://www.linkedin.com"
+            rel="linkedin account"
+            class="mx-2">
+            <span class="sr-only">click to my linkedin account</span>
             <svg
               width="28"
               height="24"
@@ -90,7 +95,11 @@
                 1.8824.9224 3.41c0 1.5274 1.3662 2.7658 3.0517 2.7658z" />
             </svg>
           </a>
-          <a href="ss" class="mx-2">
+          <a
+            href="https://www.facebook.com"
+            rel="facebook account"
+            class="mx-2">
+            <span class="sr-only">click to my facebook account</span>
             <svg
               width="14"
               height="26"
@@ -109,7 +118,8 @@
                 .1765.1542.3163.349.3163h2.5v.206h.0082z" />
             </svg>
           </a>
-          <a href="ff" class="mx-2">
+          <a href="https:/www.youtube.com" rel="youtube account" class="mx-2">
+            <span class="sr-only">click to my youtube account</span>
             <svg
               width="32"
               height="21"
@@ -125,7 +135,6 @@
                 3.6232c.3096.165.2549.5694-.0547.718z" />
             </svg>
           </a>
-
         </div>
 
       </div>

@@ -5,6 +5,9 @@
 </script>
 
 <style>
+  .text-color {
+    color: #8084b2;
+  }
   .line-shadow {
     box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.64);
   }
@@ -32,8 +35,8 @@
     <ScoialIcons
       IconSize="h-4 sm:h-5 xl:h-8 my-5 sm:my-0"
       IconColor="text-vived-red" />
-    <span class=" text-form-input-gray text-xs sm:text-sm">
-      <span class="text-vived-red">&copy; {currentYear.getFullYear()}</span>
+    <span class=" text-color text-xs sm:text-sm">
+      <span>&copy; {currentYear.getFullYear()}</span>
       Omar Jaff - All rights reserved.
     </span>
   </div>

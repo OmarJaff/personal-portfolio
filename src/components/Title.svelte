@@ -101,13 +101,10 @@
   }
 </style>
 
-<div
-  class=" ml-2 md:ml-6 text-white font-nixieOne text-xl sm:text-2xl lg:text-4xl
-  web ">
+<div class=" ml-2 md:ml-6 text-white text-xl sm:text-2xl lg:text-4xl web ">
   <p class="text-vived-red">Web</p>
   <b>
-    <div
-      class="innerIam flex flex-col h-8 sm:h-10 lg:h-12 font-nixieOne font-light">
+    <div class="innerIam flex flex-col h-8 sm:h-10 lg:h-12 font-light">
       <span>developer</span>
 
       <span>designer</span>

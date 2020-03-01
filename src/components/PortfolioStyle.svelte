@@ -50,6 +50,7 @@
     height: 1px;
     animation: 0.4s line-animation ease forwards;
     animation-delay: 1.4s;
+    will-change: auto;
   }
 
   @keyframes line-animation {
@@ -90,7 +91,7 @@
 </style>
 
 <h1 class=" text-4xl sm:text-6xl portfolio-font-size ml1 overflow-hidden ">
-  <span class="text-wrapper font-nixieOne ml1 focus-in-expand ">
+  <span class="text-wrapper ml1 focus-in-expand ">
     <span class="line line1 right-0 bg-vived-red " />
     <span class="letter text-dark-blue ">P</span>
     <span class="letter text-dark-blue letterO ">O</span>
