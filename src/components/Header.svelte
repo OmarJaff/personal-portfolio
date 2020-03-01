@@ -3,12 +3,10 @@
   import SiteLogo from './SiteLogo.svelte'
   import HumbergerIcon from '../components/HumbergurIcon.svelte'
   const dispatch = createEventDispatcher()
-  let isMenuOpened = false
-  let menuClass
+
+  export let menuClass = ''
   const openMenue = () => {
-    isMenuOpened = !isMenuOpened
-    isMenuOpened ? (menuClass = 'active') : (menuClass = 'not-active')
-    dispatch('menuToggled', { isMenuOpened })
+    dispatch('menuToggled')
   }
 </script>
 
@@ -29,7 +27,7 @@
     </div>
     <div class="flex flex-row-reverse">
 
-      <HumbergerIcon on:toggleMenu={openMenue} {menuClass} {isMenuOpened} />
+      <HumbergerIcon on:toggleMenu={openMenue} {menuClass} />
 
       <div class="hidden sm:flex">
         <div class="flex mx-8 -my-1">

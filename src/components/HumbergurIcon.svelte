@@ -3,10 +3,8 @@
   const dispatch = createEventDispatcher()
 
   export let menuClass = ''
-  export let isMenuOpened = false
   const toggleMenu = () => {
     dispatch('toggleMenu')
-    isMenuOpened ? (menuClass = 'active') : (menuClass = 'not-active')
   }
 </script>
 

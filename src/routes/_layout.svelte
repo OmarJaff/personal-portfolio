@@ -2,21 +2,28 @@
   import Nav from '../components/Nav.svelte'
   import Header from '../components/Header.svelte'
   import { onMount } from 'svelte'
-  export let segment
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
   import PageToggleLines from '../components/PageToggleLines.svelte'
-
+  let menuClass = ''
   let isMenuOpen = false
+  let slideUpClass = 'slideOutUp'
 
-  const handleMenuToggle = event => {
-    isMenuOpen = event.detail.isMenuOpened
+  const handleMenuToggle = () => {
+    isMenuOpen = !isMenuOpen
+    isMenuOpen ? (menuClass = 'active') : (menuClass = 'not-active')
   }
 </script>
 
-<Nav {isMenuOpen} {segment} />
+<Nav
+  {isMenuOpen}
+  {slideUpClass}
+  on:closeMenu={() => {
+    isMenuOpen = false
+    menuClass = 'not-active'
+  }} />
 
 <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
-  <Header on:menuToggled={handleMenuToggle} />
+  <Header on:menuToggled={handleMenuToggle} {menuClass} {isMenuOpen} />
 </div>
 
 <main>

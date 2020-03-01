@@ -59,18 +59,21 @@
     lg:mt-56">
     <Skills />
   </div>
+
   <div
     id="projects"
     class=" py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <Projects />
   </div>
+
   <div
     id="contact"
     class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56">
     <ContactForm />
   </div>
+
   <div
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto mt-24
     lg:mt-56 relative">

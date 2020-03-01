@@ -1,10 +1,15 @@
 <script>
-  // export let isMenuOpen = false
-  import { slide, fly } from 'svelte/transition'
+  export let isMenuOpen = false
+  export let slideUpClass = ''
+  import { createEventDispatcher } from 'svelte'
   import SocialIcons from '../components/SocialIcons.svelte'
   import { onMount } from 'svelte'
   import MenuSpy from 'menuspy'
+  const dispatch = createEventDispatcher()
 
+  const menueClosed = () => {
+    dispatch('closeMenu')
+  }
   onMount(() => {
     let elm = document.querySelector('#main-header')
     var ms = new MenuSpy(elm, {
@@ -15,7 +20,7 @@
       activeClass: 'active-class',
 
       // amount of space between your menu and the next section to be activated.
-      threshold: 15,
+      threshold: 20,
 
       // enable or disable browser's hash location change.
       enableLocationHash: true,
@@ -58,14 +63,22 @@
 
 <header id="main-header">
   <div
-    class=" gradiantStyle h-screen w-screen fixed inset-0 z-50 "
-    transition:slide|local={{ duration: 400 }}>
+    class="{isMenuOpen ? ' slideInDown' : slideUpClass} animated faster
+    transform -translate-y-full gradiantStyle h-screen w-screen fixed inset-0
+    z-50 ">
     <nav
       class="flex w-full justify-center top-0 text-white font-nixieOne text-4xl
       xl:text-5xl">
       <ul class="absolute flex flex-col items-center h-full justify-center">
         <li class="my-2 border-gray-100 active-class flex flex-col centerized">
-          <a class="flex flex-col hover-class " href="#home">Home</a>
+          <a
+            class="flex flex-col hover-class "
+            href="#home"
+            on:click={() => {
+              menueClosed()
+            }}>
+            Home
+          </a>
         </li>
         <li class="my-2 md:my-4 flex flex-col centerized ">
           <a class=" flex flex-col hover-class " href="#about">About Me</a>
