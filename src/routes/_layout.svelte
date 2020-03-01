@@ -4,6 +4,7 @@
   import { onMount } from 'svelte'
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
   import PageToggleLines from '../components/PageToggleLines.svelte'
+  import MenuSpy from 'menuspy'
   import {
     disableBodyScroll,
     enableBodyScroll,
@@ -16,6 +17,27 @@
   let targetElement
   onMount(() => {
     targetElement = document.querySelector('#sidebar')
+
+    let elm = document.querySelector('#main-header')
+    var ms = new MenuSpy(elm, {
+      // menu selector
+      menuItemSelector: 'a[href^="#"]',
+
+      // CSS class for active item
+      activeClass: 'active-class',
+
+      // amount of space between your menu and the next section to be activated.
+      threshold: 20,
+
+      // enable or disable browser's hash location change.
+      enableLocationHash: true,
+
+      // timeout to apply browser's hash location.
+      hashTimeout: 600,
+
+      // called every time a new menu item activates.
+      callback: null,
+    })
   })
 
   const handleMenuToggle = () => {

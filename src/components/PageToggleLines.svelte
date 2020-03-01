@@ -1,5 +1,28 @@
 <script>
+  import { onMount } from 'svelte'
+  import MenuSpy from 'menuspy'
+  onMount(() => {
+    let elm = document.querySelector('#togglepagelines')
+    var ms = new MenuSpy(elm, {
+      // menu selector
+      menuItemSelector: 'a[href^="#"]',
 
+      // CSS class for active item
+      activeClass: 'active-class',
+
+      // amount of space between your menu and the next section to be activated.
+      threshold: 20,
+
+      // enable or disable browser's hash location change.
+      enableLocationHash: true,
+
+      // timeout to apply browser's hash location.
+      hashTimeout: 600,
+
+      // called every time a new menu item activates.
+      callback: null,
+    })
+  })
 </script>
 
 <style>
@@ -45,13 +68,27 @@
 </style>
 
 <ul
+  id="togglepagelines"
   class="flex flex-col-reverse sm:flex-col transform sm:transform-none
   -rotate-90 translate-y-16 translate-x-3 sm:w-0 fixed bottom-0 sm:bottom-auto ">
-  <li class="bg-white w-5 sm:w-10 xl:w-12 active-class line-hight my-4" />
-  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4" />
-  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4" />
-  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4" />
-  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4" />
+  <li class="bg-white w-5 sm:w-10 xl:w-12 active-class line-hight my-4">
+    <a href="#home" class="sr-only">home</a>
+  </li>
+  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4">
+    <a href="#about" class="sr-only">about</a>
+  </li>
+
+  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4">
+    <a href="#skills" class=" sr-only">skills</a>
+  </li>
+
+  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4">
+    <a href="#projects" class="sr-only">projects</a>
+  </li>
+
+  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4">
+    <a href="#contact" class="sr-only">contacts</a>
+  </li>
 </ul>
 
 <div class=" flex scale-in-hor-left flex-col-reverse sm:flex-col" />
