@@ -26,14 +26,6 @@
 </script>
 
 <style>
-  .scale-in-hor-left {
-    -webkit-animation: scale-in-hor-left 0.5s
-      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation-delay: 0.2s;
-    will-change: auto;
-  }
-
   @keyframes scale-in-hor-left {
     0% {
       -webkit-transform: scaleX(0);
@@ -51,10 +43,16 @@
   .line-hight {
     height: 3px;
   }
+
   .active-class {
     background-color: #fe2f4d;
     width: 2rem;
+    -webkit-animation: scale-in-hor-left 0.5s
+      cubic-bezier(0.01, -0.47, 0.04, 1.01) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.01, -0.47, 0.04, 1.01) both;
+    will-change: auto;
   }
+
   @media screen and (min-width: 640px) and (max-width: 1023px) {
     .active-class {
       width: 4rem;
@@ -74,7 +72,7 @@
   <li class="bg-white w-5 sm:w-10 xl:w-12 active-class line-hight my-4">
     <a href="#home" class="sr-only">home</a>
   </li>
-  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4">
+  <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4 ">
     <a href="#about" class="sr-only">about</a>
   </li>
 
@@ -91,4 +89,4 @@
   </li>
 </ul>
 
-<div class=" flex scale-in-hor-left flex-col-reverse sm:flex-col" />
+<div class=" flex flex-col-reverse sm:flex-col" />
