@@ -449,7 +449,7 @@
             fill="url(#paint0_linear)" />
           <defs>
             <linearGradient
-              id="paint0_linear222"
+              id="paint0_linear"
               x1="8.79674e-06"
               y1="-189.331"
               x2="355.47"

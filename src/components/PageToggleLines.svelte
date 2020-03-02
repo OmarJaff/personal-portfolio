@@ -4,42 +4,22 @@
   onMount(() => {
     let elm = document.querySelector('#togglepagelines')
     var ms = new MenuSpy(elm, {
-      // menu selector
       menuItemSelector: 'a[href^="#"]',
 
-      // CSS class for active item
       activeClass: 'active-class',
 
-      // amount of space between your menu and the next section to be activated.
       threshold: 20,
 
-      // enable or disable browser's hash location change.
       enableLocationHash: true,
 
-      // timeout to apply browser's hash location.
       hashTimeout: 600,
 
-      // called every time a new menu item activates.
       callback: null,
     })
   })
 </script>
 
 <style>
-  @keyframes scale-in-hor-left {
-    0% {
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transform-origin: 0% 0%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-      -webkit-transform-origin: 0% 0%;
-    }
-  }
-
   .line-hight {
     height: 3px;
   }
@@ -61,6 +41,19 @@
   @media screen and (min-width: 1024px) {
     .active-class {
       width: 5.5rem;
+    }
+  }
+  @keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
     }
   }
 </style>
