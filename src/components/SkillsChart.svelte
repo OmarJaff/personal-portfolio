@@ -59,7 +59,6 @@
               'rgb(255,77,90,0.5)',
               'rgb(255,255,255,0.5)',
             ],
-            // borderColor: 'rgb(254,47,77,1)',
             hoverBorderColor: 'rgb(254,47,77,1)',
             barPercentage: 0.8,
             borderWidth: 1,
@@ -68,7 +67,7 @@
         ],
       },
       options: {
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
 
         legend: {
           display: false,

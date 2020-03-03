@@ -582,6 +582,10 @@ body {
   background-color: #1A1C33;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
 }

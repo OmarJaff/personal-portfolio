@@ -8,7 +8,7 @@
 
       activeClass: 'active-class',
 
-      threshold: 20,
+      threshold: 200,
 
       enableLocationHash: true,
 
@@ -81,5 +81,3 @@
     <a href="#contact" class="sr-only">contacts</a>
   </li>
 </ul>
-
-<div class=" flex flex-col-reverse sm:flex-col" />

@@ -80,13 +80,12 @@
     <Projects />
   </div>
 
+  <div id="contact" class="h-64 " />
   <div
-    id="contact"
     class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10
-    sm:my-20">
+    sm:my-20 mb-16 ">
     <ContactForm />
   </div>
-
   <div
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-aut relative">
     <Footer />

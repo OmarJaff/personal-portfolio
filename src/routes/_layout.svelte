@@ -24,7 +24,7 @@
 
       activeClass: 'active-class',
 
-      threshold: 20,
+      threshold: 15,
 
       enableLocationHash: true,
 
@@ -42,6 +42,14 @@
     slideUpClass = 'slideOutUp'
   }
 </script>
+
+<svelte:head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</svelte:head>
 
 <Nav
   {isMenuOpen}
