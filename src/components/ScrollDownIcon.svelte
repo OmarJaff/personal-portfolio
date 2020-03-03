@@ -1,5 +1,5 @@
 <script>
-  let y
+  let y = 0
 </script>
 
 <style>

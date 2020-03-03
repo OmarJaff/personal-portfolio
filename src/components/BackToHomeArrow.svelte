@@ -1,0 +1,35 @@
+<script>
+  let y = 0
+  $: console.log(y)
+</script>
+
+<svelte:window bind:scrollY={y} />
+
+{#if y > 600}
+  <div
+    class="fadeIn animated fast flex justify-end w-full fixed bottom-0 my-3
+    -mx-3 sm:my-6 opacity-75 sm:-mx-10 z-50">
+    <a href="#top" name="backtotop">
+      <svg
+        width="51"
+        height="51"
+        viewBox="0 0 51 51"
+        class="fill-current text-white w-10 h-10 sm:h-auto sm:w-auto"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M25.5 45.9C36.7666 45.9 45.9 36.7666 45.9 25.5C45.9 14.2334 36.7666
+          5.09998 25.5 5.09998C14.2334 5.09998 5.09998 14.2334 5.09998
+          25.5C5.09998 36.7666 14.2334 45.9 25.5 45.9ZM34.9531 23.6968L27.3031
+          16.0468C26.3073 15.051 24.6927 15.051 23.6968 16.0468L16.0468
+          23.6968C15.051 24.6927 15.051 26.3073 16.0468 27.3031C17.0427 28.2989
+          18.6573 28.2989 19.6531 27.3031L22.95 24.0062V33.15C22.95 34.5583
+          24.0916 35.7 25.5 35.7C26.9083 35.7 28.05 34.5583 28.05
+          33.15V24.0062L31.3469 27.3031C32.3426 28.2989 33.9573 28.2989 34.9531
+          27.3031C35.9489 26.3073 35.9489 24.6927 34.9531 23.6968Z" />
+      </svg>
+
+    </a>
+  </div>
+{/if}

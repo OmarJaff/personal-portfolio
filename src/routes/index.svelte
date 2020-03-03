@@ -11,13 +11,14 @@
   import Projects from '../components/sections/Projects.svelte'
   import ContactForm from '../components/sections/ContactForm.svelte'
   import Footer from '../components/sections/Footer.svelte'
+  import BackToTopArrow from '../components/BackToHomeArrow.svelte'
   import AOS from 'aos'
 
   onMount(() => {
     AOS.init({
       duration: 800,
       disable: 'phone',
-      once: false,
+      once: true,
     })
   })
 </script>
@@ -32,6 +33,7 @@
   <title>Omar Jaff</title>
 </svelte:head>
 
+<a name="top" href="#top" rel="backtohome" class="sr-only">home</a>
 <div id="home" class="flex flex-col justify-center h-screen w-full font-all ">
   <section class="flex h-full w-full my-48">
     <div class="flex w-full flex-col items-center ">
@@ -54,6 +56,7 @@
 
   <ScrollIcon />
   <ScrollDowmFlag />
+  <BackToTopArrow />
 </div>
 <div class="flex flex-col h-screen justify-between w-full ">
   <div
