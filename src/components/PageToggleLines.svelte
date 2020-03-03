@@ -8,9 +8,9 @@
 
       activeClass: 'active-class',
 
-      threshold: 200,
+      threshold: 15,
 
-      enableLocationHash: true,
+      enableLocationHash: false,
 
       hashTimeout: 600,
 

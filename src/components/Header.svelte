@@ -30,7 +30,11 @@
 
       <div class="hidden sm:flex">
         <div class="flex mx-8 -my-1">
-          <a href="https://www.twitter.com" rel="twitter account" class="mx-2">
+          <a
+            href="https://twitter.com/omarjaff95"
+            rel="noopener"
+            target="_blank"
+            class="mx-2">
             <span class="sr-only">click to my twitter account</span>
             <svg
               style="margin-top:2px;"
@@ -65,8 +69,9 @@
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com"
-            rel="linkedin account"
+            href="https://www.linkedin.com/in/omar-jaff-5b101268"
+            rel="noopener"
+            target="_blank"
             class="mx-2">
             <span class="sr-only">click to my linkedin account</span>
             <svg
@@ -93,8 +98,9 @@
             </svg>
           </a>
           <a
-            href="https://www.facebook.com"
-            rel="facebook account"
+            href="https://www.facebook.com/omar.jaff.7"
+            rel="noopener"
+            target="_blank"
             class="mx-2">
             <span class="sr-only">click to my facebook account</span>
             <svg
@@ -115,7 +121,11 @@
                 .1765.1542.3163.349.3163h2.5v.206h.0082z" />
             </svg>
           </a>
-          <a href="https:/www.youtube.com" rel="youtube account" class="mx-2">
+          <a
+            href="https://www.youtube.com/channel/UCiUJ5SkvhEN22YM9OIviKAA?view_as=subscriber"
+            target="_blank"
+            rel="noopener"
+            class="mx-2">
             <span class="sr-only">click to my youtube account</span>
             <svg
               width="32"

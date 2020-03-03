@@ -16,6 +16,21 @@
   let slideUpClass = ''
   let targetElement
   onMount(() => {
+    function removeLocationHash() {
+      var noHashURL = window.location.href.replace(/#.*$/, '')
+      window.history.replaceState('', document.title, noHashURL)
+    }
+    window.addEventListener('popstate', function(event) {
+      removeLocationHash()
+    })
+    window.addEventListener('hashchange', function(event) {
+      event.preventDefault()
+      removeLocationHash()
+    })
+    window.addEventListener('load', function() {
+      removeLocationHash()
+    })
+
     targetElement = document.querySelector('#sidebar')
 
     let elm = document.querySelector('#main-header')
@@ -26,7 +41,7 @@
 
       threshold: 15,
 
-      enableLocationHash: true,
+      enableLocationHash: false,
 
       hashTimeout: 600,
 
