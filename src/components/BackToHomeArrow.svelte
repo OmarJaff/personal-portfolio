@@ -1,14 +1,28 @@
 <script>
   let y = 0
-  $: console.log(y)
 </script>
+
+<style>
+  .fadeIn-custom {
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
+</style>
 
 <svelte:window bind:scrollY={y} />
 
 {#if y > 600}
   <div
-    class="fadeIn animated fast flex justify-end w-full fixed bottom-0 my-3
-    -mx-3 sm:my-6 opacity-75 sm:-mx-10 z-50">
+    class="fadeIn-custom flex justify-end w-full fixed bottom-0 my-3 -mx-3
+    sm:my-6 sm:-mx-10 z-50">
     <a href="#top" name="backtotop">
       <svg
         width="51"
