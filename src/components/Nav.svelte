@@ -3,8 +3,8 @@
   export let slideUpClass = ''
   import { createEventDispatcher } from 'svelte'
   import SocialIcons from '../components/SocialIcons.svelte'
-  import { onMount } from 'svelte'
 
+  import { enableBodyScroll } from 'body-scroll-lock'
   const dispatch = createEventDispatcher()
 
   const menueClosed = () => {
@@ -43,8 +43,7 @@
   <div
     class="{isMenuOpen ? ' slideInDown' : slideUpClass} animated faster
     transform -translate-y-full gradiantStyle h-screen w-screen fixed inset-0
-    z-50"
-    id="sidebar">
+    z-50">
     <nav
       class="flex w-full justify-center top-0 text-white font-nixieOne text-4xl
       xl:text-5xl">

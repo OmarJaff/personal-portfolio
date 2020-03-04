@@ -14,7 +14,9 @@
   let menuClass = ''
   let isMenuOpen = false
   let slideUpClass = ''
-  let targetElement
+  let targetElement = null
+  let elm = null
+
   onMount(() => {
     function removeLocationHash() {
       var noHashURL = window.location.href.replace(/#.*$/, '')
@@ -31,10 +33,9 @@
       removeLocationHash()
     })
 
-    targetElement = document.querySelector('#sidebar')
+    elm = document.querySelector('#main-header')
 
-    let elm = document.querySelector('#main-header')
-    var ms = new MenuSpy(elm, {
+    let ms = new MenuSpy(elm, {
       menuItemSelector: 'a[href^="#"]',
 
       activeClass: 'active-class',
@@ -49,12 +50,9 @@
     })
   })
 
-  const handleMenuToggle = () => {
+  const handleMenuToggle = function() {
     isMenuOpen = !isMenuOpen
-    isMenuOpen
-      ? ((menuClass = 'active'), disableBodyScroll(targetElement))
-      : ((menuClass = 'not-active'), enableBodyScroll(targetElement))
-    slideUpClass = 'slideOutUp'
+    isMenuOpen ? (menuClass = 'active') : (menuClass = 'not-active')
   }
 </script>
 
@@ -62,6 +60,7 @@
   <style>
     html {
       scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
     }
   </style>
 </svelte:head>
@@ -70,9 +69,7 @@
   {isMenuOpen}
   {slideUpClass}
   on:closeMenu={() => {
-    isMenuOpen = false
-    menuClass = 'not-active'
-    enableBodyScroll(targetElement)
+    handleMenuToggle()
   }} />
 
 <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">

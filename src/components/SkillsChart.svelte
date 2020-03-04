@@ -15,7 +15,7 @@
     let ctx = document.getElementById('myChart').getContext('2d')
     ctx.height = '1000'
 
-    Chart.defaults.global.defaultFontColor = 'rgb(224,225,235)'
+    Chart.defaults.global.defaultFontColor = 'rgb(128,132,178)'
     Chart.defaults.global.defaultFontFamily =
       "Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
     Chart.defaults.global.defaultFontSize = '14'
@@ -45,9 +45,9 @@
         ],
         datasets: [
           {
-            backgroundColor: 'rgb(128,132,178)',
+            backgroundColor: 'rgb(224,225,235)',
             hoverBorderColor: 'rgb(224,225,235)',
-            barPercentage: 0.4,
+            barPercentage: 0.3,
             borderWidth: 1,
             data: [3, 3, 2.5, 2.8, 2.5, 2, 2.5, 1, 1, 3, 2, 3, 4],
           },

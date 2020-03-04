@@ -16,7 +16,7 @@
 
   onMount(() => {
     AOS.init({
-      duration: 800,
+      duration: 1000,
       disable: 'phone',
       once: true,
     })
@@ -34,6 +34,7 @@
 </svelte:head>
 
 <a name="top" href="#top" rel="backtohome" class="sr-only">home</a>
+
 <div id="home" class="flex flex-col justify-center h-screen w-full font-all ">
   <section class="flex h-full w-full my-48">
     <div class="flex w-full flex-col items-center ">
@@ -58,7 +59,7 @@
   <ScrollDowmFlag />
   <BackToTopArrow />
 </div>
-<div class="flex flex-col h-screen justify-between w-full ">
+<div class="flex flex-col h-screen justify-between w-full">
   <div
     id="about"
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto py-4 my-10
