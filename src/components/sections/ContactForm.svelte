@@ -95,10 +95,10 @@
         <div class="w-full flex justify-end">
           <button
             class=" text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/3 buttom-shadow
-            sm:text-base xl:text-xl sm:h-10 mt-2 flex justify-center
-            items-center hover-class ">
+            sm:text-base xl:text-xl sm:h-10 mt-2  
+             hover-class text-white ">
 
-            <span class="mx-1 text-white">Send</span>
+            <span class="text-white">Send</span>
           </button>
         </div>
       </form>

@@ -58,13 +58,13 @@
   <div
     class=" flex pictuer-width lg:h-auto left-0 z-10 photo-shadow left-picture
     h-custom w-full bg-dark-blue"
-    data-aos="fade-right">
+    >
     <slot name="containerDesign" />
   </div>
   <div
     class=" text-width text-h-custom flex xl:justify-end xl:absolute top-custom
     h-auto top-custom-2 font-mono "
-    data-aos="fade-left">
+    >
     <div class="custom-shadow h-full w-full flex flex-col justify-between ">
       {#if containerTitle}
         <h1

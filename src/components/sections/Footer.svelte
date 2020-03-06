@@ -24,10 +24,10 @@
 </style>
 
 <div
-  class="line-shadow absolute w-full flex items-center justify-center h-2
+  class="line-shadow absolute  flex  justify-center h-2
   flex-wrap ">
 
-  <span class=" bg-vived-red bg-gradiant custom-height w-11/12" />
+  <span class="bg-vived-red  bg-gradiant custom-height w-11/12" />
 
   <div
     class="flex flex-col relative h-40 w-full items-center justify-center

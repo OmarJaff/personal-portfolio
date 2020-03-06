@@ -64,7 +64,7 @@
 <svelte:window bind:scrollY={y} />
 
 <div
-  class="{y > 0 ? ' fadeOut' : 'fadeIn'} animated fast sm:block flex font-col
+  class="{y > 0 ? ' fadeOut' : 'fadeIn'}   sm:block flex font-col
   topstyle my-12 justify-center ">
 
   <svg class="arrows my-16 lg:my-0 ">

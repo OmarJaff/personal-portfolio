@@ -59,10 +59,10 @@
   <ScrollDowmFlag />
   <BackToTopArrow />
 </div>
-<div class="flex flex-col h-screen justify-between w-full">
+<div class="flex flex-col justify-between w-full">
   <div
     id="about"
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto py-4 my-10
+    class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto py-4 my-10
     sm:my-20">
     <About />
   </div>
@@ -81,14 +81,13 @@
     <Projects />
   </div>
 
-  <div id="contact" class="h-64 " />
   <div
     class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10
     sm:my-20 mb-16 ">
     <ContactForm />
   </div>
   <div
-    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-aut relative">
+    class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto relative">
     <Footer />
   </div>
 </div>

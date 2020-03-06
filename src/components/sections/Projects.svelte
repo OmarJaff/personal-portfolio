@@ -429,11 +429,11 @@
     <div slot="techIcons" class="flex justify-around w-full text-white">
       <SvelteTooltip tip="TailwindCSS" bottom color="#272740">
         <svg
-          class="h-4 w-4 sm:h-6 sm:w-6"
+          class="h-4 w-4 sm:h-6 sm:w-6 "
           width="354"
           height="213"
           viewBox="0 0 354 213"
-          fill="none"
+          
           xmlns="http://www.w3.org/2000/svg">
           <path
             fill-rule="evenodd"
