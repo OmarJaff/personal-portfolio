@@ -60,7 +60,14 @@
         class="flex flex-col p-6 w-full"
         name="contact"
         method="POST"
+        netlify-honeypot="bot-field"
         data-netlify="true">
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you're human:
+            <input name="bot-field" />
+          </label>
+        </p>
         <label for="fullname" class="sr-only">Full Name</label>
         <input
           type="text"
