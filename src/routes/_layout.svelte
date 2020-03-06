@@ -52,7 +52,7 @@
 
   const handleMenuToggle = function() {
     isMenuOpen = !isMenuOpen
-    isMenuOpen ? (menuClass = 'active') : (menuClass = 'not-active')
+    isMenuOpen ? (menuClass = 'active') : ((menuClass = 'not-active'),(slideUpClass="slideOutUp"))
   }
 </script>
 

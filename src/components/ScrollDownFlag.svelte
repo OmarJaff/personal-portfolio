@@ -1,25 +1,30 @@
 <script>
   let y
+   
 </script>
 
 <style>
   .animating-border-in {
     border-left: 1px solid white;
     height: 0;
+    -webkit-animation: border-height 0.3s ease forwards;
     animation: border-height 0.3s ease forwards;
     animation-delay: 0.2s;
   }
   .animating-out {
     border-left: 1px solid white;
     height: 70px;
+    -webkit-animation: animating-border-out 0.1s ease-out forwards;
     animation: animating-border-out 0.1s ease-out forwards;
   }
   .scroll-title-opacity-in {
     opacity: 0;
+    -webkit-animation: scroll-title 0.3s ease forwards; 
     animation: scroll-title 0.3s ease forwards;
   }
   .scroll-title-opacity-out {
     opacity: 1;
+    -webkit-animation: scroll-title-out 0.2s ease-out forwards; 
     animation: scroll-title-out 0.2s ease-out forwards;
   }
   @keyframes border-height {

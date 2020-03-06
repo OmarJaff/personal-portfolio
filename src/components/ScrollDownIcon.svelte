@@ -1,5 +1,6 @@
 <script>
   let y = 0
+  $: console.log(y);
 </script>
 
 <style>
@@ -19,7 +20,34 @@
     animation: arrow 2s infinite;
     -webkit-animation: arrow 2s infinite;
   }
+  .fadeOut {
+    opacity: 1;
+    animation: faded-out 2s ease forwards;
+    -webkit-animation: faded-out 2s ease forwards;
+  }
+  .fadeIn {
+    opacity: 0;
+    animation: faded-in 2s ease forwards;
+    -webkit-animation: faded-in 2s ease forwards;
+  }
 
+  @keyframes faded-in {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+  @keyframes faded-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
   @keyframes arrow {
     0% {
       opacity: 0;
