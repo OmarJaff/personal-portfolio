@@ -95,7 +95,7 @@
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
           sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Subject" />
-        <label for="message" class="sr-only">Full Name</label>
+        <label for="message" class="sr-only">Message</label>
         <textarea
           type="text"
           id="message"
