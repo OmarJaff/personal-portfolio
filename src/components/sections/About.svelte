@@ -21,9 +21,6 @@
   }
 </style>
 
-<svelte:head>
-  <title>About Omar</title>
-</svelte:head>
 <div class="flex flex-col w-custom ">
   <div class="flex relative mb-12 justify-center sm:justify-start">
     <PageTitle title="About Omar" />
@@ -48,7 +45,6 @@
       <span class="text-vived-red">CV</span>
       by clicking
       <a href="#home" class="text-vived-red ">here</a>
-
     </p>
   </ProjectContainer>
 

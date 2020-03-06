@@ -62,8 +62,8 @@
 <div class="flex flex-col justify-between w-full">
   <div
     id="about"
-    class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto py-4 my-10
-    sm:my-20">
+    class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto py-4
+    my-10 sm:my-20">
     <About />
   </div>
 
@@ -87,6 +87,7 @@
     <ContactForm />
   </div>
   <div
+    id="contact"
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto relative">
     <Footer />
   </div>
