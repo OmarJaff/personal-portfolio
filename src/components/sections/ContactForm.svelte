@@ -56,13 +56,17 @@
           together?
         </h1>
       </div>
-      <form class="flex flex-col p-6 w-full">
+      <form
+        class="flex flex-col p-6 w-full"
+        name="contact"
+        method="POST"
+        data-netlify="true">
         <label for="fullname" class="sr-only">Full Name</label>
         <input
           type="text"
           id="fullname"
           required
-          name="fullname"
+          name="name"
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
           sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Full Name" />
@@ -95,8 +99,7 @@
         <div class="w-full flex justify-end">
           <button
             class=" text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/3 buttom-shadow
-            sm:text-base xl:text-xl sm:h-10 mt-2  
-             hover-class text-white ">
+            sm:text-base xl:text-xl sm:h-10 mt-2 hover-class text-white ">
 
             <span class="text-white">Send</span>
           </button>
