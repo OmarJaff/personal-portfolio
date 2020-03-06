@@ -81,6 +81,7 @@
         <input
           type="email"
           id="email"
+          required
           name="email"
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
           sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
@@ -98,6 +99,7 @@
           type="text"
           id="message"
           name="message"
+          required
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
           sm:p-4 w-full my-1 sm:my-2 h-24 sm:h-32 sm:text-base xl:text-lg
           sm:py-4"
@@ -105,6 +107,7 @@
 
         <div class="w-full flex justify-end">
           <button
+            type="submit"
             class=" text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/3 buttom-shadow
             sm:text-base xl:text-xl sm:h-10 mt-2 hover-class text-white ">
 
