@@ -54,7 +54,7 @@
         ],
       },
       options: {
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
 
         legend: {
           display: false,

@@ -25,7 +25,7 @@
 
 <div
   class="line-shadow absolute  flex  justify-center h-2
-  flex-wrap ">
+  flex-wrap w-full ">
 
   <span class="bg-vived-red  bg-gradiant custom-height w-11/12" />
 
