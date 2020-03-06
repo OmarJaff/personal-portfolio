@@ -1,6 +1,5 @@
 <script>
   let y = 0
-  $: console.log(y);
 </script>
 
 <style>
@@ -33,10 +32,10 @@
 
   @keyframes faded-in {
     0% {
-      opacity: 0
+      opacity: 0;
     }
     100% {
-      opacity: 1
+      opacity: 1;
     }
   }
 
@@ -92,8 +91,8 @@
 <svelte:window bind:scrollY={y} />
 
 <div
-  class="{y > 0 ? ' fadeOut' : 'fadeIn'}   sm:block flex font-col
-  topstyle my-12 justify-center ">
+  class="{y > 0 ? ' fadeOut' : 'fadeIn'} sm:block flex font-col topstyle my-12
+  justify-center ">
 
   <svg class="arrows my-16 lg:my-0 ">
     <path class="a2" d="M0 20 L30 52 L60 20" />
