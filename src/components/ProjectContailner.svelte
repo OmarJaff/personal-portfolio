@@ -56,8 +56,8 @@
   class="{containerTitle ? ' xl:mb-40 mb-12' : ''} flex flex-col w-auto relative
   items-center sm:items-start custom-shadow-all ">
   <div
-    class=" flex pictuer-width lg:h-auto left-0 z-10 photo-shadow left-picture
-    h-custom w-full bg-dark-blue"
+    class=" flex pictuer-width left-0 z-10 photo-shadow left-picture
+      h-custom w-full bg-dark-blue lg:h-auto"
     >
     <slot name="containerDesign" />
   </div>

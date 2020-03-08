@@ -19,6 +19,9 @@
       top: 30rem;
     }
   }
+  .img-h {
+    height: 20rem;
+  }
 </style>
 
 <div class="flex flex-col w-custom ">
@@ -28,12 +31,12 @@
   <ProjectContainer techIconsPresent="false">
     <img
       slot="containerDesign"
-      class="fill-current relative "
+      class="fill-current relative img-h"
       src="web-developer-omar-jaff.jpg"
       alt="a web developer person character with a laptop and other symbols of
       code and programming" />
     <p
-      class=" text-text-white-lighter font-thin p-6 xl:ml-12 tex font-mono
+      class=" text-text-white-lighter font-thin p-4 xl:ml-12 tex font-mono
       font-thin text-justify text-base sm:text-lg "
       slot="aboutMe">
       Hi ! I am a front-end web developer and user interface (UI) designer. I
