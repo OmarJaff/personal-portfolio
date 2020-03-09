@@ -1,6 +1,8 @@
 <script>
   import PageTitle from '../PageTitle.svelte'
   import axios from 'axios'
+  import SubmitModal from '../submitmodal.svelte'
+  import bodymovin from 'lottie-web'
 
   let formData = {
     name: '',
@@ -8,6 +10,7 @@
     subject: '',
     message: '',
   }
+  let animation
   const encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -15,7 +18,18 @@
   }
 
   let violated = { nameField: false, emailField: false, message: false }
-
+  let openModal = false
+  const animate = () => {
+    animation = bodymovin.loadAnimation({
+      container: document.getElementById('sendIcon'), // Required
+      path: 'lf30_editor_m1Vm1w.json', // Required
+      renderer: 'svg', // Required
+      loop: false, // Optional
+      autoplay: true, // Optional
+      speed: 2,
+      name: 'Hello World', // Name for future reference. Optional.
+    })
+  }
   let clearFormData = () => {
     for (const property in formData) {
       formData[property] = ''
@@ -43,7 +57,7 @@
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...formData }),
       })
-        .then(() => clearFormData())
+        .then(() => clearFormData(), (openModal = true), animate())
         .catch(error => alert(error))
     }
   }
@@ -87,6 +101,8 @@
   }
 </style>
 
+<SubmitModal {openModal} />
+
 <div class="flex flex-col w-custom">
   <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="Contact me" />
@@ -111,7 +127,6 @@
         name="contact"
         id="contact"
         method="POST"
-        action="/src/routes/submit-page"
         data-netlify="true"
         netlify-honeypot="bot-field">
         <p class="hidden">
