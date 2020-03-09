@@ -19,8 +19,11 @@
       top: 30rem;
     }
   }
-  .img-h {
-    height: 20rem;
+
+  @media only screen and (min-width: 640px) {
+    .img-h {
+      height: 20rem;
+    }
   }
 </style>
 
@@ -31,7 +34,7 @@
   <ProjectContainer techIconsPresent="false">
     <img
       slot="containerDesign"
-      class="fill-current relative img-h"
+      class="fill-current relative h-64 img-h"
       src="web-developer-omar-jaff.jpg"
       alt="a web developer person character with a laptop and other symbols of
       code and programming" />

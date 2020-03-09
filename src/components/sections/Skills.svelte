@@ -25,12 +25,12 @@
   <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="My Skills" />
   </div>
-  <div class="flex justify-around flex-wrap xl:flex-no-wrap relative ">
+  <div class="flex justify-between flex-wrap xl:flex-no-wrap relative ">
     <SkillsIconTemplate
       title="fast"
       description="Fast load times and lag free interaction is my priority">
       <svg
-        class="fill-current h-8 xl:h-10"
+        class="fill-current h-8 sm:h-10"
         viewBox="0 0 44 35"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -93,7 +93,7 @@
       description="My layouts will work on any device, big or small">
       <svg
         viewBox="0 0 44 36"
-        class="fill-current h-8 xl:h-10"
+        class="fill-current h-8 sm:h-10"
         xmlns="http://www.w3.org/2000/svg">
         <path
           d="M43.0395
@@ -135,7 +135,7 @@
         width="42"
         height="42"
         viewBox="0 0 42 42"
-        class="fill-current h-8 xl:h-10"
+        class="fill-current h-8 sm:h-10"
         xmlns="http://www.w3.org/2000/svg">
         <path
           d="M20.6902 7.37891C14.4528 7.37891 9.94714 12.0316 9.23261
@@ -180,7 +180,7 @@
         width="46"
         height="50"
         viewBox="0 0 46 50"
-        class=" fill-current h-8 xl:h-10">
+        class=" fill-current h-8 sm:h-10">
         <path
           d="M18.118 10.8392V2.92702C18.1174 2.40262 17.9089 1.8999 17.5384
           1.52909C17.168 1.15828 16.6657 0.949662 16.1417

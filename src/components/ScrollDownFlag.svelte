@@ -1,6 +1,5 @@
 <script>
   let y
-   
 </script>
 
 <style>
@@ -19,12 +18,12 @@
   }
   .scroll-title-opacity-in {
     opacity: 0;
-    -webkit-animation: scroll-title 0.3s ease forwards; 
+    -webkit-animation: scroll-title 0.3s ease forwards;
     animation: scroll-title 0.3s ease forwards;
   }
   .scroll-title-opacity-out {
     opacity: 1;
-    -webkit-animation: scroll-title-out 0.2s ease-out forwards; 
+    -webkit-animation: scroll-title-out 0.2s ease-out forwards;
     animation: scroll-title-out 0.2s ease-out forwards;
   }
   @keyframes border-height {
@@ -73,11 +72,9 @@
 <svelte:window bind:scrollY={y} />
 
 <div
-  class="{y > 0 ? 'animating-out' : 'animating-border-in'} absolute left-0
-  right-0 bottom-0 top-auto mx-6 sm:mx-8 sm:leading-7 fixed ">
-  <div
-    class="{y > 0 ? 'scroll-title-opacity-out' : 'scroll-title-opacity-in'} flex
-    items-center h-16 ">
+  class="{y > 0 ? 'animating-out' : 'animating-border-in'} left-0 right-0
+  bottom-0 top-auto mx-6 sm:mx-8 sm:leading-7 fixed ">
+  <div class="flex items-center h-16 ">
     <span
       class="text-white w-12 sm:w-24 text-center text-vived-red text-sm
       sm:font-normal ml-0 sm:ml-2 font-fenix">
