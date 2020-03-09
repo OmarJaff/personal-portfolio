@@ -111,7 +111,7 @@
         name="contact"
         id="contact"
         method="POST"
-        action="submit-page.svelte"
+        action="/src/routes/submit-page.svelte"
         data-netlify="true"
         netlify-honeypot="bot-field">
         <p class="hidden">
