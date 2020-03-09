@@ -16,7 +16,7 @@
     -webkit-animation: animating-border-out 0.1s ease-out forwards;
     animation: animating-border-out 0.1s ease-out forwards;
   }
-  .scroll-title-opacity-in {
+  /* .scroll-title-opacity-in {
     opacity: 0;
     -webkit-animation: scroll-title 0.3s ease forwards;
     animation: scroll-title 0.3s ease forwards;
@@ -25,7 +25,7 @@
     opacity: 1;
     -webkit-animation: scroll-title-out 0.2s ease-out forwards;
     animation: scroll-title-out 0.2s ease-out forwards;
-  }
+  } */
   @keyframes border-height {
     from {
       height: 0;

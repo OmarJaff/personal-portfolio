@@ -1,8 +1,34 @@
 <script>
   import PageTitle from '../PageTitle.svelte'
+  import { onMount } from 'svelte'
+
+  let formData = {
+    fullName: '',
+    email: '',
+    subject: '',
+    message: '',
+  }
+
+  let violated = { nameField: false, emailField: false, message: false }
+
+  let handleSubmit = () => {
+    formData.fullName.length === 0
+      ? (violated.nameField = true)
+      : (violated.nameField = false)
+    ;/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email) &&
+    formData.email.length != 0
+      ? (violated.emailField = false)
+      : (violated.emailField = true)
+    formData.message.length === 0
+      ? (violated.message = true)
+      : (violated.message = false)
+  }
 </script>
 
 <style>
+  .validationClass {
+    border: 0.1px red solid;
+  }
   .w-custom {
     width: 24rem;
   }
@@ -59,6 +85,7 @@
       <form
         class="flex flex-col p-6 w-full"
         name="contact"
+        id="contact"
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field">
@@ -73,42 +100,60 @@
         <input
           type="text"
           id="fullname"
-          required
+          bind:value={formData.fullName}
           name="name"
-          class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
+          class="{violated.nameField ? ' animated fast shake validationClass' : ' border-none'}
+          bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2 sm:p-4
+          w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Full Name" />
+        {#if violated.nameField}
+          <span class="text-red-600 text-sm px-2 pb-3">
+            This field is required.
+          </span>
+        {/if}
         <label for="email" class="sr-only">Email</label>
         <input
           type="email"
           id="email"
-          required
           name="email"
-          class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
+          bind:value={formData.email}
+          class="{violated.emailField ? ' animated fast shake validationClass' : ' border-none'}
+          bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2 sm:p-4
+          w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Your Email" />
+        {#if violated.emailField}
+          <span class="text-red-600 text-sm px-2 pb-3">
+            This field is required and must be a valid email address.
+          </span>
+        {/if}
         <label for="subject" class="sr-only">Subject</label>
         <input
           type="subject"
           id="subject"
           name="subject"
+          bind:value={formData.subject}
           class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
+          sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4"
           placeholder="Subject" />
         <label for="message" class="sr-only">Message</label>
         <textarea
           type="text"
           id="message"
           name="message"
-          required
-          class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          sm:p-4 w-full my-1 sm:my-2 h-24 sm:h-32 sm:text-base xl:text-lg
-          sm:py-4"
+          bind:value={formData.message}
+          class="{violated.message ? ' animated fast shake validationClass' : ' border-none'}
+          bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2 sm:p-4
+          w-full my-1 sm:my-2 h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4"
           placeholder="Your Message" />
-
+        {#if violated.message}
+          <span class="text-red-600 text-sm px-2 pb-3">
+            This field is required.
+          </span>
+        {/if}
         <div class="w-full flex justify-end">
           <button
             type="submit"
+            on:click|preventDefault={() => handleSubmit()}
             class=" text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/3 buttom-shadow
             sm:text-base xl:text-xl sm:h-10 mt-2 hover-class text-white ">
 
