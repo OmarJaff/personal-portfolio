@@ -1,12 +1,18 @@
 <script>
   import PageTitle from '../PageTitle.svelte'
   import { onMount } from 'svelte'
+  import axios from 'axios'
 
   let formData = {
     fullName: '',
     email: '',
     subject: '',
     message: '',
+  }
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
   }
 
   let violated = { nameField: false, emailField: false, message: false }
@@ -22,6 +28,19 @@
     formData.message.length === 0
       ? (violated.message = true)
       : (violated.message = false)
+    if (
+      violated.nameField === false &&
+      violated.emailField === false &&
+      violated.message === false
+    ) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...formData }),
+      })
+        .then(() => alert('Success!'))
+        .catch(error => alert(error))
+    }
   }
 </script>
 
