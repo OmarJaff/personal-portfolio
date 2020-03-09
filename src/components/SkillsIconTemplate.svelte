@@ -16,7 +16,7 @@
 
 <div
   class="flex sm:flex-col mx-4 justify-center items-center w-full sm:w-auto my-3
-  sm:my-4">
+  sm:my-8">
   <div class="custom-shadow w-24 h-24 sm:w-32 sm:h-32 relative flex ">
     <span class=" line w-1/3 bg-vived-red inset-0 left-auto absolute " />
     <div class="flex flex-col justify-center w-full h-full items-center">
@@ -30,7 +30,7 @@
     </h2>
     <p
       class="text-text-white-lighter flex justify-center font-thin text-center
-      text-xs sm:text-sm ">
+      text-xs sm:text-sm sm:h-4 ">
       {description}
     </p>
   </div>
