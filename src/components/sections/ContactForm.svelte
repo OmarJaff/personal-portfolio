@@ -1,10 +1,9 @@
 <script>
   import PageTitle from '../PageTitle.svelte'
-  import { onMount } from 'svelte'
   import axios from 'axios'
 
   let formData = {
-    fullName: '',
+    name: '',
     email: '',
     subject: '',
     message: '',
@@ -17,8 +16,14 @@
 
   let violated = { nameField: false, emailField: false, message: false }
 
+  let clearFormData = () => {
+    for (const property in formData) {
+      formData[property] = ''
+    }
+  }
+
   let handleSubmit = () => {
-    formData.fullName.length === 0
+    formData.name.length === 0
       ? (violated.nameField = true)
       : (violated.nameField = false)
     ;/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email) &&
@@ -38,7 +43,7 @@
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...formData }),
       })
-        .then(() => alert('Success!'))
+        .then(() => clearFormData())
         .catch(error => alert(error))
     }
   }
@@ -87,7 +92,6 @@
     <PageTitle title="Contact me" />
   </div>
   <div class=" flex justify-center font-mono ">
-
     <div
       class="flex flex-col custom-shadow my-8 w-full xl:w-11/12 items-center ">
       <div class="flex">
@@ -101,11 +105,13 @@
           together?
         </h1>
       </div>
+
       <form
         class="flex flex-col p-6 w-full"
         name="contact"
         id="contact"
         method="POST"
+        action="../../routes/submit-page.svelte"
         data-netlify="true"
         netlify-honeypot="bot-field">
         <p class="hidden">
@@ -119,14 +125,14 @@
         <input
           type="text"
           id="fullname"
-          bind:value={formData.fullName}
+          bind:value={formData.name}
           name="name"
           class="{violated.nameField ? ' animated fast shake validationClass' : ' border-none'}
           bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2 sm:p-4
           w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Full Name" />
         {#if violated.nameField}
-          <span class="text-red-600 text-sm px-2 pb-3">
+          <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
             This field is required.
           </span>
         {/if}
@@ -141,7 +147,7 @@
           w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Your Email" />
         {#if violated.emailField}
-          <span class="text-red-600 text-sm px-2 pb-3">
+          <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
             This field is required and must be a valid email address.
           </span>
         {/if}
@@ -165,7 +171,7 @@
           w-full my-1 sm:my-2 h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4"
           placeholder="Your Message" />
         {#if violated.message}
-          <span class="text-red-600 text-sm px-2 pb-3">
+          <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
             This field is required.
           </span>
         {/if}
