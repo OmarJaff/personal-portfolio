@@ -1,5 +1,6 @@
 <script>
   let y = 0
+  import jump from 'jump.js'
 </script>
 
 <style>
@@ -23,7 +24,13 @@
   <div
     class="fadeIn-custom flex justify-end w-full fixed bottom-0 my-3 -mx-3
     sm:my-6 sm:-mx-10 z-50">
-    <a href="#top" name="backtotop">
+    <button
+      on:click={() => jump('.target', {
+          duration: 1000,
+          offset: 0,
+          a11y: false,
+        })}
+      name="backtotop">
       <svg
         width="51"
         height="51"
@@ -44,6 +51,6 @@
           27.3031C35.9489 26.3073 35.9489 24.6927 34.9531 23.6968Z" />
       </svg>
 
-    </a>
+    </button>
   </div>
 {/if}

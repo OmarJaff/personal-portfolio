@@ -3,7 +3,6 @@
   import axios from 'axios'
   import SubmitModal from '../submitmodal.svelte'
   import bodymovin from 'lottie-web'
-  import { onMount } from 'svelte'
 
   let successAnimation
   let errorAnimation
@@ -18,9 +17,7 @@
       name: 'success message', // Name for future reference. Optional.
     })
   }
-  // onMount(() => {
 
-  //   })
   const errorMessage = () => {
     errorAnimation = bodymovin.loadAnimation({
       container: document.getElementById('sendIcon'),

@@ -16,8 +16,9 @@
 
   onMount(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       disable: 'phone',
+      easing: 'easing: easeInOutQuad',
       once: true,
     })
   })
@@ -33,9 +34,11 @@
   <title>Omar Jaff</title>
 </svelte:head>
 
-<a name="top" href="#top" rel="backtohome" class="sr-only">home</a>
+<a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 
-<div id="home" class="flex flex-col justify-center h-screen w-full font-all ">
+<div
+  id="home"
+  class="flex flex-col justify-center h-screen w-full font-all home ">
   <section class="flex h-full w-full my-48">
     <div class="flex w-full flex-col items-center ">
       <div class="text-white text-4xl">

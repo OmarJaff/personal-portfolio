@@ -5,6 +5,7 @@
   import ScrollIcon from '../components/ScrollDownIcon.svelte'
   import PageToggleLines from '../components/PageToggleLines.svelte'
   import MenuSpy from 'menuspy'
+
   import {
     disableBodyScroll,
     enableBodyScroll,
@@ -52,16 +53,18 @@
 
   const handleMenuToggle = function() {
     isMenuOpen = !isMenuOpen
-    isMenuOpen ? (menuClass = 'active') : ((menuClass = 'not-active'),(slideUpClass="slideOutUp"))
+    isMenuOpen
+      ? (menuClass = 'active')
+      : ((menuClass = 'not-active'), (slideUpClass = 'slideOutUp'))
   }
 </script>
 
 <svelte:head>
   <style>
-    html {
+    /* html {
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
-    }
+    } */
   </style>
 </svelte:head>
 

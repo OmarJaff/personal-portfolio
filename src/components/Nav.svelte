@@ -3,7 +3,7 @@
   export let slideUpClass = ''
   import { createEventDispatcher } from 'svelte'
   import SocialIcons from '../components/SocialIcons.svelte'
-
+  import jump from 'jump.js'
   import { enableBodyScroll } from 'body-scroll-lock'
   const dispatch = createEventDispatcher()
 
@@ -53,17 +53,26 @@
             class="flex flex-col hover-class "
             href="#home"
             on:click={() => {
-              menueClosed()
+              jump('#home', {
+                duration: 1000,
+                offset: 0,
+                a11y: false,
+              }), menueClosed()
             }}>
             Home
           </a>
+
         </li>
         <li class="my-2 md:my-4 flex flex-col centerized ">
           <a
             class=" flex flex-col hover-class"
             href="#about"
             on:click={() => {
-              menueClosed()
+              jump('#about', {
+                duration: 1000,
+                offset: 0,
+                a11y: false,
+              }), menueClosed()
             }}>
             About Me
           </a>
@@ -73,7 +82,11 @@
             class="flex flex-col hover-class "
             href="#skills"
             on:click={() => {
-              menueClosed()
+              jump('#skills', {
+                duration: 1000,
+                offset: 0,
+                a11y: false,
+              }), menueClosed()
             }}>
             Skills
           </a>
@@ -83,7 +96,11 @@
             class="flex flex-col hover-class "
             href="#projects"
             on:click={() => {
-              menueClosed()
+              jump('#projects', {
+                duration: 1000,
+                offset: 0,
+                a11y: false,
+              }), menueClosed()
             }}>
             Projects
           </a>
@@ -93,7 +110,11 @@
             class="flex flex-col hover-class "
             href="#contact"
             on:click={() => {
-              menueClosed()
+              jump('#contact', {
+                duration: 1000,
+                offset: 0,
+                a11y: false,
+              }), menueClosed()
             }}>
             Contact Me
           </a>
