@@ -71,9 +71,9 @@
       violated.emailField === false &&
       violated.message === false
     ) {
-      fetch('/', {
+      fetch('//', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencodedd' },
         body: encode({ 'form-name': 'contact', ...formData }),
       })
         .then(() => {
