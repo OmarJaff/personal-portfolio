@@ -91,7 +91,7 @@
   }
   const handleCloseModal = () => {
     openModal = false
-    animation ? successAnimation.destroy() : errorAnimation.destroy()
+    successAnimation ? successAnimation.destroy() : errorAnimation.destroy()
   }
 </script>
 
