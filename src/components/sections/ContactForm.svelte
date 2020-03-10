@@ -3,6 +3,34 @@
   import axios from 'axios'
   import SubmitModal from '../submitmodal.svelte'
   import bodymovin from 'lottie-web'
+  import { onMount } from 'svelte'
+
+  let animation
+  let errorMassage
+  let errorLog
+  const successMessage = () => {
+    animation = bodymovin.loadAnimation({
+      container: document.getElementById('sendIcon'), // Required
+      path: 'lf30_editor_m1Vm1w.json', // Required
+      renderer: 'svg', // Required
+      loop: false, // Optional
+      autoplay: true, // Optional
+      name: 'success message', // Name for future reference. Optional.
+    })
+  }
+  // onMount(() => {
+
+  //   })
+  const error = () => {
+    errorMassage = bodymovin.loadAnimation({
+      container: document.getElementById('sendIcon'),
+      path: 'errormassage.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: 'error massage',
+    })
+  }
 
   let formData = {
     name: '',
@@ -10,7 +38,7 @@
     subject: '',
     message: '',
   }
-  let animation
+
   const encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -19,17 +47,7 @@
 
   let violated = { nameField: false, emailField: false, message: false }
   let openModal = false
-  const animate = () => {
-    animation = bodymovin.loadAnimation({
-      container: document.getElementById('sendIcon'), // Required
-      path: 'lf30_editor_m1Vm1w.json', // Required
-      renderer: 'svg', // Required
-      loop: false, // Optional
-      autoplay: true, // Optional
-      speed: 2,
-      name: 'Hello World', // Name for future reference. Optional.
-    })
-  }
+
   let clearFormData = () => {
     for (const property in formData) {
       formData[property] = ''
@@ -56,9 +74,19 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...formData }),
+        dasfadf,
       })
-        .then(() => clearFormData(), (openModal = true), animate())
-        .catch(error => alert(error))
+        .then(
+          () => clearFormData(),
+          (openModal = true),
+          successMessage(),
+          animation.setSpeed(2)
+        )
+        .catch(error => {
+          errorLog = error
+          openModal = true
+          error()
+        })
     }
   }
 </script>
@@ -101,7 +129,14 @@
   }
 </style>
 
-<SubmitModal {openModal} />
+<SubmitModal
+  {openModal}
+  {errorLog}
+  on:closeModal={() => {
+    openModal = false
+    animation.destroy()
+    errorMassage.destroy()
+  }} />
 
 <div class="flex flex-col w-custom">
   <div class="flex mb-12 justify-center sm:justify-start">
