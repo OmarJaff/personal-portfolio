@@ -44,12 +44,11 @@
       <div class="text-white text-4xl">
         <Portfolio />
       </div>
-      <div class="flex mt-16 w-full justify-center text-white text-3xl">
+      <div class="flex flex-col mt-16 w-full items-center text-white text-3xl">
         <MyFullName />
-      </div>
-      <div class="flex">
         <Title />
       </div>
+      <div class="flex" />
     </div>
   </section>
   <div
