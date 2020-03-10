@@ -83,7 +83,7 @@
         <div class="flex flex-col w-full items-center ">
           <div
             id="sendIcon"
-            class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto lg:w-auto my-4" />
+            class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto my-4" />
           {#if !errorLog}
             <h1
               class="{openModal === true ? 'animated fadeIn delay-2s slow' : ''}

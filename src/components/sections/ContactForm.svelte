@@ -18,13 +18,11 @@
       name: 'success message', // Name for future reference. Optional.
     })
   }
-  // onMount(() => {
 
-  //   })
   const errorMessage = () => {
     errorAnimation = bodymovin.loadAnimation({
       container: document.getElementById('sendIcon'),
-      path: 'errormassage.json',
+      path: 'errormessage.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,
