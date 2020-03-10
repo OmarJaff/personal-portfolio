@@ -5,11 +5,11 @@
   import bodymovin from 'lottie-web'
   import { onMount } from 'svelte'
 
-  let animation
-  let errorMassage
+  let successAnimation
+  let errorAnimation
   let errorLog
   const successMessage = () => {
-    animation = bodymovin.loadAnimation({
+    successAnimation = bodymovin.loadAnimation({
       container: document.getElementById('sendIcon'), // Required
       path: 'lf30_editor_m1Vm1w.json', // Required
       renderer: 'svg', // Required
@@ -21,8 +21,8 @@
   // onMount(() => {
 
   //   })
-  const error = () => {
-    errorMassage = bodymovin.loadAnimation({
+  const errorMessage = () => {
+    errorAnimation = bodymovin.loadAnimation({
       container: document.getElementById('sendIcon'),
       path: 'errormassage.json',
       renderer: 'svg',
@@ -46,6 +46,7 @@
   }
 
   let violated = { nameField: false, emailField: false, message: false }
+
   let openModal = false
 
   let clearFormData = () => {
@@ -79,18 +80,18 @@
           () => clearFormData(),
           (openModal = true),
           successMessage(),
-          animation.setSpeed(2)
+          successAnimation.setSpeed(2)
         )
         .catch(error => {
           errorLog = error
           openModal = true
-          error()
+          errorMessage()
         })
     }
   }
   const handleCloseModal = () => {
     openModal = false
-    animation ? animation.destroy() : errorMassage.destroy()
+    animation ? successAnimation.destroy() : errorAnimation.destroy()
   }
 </script>
 
