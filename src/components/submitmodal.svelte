@@ -111,7 +111,7 @@
           on:click={() => {
             closeModal()
           }}
-          class="{openModal === true ? 'animated fadeIn delay-2s slow' : ''}
+          class="{openModal === true && !errorLog ? 'animated fadeIn delay-2s slow' : ''}
           text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/2 buttom-shadow sm:text-base
           xl:text-xl sm:h-10 mt-2 hover-class text-white font-nixieOne">
           <span class="text-white">Back to the website</span>
