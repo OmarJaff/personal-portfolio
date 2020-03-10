@@ -44,7 +44,9 @@
       <div class="text-white text-4xl">
         <Portfolio />
       </div>
-      <div class="flex flex-col mt-16 w-full items-center text-white text-3xl">
+      <div
+        class="flex flex-col mt-16 w-full h-full items-center text-white
+        text-3xl">
         <MyFullName />
         <Title />
       </div>

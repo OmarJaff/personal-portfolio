@@ -8,7 +8,6 @@
     overflow: hidden;
     white-space: nowrap;
   }
-
   .spananimation {
     will-change: auto;
     animation: slidein 5s ease;
@@ -70,5 +69,4 @@
   <div>
     <span class="spananimation sm:text-4xl lg:text-6xl ">S. JAFF</span>
   </div>
-
 </div>
