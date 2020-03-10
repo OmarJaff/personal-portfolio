@@ -47,7 +47,7 @@
       <div class="flex mt-16 w-full justify-center text-white text-3xl">
         <MyFullName />
       </div>
-      <div class=" my-2">
+      <div class="flex">
         <Title />
       </div>
     </div>
