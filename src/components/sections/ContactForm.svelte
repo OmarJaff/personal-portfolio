@@ -3,6 +3,7 @@
   import axios from 'axios'
   import SubmitModal from '../submitmodal.svelte'
   import bodymovin from 'lottie-web'
+  import jump from 'jump.js'
 
   let successAnimation
   let errorAnimation
@@ -89,6 +90,11 @@
   const handleCloseModal = () => {
     openModal = false
     successAnimation ? successAnimation.destroy() : errorAnimation.destroy()
+    jump('.target', {
+      duration: 1000,
+      offset: 0,
+      a11y: false,
+    })
   }
 </script>
 
