@@ -74,7 +74,6 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...formData }),
-        dasfadf,
       })
         .then(
           () => clearFormData(),
@@ -88,6 +87,10 @@
           error()
         })
     }
+  }
+  const handleCloseModal = () => {
+    openModal = false
+    animation ? animation.destroy() : errorMassage.destroy()
   }
 </script>
 
@@ -133,9 +136,7 @@
   {openModal}
   {errorLog}
   on:closeModal={() => {
-    openModal = false
-    animation.destroy()
-    errorMassage.destroy()
+    handleCloseModal()
   }} />
 
 <div class="flex flex-col w-custom">
