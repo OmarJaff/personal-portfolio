@@ -76,12 +76,12 @@
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...formData }),
       })
-        .then(
-          () => clearFormData(),
-          (openModal = true),
-          successMessage(),
-          successAnimation.setSpeed(2)
-        )
+        .then(() => {
+          clearFormData(),
+            (openModal = true),
+            successMessage(),
+            successAnimation.setSpeed(2)
+        })
         .catch(error => {
           errorLog = error
           openModal = true
