@@ -18,7 +18,9 @@
       name: 'success message', // Name for future reference. Optional.
     })
   }
+  // onMount(() => {
 
+  //   })
   const errorMessage = () => {
     errorAnimation = bodymovin.loadAnimation({
       container: document.getElementById('sendIcon'),
@@ -69,9 +71,9 @@
       violated.emailField === false &&
       violated.message === false
     ) {
-      fetch('//', {
+      fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencodedd' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...formData }),
       })
         .then(() => {
