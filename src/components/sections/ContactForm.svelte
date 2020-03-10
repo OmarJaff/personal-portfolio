@@ -31,7 +31,7 @@
   }
 
   let formData = {
-    name: '',
+    name: "",
     email: '',
     subject: '',
     message: '',
@@ -55,14 +55,14 @@
   }
 
   let handleSubmit = () => {
-    formData.name.length === 0
+    formData.name.trim().length === 0
       ? (violated.nameField = true)
       : (violated.nameField = false)
     ;/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email) &&
     formData.email.length != 0
       ? (violated.emailField = false)
       : (violated.emailField = true)
-    formData.message.length === 0
+    formData.message.trim().length === 0
       ? (violated.message = true)
       : (violated.message = false)
     if (
