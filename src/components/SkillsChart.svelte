@@ -47,7 +47,7 @@
           {
             backgroundColor: 'rgb(224,225,235)',
             hoverBorderColor: 'rgb(224,225,235)',
-            barPercentage: 0.3,
+            barPercentage: 0.5,
             borderWidth: 1,
             data: [3, 3, 2.5, 2.8, 2.5, 2, 2.5, 1, 1, 3, 2, 3, 4],
           },
@@ -76,7 +76,7 @@
           ],
           yAxes: [
             {
-              stacked: true,
+              stacked: false,
               gridLines: {
                 display: true,
                 color: 'rgba(255,255,255,0.2)',
@@ -111,6 +111,6 @@
   id="myChart"
   dir="rtl"
   aria-label="my skill's chart"
-  class="custom-shadow custom-h ">
+  class="custom-shadow custom-h" height="380">
   <p class="text-white">Unfortunately, Your browser does not support canvas!</p>
 </canvas>

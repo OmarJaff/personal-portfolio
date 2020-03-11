@@ -12,16 +12,7 @@
   import ContactForm from '../components/sections/ContactForm.svelte'
   import Footer from '../components/sections/Footer.svelte'
   import BackToTopArrow from '../components/BackToHomeArrow.svelte'
-  import AOS from 'aos'
-
-  onMount(() => {
-    AOS.init({
-      duration: 800,
-      disable: 'phone',
-      easing: 'easing: easeInOutQuad',
-      once: true,
-    })
-  })
+   
 </script>
 
 <style>
@@ -85,13 +76,16 @@
     <Projects />
   </div>
 
+  <div id="contact" class="h-full">
+  
+  </div>
   <div
+    
     class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10
     sm:my-20 mb-16 ">
     <ContactForm />
   </div>
   <div
-    id="contact"
     class="flex justify-center sm:items-center mx-10 xl:mx-32 w-auto relative">
     <Footer />
   </div>
