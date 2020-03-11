@@ -62,7 +62,23 @@
       violated.emailField === false &&
       violated.message === false
     ) {
-        encoder(formData)
+        
+fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: encoder(formData)
+  })
+    .then(() => {
+      clearFormData(),
+        (openModal = true),
+        successMessage(),
+        successAnimation.setSpeed(2)
+    })
+    .catch(error => {
+      errorLog = error
+      openModal = true
+      errorMessage()
+    })
     }
   }
   const handleCloseModal = () => {
