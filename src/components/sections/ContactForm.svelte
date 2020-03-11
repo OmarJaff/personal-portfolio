@@ -1,6 +1,5 @@
 <script>
   import PageTitle from '../PageTitle.svelte'
-  import axios from 'axios'
   import SubmitModal from '../submitmodal.svelte'
   import bodymovin from 'lottie-web'
   import jump from 'jump.js'
@@ -37,9 +36,6 @@
     message: '',
   }
   
-
-
-
   let violated = { nameField: false, emailField: false, message: false }
 
   let openModal = false
@@ -66,22 +62,7 @@
       violated.emailField === false &&
       violated.message === false
     ) {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encoder(formData) 
-      })
-        .then(() => {
-          clearFormData(),
-            (openModal = true),
-            successMessage(),
-            successAnimation.setSpeed(2)
-        })
-        .catch(error => {
-          errorLog = error
-          openModal = true
-          errorMessage()
-        })
+        encoder(formData)
     }
   }
   const handleCloseModal = () => {
