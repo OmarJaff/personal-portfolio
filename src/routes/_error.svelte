@@ -63,6 +63,9 @@
     margin: 0 50px;
   }
 
+  .bg-new {
+enable-background:new 0 0 200 82.7;
+  }
   @-webkit-keyframes opacity {
     0%,
     100% {
@@ -116,9 +119,8 @@
     <svg
       x="0px"
       y="0px"
-      class=" h-64 w-full"
+      class=" h-64 w-full bg-new"
       viewBox="0 0 200 82.7"
-      style="enable-background:new 0 0 200 82.7;"
       xml:space="preserve">
 
       <g id="Calque_1">

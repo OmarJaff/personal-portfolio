@@ -17,6 +17,9 @@
   .hover-class:hover {
     color: #cbd5e0;
   }
+  .mt-custom-2 {
+    margin-top: 2px
+  }
 </style>
 
 <div class="relative flex w-full z-50 ">
@@ -37,10 +40,9 @@
             class="mx-2">
             <span class="sr-only">click to my twitter account</span>
             <svg
-              style="margin-top:2px;"
               width="30"
               height="23"
-              class=" hover-class text-white fill-current "
+              class=" hover-class text-white fill-current mt-custom-2 "
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M29.2556 3.1798c-.9168.3784-1.9243.6005-2.9137.7569.472-.074

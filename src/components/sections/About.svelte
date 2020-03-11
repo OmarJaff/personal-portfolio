@@ -34,8 +34,8 @@
   <ProjectContainer techIconsPresent="false">
     <img
       slot="containerDesign"
-      class="fill-current relative h-64 img-h"
-      src="web-developer-omar-jaff.jpg"
+      class="fill-current relative h-64 img-h text-white"
+      src="web-developer-omar.jpg"
       alt="a web developer person character with a laptop and other symbols of
       code and programming" />
     <p

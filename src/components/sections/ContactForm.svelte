@@ -166,7 +166,6 @@
       <form
         class="flex flex-col p-6 w-full"
         name="contact"
-        id="contact"
         method="POST"
         data-netlify="true"
         netlify-honeypot="bot-field">
