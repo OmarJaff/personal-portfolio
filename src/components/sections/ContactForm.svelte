@@ -4,7 +4,7 @@
   import SubmitModal from '../submitmodal.svelte'
   import bodymovin from 'lottie-web'
   import jump from 'jump.js'
-
+  import encoder from '../encoder.js'
   let successAnimation
   let errorAnimation
   let errorLog
@@ -38,11 +38,7 @@
   }
   
 
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&')
-  }
+
 
   let violated = { nameField: false, emailField: false, message: false }
 
@@ -73,7 +69,7 @@
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', ...formData }),
+        body: encoder(formData) 
       })
         .then(() => {
           clearFormData(),
