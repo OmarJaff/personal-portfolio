@@ -5,20 +5,6 @@
 </script>
 
 <style>
-  .custom-shadow {
-    -webkit-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-  }
-
-  @media only screen and (max-width: 1279px) {
-    .custom-shadow-all {
-      -webkit-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-      -moz-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-      box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-    }
-  }
-
   @media only screen and (min-width: 640px) and (max-width: 1279px) {
     .top-custom-2 {
       top: 21rem;
@@ -44,28 +30,38 @@
     .left-picture {
       right: 8rem;
     }
+    .custom-shadow {
+      -webkit-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+      -moz-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+      box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+    }
     .photo-shadow {
-      -webkit-box-shadow: -16px 16px 32px rgba(0, 0, 0, 0.64);
-      -moz-box-shadow: -16px 16px 32px rgba(0, 0, 0, 0.64);
-      box-shadow: -16px 16px 32px rgba(0, 0, 0, 0.64);
+      -webkit-box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+  @media only screen and (max-width: 1279px) {
+    .layout-shadow {
+      -webkit-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+      -moz-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+      box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
     }
   }
 </style>
 
 <div
   class="{containerTitle ? ' xl:mb-40 mb-12' : ''} flex flex-col w-auto relative
-  items-center sm:items-start custom-shadow-all ">
+  items-center sm:items-start layout-shadow ">
   <div
-    class=" flex pictuer-width left-0 z-10 photo-shadow left-picture
-      h-custom w-full bg-dark-blue lg:h-auto"
-    >
+    class=" flex pictuer-width left-0 z-10 photo-shadow left-picture h-custom
+    w-full bg-dark-blue lg:h-auto">
     <slot name="containerDesign" />
   </div>
   <div
     class=" text-width text-h-custom flex xl:justify-end xl:absolute top-custom
-    h-auto top-custom-2 font-mono "
-    >
-    <div class="custom-shadow h-full w-full flex flex-col justify-between ">
+    h-auto top-custom-2 font-mono custom-shadow">
+    <div class=" h-full w-full flex flex-col justify-between ">
       {#if containerTitle}
         <h1
           class="text-white flex justify-center text-base p-4 lg:text-xl
@@ -85,7 +81,9 @@
       {/if}
 
       {#if techIconsPresent === true}
-        <div class="flex w-full py-4 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8">
+        <div
+          class="flex w-full py-4 px-6 bg-dark-blue-deep lg:px-4 xl:-my-8
+          custom-shadow">
           <span
             class="flex text-vived-red font-thin text-xs items-center
             flex-shrink-0 sm:text-sm">

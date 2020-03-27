@@ -30,12 +30,12 @@
   }
 
   let formData = {
-    name: "",
+    name: '',
     email: '',
     subject: '',
     message: '',
   }
-  
+
   let violated = { nameField: false, emailField: false, message: false }
 
   let openModal = false
@@ -62,23 +62,22 @@
       violated.emailField === false &&
       violated.message === false
     ) {
-        
-fetch('/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: encoder(formData)
-  })
-    .then(() => {
-      clearFormData(),
-        (openModal = true),
-        successMessage(),
-        successAnimation.setSpeed(2)
-    })
-    .catch(error => {
-      errorLog = error
-      openModal = true
-      errorMessage()
-    })
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encoder(formData),
+      })
+        .then(() => {
+          clearFormData(),
+            (openModal = true),
+            successMessage(),
+            successAnimation.setSpeed(2)
+        })
+        .catch(error => {
+          errorLog = error
+          openModal = true
+          errorMessage()
+        })
     }
   }
   const handleCloseModal = () => {
@@ -237,5 +236,5 @@ fetch('/', {
     </div>
 
   </div>
-  
+
 </div>

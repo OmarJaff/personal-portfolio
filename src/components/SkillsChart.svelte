@@ -20,8 +20,8 @@
       "Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
     Chart.defaults.global.defaultFontSize = '14'
     Chart.defaults.global.tooltips.enabled = false
-    Chart.defaults.global.animation.duration = 2000
-    Chart.defaults.global.animation.easing = 'easeOutElastic'
+    Chart.defaults.global.animation.duration = 600
+    Chart.defaults.global.animation.easing = 'linear'
     Chart.defaults.global.plugins.deferred.delay = 100
     Chart.defaults.global.plugins.deferred.xOffset = 150
     Chart.defaults.global.plugins.deferred.yOffset = '50%'
@@ -97,9 +97,9 @@
 
 <style>
   .custom-shadow {
-    -webkit-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
-    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+    box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
   }
   .custom-h {
     height: 550px;
@@ -111,6 +111,7 @@
   id="myChart"
   dir="rtl"
   aria-label="my skill's chart"
-  class="custom-shadow custom-h" height="380">
+  class="custom-shadow custom-h"
+  height="380">
   <p class="text-white">Unfortunately, Your browser does not support canvas!</p>
 </canvas>
