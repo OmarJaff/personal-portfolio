@@ -143,7 +143,7 @@
   <div class=" flex justify-center font-mono ">
     <div
       class="flex flex-col custom-shadow my-8 w-full xl:w-11/12 items-center ">
-      <div class="flex">
+      <div class="flex py-4">
         <h1
           class="text-white text-sm text-center sm:text-lg xl:text-2xl px-6
           font-col ">
@@ -175,8 +175,8 @@
           bind:value={formData.name}
           name="name"
           class="{violated.nameField ? ' animated fast shake validationClass' : ' border-none'}
-          bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2 sm:p-4
-          w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
+          bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3 p-2
+          sm:p-4 w-full my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Full Name" />
         {#if violated.nameField}
           <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
@@ -190,8 +190,8 @@
           name="email"
           bind:value={formData.email}
           class="{violated.emailField ? ' animated fast shake validationClass' : ' border-none'}
-          bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2 sm:p-4
-          w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4 "
+          bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3 p-2
+          sm:p-4 w-full my-2 sm:text-base xl:text-lg sm:py-4 "
           placeholder="Your Email" />
         {#if violated.emailField}
           <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
@@ -204,8 +204,8 @@
           id="subject"
           name="subject"
           bind:value={formData.subject}
-          class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2
-          sm:p-4 w-full my-1 sm:my-2 sm:text-base xl:text-lg sm:py-4"
+          class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3
+          p-2 sm:p-4 w-full my-2 sm:text-base xl:text-lg sm:py-4"
           placeholder="Subject" />
         <label for="message" class="sr-only">Message</label>
         <textarea
@@ -214,8 +214,8 @@
           name="message"
           bind:value={formData.message}
           class="{violated.message ? ' animated fast shake validationClass' : ' border-none'}
-          bg-dark-blue-deep placeholder-gray-600 text-white text-xs p-2 sm:p-4
-          w-full my-1 sm:my-2 h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4"
+          bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3 p-2
+          sm:p-4 w-full my-2 h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4"
           placeholder="Your Message" />
         {#if violated.message}
           <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
