@@ -1,5 +1,6 @@
 <script>
   let y = 0
+  let x
 </script>
 
 <style>
