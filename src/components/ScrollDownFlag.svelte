@@ -12,24 +12,24 @@
   }
   .animating-out {
     border-left: 1px solid white;
-    height: 70px;
+    height: 60px;
     -webkit-animation: animating-border-out 0.1s ease-out forwards;
     animation: animating-border-out 0.1s ease-out forwards;
   }
- 
+
   @keyframes border-height {
     from {
       height: 0;
     }
 
     to {
-      height: 70px;
+      height: 60px;
     }
   }
 
   @keyframes animating-border-out {
     0% {
-      height: 70px;
+      height: 60px;
     }
     50% {
       height: 30px;
@@ -67,8 +67,8 @@
   bottom-0 top-auto mx-6 sm:mx-8 sm:leading-7 fixed ">
   <div class="flex items-center h-16 ">
     <span
-      class="text-white w-12 sm:w-24 text-center text-vived-red text-sm
-      sm:font-normal ml-0 sm:ml-2 font-fenix">
+      class="text-white w-12 sm:w-24 text-center text-vived-red text-xs
+      sm:text-sm ml-0 sm:ml-2 font-fenix">
 
       <span class="text-white hidden sm:block">
         <span class="hidden sm:inline-block text-vived-red">Scroll</span>
@@ -76,7 +76,7 @@
       </span>
 
       <span class="text-vived-red ">
-        <span class=" text-white">About</span>
+        <span class=" text-white ">About</span>
         Me
       </span>
     </span>

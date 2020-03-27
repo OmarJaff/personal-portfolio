@@ -23,8 +23,9 @@
 {#if y > 600}
   <div
     class="fadeIn-custom flex justify-end w-full fixed bottom-0 my-3 -mx-3
-    sm:my-6 sm:-mx-10 z-50">
+    sm:my-6 sm:-mx-10 z-50 outline-none">
     <button
+      class="outline-none"
       on:click={() => jump('.target', {
           duration: 1000,
           offset: 0,
