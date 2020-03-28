@@ -13,8 +13,8 @@
 <div class="absolute flex justify-center h-2 flex-wrap w-full ">
 
   <div
-    class="flex flex-col h-40 items-center justify-center mb-4 sm:mb-0
-    bg-dark-blue-deep w-screen ">
+    class="flex flex-col h-40 items-center justify-center bg-dark-blue-deep
+    w-screen ">
 
     <ScoialIcons
       IconSize="h-4 sm:h-5 xl:h-8 my-3 "
