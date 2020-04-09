@@ -60,8 +60,8 @@
           display: false,
         },
         title: {
-          display: false,
-          text: 'Web Skills',
+          display: true,
+          text: 'My web development skills chart',
 
           fontSize: '16',
           fontFamily: 'nixiOne',
