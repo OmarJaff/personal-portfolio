@@ -36,6 +36,11 @@
     message: '',
   }
 
+  let isCopied = false
+  $: copyMassge = isCopied ? 'Copied!' : 'Copy'
+
+  let emailadress = 'me@omarjaff.com'
+
   let violated = { nameField: false, emailField: false, message: false }
 
   let openModal = false
@@ -88,6 +93,12 @@
       offset: 0,
       a11y: false,
     })
+  }
+
+  const handleEmailCopy = () => {
+    console.log('dsaf')
+    isCopied = true
+    navigator.clipboard.writeText(emailadress)
   }
 </script>
 
@@ -222,7 +233,8 @@
             This field is required.
           </span>
         {/if}
-        <div class="w-full flex justify-end">
+        <div class="w-full flex justify-between flex-row-reverse">
+
           <button
             type="submit"
             on:click|preventDefault={() => handleSubmit()}
@@ -231,10 +243,29 @@
 
             <span class="text-white">Send</span>
           </button>
+
+          <div
+            class="flex bg-dark-blue-deep text-xs sm:text-base h-8 sm:h-12 mt-2
+            sm:h-10 xl:text-lg text-white relative ">
+            <input
+              type="subject"
+              id="subject"
+              name="subject"
+              readonly
+              bind:value={emailadress}
+              class=" bg-dark-blue-deep py-3 p-2 sm:p-4 w-32 sm:w-48" />
+            <span class=" border-l-2 absolute inset-0 border-vived-red w-0" />
+            <button
+              class="text-white -mt-1 py-3 p-2 sm:p-4 hover-class outline-none"
+              on:click|preventDefault={() => handleEmailCopy()}>
+              <span class="text-white">{copyMassge}</span>
+
+            </button>
+
+          </div>
         </div>
       </form>
     </div>
-
   </div>
 
 </div>
