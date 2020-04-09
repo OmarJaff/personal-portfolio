@@ -4,9 +4,29 @@
   import bodymovin from 'lottie-web'
   import jump from 'jump.js'
   import encoder from '../encoder.js'
+  import ClipboardJS from 'clipboard'
+  import SvelteTooltip from 'svelte-tooltip'
+  import { onMount } from 'svelte'
+
+  onMount(() => {
+    const clipboard = new ClipboardJS('.mycopybtn')
+    clipboard.on('success', function(e) {
+      copyResponse = 'Copied!'
+      isCopied = true
+
+      e.clearSelection()
+    })
+    clipboard.on('error', function(e) {
+      copyResponse = 'Oops! something is wrong.'
+    })
+  })
+
   let successAnimation
   let errorAnimation
   let errorLog
+  let isCopied = false
+  let copyResponse = ''
+
   const successMessage = () => {
     successAnimation = bodymovin.loadAnimation({
       container: document.getElementById('sendIcon'), // Required
@@ -35,11 +55,6 @@
     subject: '',
     message: '',
   }
-
-  let isCopied = false
-  $: copyMassge = isCopied ? 'Copied!' : 'Copy'
-
-  let emailadress = 'me@omarjaff.com'
 
   let violated = { nameField: false, emailField: false, message: false }
 
@@ -93,12 +108,6 @@
       offset: 0,
       a11y: false,
     })
-  }
-
-  const handleEmailCopy = () => {
-    console.log('dsaf')
-    isCopied = true
-    navigator.clipboard.writeText(emailadress)
   }
 </script>
 
@@ -248,18 +257,26 @@
             class="flex bg-dark-blue-deep text-xs sm:text-base h-8 sm:h-12 mt-2
             sm:h-10 xl:text-lg text-white relative ">
             <input
-              type="subject"
-              id="subject"
-              name="subject"
+              type="text"
+              id="emailaddress"
               readonly
-              bind:value={emailadress}
+              value={'me@omarjaff.com'}
               class=" bg-dark-blue-deep py-3 p-2 sm:p-4 w-32 sm:w-48" />
             <span class=" border-l-2 absolute inset-0 border-vived-red w-0" />
-            <button
-              class="text-white -mt-1 py-3 p-2 sm:p-4 hover-class outline-none"
-              on:click|preventDefault={() => handleEmailCopy()}>
-              <span class="text-white">{copyMassge}</span>
 
+            <SvelteTooltip
+              tip={copyResponse}
+              bottom
+              color="#272740"
+              active={isCopied} />
+
+            <button
+              data-clipboard-target="#emailaddress"
+              type="button"
+              class="mycopybtn text-white -mt-1 py-3 p-2 sm:p-4 hover-class
+              outline-none"
+              on:mouseout|preventDefault={() => (isCopied = false)}>
+              <span class="text-white">Copy</span>
             </button>
 
           </div>
