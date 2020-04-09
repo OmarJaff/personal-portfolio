@@ -47,10 +47,11 @@
       worked on independent projects with other freelancer teams using the most
       efficient and modern web technologies. I love to work in a professional
       and accurate pattern, and always aim to develop fast, beautiful and
-      functional user interfaces. You may also have a look at my
+      functional user interfaces.
+      <!-- You may also have a look at my
       <span class="text-vived-red">CV</span>
       by clicking
-      <a href="#home" class="text-vived-red ">here</a>
+      <a href="#home" class="text-vived-red ">here</a> -->
     </p>
   </ProjectContainer>
 
