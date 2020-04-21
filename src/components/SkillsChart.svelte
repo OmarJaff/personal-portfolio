@@ -35,7 +35,7 @@
           'JavaScript',
           'Vue.JS',
           'Nuxt.JS',
-          'Quasar',
+          'NativeScript',
           'Svelte',
           'PHP',
           'Laravel',
@@ -49,7 +49,7 @@
             hoverBorderColor: 'rgb(224,225,235)',
             barPercentage: 0.5,
             borderWidth: 1,
-            data: [3, 3, 2.5, 2.8, 2.5, 2, 2.5, 2, 1, 3, 2, 3, 4],
+            data: [3, 3, 2.5, 2.8, 2.5, 1, 2.5, 2, 2, 3, 2, 3, 4],
           },
         ],
       },
@@ -63,7 +63,7 @@
           display: true,
           text: 'My web development skills chart',
 
-          fontSize: '16',
+          fontSize: '14',
           fontFamily: 'nixiOne',
         },
         scales: {

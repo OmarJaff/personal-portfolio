@@ -42,12 +42,12 @@
       class=" text-text-white-lighter font-thin px-4 py-6 xl:ml-12 tex font-mono
       font-thin text-justify text-base sm:text-lg "
       slot="aboutMe">
-      Hi ! I am a front-end web developer and user interface (UI) designer. I
-      have about two years of experience in web development field and have
+      Hi ! I am a Full stack web developer and user interface (UI) designer. I
+      have about two years of experience in web development field and I have
       worked on independent projects with other freelancer teams using the most
       efficient and modern web technologies. I love to work in a professional
       and accurate pattern, and always aim to develop fast, beautiful and
-      functional user interfaces.
+      functional user interfaces and database management systems.
       <!-- You may also have a look at my
       <span class="text-vived-red">CV</span>
       by clicking
