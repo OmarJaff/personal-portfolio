@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte'
+
 </script>
 
 <style>
@@ -41,7 +41,7 @@
     padding-right: 0.05em;
     padding-bottom: 0.15em;
   }
-
+  /* 
   .line {
     opacity: 1;
     position: absolute;
@@ -59,7 +59,7 @@
     to {
       width: 20%;
     }
-  }
+  } */
 
   .line1 {
     box-shadow: 2px -1px 0 #ffffff;
@@ -90,8 +90,8 @@
 </style>
 
 <h1 class=" text-4xl sm:text-6xl portfolio-font-size ml1 overflow-hidden ">
-  <span class="text-wrapper ml1">
-    <span class="line line1 right-0 bg-vived-red " />
+  <span class="text-wrapper ml1 ">
+    <span class=" line1 right-0 bg-vived-red " />
     <span class="letter text-dark-blue ">P</span>
     <span class="letter text-dark-blue letterO ">O</span>
     <span class="letter text-dark-blue">R</span>
@@ -101,6 +101,6 @@
     <span class="letter text-dark-blue">L</span>
     <span class="letter text-dark-blue">I</span>
     <span class="letter text-dark-blue letterO">O</span>
-    <span class="line line2 left-0 " />
+    <span class=" line2 left-0 " />
   </span>
 </h1>

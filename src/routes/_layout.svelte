@@ -59,14 +59,6 @@
   }
 </script>
 
-<svelte:head>
-  <style>
-    /* html {
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-    } */
-  </style>
-</svelte:head>
 
 <Nav
   {isMenuOpen}
