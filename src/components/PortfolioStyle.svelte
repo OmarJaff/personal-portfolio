@@ -3,7 +3,7 @@
 </script>
 
 <style>
-  .focus-in-expand {
+  /* .focus-in-expand {
     -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -21,7 +21,7 @@
       filter: blur(0px);
       opacity: 1;
     }
-  }
+  } */
 
   .ml1 .letter {
     display: inline-block;
@@ -90,7 +90,7 @@
 </style>
 
 <h1 class=" text-4xl sm:text-6xl portfolio-font-size ml1 overflow-hidden ">
-  <span class="text-wrapper ml1 focus-in-expand ">
+  <span class="text-wrapper ml1">
     <span class="line line1 right-0 bg-vived-red " />
     <span class="letter text-dark-blue ">P</span>
     <span class="letter text-dark-blue letterO ">O</span>
