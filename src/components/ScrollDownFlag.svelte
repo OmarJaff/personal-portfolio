@@ -8,7 +8,6 @@
     height: 0;
     -webkit-animation: border-height 0.3s ease forwards;
     animation: border-height 0.3s ease forwards;
-    animation-delay: 0.2s;
   }
   .animating-out {
     border-left: 1px solid white;
