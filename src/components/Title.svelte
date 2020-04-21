@@ -102,16 +102,14 @@
 </style>
 
 <div
-  class=" ml-2 md:ml-6 text-white text-xl sm:text-2xl lg:text-4xl web absolute
-  my-12 lg:my-24 ">
-  <p class="text-vived-red">Web</p>
-  <b>
-    <div class="innerIam flex flex-col h-8 sm:h-10 lg:h-12 font-light">
-      <span>developer</span>
+  class=" ml-2 md:ml-6 text-white text-xl sm:text-2xl lg:text-4xl absolute my-12
+  lg:my-24 ">
 
-      <span>designer</span>
+  <div class=" flex h-8 sm:h-10 lg:h-12 font-light">
+    <span class="text-vived-red">Full &ThinSpace;</span>
+    stack &ThinSpace;
+    <span class="text-vived-red">Web &ThinSpace;</span>
+    developer
+  </div>
 
-      <span>trainer</span>
-    </div>
-  </b>
 </div>
