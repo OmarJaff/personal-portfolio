@@ -39,8 +39,8 @@
       alt="a web developer person character with a laptop and other symbols of
       code and programming" />
     <p
-      class=" text-text-white-lighter font-thin px-4 py-6 xl:ml-12 tex font-mono
-      font-thin text-justify text-base sm:text-lg "
+      class=" text-text-white-lighter font-thin px-4 py-4 xl:ml-12 tex font-mono
+      font-thin text-justify text-base sm:text-lg"
       slot="aboutMe">
       Hi ! I am a Full stack web developer and user interface (UI) designer. I
       have about two years of experience in web development field and I have
