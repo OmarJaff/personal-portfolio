@@ -59,6 +59,13 @@
   }
 </script>
 
+<!--[if IE]>
+
+
+  <p>Sorry, Internet Explorer is not supported.<p>
+    Use <a href="http://firefox.com">Firefox</a> instead.
+
+    <!--<![endif]-->
 
 <Nav
   {isMenuOpen}
@@ -72,5 +79,6 @@
 </div>
 
 <main>
+
   <slot />
 </main>
