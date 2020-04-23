@@ -256,9 +256,11 @@
           <div
             class="flex bg-dark-blue-deep text-xs sm:text-base h-8 sm:h-12 mt-2
             sm:h-10 xl:text-lg text-white relative ">
+            <label for="emailaddress" class="sr-only">email addess</label>
             <input
               type="text"
               id="emailaddress"
+              name="emailaddress"
               readonly
               value={'me@omarjaff.com'}
               class=" bg-dark-blue-deep py-3 p-2 sm:p-4 w-32 sm:w-48" />

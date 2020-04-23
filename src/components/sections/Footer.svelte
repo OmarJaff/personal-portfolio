@@ -22,7 +22,7 @@
 
     <span class=" text-color text-xs sm:text-sm">
       <span>&copy; {currentYear.getFullYear()}</span>
-      Developerd and designed by Omar S. Jaff
+      Developed and designed by Omar S. Jaff
     </span>
   </div>
 </div>
