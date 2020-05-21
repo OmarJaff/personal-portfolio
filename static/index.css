@@ -6350,6 +6350,18 @@ body {
   font-family: Nixie One, Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
 }
 
+.font-payTon {
+  font-family: Paytone One, sans-serif, Roboto;
+}
+
+.font-roboto {
+  font-family: Roboto, sans-serif, Arial;
+}
+
+.font-SourceSans {
+  font-family: "Source Sans Pro", Roboto, sans-serif;
+}
+
 .font-fenix {
   font-family: Fenix, serif;
 }
@@ -20596,6 +20608,18 @@ body {
 
   .sm\:font-nixieOne {
     font-family: Nixie One, Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
+  }
+
+  .sm\:font-payTon {
+    font-family: Paytone One, sans-serif, Roboto;
+  }
+
+  .sm\:font-roboto {
+    font-family: Roboto, sans-serif, Arial;
+  }
+
+  .sm\:font-SourceSans {
+    font-family: "Source Sans Pro", Roboto, sans-serif;
   }
 
   .sm\:font-fenix {
@@ -34847,6 +34871,18 @@ body {
     font-family: Nixie One, Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
   }
 
+  .md\:font-payTon {
+    font-family: Paytone One, sans-serif, Roboto;
+  }
+
+  .md\:font-roboto {
+    font-family: Roboto, sans-serif, Arial;
+  }
+
+  .md\:font-SourceSans {
+    font-family: "Source Sans Pro", Roboto, sans-serif;
+  }
+
   .md\:font-fenix {
     font-family: Fenix, serif;
   }
@@ -49096,6 +49132,18 @@ body {
     font-family: Nixie One, Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
   }
 
+  .lg\:font-payTon {
+    font-family: Paytone One, sans-serif, Roboto;
+  }
+
+  .lg\:font-roboto {
+    font-family: Roboto, sans-serif, Arial;
+  }
+
+  .lg\:font-SourceSans {
+    font-family: "Source Sans Pro", Roboto, sans-serif;
+  }
+
   .lg\:font-fenix {
     font-family: Fenix, serif;
   }
@@ -63343,6 +63391,18 @@ body {
 
   .xl\:font-nixieOne {
     font-family: Nixie One, Noto Sans, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial;
+  }
+
+  .xl\:font-payTon {
+    font-family: Paytone One, sans-serif, Roboto;
+  }
+
+  .xl\:font-roboto {
+    font-family: Roboto, sans-serif, Arial;
+  }
+
+  .xl\:font-SourceSans {
+    font-family: "Source Sans Pro", Roboto, sans-serif;
   }
 
   .xl\:font-fenix {
