@@ -1,5 +1,5 @@
 <script>
-  let y
+  let y;
 </script>
 
 <style>
@@ -63,18 +63,18 @@
 
 <div
   class="{y > 0 ? 'animating-out' : 'animating-border-in'} left-0 right-0
-  bottom-0 top-auto mx-6 sm:mx-8 sm:leading-7 fixed ">
+  bottom-0 top-auto mx-6 sm:mx-8 sm:leading-7 fixed font-roboto font-medium ">
   <div class="flex items-center h-16 ">
     <span
       class="text-white w-12 sm:w-24 text-center text-vived-red text-xs
-      sm:text-sm ml-0 sm:ml-2 font-fenix">
+      sm:text-sm ml-0 sm:ml-2">
 
       <span class="text-white hidden sm:block">
-        <span class="hidden sm:inline-block text-vived-red">Scroll</span>
+        <span class="hidden sm:inline-block text-teal-400">Scroll</span>
         & Read
       </span>
 
-      <span class="text-vived-red ">
+      <span class=" text-teal-400">
         <span class=" text-white ">About</span>
         Me
       </span>

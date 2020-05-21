@@ -1,24 +1,18 @@
 <script>
-  import { onMount } from 'svelte'
-  import Portfolio from '../components/PortfolioStyle.svelte'
-  import Title from '../components/Title.svelte'
-  import MyFullName from '../components/MyFullName.svelte'
-  import ScrollIcon from '../components/ScrollDownIcon.svelte'
-  import PageToggleLines from '../components/PageToggleLines.svelte'
-  import ScrollDowmFlag from '../components/ScrollDownFlag.svelte'
-  import About from '../components/sections/About.svelte'
-  import Skills from '../components/sections/Skills.svelte'
-  import Projects from '../components/sections/Projects.svelte'
-  import ContactForm from '../components/sections/ContactForm.svelte'
-  import Footer from '../components/sections/Footer.svelte'
-  import BackToTopArrow from '../components/BackToHomeArrow.svelte'
+  import { onMount } from "svelte";
+  import Portfolio from "../components/PortfolioStyle.svelte";
+  import Title from "../components/Title.svelte";
+  import MyFullName from "../components/MyFullName.svelte";
+  import ScrollIcon from "../components/ScrollDownIcon.svelte";
+  import PageToggleLines from "../components/PageToggleLines.svelte";
+  import ScrollDowmFlag from "../components/ScrollDownFlag.svelte";
+  import About from "../components/sections/About.svelte";
+  import Skills from "../components/sections/Skills.svelte";
+  import Projects from "../components/sections/Projects.svelte";
+  import ContactForm from "../components/sections/ContactForm.svelte";
+  import Footer from "../components/sections/Footer.svelte";
+  import BackToTopArrow from "../components/BackToHomeArrow.svelte";
 </script>
-
-<style>
-  .font-all {
-    font-family: 'Nixie One', 'Noto Sans', 'sans-serif', 'Segoe UI', 'Roboto';
-  }
-</style>
 
 <svelte:head>
   <title>Omar Jaff</title>
@@ -26,21 +20,19 @@
 
 <a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 
-<div
-  id="home"
-  class="flex flex-col justify-center h-screen w-full font-all home ">
+<div id="home" class="flex flex-col justify-center h-screen w-full home ">
   <section class="flex h-full w-full my-48">
-    <div class="flex w-full flex-col items-center ">
-      <div class="text-white text-4xl">
+    <div class="flex w-full flex-col items-center space-y-10">
+      <div class="text-white text-4xl font-payTon">
         <Portfolio />
       </div>
       <div
-        class="flex flex-col mt-16 w-full h-full items-center text-white
-        text-3xl">
+        class="flex flex-col w-full h-full items-center text-white text-3xl
+        font-roboto">
         <MyFullName />
         <Title />
       </div>
-      <div class="flex" />
+      <!-- <div class="flex" /> -->
     </div>
   </section>
   <div

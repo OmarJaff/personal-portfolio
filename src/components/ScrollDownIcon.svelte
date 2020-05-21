@@ -1,5 +1,5 @@
 <script>
-  let y = 0
+  let y = 0;
 </script>
 
 <style>
@@ -42,19 +42,21 @@
     -webkit-transform: rotate(45deg);
     border-left: none;
     border-top: none;
-    border-right: 2px #fff solid;
-    border-bottom: 2px #fff solid;
+    border-right: 3px #fff solid;
+    border-radius: 5px;
+    border-bottom: 3px #fff solid;
   }
   .arrow:before {
-    content: '';
+    content: "";
     width: 20px;
     height: 20px;
     top: 50%;
     margin: -10px 0 0 -10px;
     border-left: none;
     border-top: none;
-    border-right: 1px #fe2f4d solid;
-    border-bottom: 1px #fe2f4d solid;
+    border-right: 2px #4fd1c5 solid;
+    border-bottom: 2px #4fd1c5 solid;
+    border-radius: 5px;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-name: arrow;

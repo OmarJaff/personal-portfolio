@@ -1,12 +1,12 @@
 <script>
-  import { onMount } from 'svelte'
-  import MenuSpy from 'menuspy'
+  import { onMount } from "svelte";
+  import MenuSpy from "menuspy";
   onMount(() => {
-    let elm = document.querySelector('#togglepagelines')
+    let elm = document.querySelector("#togglepagelines");
     var ms = new MenuSpy(elm, {
       menuItemSelector: 'a[href^="#"]',
 
-      activeClass: 'active-class',
+      activeClass: "active-class",
 
       threshold: 15,
 
@@ -14,9 +14,9 @@
 
       hashTimeout: 600,
 
-      callback: null,
-    })
-  })
+      callback: null
+    });
+  });
 </script>
 
 <style>
@@ -25,7 +25,7 @@
   }
 
   .active-class {
-    background-color: #fe2f4d;
+    background-color: #4fd1c5;
     width: 2rem;
     -webkit-animation: scale-in-hor-left 0.5s
       cubic-bezier(0.01, -0.47, 0.04, 1.01) both;
@@ -62,7 +62,7 @@
   id="togglepagelines"
   class="flex flex-col-reverse sm:flex-col transform sm:transform-none
   -rotate-90 translate-y-16 translate-x-3 sm:w-0 fixed bottom-0 sm:bottom-auto ">
-  <li class="bg-white w-5 sm:w-10 xl:w-12 active-class line-hight my-4">
+  <li class="bg-gray-200 w-5 sm:w-10 xl:w-12 active-class line-hight my-4">
     <a href="#home" class="sr-only">home</a>
   </li>
   <li class="bg-white w-5 sm:w-10 xl:w-12 line-hight my-4 ">
