@@ -1,7 +1,20 @@
 <script>
-  export let IconColor = 'text-white'
-  export let IconSize = 'h-6'
+  export let IconColor = "text-gray-100";
+  export let IconSize = "h-6";
 </script>
+
+<style>
+  .hover-class {
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .hover-class:hover {
+    color: #4fd1c5;
+  }
+  .mt-custom-2 {
+    margin-top: 2px;
+  }
+</style>
 
 <div class="items-center flex">
 
@@ -16,7 +29,7 @@
       height="18"
       viewBox="0 0 23 18"
       class="{IconColor}
-      {IconSize} fill-current"
+      {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M22.6579 2.53257C21.9515 2.82418 21.1751 2.99535 20.4127
@@ -63,7 +76,7 @@
       height="19"
       viewBox="0 0 22 19"
       class="{IconColor}
-      {IconSize} fill-current"
+      {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M21.0925 11.156V17.7245C21.0925 17.886 20.95 18.0216 20.7647
@@ -101,7 +114,7 @@
       height="20"
       viewBox="0 0 11 20"
       class="{IconColor}
-      {IconSize} fill-current"
+      {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path
         fill-rule="evenodd"
@@ -130,7 +143,7 @@
       height="16"
       viewBox="0 0 24 16"
       class="{IconColor}
-      {IconSize} fill-current"
+      {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M23.7811 5.10664C23.7811 2.51817 21.4725 0.425781 18.6165

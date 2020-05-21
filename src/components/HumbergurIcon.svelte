@@ -1,12 +1,12 @@
 <script>
-  import { createEventDispatcher } from 'svelte'
+  import { createEventDispatcher } from "svelte";
 
-  const dispatch = createEventDispatcher()
+  const dispatch = createEventDispatcher();
 
-  export let menuClass = ''
+  export let menuClass = "";
   const toggleMenu = () => {
-    dispatch('toggleMenu')
-  }
+    dispatch("toggleMenu");
+  };
 </script>
 
 <style>
@@ -14,7 +14,7 @@
     width: 100%;
     border-radius: 2px;
     height: 3px;
-    background: #fff;
+    /* background: #edf2f7; */
     transition: all 0.2s;
     position: relative;
   }
@@ -107,7 +107,7 @@
 <div
   on:click={() => toggleMenu()}
   class="{menuClass} btn w-10 sm:w-12 cursor-pointer flex-col ">
-  <span class="flex" />
+  <span class="flex bg-gray-100" />
 
-  <span class="flex" />
+  <span class="flex bg-gray-100" />
 </div>
