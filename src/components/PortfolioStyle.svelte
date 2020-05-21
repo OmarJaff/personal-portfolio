@@ -16,7 +16,6 @@
 </style>
 
 <h1
-  class="text-5xl sm:text-6xl portfolio-font-size ml1 overflow-hidden
-  tracking-wide">
+  class="text-5xl sm:text-6xl portfolio-font-size overflow-hidden tracking-wide">
   PORTFOLIO
 </h1>

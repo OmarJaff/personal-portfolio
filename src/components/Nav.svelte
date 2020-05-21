@@ -1,34 +1,26 @@
 <script>
-  export let isMenuOpen = false
-  export let slideUpClass = ''
-  import { createEventDispatcher } from 'svelte'
-  import SocialIcons from '../components/SocialIcons.svelte'
-  import jump from 'jump.js'
-  import { enableBodyScroll } from 'body-scroll-lock'
-  const dispatch = createEventDispatcher()
+  export let isMenuOpen = false;
+  export let slideUpClass = "";
+  import { createEventDispatcher } from "svelte";
+  import SocialIcons from "../components/SocialIcons.svelte";
+  import jump from "jump.js";
+  import { enableBodyScroll } from "body-scroll-lock";
+  const dispatch = createEventDispatcher();
 
   const menueClosed = () => {
-    dispatch('closeMenu')
-  }
+    dispatch("closeMenu");
+  };
 </script>
 
 <style>
   .gradiantStyle {
-    background: rgb(26, 28, 51);
-    background: linear-gradient(
-      180deg,
-      rgb(32, 34, 61) 100%,
-      rgba(254, 47, 77, 0.8687850140056023) 140%
-    );
+    background: #232b38;
   }
   li {
     align-items: center;
   }
-  .active-class::after {
-    content: '';
-    background-image: radial-gradient(ellipse at top, #fe2f4d 0, #20223d 80%);
-    width: 50%;
-    height: 3px;
+  .active-class {
+    color: #4fd1c5;
   }
   .hover-class:hover {
     color: #cbd5e0;
@@ -43,10 +35,9 @@
   <div
     class="{isMenuOpen ? ' slideInDown' : slideUpClass} animated faster
     transform -translate-y-full gradiantStyle h-screen w-screen fixed inset-0
-    z-50">
+    z-50 font-roboto font-medium">
     <nav
-      class="flex w-full justify-center top-0 text-white font-nixieOne text-4xl
-      xl:text-5xl">
+      class="flex w-full justify-center top-0 text-white text-4xl xl:text-5xl">
       <ul class="absolute flex flex-col items-center h-full justify-center">
         <li class="my-2 border-gray-100 active-class flex flex-col centerized">
           <a
@@ -56,8 +47,8 @@
               jump('#home', {
                 duration: 1000,
                 offset: 0,
-                a11y: false,
-              }), menueClosed()
+                a11y: false
+              }), menueClosed();
             }}>
             Home
           </a>
@@ -71,8 +62,8 @@
               jump('#about', {
                 duration: 1000,
                 offset: 0,
-                a11y: false,
-              }), menueClosed()
+                a11y: false
+              }), menueClosed();
             }}>
             About Me
           </a>
@@ -85,8 +76,8 @@
               jump('#skills', {
                 duration: 1000,
                 offset: 0,
-                a11y: false,
-              }), menueClosed()
+                a11y: false
+              }), menueClosed();
             }}>
             Skills
           </a>
@@ -99,8 +90,8 @@
               jump('#projects', {
                 duration: 1000,
                 offset: 0,
-                a11y: false,
-              }), menueClosed()
+                a11y: false
+              }), menueClosed();
             }}>
             Projects
           </a>
@@ -113,8 +104,8 @@
               jump('#contact', {
                 duration: 1000,
                 offset: 0,
-                a11y: false,
-              }), menueClosed()
+                a11y: false
+              }), menueClosed();
             }}>
             Contact Me
           </a>
