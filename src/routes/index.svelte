@@ -20,17 +20,19 @@
 
 <a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 
-<div id="home" class="flex flex-col justify-center h-screen w-full home ">
-  <section class="flex h-full w-full my-48">
+<div id="home" class="bg-gray-800 flex flex-col justify-center h-screen w-full">
+  <section class="flex h-full w-full my-48 lg:my-0 lg:items-center">
     <div class="flex w-full flex-col items-center space-y-10">
       <div class="text-white text-4xl font-payTon">
         <Portfolio />
       </div>
       <div
         class="flex flex-col w-full h-full items-center text-white text-3xl
-        font-roboto">
+        font-roboto -space-y-4">
+
         <MyFullName />
         <Title />
+
       </div>
       <!-- <div class="flex" /> -->
     </div>

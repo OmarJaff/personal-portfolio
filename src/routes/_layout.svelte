@@ -1,45 +1,45 @@
 <script>
-  import Nav from '../components/Nav.svelte'
-  import Header from '../components/Header.svelte'
-  import { onMount } from 'svelte'
-  import ScrollIcon from '../components/ScrollDownIcon.svelte'
-  import PageToggleLines from '../components/PageToggleLines.svelte'
-  import MenuSpy from 'menuspy'
+  import Nav from "../components/Nav.svelte";
+  import Header from "../components/Header.svelte";
+  import { onMount } from "svelte";
+  import ScrollIcon from "../components/ScrollDownIcon.svelte";
+  import PageToggleLines from "../components/PageToggleLines.svelte";
+  import MenuSpy from "menuspy";
 
   import {
     disableBodyScroll,
     enableBodyScroll,
-    clearAllBodyScrollLocks,
-  } from 'body-scroll-lock'
+    clearAllBodyScrollLocks
+  } from "body-scroll-lock";
 
-  let menuClass = ''
-  let isMenuOpen = false
-  let slideUpClass = ''
-  let targetElement = null
-  let elm = null
+  let menuClass = "";
+  let isMenuOpen = false;
+  let slideUpClass = "";
+  let targetElement = null;
+  let elm = null;
 
   onMount(() => {
     function removeLocationHash() {
-      var noHashURL = window.location.href.replace(/#.*$/, '')
-      window.history.replaceState('', document.title, noHashURL)
+      var noHashURL = window.location.href.replace(/#.*$/, "");
+      window.history.replaceState("", document.title, noHashURL);
     }
-    window.addEventListener('popstate', function(event) {
-      removeLocationHash()
-    })
-    window.addEventListener('hashchange', function(event) {
-      event.preventDefault()
-      removeLocationHash()
-    })
-    window.addEventListener('load', function() {
-      removeLocationHash()
-    })
+    window.addEventListener("popstate", function(event) {
+      removeLocationHash();
+    });
+    window.addEventListener("hashchange", function(event) {
+      event.preventDefault();
+      removeLocationHash();
+    });
+    window.addEventListener("load", function() {
+      removeLocationHash();
+    });
 
-    elm = document.querySelector('#main-header')
+    elm = document.querySelector("#main-header");
 
     let ms = new MenuSpy(elm, {
       menuItemSelector: 'a[href^="#"]',
 
-      activeClass: 'active-class',
+      activeClass: "active-class",
 
       threshold: 15,
 
@@ -47,16 +47,16 @@
 
       hashTimeout: 600,
 
-      callback: null,
-    })
-  })
+      callback: null
+    });
+  });
 
   const handleMenuToggle = function() {
-    isMenuOpen = !isMenuOpen
+    isMenuOpen = !isMenuOpen;
     isMenuOpen
-      ? (menuClass = 'active')
-      : ((menuClass = 'not-active'), (slideUpClass = 'slideOutUp'))
-  }
+      ? (menuClass = "active")
+      : ((menuClass = "not-active"), (slideUpClass = "slideOutUp"));
+  };
 </script>
 
 <!--[if IE]>
@@ -71,7 +71,7 @@
   {isMenuOpen}
   {slideUpClass}
   on:closeMenu={() => {
-    handleMenuToggle()
+    handleMenuToggle();
   }} />
 
 <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">

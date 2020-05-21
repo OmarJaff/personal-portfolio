@@ -1,7 +1,7 @@
 <script>
-  import PageTitle from '../PageTitle.svelte'
-  import SkillsIconTemplate from '../SkillsIconTemplate.svelte'
-  import SkillsChart from '../SkillsChart.svelte'
+  import PageTitle from "../PageTitle.svelte";
+  import SkillsIconTemplate from "../SkillsIconTemplate.svelte";
+  import SkillsChart from "../SkillsChart.svelte";
 </script>
 
 <style>
@@ -333,6 +333,6 @@
 
   </div>
   <div class="flex w-full my-20">
-    <SkillsChart />
+    <!-- <SkillsChart /> -->
   </div>
 </div>
