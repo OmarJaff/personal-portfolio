@@ -1,6 +1,6 @@
 <script>
-  import PageTitle from '../PageTitle.svelte'
-  import ProjectContainer from '../ProjectContailner.svelte'
+  import PageTitle from "../PageTitle.svelte";
+  import ProjectContainer from "../ProjectContailner.svelte";
 </script>
 
 <style>
@@ -33,7 +33,6 @@
   </div>
   <ProjectContainer techIconsPresent="false">
     <img
-      slot="containerDesign"
       class="fill-current relative h-64 img-h text-white"
       src="web-developer-omar.jpg"
       alt="a web developer person character with a laptop and other symbols of

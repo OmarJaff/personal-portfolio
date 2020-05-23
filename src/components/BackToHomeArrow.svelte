@@ -1,6 +1,6 @@
 <script>
-  let y = 0
-  import jump from 'jump.js'
+  let y = 0;
+  import jump from "jump.js";
 </script>
 
 <style>
@@ -29,14 +29,14 @@
       on:click={() => jump('.target', {
           duration: 1000,
           offset: 0,
-          a11y: false,
+          a11y: false
         })}
       name="backtotop">
       <svg
         width="51"
         height="51"
         viewBox="0 0 51 51"
-        class="fill-current text-white w-10 h-10 sm:h-auto sm:w-auto"
+        class="fill-current text-teal-400 w-10 h-10 sm:h-auto sm:w-auto"
         xmlns="http://www.w3.org/2000/svg">
         <path
           fill-rule="evenodd"

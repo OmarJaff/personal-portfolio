@@ -5,6 +5,7 @@
   import ScrollIcon from "../components/ScrollDownIcon.svelte";
   import PageToggleLines from "../components/PageToggleLines.svelte";
   import MenuSpy from "menuspy";
+  export let segment;
 
   import {
     disableBodyScroll,
@@ -79,6 +80,5 @@
 </div>
 
 <main>
-
   <slot />
 </main>

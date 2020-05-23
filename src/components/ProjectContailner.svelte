@@ -1,7 +1,7 @@
 <script>
-  export let containerTitle = ''
-  export let containerDescription = ''
-  export let techIconsPresent = true
+  export let containerTitle = "";
+  export let containerDescription = "";
+  export let techIconsPresent = true;
 </script>
 
 <style>
@@ -56,7 +56,7 @@
   <div
     class=" flex pictuer-width left-0 z-10 photo-shadow left-picture h-custom
     w-full bg-dark-blue lg:h-auto">
-    <slot name="containerDesign" />
+    <slot />
   </div>
   <div
     class=" text-width text-h-custom flex xl:justify-end xl:absolute top-custom

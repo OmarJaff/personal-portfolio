@@ -17,6 +17,12 @@
       callback: null
     });
   });
+  let y = 0;
+  let outerHeight = 0;
+  $: {
+    console.log(outerHeight);
+    console.log(y);
+  }
 </script>
 
 <style>
@@ -57,6 +63,8 @@
     }
   }
 </style>
+
+<svelte:window bind:scrollY={y} bind:outerHeight />
 
 <ul
   id="togglepagelines"

@@ -1,8 +1,8 @@
 <script>
-  import PageTitle from '../PageTitle.svelte'
-  import ProjectContainer from '../ProjectContailner.svelte'
+  import PageTitle from "../PageTitle.svelte";
+  import ProjectContainer from "../ProjectContailner.svelte";
 
-  import SvelteTooltip from 'svelte-tooltip'
+  import SvelteTooltip from "svelte-tooltip";
 </script>
 
 <style>
@@ -36,7 +36,6 @@
       width="878"
       height="481"
       viewBox="0 0 878 481"
-      slot="containerDesign"
       class="fill-current w-full h-full py-4 px-3 xl:px-0"
       xmlns="http://www.w3.org/2000/svg">
       <path
@@ -218,7 +217,6 @@
       width="878"
       height="465"
       viewBox="0 0 878 465"
-      slot="containerDesign"
       class=" h-full w-full py-3 px-3 xl:px-0"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -524,7 +522,6 @@
 
     <svg
       class="h-full w-full"
-      slot="containerDesign"
       width="878"
       height="481"
       viewBox="0 0 878 481"

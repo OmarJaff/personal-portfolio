@@ -1,7 +1,7 @@
 @tailwind base;
 
 body {
-  @apply bg-dark-blue;
+  @apply bg-gray-100;
 }
 
 @tailwind components;
