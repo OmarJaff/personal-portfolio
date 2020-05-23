@@ -5,7 +5,7 @@
   import MyFullName from "../components/MyFullName.svelte";
   import ScrollIcon from "../components/ScrollDownIcon.svelte";
   import PageToggleLines from "../components/PageToggleLines.svelte";
-  import ScrollDowmFlag from "../components/ScrollDownFlag.svelte";
+  import AboutMeFlag from "../components/AboutMeFlag.svelte";
   import About from "../components/sections/About.svelte";
   import Skills from "../components/sections/Skills.svelte";
   import Projects from "../components/sections/Projects.svelte";
@@ -17,11 +17,11 @@
   let outerHeight = 0;
   let ratio = 0;
   let ToggleLinevisible = false;
-  $: {
-    ratio = y - outerHeight / 2;
-    console.log(ratio, ToggleLinevisible);
-    ToggleLinevisible = ratio > 71 ? true : false;
-  }
+  // $: {
+  //   ratio = y - outerHeight / 2;
+  //   console.log(ratio, ToggleLinevisible);
+  //   ToggleLinevisible = ratio > 71 ? true : false;
+  // }
 </script>
 
 <style>
@@ -65,7 +65,7 @@
   </div>
 
   <ScrollIcon />
-  <ScrollDowmFlag />
+  <AboutMeFlag />
   <BackToTopArrow />
 </div>
 <div class="flex flex-col justify-between w-full relative">

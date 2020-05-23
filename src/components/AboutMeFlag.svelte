@@ -66,8 +66,8 @@
   bottom-0 top-auto mx-6 sm:mx-8 sm:leading-7 fixed font-roboto font-medium ">
   <div class="flex items-center h-16 ">
     <span
-      class="text-white w-12 sm:w-24 text-center text-vived-red text-xs
-      sm:text-sm ml-0 sm:ml-2">
+      class="rounded-lg text-white w-12 sm:w-24 text-center text-vived-red
+      text-xs sm:text-sm ml-0 sm:ml-2">
 
       <span class="text-white hidden sm:block">
         <span class="hidden sm:inline-block text-teal-400">Scroll</span>
