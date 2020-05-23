@@ -24,12 +24,19 @@
   }
 </script>
 
+<style>
+  @media only screen and (max-width: 640px) {
+    .flex-custom {
+      display: flex;
+    }
+  }
+</style>
+
 <svelte:head>
   <title>Omar Jaff</title>
 </svelte:head>
 
 <svelte:window bind:scrollY={y} bind:outerHeight />
-
 <a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 
 <div id="home" class="bg-gray-800 flex flex-col justify-center h-screen w-full">
@@ -53,7 +60,7 @@
   <div
     class="flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0 sm:h-full
     justify-center z-40 "
-    style=" clip: rect(auto, auto, auto, auto);">
+    style="clip: rect(auto, auto, auto, auto);">
     <PageToggleLines id={'togglepagelines'} />
   </div>
 
@@ -63,13 +70,15 @@
 </div>
 <div class="flex flex-col justify-between w-full relative">
   <div
-    class="absolute w-64 inset-0 "
-    style=" clip: rect(auto, auto, auto, auto);">
+    style=" clip: rect(auto, auto, auto, auto);"
+    class="flex-custom absolute w-full justify-center inset-0 ">
     <div
-      class="flex mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
+      class="flex sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
       justify-center z-40 ">
 
-      <PageToggleLines id={'togglepagelines2'} />
+      <PageToggleLines
+        id={'togglepagelines2'}
+        backgroundColor={'bg-gray-500'} />
 
     </div>
 

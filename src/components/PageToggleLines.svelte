@@ -1,7 +1,8 @@
 <script>
+  export let id = "";
+  export let backgroundColor = "bg-gray-200";
   import { onMount } from "svelte";
   import MenuSpy from "menuspy";
-  export let id = "";
 
   onMount(() => {
     if (id === "togglepagelines") {
@@ -78,25 +79,26 @@
 
 <ul
   {id}
-  class="class1 class2 flex flex-col-reverse sm:flex-col transform
-  sm:transform-none -rotate-90 translate-y-16 translate-x-3 sm:w-0 fixed
-  bottom-0 sm:bottom-auto">
-  <li class="bg-gray-200 w-5 sm:w-10 xl:w-12 active-class line-hight my-4">
+  class="flex flex-col-reverse sm:flex-col transform sm:transform-none
+  -rotate-90 translate-y-16 translate-x-3 sm:w-0 fixed bottom-0 sm:bottom-auto">
+  <li
+    class="{backgroundColor} rounded-lg w-5 sm:w-10 xl:w-12 active-class
+    line-hight my-4">
     <a href="#home" class="sr-only">home</a>
   </li>
-  <li class="bg-gray-200 w-5 sm:w-10 xl:w-12 line-hight my-4 ">
+  <li class="{backgroundColor} rounded-lg w-5 sm:w-10 xl:w-12 line-hight my-4 ">
     <a href="#about" class="sr-only">about</a>
   </li>
 
-  <li class="bg-gray-200 w-5 sm:w-10 xl:w-12 line-hight my-4">
+  <li class="{backgroundColor} rounded-lg w-5 sm:w-10 xl:w-12 line-hight my-4">
     <a href="#skills" class=" sr-only">skills</a>
   </li>
 
-  <li class="bg-gray-200 w-5 sm:w-10 xl:w-12 line-hight my-4">
+  <li class="{backgroundColor} rounded-lg w-5 sm:w-10 xl:w-12 line-hight my-4">
     <a href="#projects" class="sr-only">projects</a>
   </li>
 
-  <li class="bg-gray-200 w-5 sm:w-10 xl:w-12 line-hight my-4">
+  <li class="{backgroundColor} rounded-lg w-5 sm:w-10 xl:w-12 line-hight my-4">
     <a href="#contact" class="sr-only">contacts</a>
   </li>
 </ul>

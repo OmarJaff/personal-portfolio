@@ -18,6 +18,7 @@
   let slideUpClass = "";
   let targetElement = null;
   let elm = null;
+  let seg = segment;
 
   onMount(() => {
     function removeLocationHash() {

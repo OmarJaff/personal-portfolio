@@ -3,12 +3,6 @@
   let x;
 </script>
 
-<style>
-  .swing:hover {
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
-  }
-</style>
 
 <svelte:window bind:innerWidth={x} />
 <div class="flex flex-col items-center ">
