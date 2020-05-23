@@ -12,11 +12,23 @@
   import ContactForm from "../components/sections/ContactForm.svelte";
   import Footer from "../components/sections/Footer.svelte";
   import BackToTopArrow from "../components/BackToHomeArrow.svelte";
+
+  let y = 0;
+  let outerHeight = 0;
+  let ratio = 0;
+  let ToggleLinevisible = false;
+  $: {
+    ratio = y - outerHeight / 2;
+    console.log(ratio, ToggleLinevisible);
+    ToggleLinevisible = ratio > 71 ? true : false;
+  }
 </script>
 
 <svelte:head>
   <title>Omar Jaff</title>
 </svelte:head>
+
+<svelte:window bind:scrollY={y} bind:outerHeight />
 
 <a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 
@@ -34,20 +46,34 @@
         <Title />
 
       </div>
-      <!-- <div class="flex" /> -->
+
     </div>
   </section>
+
   <div
     class="flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0 sm:h-full
-    justify-center z-40 ">
-    <PageToggleLines />
+    justify-center z-40 "
+    style=" clip: rect(auto, auto, auto, auto);">
+    <PageToggleLines id={'togglepagelines'} />
   </div>
 
   <ScrollIcon />
   <ScrollDowmFlag />
   <BackToTopArrow />
 </div>
-<div class="flex flex-col justify-between w-full">
+<div class="flex flex-col justify-between w-full relative">
+  <div
+    class="absolute w-64 inset-0 "
+    style=" clip: rect(auto, auto, auto, auto);">
+    <div
+      class="flex mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
+      justify-center z-40 ">
+
+      <PageToggleLines id={'togglepagelines2'} />
+
+    </div>
+
+  </div>
   <div
     id="about"
     class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto py-4
@@ -78,4 +104,5 @@
   <div class="flex justify-center ">
     <Footer />
   </div>
+
 </div>

@@ -1,14 +1,32 @@
 <script>
   import { onMount } from "svelte";
   import MenuSpy from "menuspy";
+  export let id = "";
+
   onMount(() => {
-    let elm = document.querySelector("#togglepagelines");
-    var ms = new MenuSpy(elm, {
+    if (id === "togglepagelines") {
+      let elm = document.querySelector(`#${id}`);
+      let ms = new MenuSpy(elm, {
+        menuItemSelector: 'a[href^="#"]',
+
+        activeClass: "active-class",
+
+        threshold: 10,
+
+        enableLocationHash: false,
+
+        hashTimeout: 600,
+
+        callback: null
+      });
+    }
+    let elm = document.querySelector(`#${id}`);
+    let ms = new MenuSpy(elm, {
       menuItemSelector: 'a[href^="#"]',
 
       activeClass: "active-class",
 
-      threshold: 15,
+      threshold: 10,
 
       enableLocationHash: false,
 
@@ -17,12 +35,6 @@
       callback: null
     });
   });
-  let y = 0;
-  let outerHeight = 0;
-  $: {
-    console.log(outerHeight);
-    console.log(y);
-  }
 </script>
 
 <style>
@@ -64,12 +76,11 @@
   }
 </style>
 
-<svelte:window bind:scrollY={y} bind:outerHeight />
-
 <ul
-  id="togglepagelines"
-  class="flex flex-col-reverse sm:flex-col transform sm:transform-none
-  -rotate-90 translate-y-16 translate-x-3 sm:w-0 fixed bottom-0 sm:bottom-auto ">
+  {id}
+  class="class1 class2 flex flex-col-reverse sm:flex-col transform
+  sm:transform-none -rotate-90 translate-y-16 translate-x-3 sm:w-0 fixed
+  bottom-0 sm:bottom-auto">
   <li class="bg-gray-200 w-5 sm:w-10 xl:w-12 active-class line-hight my-4">
     <a href="#home" class="sr-only">home</a>
   </li>
