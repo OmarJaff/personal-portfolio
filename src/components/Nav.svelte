@@ -1,14 +1,12 @@
 <script>
-  export let isMenuOpen = false;
-  export let slideUpClass = "";
   import { createEventDispatcher } from "svelte";
   import SocialIcons from "../components/SocialIcons.svelte";
   import jump from "jump.js";
   import { enableBodyScroll } from "body-scroll-lock";
-  const dispatch = createEventDispatcher();
+  import { isMenuOpen, slideUpClass } from "../store.js";
 
   const menueClosed = () => {
-    dispatch("closeMenu");
+    isMenuOpen.update(m => (m = !m));
   };
 </script>
 
@@ -33,7 +31,7 @@
 
 <header id="main-header">
   <div
-    class="{isMenuOpen ? ' slideInDown' : slideUpClass} animated faster
+    class="{$isMenuOpen ? ' slideInDown' : 'slideOutUp'} animated faster
     transform -translate-y-full gradiantStyle h-screen w-screen fixed inset-0
     z-50 font-roboto font-medium">
     <nav

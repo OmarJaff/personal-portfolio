@@ -1,14 +1,17 @@
 <script>
-  export let menuClass = "";
   export let backgroundColor = "gray-100";
-
+  import { isMenuOpen } from "../store.js";
   import { createEventDispatcher } from "svelte";
-
+  import { onMount } from "svelte";
   const dispatch = createEventDispatcher();
 
   const toggleMenu = () => {
     dispatch("toggleMenu");
   };
+
+  let menuClass = "";
+
+  $: $isMenuOpen ? (menuClass = "active") : (menuClass = "not-active");
 </script>
 
 <style>

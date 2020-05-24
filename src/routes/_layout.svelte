@@ -13,9 +13,6 @@
     clearAllBodyScrollLocks
   } from "body-scroll-lock";
 
-  let menuClass = "";
-  let isMenuOpen = false;
-  let slideUpClass = "";
   let targetElement = null;
   let elm = null;
   let seg = segment;
@@ -52,34 +49,12 @@
       callback: null
     });
   });
-
-  const handleMenuToggle = function() {
-    isMenuOpen = !isMenuOpen;
-    isMenuOpen
-      ? (menuClass = "active")
-      : ((menuClass = "not-active"), (slideUpClass = "slideOutUp"));
-  };
 </script>
 
-<!--[if IE]>
+<Nav />
 
-
-  <p>Sorry, Internet Explorer is not supported.<p>
-    Use <a href="http://firefox.com">Firefox</a> instead.
-
-    <!--<![endif]-->
-
-<Nav
-  {isMenuOpen}
-  {slideUpClass}
-  on:closeMenu={() => {
-    handleMenuToggle();
-  }} />
-
-<div
-  style="clip: rect(auto, auto, auto, auto);"
-  class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
-  <Header on:menuToggled={handleMenuToggle} {menuClass} />
+<div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
+  <Header />
 </div>
 
 <main>
