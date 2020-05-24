@@ -1,5 +1,5 @@
 <script>
-  export let IconColor = "text-gray-100";
+  export let IconColor = "gray-100";
   export let IconSize = "h-6";
 </script>
 
@@ -28,7 +28,7 @@
       width="23"
       height="18"
       viewBox="0 0 23 18"
-      class="{IconColor}
+      class="text-{IconColor}
       {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path
@@ -75,7 +75,7 @@
       width="22"
       height="19"
       viewBox="0 0 22 19"
-      class="{IconColor}
+      class="text-{IconColor}
       {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path
@@ -113,7 +113,7 @@
       width="11"
       height="20"
       viewBox="0 0 11 20"
-      class="{IconColor}
+      class="text-{IconColor}
       {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path
@@ -142,7 +142,7 @@
       width="24"
       height="16"
       viewBox="0 0 24 16"
-      class="{IconColor}
+      class="text-{IconColor}
       {IconSize} fill-current hover-class"
       xmlns="http://www.w3.org/2000/svg">
       <path

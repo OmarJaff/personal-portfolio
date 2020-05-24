@@ -76,7 +76,9 @@
     handleMenuToggle();
   }} />
 
-<div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
+<div
+  style="clip: rect(auto, auto, auto, auto);"
+  class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
   <Header on:menuToggled={handleMenuToggle} {menuClass} />
 </div>
 

@@ -1,12 +1,16 @@
 <script>
   export let label = "";
+  export let mainLogoColor = "gray-100";
   let x;
 </script>
 
-
 <svelte:window bind:innerWidth={x} />
 <div class="flex flex-col items-center ">
-  <svg class="-my-1" width="46" height="40" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    class="-my-1 text-{mainLogoColor}"
+    width="46"
+    height="40"
+    xmlns="http://www.w3.org/2000/svg">
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -25,7 +29,7 @@
       4.008 3.9613 6.872 8.9564 6.872 5.4003 0 10.875-3.365
       13.4221-7.8516h10.8378c-3.8083 8.9956-14.7826 17.6959-24.9298
       15.8377-3.6843-.6767-6.7111-2.6845-8.2038-5.87-1.286-2.7555-1.2074-5.9148-.0827-8.9881z"
-      fill="#F7FAFC" />
+      fill="currentColor" />
   </svg>
 
   <div class="font-nixieOne text-white my-2 -mx-2">

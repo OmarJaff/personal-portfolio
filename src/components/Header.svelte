@@ -1,4 +1,6 @@
 <script>
+  export let backgroundColor = "gray-100";
+  export let mainLogoColor = "gray-100";
   import { createEventDispatcher } from "svelte";
   import SiteLogo from "./SiteLogo.svelte";
   import HumbergerIcon from "../components/HumbergurIcon.svelte";
@@ -13,15 +15,15 @@
 <div class="relative flex w-full z-50 ">
   <div class="flex justify-between mx-6 my-6 sm:mx-8 sm:my-8 w-full">
     <div>
-      <SiteLogo />
+      <SiteLogo {mainLogoColor} />
     </div>
     <div class="flex flex-row-reverse items-baseline">
 
-      <HumbergerIcon on:toggleMenu={openMenue} {menuClass} />
+      <HumbergerIcon {backgroundColor} on:toggleMenu={openMenue} {menuClass} />
 
       <div class="hidden sm:flex">
         <div class="flex mx-8 ">
-          <SocialIcons />
+          <SocialIcons IconColor={backgroundColor} />
         </div>
 
       </div>

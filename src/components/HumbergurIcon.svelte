@@ -1,9 +1,11 @@
 <script>
+  export let menuClass = "";
+  export let backgroundColor = "gray-100";
+
   import { createEventDispatcher } from "svelte";
 
   const dispatch = createEventDispatcher();
 
-  export let menuClass = "";
   const toggleMenu = () => {
     dispatch("toggleMenu");
   };
@@ -107,7 +109,7 @@
 <div
   on:click={() => toggleMenu()}
   class="{menuClass} btn w-10 sm:w-12 cursor-pointer flex-col ">
-  <span class="flex bg-gray-100" />
+  <span class="flex bg-{backgroundColor}" />
 
-  <span class="flex bg-gray-100" />
+  <span class="flex bg-{backgroundColor}" />
 </div>

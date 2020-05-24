@@ -12,6 +12,7 @@
   import ContactForm from "../components/sections/ContactForm.svelte";
   import Footer from "../components/sections/Footer.svelte";
   import BackToTopArrow from "../components/BackToHomeArrow.svelte";
+  import Header from "../components/Header.svelte";
 
   let y = 0;
   let outerHeight = 0;
@@ -25,11 +26,7 @@
 </script>
 
 <style>
-  @media only screen and (max-width: 640px) {
-    .flex-custom {
-      display: flex;
-    }
-  }
+
 </style>
 
 <svelte:head>
@@ -48,12 +45,9 @@
       <div
         class="flex flex-col w-full h-full items-center font-roboto
         sm:-space-y-4">
-
         <MyFullName />
         <Title />
-
       </div>
-
     </div>
   </section>
 
@@ -72,13 +66,18 @@
   <div
     style=" clip: rect(auto, auto, auto, auto);"
     class="hidden sm:block absolute w-full justify-center inset-0 ">
+
+    <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
+      <Header backgroundColor="gray-600" mainLogoColor="gray-500" />
+    </div>
+
     <div
       class="flex sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
       justify-center z-40 ">
 
       <PageToggleLines
         id={'togglepagelines2'}
-        backgroundColor={'bg-gray-500'} />
+        backgroundColor={'bg-gray-600'} />
 
     </div>
 
