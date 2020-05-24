@@ -4,10 +4,12 @@
   import jump from "jump.js";
   import { enableBodyScroll } from "body-scroll-lock";
   import { isMenuOpen, slideUpClass } from "../store.js";
+  import { fly } from "svelte/transition";
 
   const menueClosed = () => {
     isMenuOpen.update(m => (m = !m));
   };
+  let menuOpen = false;
 </script>
 
 <style>
@@ -31,9 +33,9 @@
 
 <header id="main-header">
   <div
-    class="{$isMenuOpen ? ' slideInDown' : 'slideOutUp'} animated faster
-    transform -translate-y-full gradiantStyle h-screen w-screen fixed inset-0
-    z-50 font-roboto font-medium">
+    class:slideInDown={$isMenuOpen === true}
+    class="transform -translate-y-full animated faster gradiantStyle h-screen
+    w-screen fixed inset-0 z-50 font-roboto font-medium">
     <nav
       class="flex w-full justify-center top-0 text-white text-4xl xl:text-5xl">
       <ul class="absolute flex flex-col items-center h-full justify-center">

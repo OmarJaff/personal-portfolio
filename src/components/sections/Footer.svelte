@@ -1,7 +1,7 @@
 <script>
-  import ScoialIcons from '../../components/SocialIcons.svelte'
+  import ScoialIcons from "../../components/SocialIcons.svelte";
 
-  let currentYear = new Date()
+  let currentYear = new Date();
 </script>
 
 <style>
@@ -16,9 +16,7 @@
     class="flex flex-col h-40 items-center justify-center bg-dark-blue-deep
     w-screen ">
 
-    <ScoialIcons
-      IconSize="h-4 sm:h-5 xl:h-8 my-3 "
-      IconColor="text-vived-red" />
+    <ScoialIcons IconSize="h-4 sm:h-5 xl:h-8 my-3" IconColor="teal-600" />
 
     <span class=" text-color text-xs sm:text-sm">
       <span>&copy; {currentYear.getFullYear()}</span>

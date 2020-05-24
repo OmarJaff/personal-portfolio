@@ -25,7 +25,7 @@
     class="fadeIn-custom flex justify-end w-full fixed bottom-0 my-3 -mx-3
     sm:my-6 sm:-mx-10 z-40 outline-none">
     <button
-      class="outline-none"
+      class="outline-none focus:outline-none"
       on:click={() => jump('.target', {
           duration: 1000,
           offset: 0,
@@ -36,7 +36,8 @@
         width="51"
         height="51"
         viewBox="0 0 51 51"
-        class="fill-current text-teal-400 w-10 h-10 sm:h-auto sm:w-auto"
+        class="fill-current text-teal-400 w-10 h-10 sm:h-auto sm:w-auto
+        hover:text-teal-500"
         xmlns="http://www.w3.org/2000/svg">
         <path
           fill-rule="evenodd"

@@ -18,11 +18,6 @@
   let outerHeight = 0;
   let ratio = 0;
   let ToggleLinevisible = false;
-  // $: {
-  //   ratio = y - outerHeight / 2;
-  //   console.log(ratio, ToggleLinevisible);
-  //   ToggleLinevisible = ratio > 71 ? true : false;
-  // }
 </script>
 
 <style>

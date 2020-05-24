@@ -9,9 +9,11 @@
     dispatch("toggleMenu");
   };
 
-  let menuClass = "";
+  let menuClass = "not-active";
 
-  $: $isMenuOpen ? (menuClass = "active") : (menuClass = "not-active");
+  $: {
+    $isMenuOpen ? (menuClass = "active") : (menuClass = "not-active");
+  }
 </script>
 
 <style>
