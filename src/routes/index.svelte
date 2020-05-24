@@ -58,8 +58,8 @@
   </section>
 
   <div
-    class="flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0 sm:h-full
-    justify-center z-40 "
+    class="hidden sm:flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0
+    sm:h-full justify-center z-40"
     style="clip: rect(auto, auto, auto, auto);">
     <PageToggleLines id={'togglepagelines'} />
   </div>
@@ -71,7 +71,7 @@
 <div class="flex flex-col justify-between w-full relative">
   <div
     style=" clip: rect(auto, auto, auto, auto);"
-    class="flex-custom absolute w-full justify-center inset-0 ">
+    class="hidden sm:block absolute w-full justify-center inset-0 ">
     <div
       class="flex sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
       justify-center z-40 ">
