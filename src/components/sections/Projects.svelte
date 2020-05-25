@@ -23,7 +23,7 @@
 </style>
 
 <div class="flex flex-col space-y-8">
-  <div class="flex mb-12 justify-center sm:justify-start">
+  <div class="flex mb-4 justify-start">
     <PageTitle title="Featured Projects" />
   </div>
   <ProjectContainer

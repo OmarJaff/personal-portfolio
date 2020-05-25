@@ -156,13 +156,12 @@
     handleCloseModal();
   }} />
 
-<div class="flex flex-col">
-  <div class="flex mb-12 justify-center sm:justify-start">
+<div class="flex flex-col w-full">
+  <div class="flex mb-4 justify-start">
     <PageTitle title="Contact me" />
   </div>
   <div class=" flex justify-center font-mono ">
-    <div
-      class="flex flex-col custom-shadow my-8 w-full xl:w-11/12 items-center ">
+    <div class="flex flex-col my-8 w-full xl:w-11/12 items-center ">
       <div class="flex py-4">
         <h1
           class="text-white text-sm text-center sm:text-lg xl:text-2xl px-6

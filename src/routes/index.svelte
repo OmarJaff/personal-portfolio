@@ -13,7 +13,7 @@
   import Footer from "../components/sections/Footer.svelte";
   import BackToTopArrow from "../components/BackToHomeArrow.svelte";
   import Header from "../components/Header.svelte";
-
+  import Saparator from "../components/utilities/Separator.svelte";
   let y = 0;
   let outerHeight = 0;
   let ratio = 0;
@@ -81,36 +81,42 @@
     </div>
 
   </div>
-  <div class="container mx-auto z-30">
+  <div class="container mx-auto z-30 mt-16">
+
     <div
       id="about"
       class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto
-      py-4 my-10 sm:my-20">
+      py-4 ">
       <About />
     </div>
 
+    <Saparator />
+
     <div
       id="skills"
-      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto
-      my-10 sm:my-20">
+      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto ">
       <Skills />
     </div>
 
+    <Saparator />
+
     <div
       id="projects"
-      class=" py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto
-      my-10 sm:my-20">
+      class=" py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto ">
       <Projects />
     </div>
 
-    <div id="contact" class="h-full" />
-    <div
-      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto
-      my-10 sm:my-20 mb-16 ">
-      <ContactForm />
-    </div>
-  </div>
+    <Saparator />
 
+    <div
+      id="contact"
+      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto">
+
+      <ContactForm />
+
+    </div>
+
+  </div>
 </div>
 <div class="flex justify-center ">
   <Footer />

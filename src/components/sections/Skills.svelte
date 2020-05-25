@@ -22,7 +22,7 @@
 </style>
 
 <div class="flex flex-col">
-  <div class="flex mb-12 justify-center sm:justify-start">
+  <div class="flex mb-4 justify-start">
     <PageTitle title="My Skills" />
   </div>
   <div class="flex justify-between flex-wrap xl:flex-no-wrap relative ">
@@ -332,7 +332,7 @@
     </SkillsIconTemplate>
 
   </div>
-  <div class="flex w-full my-20">
+  <div class="flex w-full ">
     <!-- <SkillsChart /> -->
   </div>
 </div>
