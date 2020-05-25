@@ -12,7 +12,7 @@
 
         activeClass: "active-class",
 
-        threshold: 10,
+        threshold: 1,
 
         enableLocationHash: false,
 
