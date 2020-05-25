@@ -19,7 +19,7 @@
 
       <div
         class="border-l-2 border-teal-400 pl-2 text-gray-800 text-2xl
-        md:text-4xl">
+        md:text-4xl capitalize">
         {containerTitle}
       </div>
 
