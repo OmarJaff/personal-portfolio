@@ -29,27 +29,23 @@
 
 <div class="flex flex-col w-full">
 
-  <ProjectContainer techIconsPresent="false">
-    <img
-      class="fill-current relative h-64 img-h text-white"
+  <ProjectContainer
+    techIconsPresent="false"
+    containerTitle="about omar"
+    techIconsExist={false}
+    containerDescription=" Hi ! I am a Full stack web developer and user
+    interface (UI) designer. I have about two years of experience in web
+    development field and I have worked on independent projects with other
+    freelancer teams using the most efficient and modern web technologies. I
+    love to work in a professional and accurate pattern, and always aim to
+    develop fast, beautiful and functional user interfaces and database
+    management systems.">
+    <!-- <img
+      class="fill-current relative img-h text-white"
       src="web-developer-omar.jpg"
       alt="a web developer person character with a laptop and other symbols of
-      code and programming" />
-    <p
-      class=" text-text-white-lighter font-thin px-4 py-4 xl:ml-12 tex font-mono
-      font-thin text-justify text-base sm:text-lg"
-      slot="aboutMe">
-      Hi ! I am a Full stack web developer and user interface (UI) designer. I
-      have about two years of experience in web development field and I have
-      worked on independent projects with other freelancer teams using the most
-      efficient and modern web technologies. I love to work in a professional
-      and accurate pattern, and always aim to develop fast, beautiful and
-      functional user interfaces and database management systems.
-      <!-- You may also have a look at my
-      <span class="text-vived-red">CV</span>
-      by clicking
-      <a href="#home" class="text-vived-red ">here</a> -->
-    </p>
+      code and programming" /> -->
+
   </ProjectContainer>
 
 </div>

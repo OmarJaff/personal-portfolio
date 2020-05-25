@@ -1,7 +1,8 @@
 <script>
-  export let containerTitle = "";
-  export let containerDescription = "";
-  export let techIconsPresent = true;
+  export let containerTitle = "Container Title";
+  export let containerDescription =
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ratione alias doloremque libero ...";
+  export let techIconsExist = true;
   import Button from "../components/utilities/Button.svelte";
 </script>
 
@@ -51,15 +52,15 @@
   <div
     class="flex border-b-2 border-gray-400 sm:border-b-0 sm:border-r-2
     bg-gray-300 h-40 sm:h-auto sm:w-full ">
-    ...
+    <slot />
   </div>
   <div class="flex-col p-4 space-y-4 sm:col-span-2">
     <div class="flex justify-between">
 
       <div
         class="border-l-2 border-teal-400 pl-2 text-gray-800 text-2xl
-        md:text-4xl xl:text-5xl">
-        About Omar
+        md:text-4xl">
+        {containerTitle}
       </div>
 
       <div>
@@ -102,20 +103,26 @@
               fill="currentColor" />
           </svg>
         </button>
+
       </div>
 
     </div>
 
-    <div class="text-gray-600 text-md md:text-xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet earum
-      laboriosam, placeat odit minus quidem sapiente, dignissimos adipisci ullam
-      sint dolore quisquam magni quia libero tempora distinctio molestiae
-      repellat? Obcaecati.
+    <div class="text-gray-600 text-md md:text-lg text-justify">
+      {containerDescription}
     </div>
-    <div class="w-full">
-      <Button title="check out my cv" />
-    </div>
+
+    {#if techIconsExist}
+      <footer class="w-full flex bg-gray-200 border-t-2 h-6 pt-2">
+        <slot name="techIcons" />
+      </footer>
+    {:else}
+      <div class="w-full">
+        <Button title="check out my cv" />
+      </div>
+    {/if}
   </div>
+
 </div>
 
 <!-- <div

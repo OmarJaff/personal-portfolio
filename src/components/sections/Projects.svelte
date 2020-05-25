@@ -22,7 +22,7 @@
   }
 </style>
 
-<div class="flex flex-col">
+<div class="flex flex-col space-y-8">
   <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="Featured Projects" />
   </div>
