@@ -31,9 +31,12 @@
 <svelte:window bind:scrollY={y} bind:outerHeight />
 <a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 
-<div id="home" class="bg-gray-800 flex flex-col justify-center h-screen w-full">
-  <section class="flex h-full w-full my-40 lg:my-0 lg:items-center">
-    <div class="flex w-full flex-col items-center space-y-10">
+<div
+  id="home"
+  class=" bg-gray-800 flex flex-col justify-center h-screen w-full">
+  <section
+    class="container mx-auto flex h-full w-full my-40 lg:my-0 lg:items-center">
+    <div class=" flex w-full flex-col items-center space-y-10">
       <div class="text-white text-4xl font-payTon">
         <Portfolio />
       </div>
@@ -57,7 +60,8 @@
   <AboutMeFlag />
   <BackToTopArrow />
 </div>
-<div class="flex flex-col justify-between w-full relative">
+
+<div class="flex flex-col justify-between relative">
   <div
     style=" clip: rect(auto, auto, auto, auto);"
     class="hidden sm:block absolute w-full justify-center inset-0 ">
@@ -77,35 +81,37 @@
     </div>
 
   </div>
-  <div
-    id="about"
-    class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto py-4
-    my-10 sm:my-20">
-    <About />
+  <div class="container mx-auto z-30">
+    <div
+      id="about"
+      class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto
+      py-4 my-10 sm:my-20">
+      <About />
+    </div>
+
+    <div
+      id="skills"
+      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto
+      my-10 sm:my-20">
+      <Skills />
+    </div>
+
+    <div
+      id="projects"
+      class=" py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto
+      my-10 sm:my-20">
+      <Projects />
+    </div>
+
+    <div id="contact" class="h-full" />
+    <div
+      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto
+      my-10 sm:my-20 mb-16 ">
+      <ContactForm />
+    </div>
   </div>
 
-  <div
-    id="skills"
-    class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10
-    sm:my-20">
-    <Skills />
-  </div>
-
-  <div
-    id="projects"
-    class=" py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10
-    sm:my-20">
-    <Projects />
-  </div>
-
-  <div id="contact" class="h-full" />
-  <div
-    class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto my-10
-    sm:my-20 mb-16 ">
-    <ContactForm />
-  </div>
-  <div class="flex justify-center ">
-    <Footer />
-  </div>
-
+</div>
+<div class="flex justify-center ">
+  <Footer />
 </div>

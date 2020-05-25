@@ -21,7 +21,7 @@
   }
 </style>
 
-<div class="flex flex-col w-custom">
+<div class="flex flex-col">
   <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="My Skills" />
   </div>

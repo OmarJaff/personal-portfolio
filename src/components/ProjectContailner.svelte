@@ -2,6 +2,7 @@
   export let containerTitle = "";
   export let containerDescription = "";
   export let techIconsPresent = true;
+  import Button from "../components/utilities/Button.svelte";
 </script>
 
 <style>
@@ -30,27 +31,94 @@
     .left-picture {
       right: 8rem;
     }
-    .custom-shadow {
-      -webkit-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-      -moz-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-      box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-    }
+
     .photo-shadow {
       -webkit-box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
       box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
     }
   }
-  @media only screen and (max-width: 1279px) {
-    .layout-shadow {
-      -webkit-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-      -moz-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-      box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
+  @media (min-width: 640px) {
+    .w80 {
+      width: 80rem;
     }
   }
 </style>
 
 <div
+  class="flex flex-col sm:flex-row border-2 border-gray-400 rounded
+  font-SourceSans">
+  <div
+    class="flex border-b-2 border-gray-400 sm:border-b-0 sm:border-r-2
+    bg-gray-300 h-40 sm:h-auto sm:w-full">
+    ...
+  </div>
+  <div class="flex-col p-4 space-y-4">
+    <div class="flex justify-between">
+
+      <div
+        class="border-l-2 border-teal-400 pl-2 text-gray-800 text-2xl
+        md:text-4xl">
+        About Omar
+      </div>
+
+      <div>
+        <button class="focus:outline-none outline-none">
+          <svg
+            width="28"
+            height="25"
+            viewBox="0 0 28 25"
+            fill="none"
+            class="text-gray-500 hover:text-gray-600"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.80006 2.5C10.5733 2.5 11.2001 3.05965 11.2001
+              3.75V5H12.2252C12.2416 4.99974 12.2582 4.99974 12.2748
+              5H15.4C16.1733 5 16.8 5.55965 16.8 6.25C16.8 6.94035 16.1733 7.5
+              15.4 7.5H13.4093C12.9029 9.60935 12.0831 11.6144 10.9957
+              13.4745C11.4028 13.9173 11.8295 14.345 12.2748 14.7569C12.8118
+              15.2535 12.7961 16.0449 12.2399 16.5244C11.6836 17.0037 10.7973
+              16.9899 10.2603 16.4931C9.99552 16.2483 9.7366 15.9984 9.48372
+              15.7435C8.24458 17.3876 6.78147 18.8855 5.13374 20.2023C4.55761
+              20.6626 3.67253 20.6189 3.15687 20.1045C2.64122 19.59 2.69025
+              18.7997 3.26639 18.3394C4.96471 16.9823 6.44304 15.411 7.64839
+              13.6736C6.86933 12.6874 6.1722 11.6456 5.56586 10.5563C5.22177
+              9.93806 5.50412 9.18784 6.19653 8.88061C6.88894 8.57337 7.72921
+              8.82549 8.0733 9.44371C8.40034 10.0313 8.75698 10.6035 9.1415
+              11.1587C9.72585 9.9909 10.1955 8.76752 10.5378 7.5H4.20006C3.42686
+              7.5 2.80006 6.94035 2.80006 6.25C2.80006 5.55965 3.42686 5 4.20006
+              5H8.40006V3.75C8.40006 3.05965 9.02686 2.5 9.80006 2.5ZM18.2
+              10C18.7304 10 19.215 10.2675 19.4522 10.691L23.6396
+              18.1685C23.6487 18.1839 23.6575 18.1995 23.6658 18.2153L25.0522
+              20.691C25.398 21.3085 25.1177 22.0592 24.4261 22.368C23.7345
+              22.6768 22.8937 22.4265 22.5479 21.809L21.5348 20H14.8652L13.8523
+              21.809C13.5065 22.4265 12.6655 22.6768 11.974 22.368C11.2824
+              22.0592 11.0021 21.3085 11.3479 20.691L12.7343 18.2153C12.7427
+              18.1995 12.7514 18.1839 12.7605 18.1685L16.9479 10.691C17.185
+              10.2675 17.6697 10 18.2 10ZM16.2652 17.5H20.1348L18.2
+              14.0451L16.2652 17.5Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="text-gray-600 text-md md:text-xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet earum
+      laboriosam, placeat odit minus quidem sapiente, dignissimos adipisci ullam
+      sint dolore quisquam magni quia libero tempora distinctio molestiae
+      repellat? Obcaecati.
+    </div>
+    <div class="w-full">
+      <Button title="check out my cv" />
+    </div>
+  </div>
+</div>
+
+<!-- <div
   class="{containerTitle ? ' xl:mb-40 mb-24' : ''} flex flex-col w-auto relative
   items-center sm:items-start layout-shadow ">
   <div
@@ -94,4 +162,4 @@
       {/if}
     </div>
   </div>
-</div>
+</div> -->

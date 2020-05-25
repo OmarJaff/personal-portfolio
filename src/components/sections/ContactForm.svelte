@@ -1,114 +1,114 @@
 <script>
-  import PageTitle from '../PageTitle.svelte'
-  import SubmitModal from '../submitmodal.svelte'
-  import bodymovin from 'lottie-web'
-  import jump from 'jump.js'
-  import encoder from '../encoder.js'
-  import ClipboardJS from 'clipboard'
-  import SvelteTooltip from 'svelte-tooltip'
-  import { onMount } from 'svelte'
+  import PageTitle from "../PageTitle.svelte";
+  import SubmitModal from "../submitmodal.svelte";
+  import bodymovin from "lottie-web";
+  import jump from "jump.js";
+  import encoder from "../encoder.js";
+  import ClipboardJS from "clipboard";
+  import SvelteTooltip from "svelte-tooltip";
+  import { onMount } from "svelte";
 
   onMount(() => {
-    const clipboard = new ClipboardJS('.mycopybtn')
-    clipboard.on('success', function(e) {
-      copyResponse = 'Copied!'
-      isCopied = true
+    const clipboard = new ClipboardJS(".mycopybtn");
+    clipboard.on("success", function(e) {
+      copyResponse = "Copied!";
+      isCopied = true;
 
-      e.clearSelection()
-    })
-    clipboard.on('error', function(e) {
-      copyResponse = 'Oops! something is wrong.'
-    })
-  })
+      e.clearSelection();
+    });
+    clipboard.on("error", function(e) {
+      copyResponse = "Oops! something is wrong.";
+    });
+  });
 
-  let successAnimation
-  let errorAnimation
-  let errorLog
-  let isCopied = false
-  let copyResponse = ''
+  let successAnimation;
+  let errorAnimation;
+  let errorLog;
+  let isCopied = false;
+  let copyResponse = "";
 
   const successMessage = () => {
     successAnimation = bodymovin.loadAnimation({
-      container: document.getElementById('sendIcon'), // Required
-      path: 'lf30_editor_m1Vm1w.json', // Required
-      renderer: 'svg', // Required
+      container: document.getElementById("sendIcon"), // Required
+      path: "lf30_editor_m1Vm1w.json", // Required
+      renderer: "svg", // Required
       loop: false, // Optional
       autoplay: true, // Optional
-      name: 'success message', // Name for future reference. Optional.
-    })
-  }
+      name: "success message" // Name for future reference. Optional.
+    });
+  };
 
   const errorMessage = () => {
     errorAnimation = bodymovin.loadAnimation({
-      container: document.getElementById('sendIcon'),
-      path: 'errormessage.json',
-      renderer: 'svg',
+      container: document.getElementById("sendIcon"),
+      path: "errormessage.json",
+      renderer: "svg",
       loop: true,
       autoplay: true,
-      name: 'error massage',
-    })
-  }
+      name: "error massage"
+    });
+  };
 
   let formData = {
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  }
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  };
 
-  let violated = { nameField: false, emailField: false, message: false }
+  let violated = { nameField: false, emailField: false, message: false };
 
-  let openModal = false
+  let openModal = false;
 
   let clearFormData = () => {
     for (const property in formData) {
-      formData[property] = ''
+      formData[property] = "";
     }
-  }
+  };
 
   let handleSubmit = () => {
     formData.name.trim().length === 0
       ? (violated.nameField = true)
-      : (violated.nameField = false)
-    ;/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email) &&
+      : (violated.nameField = false);
+    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email) &&
     formData.email.length != 0
       ? (violated.emailField = false)
-      : (violated.emailField = true)
+      : (violated.emailField = true);
     formData.message.trim().length === 0
       ? (violated.message = true)
-      : (violated.message = false)
+      : (violated.message = false);
     if (
       violated.nameField === false &&
       violated.emailField === false &&
       violated.message === false
     ) {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encoder(formData),
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encoder(formData)
       })
         .then(() => {
           clearFormData(),
             (openModal = true),
             successMessage(),
-            successAnimation.setSpeed(2)
+            successAnimation.setSpeed(2);
         })
         .catch(error => {
-          errorLog = error
-          openModal = true
-          errorMessage()
-        })
+          errorLog = error;
+          openModal = true;
+          errorMessage();
+        });
     }
-  }
+  };
   const handleCloseModal = () => {
-    openModal = false
-    successAnimation ? successAnimation.destroy() : errorAnimation.destroy()
-    jump('.target', {
+    openModal = false;
+    successAnimation ? successAnimation.destroy() : errorAnimation.destroy();
+    jump(".target", {
       duration: 1000,
       offset: 0,
-      a11y: false,
-    })
-  }
+      a11y: false
+    });
+  };
 </script>
 
 <style>
@@ -153,10 +153,10 @@
   {openModal}
   {errorLog}
   on:closeModal={() => {
-    handleCloseModal()
+    handleCloseModal();
   }} />
 
-<div class="flex flex-col w-custom">
+<div class="flex flex-col">
   <div class="flex mb-12 justify-center sm:justify-start">
     <PageTitle title="Contact me" />
   </div>
