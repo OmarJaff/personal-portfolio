@@ -6,46 +6,6 @@
   import Button from "../components/utilities/Button.svelte";
 </script>
 
-<style>
-  @media only screen and (min-width: 640px) and (max-width: 1279px) {
-    .top-custom-2 {
-      top: 21rem;
-    }
-  }
-  @media only screen and (min-width: 1280px) {
-    .pictuer-width {
-      width: 35rem;
-    }
-    .text-width {
-      width: 35rem;
-    }
-    .h-custom {
-      height: 20rem;
-    }
-    .text-h-custom {
-      height: 20rem;
-    }
-    .top-custom {
-      top: 4rem;
-      left: 32rem;
-    }
-    .left-picture {
-      right: 8rem;
-    }
-
-    .photo-shadow {
-      -webkit-box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: -8px 6px 12px 0px rgba(0, 0, 0, 0.75);
-    }
-  }
-  @media (min-width: 640px) {
-    .w80 {
-      width: 80rem;
-    }
-  }
-</style>
-
 <div
   class="flex flex-col border-2 border-gray-400 rounded font-SourceSans sm:grid
   sm:grid-cols-3">

@@ -115,14 +115,7 @@
   .validationClass {
     border: 0.1px red solid;
   }
-  .w-custom {
-    width: 24rem;
-  }
-  .custom-shadow {
-    -webkit-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-    -moz-box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-    box-shadow: 8px 6px 12px 0px rgba(0, 0, 0, 0.68);
-  }
+
   .buttom-shadow {
     -webkit-box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
     -moz-box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
@@ -135,17 +128,6 @@
   .hover-class:hover {
     background-color: #1f223d;
     color: #1f223d;
-  }
-  @media only screen and (min-width: 640px) and (max-width: 1279px) {
-    .w-custom {
-      width: 34rem;
-    }
-  }
-  @media only screen and (min-width: 1280px) {
-    .w-custom {
-      width: 64rem;
-      top: 30rem;
-    }
   }
 </style>
 

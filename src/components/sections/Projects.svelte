@@ -5,22 +5,6 @@
   import SvelteTooltip from "svelte-tooltip";
 </script>
 
-<style>
-  .w-custom {
-    width: 24rem;
-  }
-  @media only screen and (min-width: 640px) and (max-width: 1279px) {
-    .w-custom {
-      width: 34rem;
-    }
-  }
-  @media only screen and (min-width: 1280px) {
-    .w-custom {
-      width: 64rem;
-      top: 30rem;
-    }
-  }
-</style>
 
 <div class="flex flex-col space-y-8">
   <div class="flex mb-4 justify-start">
