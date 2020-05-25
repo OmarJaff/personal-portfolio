@@ -27,6 +27,9 @@ module.exports = {
         fenix: ["Fenix", "serif"],
         robotoMono: ['"Roboto Mono"', "sans-serif", "Arial"],
       },
+      screens: {
+        "hover-hover": { raw: "(hover: hover)" },
+      },
     },
   },
   variants: {},

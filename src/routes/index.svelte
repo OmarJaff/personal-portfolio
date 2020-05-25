@@ -64,15 +64,15 @@
 <div class="flex flex-col justify-between relative">
   <div
     style=" clip: rect(auto, auto, auto, auto);"
-    class="hidden sm:block absolute w-full justify-center inset-0 ">
+    class="block absolute w-full justify-center inset-0 ">
 
     <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
       <Header backgroundColor="gray-600" mainLogoColor="gray-500" />
     </div>
 
     <div
-      class="flex sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
-      justify-center z-40 ">
+      class="sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
+      justify-center z-40 hidden sm:flex ">
 
       <PageToggleLines
         id={'togglepagelines2'}

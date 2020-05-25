@@ -46,19 +46,19 @@
 </style>
 
 <div
-  class="flex flex-col sm:flex-row border-2 border-gray-400 rounded
-  font-SourceSans">
+  class="flex flex-col border-2 border-gray-400 rounded font-SourceSans sm:grid
+  sm:grid-cols-3">
   <div
     class="flex border-b-2 border-gray-400 sm:border-b-0 sm:border-r-2
-    bg-gray-300 h-40 sm:h-auto sm:w-full">
+    bg-gray-300 h-40 sm:h-auto sm:w-full ">
     ...
   </div>
-  <div class="flex-col p-4 space-y-4">
+  <div class="flex-col p-4 space-y-4 sm:col-span-2">
     <div class="flex justify-between">
 
       <div
         class="border-l-2 border-teal-400 pl-2 text-gray-800 text-2xl
-        md:text-4xl">
+        md:text-4xl xl:text-5xl">
         About Omar
       </div>
 
