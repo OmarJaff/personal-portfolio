@@ -8,6 +8,7 @@
   import SvelteTooltip from "svelte-tooltip";
   import { onMount } from "svelte";
   import Button from "../utilities/Button.svelte";
+  import Saparator2 from "../utilities/Saparator2.svelte";
   onMount(() => {
     const clipboard = new ClipboardJS(".mycopybtn");
     clipboard.on("success", function(e) {
@@ -143,11 +144,11 @@
       Have a question or want to work together?
     </h1>
   </div>
-  <div class=" flex justify-center font-roboto">
-    <div class="flex flex-col my-8 w-full xl:w-11/12 ">
+  <div class=" flex justify-center font-roboto p-6">
+    <div class="flex flex-col my-8 w-full items-center">
 
       <form
-        class="flex flex-col p-6 font-SourceSans space-y-4 w-10/12"
+        class="flex flex-col font-SourceSans space-y-4 w-full lg:w-10/12"
         name="contact"
         method="POST"
         data-netlify="true"
@@ -242,36 +243,40 @@
         </div>
 
       </form>
-      <div
-        class="flex bg-dark-blue-deep text-xs sm:text-base h-8 sm:h-12 mt-2
-        sm:h-10 xl:text-lg text-white relative ">
-        <label for="emailaddress" class="sr-only">email addess</label>
+      <Saparator2
+        width="w-full lg:w-10/12"
+        title="Want to send me an email instead?" />
+
+      <label for="emailaddress" class="sr-only">email addess</label>
+
+      <div class="relative w-full lg:w-10/12 flex items-center">
         <input
           type="text"
           id="emailaddress"
           name="emailaddress"
           readonly
           value={'me@omarjaff.com'}
-          class=" bg-dark-blue-deep py-3 p-2 sm:p-4 w-32 sm:w-48" />
-        <span class=" border-l-2 absolute inset-0 border-vived-red w-0" />
+          class="text-gray-600 w-auto border-l-4 border-teal-400 bg-white py-3
+          p-2 sm:p-3 rounded w-full" />
 
-        <SvelteTooltip
-          tip={copyResponse}
-          bottom
-          color="#272740"
-          active={isCopied} />
+        <div class="text-gray-100 mt-6">
+          <SvelteTooltip
+            tip={copyResponse}
+            bottom
+            color="#272740"
+            active={isCopied} />
+
+        </div>
 
         <button
           data-clipboard-target="#emailaddress"
           type="button"
-          class="mycopybtn text-white -mt-1 py-3 p-2 sm:p-4 hover-class
-          outline-none"
+          class=" absolute bg-gray-800 hover:bg-gray-900 text-white outline-none
+          font-roboto rounded py-1 w-24 right-0 mx-4"
           on:mouseout|preventDefault={() => (isCopied = false)}>
           <span class="text-white">Copy</span>
         </button>
-        <Button title="Copy" />
       </div>
-
     </div>
   </div>
 
