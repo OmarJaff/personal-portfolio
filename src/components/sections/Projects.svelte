@@ -559,7 +559,10 @@
     containerTitle="personal portfolio"
     techNames="tailwindcss, Svelte, Figma"
     containerDescription="A personal portfolio designed and developed from
-    scratch using the most modren 'design and web' technologies.">
+    scratch using efficient, modern and fast 'design and web' technologies,
+    considering consistency, Typography & Readability, Mobile Compatibility and
+    color combination. As a general rule Simplicity in desining always works the
+    best for me.">
 
     <svg
       class="p-6 h-full w-full sm:p-10"
