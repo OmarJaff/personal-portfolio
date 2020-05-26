@@ -7,7 +7,7 @@
   import ClipboardJS from "clipboard";
   import SvelteTooltip from "svelte-tooltip";
   import { onMount } from "svelte";
-
+  import Button from "../utilities/Button.svelte";
   onMount(() => {
     const clipboard = new ClipboardJS(".mycopybtn");
     clipboard.on("success", function(e) {
@@ -112,10 +112,6 @@
 </script>
 
 <style>
-  .validationClass {
-    border: 0.1px red solid;
-  }
-
   .buttom-shadow {
     -webkit-box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
     -moz-box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
@@ -142,22 +138,16 @@
   <div class="flex mb-4 justify-start">
     <PageTitle title="Contact me" />
   </div>
-  <div class=" flex justify-center font-mono ">
-    <div class="flex flex-col my-8 w-full xl:w-11/12 items-center ">
-      <div class="flex py-4">
-        <h1
-          class="text-white text-sm text-center sm:text-lg xl:text-2xl px-6
-          font-col ">
-          Have a
-          <span class="text-vived-red">question</span>
-          or want to
-          <span class="text-vived-red">work</span>
-          together?
-        </h1>
-      </div>
+  <div class="flex">
+    <h1 class="text-teal-500 text-sm sm:text-2xl font-col capitalize ">
+      Have a question or want to work together?
+    </h1>
+  </div>
+  <div class=" flex justify-center font-roboto">
+    <div class="flex flex-col my-8 w-full xl:w-11/12 ">
 
       <form
-        class="flex flex-col p-6 w-full"
+        class="flex flex-col p-6 font-SourceSans space-y-4 w-10/12"
         name="contact"
         method="POST"
         data-netlify="true"
@@ -175,9 +165,9 @@
           id="fullname"
           bind:value={formData.name}
           name="name"
-          class="{violated.nameField ? ' animated fast shake validationClass' : ' border-none'}
-          bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3 p-2
-          sm:p-4 w-full my-2 sm:text-base xl:text-lg sm:py-4 "
+          class="{violated.nameField ? ' animated fast shake border-2 border-red-500' : 'border-2 border-gray-400'}
+          bg-white placeholder-gray-600 text-gray-800 text-xs py-2 p-2 sm:p-3
+          w-full sm:text-base xl:text-lg sm:py-2 rounded"
           placeholder="Full Name" />
         {#if violated.nameField}
           <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
@@ -190,10 +180,11 @@
           id="email"
           name="email"
           bind:value={formData.email}
-          class="{violated.emailField ? ' animated fast shake validationClass' : ' border-none'}
-          bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3 p-2
-          sm:p-4 w-full my-2 sm:text-base xl:text-lg sm:py-4 "
+          class="{violated.emailField ? ' animated fast shake border-2 border-red-500' : 'border-2 border-gray-400'}
+          bg-white placeholder-gray-600 text-gray-800 text-xs py-2 p-2 sm:p-3
+          w-full sm:text-base xl:text-lg sm:py-2 rounded"
           placeholder="Your Email" />
+
         {#if violated.emailField}
           <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
             This field is required and must be a valid email address.
@@ -205,18 +196,20 @@
           id="subject"
           name="subject"
           bind:value={formData.subject}
-          class="bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3
-          p-2 sm:p-4 w-full my-2 sm:text-base xl:text-lg sm:py-4"
-          placeholder="Subject" />
+          class="border-2 border-gray-400 bg-white placeholder-gray-600
+          text-gray-800 text-xs py-2 p-2 sm:p-3 w-full sm:text-base xl:text-lg
+          sm:py-2 rounded"
+          placeholder="Your Email" />
+
         <label for="message" class="sr-only">Message</label>
         <textarea
           type="text"
           id="message"
           name="message"
           bind:value={formData.message}
-          class="{violated.message ? ' animated fast shake validationClass' : ' border-none'}
-          bg-dark-blue-deep placeholder-gray-600 text-white text-xs py-3 p-2
-          sm:p-4 w-full my-2 h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4"
+          class="{violated.message ? ' animated fast shake border-2 border-red-500' : 'border-2 border-gray-400'}
+          bg-white placeholder-gray-600 text-gray-800 text-xs py-2 p-2 sm:p-3
+          w-full h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4 rounded"
           placeholder="Your Message" />
         {#if violated.message}
           <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
@@ -225,46 +218,60 @@
         {/if}
         <div class="w-full flex justify-between flex-row-reverse">
 
-          <button
-            type="submit"
-            on:click|preventDefault={() => handleSubmit()}
-            class=" text-xs bg-dark-blue-deep h-8 sm:h-12 w-1/3 buttom-shadow
-            sm:text-base xl:text-xl sm:h-10 mt-2 hover-class text-white ">
+          <Button title="Submit" on:click={() => handleSubmit()}>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.40399 7.06031L11.9999 11.8583L21.596 7.06025C21.5236
+                5.79983 20.4786 4.80005 19.2 4.80005H4.8C3.52142 4.80005 2.47635
+                5.79987 2.40399 7.06031Z"
+                fill="#718096" />
+              <path
+                d="M21.6 9.74146L12 14.5415L2.40002 9.74153V16.8C2.40002 18.1255
+                3.47454 19.2 4.80002 19.2H19.2C20.5255 19.2 21.6 18.1255 21.6
+                16.8V9.74146Z"
+                fill="#718096" />
+            </svg>
 
-            <span class="text-white">Send</span>
-          </button>
+          </Button>
 
-          <div
-            class="flex bg-dark-blue-deep text-xs sm:text-base h-8 sm:h-12 mt-2
-            sm:h-10 xl:text-lg text-white relative ">
-            <label for="emailaddress" class="sr-only">email addess</label>
-            <input
-              type="text"
-              id="emailaddress"
-              name="emailaddress"
-              readonly
-              value={'me@omarjaff.com'}
-              class=" bg-dark-blue-deep py-3 p-2 sm:p-4 w-32 sm:w-48" />
-            <span class=" border-l-2 absolute inset-0 border-vived-red w-0" />
-
-            <SvelteTooltip
-              tip={copyResponse}
-              bottom
-              color="#272740"
-              active={isCopied} />
-
-            <button
-              data-clipboard-target="#emailaddress"
-              type="button"
-              class="mycopybtn text-white -mt-1 py-3 p-2 sm:p-4 hover-class
-              outline-none"
-              on:mouseout|preventDefault={() => (isCopied = false)}>
-              <span class="text-white">Copy</span>
-            </button>
-
-          </div>
         </div>
+
       </form>
+      <div
+        class="flex bg-dark-blue-deep text-xs sm:text-base h-8 sm:h-12 mt-2
+        sm:h-10 xl:text-lg text-white relative ">
+        <label for="emailaddress" class="sr-only">email addess</label>
+        <input
+          type="text"
+          id="emailaddress"
+          name="emailaddress"
+          readonly
+          value={'me@omarjaff.com'}
+          class=" bg-dark-blue-deep py-3 p-2 sm:p-4 w-32 sm:w-48" />
+        <span class=" border-l-2 absolute inset-0 border-vived-red w-0" />
+
+        <SvelteTooltip
+          tip={copyResponse}
+          bottom
+          color="#272740"
+          active={isCopied} />
+
+        <button
+          data-clipboard-target="#emailaddress"
+          type="button"
+          class="mycopybtn text-white -mt-1 py-3 p-2 sm:p-4 hover-class
+          outline-none"
+          on:mouseout|preventDefault={() => (isCopied = false)}>
+          <span class="text-white">Copy</span>
+        </button>
+        <Button title="Copy" />
+      </div>
+
     </div>
   </div>
 

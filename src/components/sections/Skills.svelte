@@ -5,7 +5,7 @@
   import Saparator2 from "../utilities/Saparator2.svelte";
 </script>
 
-<div class="flex flex-col w-full space-y-2">
+<div class="flex flex-col w-full space-y-4">
   <div class="flex mb-4 justify-start">
     <PageTitle title="My Skills" />
   </div>
