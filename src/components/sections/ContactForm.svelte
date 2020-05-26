@@ -104,11 +104,6 @@
   const handleCloseModal = () => {
     openModal = false;
     successAnimation ? successAnimation.destroy() : errorAnimation.destroy();
-    jump(".target", {
-      duration: 1000,
-      offset: 0,
-      a11y: false
-    });
   };
 </script>
 
@@ -184,7 +179,7 @@
           class="border-2 border-gray-400 bg-white placeholder-gray-600
           text-gray-800 text-xs py-2 p-2 sm:p-3 w-full sm:text-base xl:text-lg
           sm:py-2 rounded"
-          placeholder="Your Email" />
+          placeholder="Subject" />
 
         <label for="message" class="sr-only">Message</label>
         <textarea

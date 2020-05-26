@@ -4,11 +4,6 @@
   let currentYear = new Date();
 </script>
 
-<style>
-  .text-color {
-    color: #8084b2;
-  }
-</style>
 
 <div class="absolute flex justify-center h-2 flex-wrap w-full ">
 
