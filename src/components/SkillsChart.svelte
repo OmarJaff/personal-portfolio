@@ -15,9 +15,9 @@
     let ctx = document.getElementById("myChart").getContext("2d");
     ctx.height = "1000";
 
-    Chart.defaults.global.defaultFontColor = "rgb(128,132,178)";
+    Chart.defaults.global.defaultFontColor = "rgb(113,128,150)";
     Chart.defaults.global.defaultFontFamily =
-      "Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace";
+      "'Roboto Mono', 'sans-serif', 'Arial' ,'Courier New', monospace";
     Chart.defaults.global.defaultFontSize = "14";
     Chart.defaults.global.tooltips.enabled = false;
     Chart.defaults.global.animation.duration = 600;
@@ -45,7 +45,7 @@
         ],
         datasets: [
           {
-            backgroundColor: "rgb(224,225,235)",
+            backgroundColor: "rgb(80,209,197)",
             hoverBorderColor: "rgb(224,225,235)",
             barPercentage: 0.5,
             borderWidth: 1,
@@ -60,11 +60,10 @@
           display: false
         },
         title: {
-          display: true,
-          text: "My web development skills chart",
+          display: false,
 
           fontSize: "14",
-          fontFamily: "nixiOne"
+          fontFamily: "'Roboto Mono'"
         },
         scales: {
           xAxes: [
@@ -79,7 +78,7 @@
               stacked: false,
               gridLines: {
                 display: true,
-                color: "rgba(255,255,255,0.2)"
+                color: "rgb(203,213,224)"
               },
               ticks: {
                 beginAtZero: true,
@@ -94,7 +93,6 @@
     });
   });
 </script>
-
 
 <canvas
   id="myChart"

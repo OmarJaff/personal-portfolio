@@ -1,5 +1,6 @@
 <script>
   export let title = "description goes here";
+  export let fontSize = "text-base";
 </script>
 
 <div class="form-group row mb-0">
@@ -10,8 +11,8 @@
       </div>
 
       <div
-        class="relative flex justify-center text-sm leading-5 font-SourceSans
-        my-8">
+        class="relative flex justify-center text-sm sm:{fontSize} leading-5
+        font-SourceSans my-8">
         <span class="px-2 bg-gray-200 text-gray-600">{title}</span>
       </div>
 

@@ -330,7 +330,7 @@
 
     </SkillsIconTemplate>
   </div>
-  <Saparator2 />
+  <Saparator2 title="My web development skills chart" />
   <div class="flex w-full">
     <SkillsChart />
   </div>
