@@ -57,7 +57,7 @@
         {/if}
       </div>
 
-      <div>
+      <!-- <div>
         <button class="focus:outline-none outline-none">
           <svg
             width="28"
@@ -98,7 +98,7 @@
           </svg>
         </button>
 
-      </div>
+      </div> -->
 
     </div>
 
