@@ -224,6 +224,7 @@
       </form>
       <Saparator2
         width="w-full lg:w-10/12"
+        fontSize="font-base lg:text-lg"
         title="Want to send me an email instead?" />
 
       <label for="emailaddress" class="sr-only">email addess</label>

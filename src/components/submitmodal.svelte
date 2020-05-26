@@ -23,7 +23,7 @@
   }
 
   .bg-custom-color {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(116, 87, 87, 0.2);
   }
 
   @-webkit-keyframes scale-up-hor-center {
@@ -52,7 +52,7 @@
   transition:fade
   class="{openModal === true ? 'scale-up-hor-center' : 'scale-0'} transform
   scale-0 main-modal z-50 fixed w-full h-100 inset-0 overflow-hidden flex
-  justify-center items-center bg-custom-color">
+  justify-center items-center bg-custom-color text-teal-400">
   <div
     class="modal-container bg-gray-800 w-11/12 md:max-w-lg mx-auto rounded
     shadow-lg z-50 overflow-y-auto">
