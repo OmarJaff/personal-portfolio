@@ -112,22 +112,6 @@
   };
 </script>
 
-<style>
-  .buttom-shadow {
-    -webkit-box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
-    -moz-box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
-    box-shadow: 6px 5px 9px -3px rgba(0, 0, 0, 0.59);
-  }
-  .hover-class {
-    transition: 0.2s;
-    transition-timing-function: ease-in-out;
-  }
-  .hover-class:hover {
-    background-color: #1f223d;
-    color: #1f223d;
-  }
-</style>
-
 <SubmitModal
   {openModal}
   {errorLog}
@@ -259,7 +243,7 @@
           class="text-gray-600 w-auto border-l-4 border-teal-400 bg-white py-3
           p-2 sm:p-3 rounded w-full" />
 
-        <div class="text-gray-100 mt-6">
+        <div class="text-gray-100 mt-4 px-20 absolute right-0">
           <SvelteTooltip
             tip={copyResponse}
             bottom
@@ -271,8 +255,8 @@
         <button
           data-clipboard-target="#emailaddress"
           type="button"
-          class=" absolute bg-gray-800 hover:bg-gray-900 text-white outline-none
-          font-roboto rounded py-1 w-24 right-0 mx-4"
+          class="mycopybtn absolute bg-gray-800 hover:bg-gray-900 text-white
+          outline-none font-roboto rounded py-1 w-24 right-0 mx-4"
           on:mouseout|preventDefault={() => (isCopied = false)}>
           <span class="text-white">Copy</span>
         </button>
