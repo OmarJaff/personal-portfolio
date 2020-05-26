@@ -2,7 +2,8 @@
   export let containerTitle = "Container Title";
   export let containerDescription =
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ratione alias doloremque libero ...";
-  export let techIconsExist = true;
+  export let techInfoExist = true;
+  export let techNames = "technoloy names";
   import Button from "../components/utilities/Button.svelte";
 </script>
 
@@ -49,9 +50,11 @@
         class="border-l-2 border-teal-400 pl-2 text-gray-800 text-2xl
         md:text-4xl capitalize">
         {containerTitle}
-        <div class="flex font-light text-base text-teal-600 capitalize">
-          <span>Technologies Used: Bootstrap, Vuejs, Laravel</span>
-        </div>
+        {#if techInfoExist}
+          <div class="flex font-light text-base text-teal-600 capitalize">
+            <span>Technologies Used: {techNames}</span>
+          </div>
+        {/if}
       </div>
 
       <div>
@@ -105,11 +108,7 @@
       {containerDescription}
     </div>
 
-    {#if !techIconsExist}
-      <!-- <footer class="w-full flex bg-gray-200 border-t-2 h-6 pt-2">
-        <slot name="techIcons" />
-      </footer> -->
-
+    {#if !techInfoExist}
       <div class="w-full">
         <Button title="check out my cv" />
       </div>
