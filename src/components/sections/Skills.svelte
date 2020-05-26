@@ -2,9 +2,10 @@
   import PageTitle from "../PageTitle.svelte";
   import SkillsIconTemplate from "../SkillsIconTemplate.svelte";
   import SkillsChart from "../SkillsChart.svelte";
+  import Saparator2 from "../utilities/Saparator2.svelte";
 </script>
 
-<div class="flex flex-col w-full">
+<div class="flex flex-col w-full space-y-2">
   <div class="flex mb-4 justify-start">
     <PageTitle title="My Skills" />
   </div>
@@ -329,7 +330,8 @@
 
     </SkillsIconTemplate>
   </div>
-  <div class="flex w-full ">
-    <!-- <SkillsChart /> -->
+  <Saparator2 />
+  <div class="flex w-full">
+    <SkillsChart />
   </div>
 </div>

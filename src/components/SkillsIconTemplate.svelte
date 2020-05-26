@@ -5,7 +5,7 @@
 
 <style>
   .line {
-    height: 1px;
+    height: 1.5px;
   }
 </style>
 
@@ -19,8 +19,8 @@
     </div>
     <span class=" line w-1/3 bg-gray-500 inset-0 absolute top-auto " />
   </div>
-  <div class="my-3 flex flex-col p-2 w-48 font-roboto space-y-2">
-    <h2 class="text-gray-600 font-semibold flex justify-center ">
+  <div class="my-3 flex flex-col p-2 w-48 font-SourceSans space-y-2">
+    <h2 class="text-gray-600 sm:text-lg font-semibold flex justify-center ">
       {title.toUpperCase()}
     </h2>
     <p
