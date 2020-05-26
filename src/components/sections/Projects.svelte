@@ -134,8 +134,8 @@
 
     </div>
 
-    <div slot="techIcons" class="flex justify-around w-full text-white">
-      <SvelteTooltip tip="Bootstrap" bottom color="#1A202C">
+    <div slot="techInfo" class="flex justify-around w-full text-white">
+      <!-- <SvelteTooltip tip="Bootstrap" bottom color="#1A202C">
         <svg
           class="h-4 w-4 sm:h-6 sm:w-6 fill-current"
           width="22"
@@ -241,9 +241,11 @@
             fill="#4FD1C5" />
         </svg>
 
-      </SvelteTooltip>
+      </SvelteTooltip> -->
+
     </div>
   </ProjectContainer>
+
   <ProjectContainer
     containerTitle="Administrator Dashboard"
     containerDescription="Designing a responsive, multilingual, and functional
@@ -1592,7 +1594,7 @@
   <ProjectContainer
     containerTitle="personal portfolio"
     containerDescription="A personal portfolio designed and developed from
-    scratch using the most modren 'design and web' technologies">
+    scratch using the most modren 'design and web' technologies.">
 
     <svg
       class="p-6 h-full w-full sm:p-10"

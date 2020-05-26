@@ -49,6 +49,9 @@
         class="border-l-2 border-teal-400 pl-2 text-gray-800 text-2xl
         md:text-4xl capitalize">
         {containerTitle}
+        <div class="flex font-light text-base text-teal-600 capitalize">
+          <span>Technologies Used: Bootstrap, Vuejs, Laravel</span>
+        </div>
       </div>
 
       <div>
@@ -96,15 +99,17 @@
 
     </div>
 
+    <!-- <slot name="techInfo" /> -->
+
     <div class="text-gray-600 text-md md:text-lg text-justify">
       {containerDescription}
     </div>
 
-    {#if techIconsExist}
-      <footer class="w-full flex bg-gray-200 border-t-2 h-6 pt-2">
+    {#if !techIconsExist}
+      <!-- <footer class="w-full flex bg-gray-200 border-t-2 h-6 pt-2">
         <slot name="techIcons" />
-      </footer>
-    {:else}
+      </footer> -->
+
       <div class="w-full">
         <Button title="check out my cv" />
       </div>
