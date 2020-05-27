@@ -29,10 +29,12 @@
 </svelte:head>
 
 <svelte:window bind:scrollY={y} bind:outerHeight />
+
 <a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
   <Header iscurrentPageHome={true} />
 </div>
+
 <div
   id="home"
   class=" bg-gray-800 flex flex-col justify-center h-screen w-full">

@@ -72,7 +72,10 @@
               fill="currentColor" />
           </svg>
 
-          <span>Back to home</span>
+          <span class="flex">
+            <span class="hidden sm:block mr-1">Back to</span>
+            home
+          </span>
         </a>
       {/if}
     </div>
