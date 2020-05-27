@@ -197,8 +197,8 @@
     <a href="./" class="text-teal-400 z-50 cursor-pointer">Home Page</a>
   </p>
   {#if dev && error.stack}
-    <div class="text-white flex justify-center">
-      <p class="flex justify-center leading-snug p-4 m-4 text-sm h-auto w-64">
+    <div class="text-gray-600 flex justify-center mx-auto">
+      <p class="flex justify-center leading-snug p-4 m-4 text-sm h-auto w-64 ">
         {error.stack}
       </p>
 

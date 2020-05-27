@@ -11,6 +11,6 @@
   </div>
 </div>
 
-<div class="h-screen w-full flex">
+<div class=" w-full flex">
   <ResumeTemplate />
 </div>
