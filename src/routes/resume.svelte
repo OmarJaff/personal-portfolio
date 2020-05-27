@@ -1,5 +1,6 @@
 <script>
   import Header from "../components/Header.svelte";
+  import ResumeTemplate from "../components/Resume/ResumeTemplate.svelte";
 </script>
 
 <div class="block absolute w-full justify-center inset-0 h-20">
@@ -11,9 +12,5 @@
 </div>
 
 <div class="h-screen w-full flex">
-  <div class="flex justify-center container mx-auto">
-
-    
-
-  </div>
+  <ResumeTemplate />
 </div>
