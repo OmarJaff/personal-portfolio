@@ -15,6 +15,23 @@
     clearAllBodyScrollLocks
   } from "body-scroll-lock";
 
+  let successAnimation;
+  let errorAnimation;
+  let errorLog;
+  let isCopied = false;
+  let copyResponse = "";
+  let targetElement;
+  let openModal = false;
+
+  let formData = {
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  };
+
+  let violated = { nameField: false, emailField: false, message: false };
+
   onMount(() => {
     const targetElement = document.querySelector("#submitModel");
 
@@ -34,52 +51,13 @@
     ? disableBodyScroll(targetElement)
     : enableBodyScroll(targetElement);
 
-  let successAnimation;
-  let errorAnimation;
-  let errorLog;
-  let isCopied = false;
-  let copyResponse = "";
-  let targetElement;
-  const successMessage = () => {
-    successAnimation = bodymovin.loadAnimation({
-      container: document.getElementById("sendIcon"), // Required
-      path: "success_animation.json", // Required
-      renderer: "svg", // Required
-      loop: false, // Optional
-      autoplay: true, // Optional
-      name: "success message" // Name for future reference. Optional.
-    });
-  };
-
-  const errorMessage = () => {
-    errorAnimation = bodymovin.loadAnimation({
-      container: document.getElementById("sendIcon"),
-      path: "error_animation.json",
-      renderer: "svg",
-      loop: false,
-      autoplay: true,
-      name: "error massage"
-    });
-  };
-
-  let formData = {
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  };
-
-  let violated = { nameField: false, emailField: false, message: false };
-
-  let openModal = false;
-
-  let clearFormData = () => {
+  const clearFormData = () => {
     for (const property in formData) {
       formData[property] = "";
     }
   };
 
-  let handleSubmit = () => {
+  const handleSubmit = () => {
     formData.name.trim().length === 0
       ? (violated.nameField = true)
       : (violated.nameField = false);
@@ -113,6 +91,29 @@
         });
     }
   };
+
+  const successMessage = () => {
+    successAnimation = bodymovin.loadAnimation({
+      container: document.getElementById("sendIcon"), // Required
+      path: "success_animation.json", // Required
+      renderer: "svg", // Required
+      loop: false, // Optional
+      autoplay: true, // Optional
+      name: "success message" // Name for future reference. Optional.
+    });
+  };
+
+  const errorMessage = () => {
+    errorAnimation = bodymovin.loadAnimation({
+      container: document.getElementById("sendIcon"),
+      path: "error_animation.json",
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      name: "error massage"
+    });
+  };
+
   const handleCloseModal = () => {
     openModal = false;
     successAnimation ? successAnimation.destroy() : errorAnimation.destroy();
