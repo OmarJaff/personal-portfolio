@@ -16,14 +16,8 @@
 </script>
 
 <style>
-  .scale-up-hor-center {
-    -webkit-animation: scale-up-hor-center 0.4s
-      cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  }
-
-  .bg-custom-color {
-    background: rgba(116, 87, 87, 0.2);
+  .model-backdrop {
+    background: rgba(0, 0, 0, 0.1);
   }
 
   @-webkit-keyframes scale-up-hor-center {
@@ -50,9 +44,9 @@
 
 <div
   transition:fade
-  class="{openModal === true ? 'scale-up-hor-center' : 'scale-0'} transform
-  scale-0 main-modal z-50 fixed w-full h-100 inset-0 overflow-hidden flex
-  justify-center items-center bg-custom-color text-teal-400">
+  class="{openModal === true ? 'animated fadeIn fast' : 'hidden'} main-modal
+  z-50 fixed w-full h-100 inset-0 overflow-hidden flex justify-center
+  items-center model-backdrop text-teal-400">
   <div
     class="modal-container bg-gray-800 w-11/12 md:max-w-lg mx-auto rounded
     shadow-lg z-50 overflow-y-auto">
@@ -83,7 +77,7 @@
             class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto my-4" />
           {#if !errorLog}
             <h1
-              class="{openModal === true ? 'animated fadeIn delay-2s slow' : ''}
+              class="{openModal === true ? 'animated fadeIn slow' : ''}
               font-SourceSans text-xl sm:text-2xl text-gray-100 justify-center
               text-center ">
               <span class="text-teal-400">Thanks!</span>
@@ -108,10 +102,12 @@
           on:click={() => {
             closeModal();
           }}
-          class="{openModal === true && !errorLog ? 'animated fadeIn delay-2s slow' : ''}
-          text-xs bg-gray-200 rounded hover:bg-gray-300 h-8 sm:h-12 w-1/2
-          sm:text-base xl:text-xl sm:h-10 mt-2 text-white font-roboto">
-          <span class="text-gray-800">Back to the website</span>
+          class="{openModal === true && !errorLog ? ' ' : ''} text-xs
+          bg-gray-200 rounded hover:bg-gray-300 h-8 sm:h-12 w-1/2 sm:text-base
+          xl:text-xl sm:h-10 mt-2 text-white font-roboto">
+          <span class="text-gray-800 text-sm sm:text-lg">
+            Back to the website
+          </span>
         </button>
       </div>
     </div>

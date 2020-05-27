@@ -31,7 +31,7 @@
   const successMessage = () => {
     successAnimation = bodymovin.loadAnimation({
       container: document.getElementById("sendIcon"), // Required
-      path: "lf30_editor_m1Vm1w.json", // Required
+      path: "lf30_editor_7QlS1M.json", // Required
       renderer: "svg", // Required
       loop: false, // Optional
       autoplay: true, // Optional
@@ -150,7 +150,8 @@
           w-full sm:text-base xl:text-lg sm:py-2 rounded"
           placeholder="Full Name" />
         {#if violated.nameField}
-          <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
+          <span
+            class="text-red-600 text-xs sm:text-sm px-2 transform -translate-y-3">
             This field is required.
           </span>
         {/if}
@@ -166,7 +167,8 @@
           placeholder="Your Email" />
 
         {#if violated.emailField}
-          <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
+          <span
+            class="text-red-600 text-xs sm:text-sm px-2 transform -translate-y-3">
             This field is required and must be a valid email address.
           </span>
         {/if}
@@ -192,7 +194,8 @@
           w-full h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4 rounded"
           placeholder="Your Message" />
         {#if violated.message}
-          <span class="text-red-600 text-xs sm:text-sm px-2 pb-3">
+          <span
+            class="text-red-600 text-xs sm:text-sm px-2 transform -translate-y-3">
             This field is required.
           </span>
         {/if}
@@ -236,25 +239,25 @@
           name="emailaddress"
           readonly
           value={'me@omarjaff.com'}
-          class="text-gray-600 w-auto border-l-4 border-teal-400 bg-white py-3
-          p-2 sm:p-3 rounded w-full" />
+          class="text-xs sm:text-base text-gray-600 w-auto border-l-4
+          border-teal-400 bg-white py-3 p-2 sm:p-3 rounded w-full" />
 
-        <div class="text-gray-100 mt-4 px-20 absolute right-0">
+        <!-- <div class="text-gray-100 mt-4 px-20 absolute right-0">
           <SvelteTooltip
             tip={copyResponse}
             bottom
             color="#272740"
             active={isCopied} />
 
-        </div>
+        </div> -->
 
         <button
           data-clipboard-target="#emailaddress"
           type="button"
-          class="mycopybtn absolute bg-gray-800 hover:bg-gray-900 text-white
-          outline-none font-roboto rounded py-1 w-24 right-0 mx-4"
-          on:mouseout|preventDefault={() => (isCopied = false)}>
-          <span class="text-white">Copy</span>
+          class="text-sm sm:text-base mycopybtn absolute bg-gray-800
+          hover:bg-gray-900 text-white outline-none font-roboto rounded py-1
+          right-0 mx-4 w-20 sm:w-24 lg:w-32 ">
+          <span class="text-white">{isCopied ? 'Copied!' : 'Copy'}</span>
         </button>
       </div>
     </div>
