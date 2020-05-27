@@ -19,30 +19,10 @@
   .model-backdrop {
     background: rgba(0, 0, 0, 0.1);
   }
-
-  @-webkit-keyframes scale-up-hor-center {
-    0% {
-      -webkit-transform: scaleX(0.4);
-      transform: scaleX(0.4);
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-  }
-  @keyframes scale-up-hor-center {
-    0% {
-      -webkit-transform: scaleX(0.4);
-      transform: scaleX(0.4);
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-  }
 </style>
 
 <div
+  id="submitModel"
   transition:fade
   class="{openModal === true ? 'animated fadeIn fast' : 'hidden'} main-modal
   z-50 fixed w-full h-100 inset-0 overflow-hidden flex justify-center
@@ -74,21 +54,20 @@
         <div class="flex flex-col w-full items-center ">
           <div
             id="sendIcon"
-            class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto my-4" />
+            class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto my-4 font-SourceSans" />
           {#if !errorLog}
             <h1
-              class="{openModal === true ? 'animated fadeIn slow' : ''}
-              font-SourceSans text-xl sm:text-2xl text-gray-100 justify-center
-              text-center ">
+              class="{openModal === true ? 'animated fadeIn slow' : ''} text-lg
+              sm:text-xl text-gray-100 justify-center text-center ">
               <span class="text-teal-400">Thanks!</span>
               your message sent successfully.
             </h1>
           {:else}
             <h1
-              class=" font-nixieOne text-xl sm:text-2xl text-gray-100
-              justify-center text-center ">
+              class="{openModal === true ? 'animated fadeIn ' : ''} text-lg
+              sm:text-xl text-gray-100 justify-center text-center ">
               <span class="text-red-500">Oops!</span>
-              Something went wrong!
+              Something went wrong! Please try again.
             </h1>
           {/if}
         </div>

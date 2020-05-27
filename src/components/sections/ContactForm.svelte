@@ -9,7 +9,15 @@
   import { onMount } from "svelte";
   import Button from "../utilities/Button.svelte";
   import Saparator2 from "../utilities/Saparator2.svelte";
+  import {
+    disableBodyScroll,
+    enableBodyScroll,
+    clearAllBodyScrollLocks
+  } from "body-scroll-lock";
+
   onMount(() => {
+    const targetElement = document.querySelector("#submitModel");
+
     const clipboard = new ClipboardJS(".mycopybtn");
     clipboard.on("success", function(e) {
       copyResponse = "Copied!";
@@ -22,16 +30,20 @@
     });
   });
 
+  $: openModal
+    ? disableBodyScroll(targetElement)
+    : enableBodyScroll(targetElement);
+
   let successAnimation;
   let errorAnimation;
   let errorLog;
   let isCopied = false;
   let copyResponse = "";
-
+  let targetElement;
   const successMessage = () => {
     successAnimation = bodymovin.loadAnimation({
       container: document.getElementById("sendIcon"), // Required
-      path: "lf30_editor_7QlS1M.json", // Required
+      path: "success_animation.json", // Required
       renderer: "svg", // Required
       loop: false, // Optional
       autoplay: true, // Optional
@@ -42,9 +54,9 @@
   const errorMessage = () => {
     errorAnimation = bodymovin.loadAnimation({
       container: document.getElementById("sendIcon"),
-      path: "errormessage.json",
+      path: "error_animation.json",
       renderer: "svg",
-      loop: true,
+      loop: false,
       autoplay: true,
       name: "error massage"
     });
@@ -241,15 +253,6 @@
           value={'me@omarjaff.com'}
           class="text-xs sm:text-base text-gray-600 w-auto border-l-4
           border-teal-400 bg-white py-3 p-2 sm:p-3 rounded w-full" />
-
-        <!-- <div class="text-gray-100 mt-4 px-20 absolute right-0">
-          <SvelteTooltip
-            tip={copyResponse}
-            bottom
-            color="#272740"
-            active={isCopied} />
-
-        </div> -->
 
         <button
           data-clipboard-target="#emailaddress"
