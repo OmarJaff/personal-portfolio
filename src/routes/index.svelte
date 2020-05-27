@@ -30,7 +30,9 @@
 
 <svelte:window bind:scrollY={y} bind:outerHeight />
 <a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
-
+<div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
+  <Header iscurrentPageHome={true} />
+</div>
 <div
   id="home"
   class=" bg-gray-800 flex flex-col justify-center h-screen w-full">
@@ -67,7 +69,10 @@
     class="block absolute w-full justify-center inset-0 ">
 
     <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
-      <Header backgroundColor="gray-600" mainLogoColor="gray-500" />
+      <Header
+        iscurrentPageHome={true}
+        backgroundColor="gray-600"
+        mainLogoColor="gray-500" />
     </div>
 
     <div

@@ -53,10 +53,6 @@
 
 <Nav />
 
-<div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
-  <Header />
-</div>
-
 <main>
   <slot />
 </main>
