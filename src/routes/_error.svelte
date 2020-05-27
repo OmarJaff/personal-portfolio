@@ -1,6 +1,6 @@
 <script>
   export let status;
-  export let error;
+  // export let error;
   import SiteLogo from "../components/SiteLogo.svelte";
   import Header from "../components/Header.svelte";
   const dev = process.env.NODE_ENV === "development";
@@ -196,13 +196,15 @@
     Back to
     <a href="./" class="text-teal-400 z-50 cursor-pointer">Home Page</a>
   </p>
-  {#if dev && error.stack}
-    <div class="text-gray-600 flex justify-center mx-auto">
-      <p class="flex justify-center leading-snug p-4 m-4 text-sm h-auto w-64 ">
-        {error.stack}
+  <!-- {#if dev && error.stack}
+    <div
+      class="text-gray-600 flex justify-center mx-auto border-2 border-gray-300
+      rounded overflow-auto">
+      <p class="flex justify-center leading-snug m-4 text-sm w-64 ">
+        {error.stack.toString}
       </p>
 
     </div>
-  {/if}
+  {/if} -->
 
 </div>

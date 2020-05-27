@@ -3,6 +3,17 @@
   import Container from "./Container.svelte";
 </script>
 
+<style>
+  .list-color li::before {
+    content: "\2022";
+    color: #718096;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+</style>
+
 <div class="flex justify-center container mx-auto mt-24 mb-10">
 
   <div class="border-2 border-gray-300 rounded flex flex-col w-full mx-8 ">
@@ -247,14 +258,23 @@
         <ul
           slot="custom"
           class="font-SourceSans flex flex-col list-inside list-disc p-2
-          text-gray-800 space-y-2">
-          <li>Full stack web developer - Freelance</li>
-          <span class="text-teal-400 text-sm">| July-2018 - Present</span>
+          text-gray-800 space-y-6">
 
-          <li>Front-End Web developer at a local company - Erbil</li>
-          <span class="text-teal-400 text-sm">| Sep-2019 - Feb-2020</span>
-          <li>Web development trainer at Rwanga foundation – Erbil</li>
-          <span class="text-teal-400 text-sm">| Feb-2019 - Aprl-2020</span>
+          <li class="flex flex-col">
+            Full stack web developer - Freelance
+            <span class="text-teal-400 text-sm">| July-2018 - Present</span>
+          </li>
+
+          <li class="flex flex-col">
+            Front-End Web developer at a local company - Erbil
+            <span class="text-teal-400 text-sm">| Sep-2019 - Feb-2020</span>
+          </li>
+
+          <li class="flex flex-col">
+            Web development trainer at Rwanga foundation – Erbil
+            <span class="text-teal-400 text-sm">| Feb-2019 - Aprl-2020</span>
+          </li>
+
         </ul>
       </Container>
       <Container title="Skills">
@@ -287,8 +307,9 @@
 
         <ul
           slot="custom"
-          class="font-SourceSans flex flex-col list-inside list-disc p-2
-          text-gray-800 space-y-2">
+          class="font-SourceSans flex flex-col list-outside p-2 text-gray-800
+          space-y-6 list-color">
+
           <li>
             Front-End Web development:
             <span class="text-gray-600">
@@ -353,15 +374,16 @@
         </svg>
         <ul
           slot="custom"
-          class="font-SourceSans flex flex-col list-inside list-disc p-2
-          text-gray-800 space-y-2">
+          class="font-SourceSans flex flex-col list-outside p-2 text-gray-800
+          space-y-2">
           <li>
             Salahaddin University-Erbil
             <span class="text-teal-400 text-sm ml-1">| 2014 - 2018</span>
+
             <ul>
               <li class="text-gray-600 list-none">
                 + Bachelor degree in Computer Science
-                <span class="text-gray-700">(Top Second Student)</span>
+                <span class="text-gray-700">( Average grade: 77.38 )</span>
               </li>
             </ul>
           </li>
