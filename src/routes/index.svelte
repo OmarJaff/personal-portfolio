@@ -10,7 +10,7 @@
   import Skills from "../components/sections/Skills.svelte";
   import Projects from "../components/sections/Projects.svelte";
   import ContactForm from "../components/sections/ContactForm.svelte";
-  import Footer from "../components/sections/Footer.svelte";
+
   import BackToTopArrow from "../components/BackToHomeArrow.svelte";
   import Header from "../components/Header.svelte";
   import Saparator from "../components/utilities/Separator.svelte";
@@ -117,7 +117,4 @@
     </div>
 
   </div>
-</div>
-<div class="flex justify-center ">
-  <Footer />
 </div>

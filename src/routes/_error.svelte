@@ -1,8 +1,9 @@
 <script>
-  export let status
-  export let error
-  import SiteLogo from '../components/SiteLogo.svelte'
-  const dev = process.env.NODE_ENV === 'development'
+  export let status;
+  export let error;
+  import SiteLogo from "../components/SiteLogo.svelte";
+  import Header from "../components/Header.svelte";
+  const dev = process.env.NODE_ENV === "development";
 </script>
 
 <style>
@@ -17,7 +18,7 @@
   }
 
   .st0 {
-    font-family: 'Nixie One';
+    font-family: "Roboto Mono";
   }
   .st1 {
     font-size: 83.0285px;
@@ -28,28 +29,28 @@
 
   svg {
     text-align: center;
-    fill: #fe2f4d;
+    fill: #4fd1c5;
   }
   path#XMLID_5_ {
-    fill: #fe2f4d;
+    fill: #4fd1c5;
     filter: url(#blurFilter4);
   }
   path#XMLID_11_,
   path#XMLID_2_ {
-    fill: #fe2f4d;
+    fill: #4fd1c5;
   }
   .circle {
     animation: out 2s infinite ease-out;
-    fill: #fe2f4d;
+    fill: #4fd1c5;
   }
 
   .message {
-    color: #fff;
+    color: #7180a3;
   }
 
   .message:after,
   .message:before {
-    color: #f6f8f8;
+    color: #7180a3;
     font-size: 20px;
     -webkit-animation-name: opacity;
     -webkit-animation-duration: 2s;
@@ -64,7 +65,7 @@
   }
 
   .bg-new {
-enable-background:new 0 0 200 82.7;
+    enable-background: new 0 0 200 82.7;
   }
   @-webkit-keyframes opacity {
     0%,
@@ -113,8 +114,17 @@ enable-background:new 0 0 200 82.7;
 <svelte:head>
   <title>{status}</title>
 </svelte:head>
+<div class="block absolute w-full justify-center inset-0 h-20">
 
-<div id="container" class=" flex flex-col items-center h-full justify-center">
+  <div
+    class="flex w-fulL inset-0 bottom-auto fixed z-50 "
+    style=" clip: rect(auto, auto, auto, auto);">
+    <Header backgroundColor="gray-600" mainLogoColor="gray-500" />
+  </div>
+</div>
+<div
+  id="container"
+  class=" flex flex-col items-center h-full justify-center h-screen font-roboto ">
   {#if status === 404}
     <svg
       x="0px"
@@ -175,14 +185,16 @@ enable-background:new 0 0 200 82.7;
       </g>
     </svg>
   {:else}
-    <h1 class=" font-nixieOne text-vived-red">{status}</h1>
+    <h1 class="text-teal-400 text-lg sm:text-xl text-gray-600 font-bold">
+      {status}
+    </h1>
   {/if}
-  <div class="message font-raleway text-4xl px-4 py-2 break-all flex">
-    <p>{error.message}</p>
+  <div class="message text-gray-600 text-4xl px-4 py-2 break-all flex">
+    <p>Page not Found!</p>
   </div>
-  <p class="text-white font-raleway my-2">
+  <p class="text-gray-600 my-2">
     Back to
-    <a href="./" class="text-vived-red z-50 cursor-pointer">Home Page</a>
+    <a href="./" class="text-teal-400 z-50 cursor-pointer">Home Page</a>
   </p>
   {#if dev && error.stack}
     <div class="text-white flex justify-center">
@@ -192,8 +204,5 @@ enable-background:new 0 0 200 82.7;
 
     </div>
   {/if}
-  <div class=" my-12">
-    <SiteLogo />
 
-  </div>
 </div>

@@ -17,7 +17,18 @@
 
   let y = 0;
   let bgColor = "gray-100";
+  let path;
+  let isHomePage = true;
+  onMount(() => {
+    path = window.location.pathname;
+    backgroundColor = path === "/blog" ? "gray-600" : backgroundColor;
+    mainLogoColor = path === "/blog" ? "gray-500" : mainLogoColor;
+  });
+
   $: {
+    // isHomePage = path == "/" ? true : false;
+    // console.log(isHomePage);
+    // backgroundColor = isHomePage ? backgroundColor : "gray-600";
     bgColor = $isMenuOpen ? bgColor : backgroundColor;
   }
 </script>

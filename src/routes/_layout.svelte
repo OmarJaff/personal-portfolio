@@ -1,11 +1,12 @@
 <script>
+  export let segment;
   import Nav from "../components/Nav.svelte";
   import Header from "../components/Header.svelte";
   import { onMount } from "svelte";
   import ScrollIcon from "../components/ScrollDownIcon.svelte";
   import PageToggleLines from "../components/PageToggleLines.svelte";
   import MenuSpy from "menuspy";
-  export let segment;
+  import Footer from "../components/sections/Footer.svelte";
 
   import {
     disableBodyScroll,
@@ -34,7 +35,6 @@
     });
 
     elm = document.querySelector("#main-header");
-
     let ms = new MenuSpy(elm, {
       menuItemSelector: 'a[href^="#"]',
 
@@ -60,3 +60,7 @@
 <main>
   <slot />
 </main>
+
+<div class="flex justify-center ">
+  <Footer />
+</div>
