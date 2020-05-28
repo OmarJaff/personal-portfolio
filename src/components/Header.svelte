@@ -12,9 +12,9 @@
 
   const dispatch = createEventDispatcher();
 
-  const openMenue = () => {
-    dispatch("menuToggled");
-  };
+  // const openMenue = () => {
+  //   dispatch("menuToggled");
+  // };
 
   let y = 0;
   let bgColor = "gray-100";

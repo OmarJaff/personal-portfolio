@@ -5,15 +5,12 @@
   import { onMount } from "svelte";
   const dispatch = createEventDispatcher();
 
+  let menuClass = "";
+
   const toggleMenu = () => {
     dispatch("toggleMenu");
+    $isMenuOpen ? (menuClass = "active") : (menuClass = "not-active");
   };
-
-  let menuClass = "not-active";
-
-  $: {
-    !$isMenuOpen ? (menuClass = "not-active") : (menuClass = "active");
-  }
 </script>
 
 <style>
