@@ -16,7 +16,9 @@
 
 <div class="flex justify-center container mx-auto mt-24 mb-10">
 
-  <div class="border-2 border-gray-300 rounded flex flex-col w-full mx-8 ">
+  <div
+    class="border-2 border-gray-300 rounded flex flex-col w-full mx-8 sm:grid
+    sm:grid-flow-col space-y-4">
 
     <div class="flex bg-gray-300">
 
@@ -138,7 +140,7 @@
           </PersonalInfo>
         </div>
 
-        <div class="flex flex-col font-roboto mt-6">
+        <div class="hidden sm:flex flex-col font-roboto">
           <div class="flex items-center space-x-2">
             <svg
               class="w-5 h-5"
@@ -184,15 +186,84 @@
           <div class="flex flex-col font-SourceSans text-gray-800 px-8">
             <span>Kurdish (Native)</span>
             <span>Arabic (Excellent)</span>
-            <span>Kurdish (Excellent)</span>
-            <span>Kurdish (Good)</span>
+            <span>English (Excellent)</span>
+            <span>Turkish (Good)</span>
           </div>
 
         </div>
       </div>
 
     </div>
+
     <div class="flex flex-col p-6 space-y-8">
+      <div class="flex sm:hidden">
+        <Container title="languages">
+          <svg
+            class="w-5 h-5"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.49992 0C8.32833 0 8.9999 0.671571 8.9999
+              1.49998V2.99996H10.0982C10.1159 2.99965 10.1336 2.99965 10.1513
+              2.99996H13.4998C14.3283 2.99996 14.9998 3.67153 14.9998
+              4.49994C14.9998 5.32835 14.3283 5.99992 13.4998
+              5.99992H11.3669C10.8244 8.53111 9.94601 10.9372 8.78096
+              13.1692C9.21711 13.7005 9.67434 14.2138 10.1514 14.7081C10.7267
+              15.304 10.71 16.2536 10.114 16.829C9.51793 17.4043 8.56834 17.3876
+              7.99299 16.7915C7.70933 16.4977 7.43193 16.1978 7.16098
+              15.892C5.83335 17.8649 4.26575 19.6624 2.50035 21.2424C1.88307
+              21.7949 0.934787 21.7424 0.382299 21.1251C-0.170174 20.5077
+              -0.117644 19.5595 0.499643 19.007C2.31925 17.3785 3.90316 15.493
+              5.19458 13.4082C4.35989 12.2247 3.61297 10.9746 2.96333
+              9.66742C2.59467 8.92556 2.89718 8.0253 3.63904 7.65664C4.3809
+              7.28796 5.28118 7.59049 5.64984 8.33235C6.00024 9.03742 6.38234
+              9.72405 6.79433 10.3904C7.42041 8.98897 7.9236 7.52094 8.29036
+              5.99992H1.49999C0.67157 5.99992 1.39532e-05 5.32835 1.39532e-05
+              4.49994C1.39532e-05 3.67153 0.67157 2.99996 1.49999
+              2.99996H5.99994V1.49998C5.99994 0.671571 6.67149 0 7.49992
+              0ZM16.4998 8.99989C17.068 8.99989 17.5873 9.32088 17.8414
+              9.82906L22.3278 18.802C22.3376 18.8204 22.347 18.8392 22.3559
+              18.8581L23.8413 21.8289C24.2118 22.5699 23.9115 23.4708 23.1705
+              23.8413C22.4295 24.2118 21.5286 23.9115 21.1581 23.1705L20.0727
+              20.9997H12.9268L11.8415 23.1705C11.471 23.9115 10.57 24.2118
+              9.82908 23.8413C9.08811 23.4708 8.78777 22.5699 9.15825
+              21.8289L10.6437 18.8581C10.6527 18.8392 10.662 18.8204 10.6717
+              18.802L15.1582 9.82906C15.4123 9.32088 15.9316 8.99989 16.4998
+              8.99989ZM14.4268 17.9998H18.5728L16.4998 13.854L14.4268 17.9998Z"
+              fill="#718096" />
+          </svg>
+          <ul
+            slot="custom"
+            class="font-SourceSans flex flex-col list-disc p-2 text-gray-800
+            space-y-2">
+
+            <li class="flex">
+              Kurdish
+              <span class="text-gray-600 px-1">(Native)</span>
+            </li>
+
+            <li class="flex">
+              Arabic
+              <span class="text-gray-600 px-1">(Excellent)</span>
+            </li>
+
+            <li class="flex">
+              English
+              <span class="text-gray-600 px-1">(Excellent)</span>
+            </li>
+            <li class="flex">
+              Turkish
+              <span class="text-gray-600 px-1">(Good)</span>
+            </li>
+          </ul>
+        </Container>
+      </div>
+
       <Container
         title="about me"
         description=" I am a Full stack web developer and user interface (UI)
