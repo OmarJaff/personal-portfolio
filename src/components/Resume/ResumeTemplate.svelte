@@ -12,35 +12,54 @@
     width: 1em;
     margin-left: -1em;
   }
+  .custom-w {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .custom-w {
+      width: 50rem;
+    }
+  }
+  @media (min-width: 1280px) {
+    .custom-w {
+      width: 55rem;
+    }
+  }
 </style>
 
 <div class="flex justify-center container mx-auto mt-24 mb-10">
 
   <div
-    class="border-2 border-gray-300 rounded flex flex-col w-full mx-8 sm:grid
-    sm:grid-flow-col space-y-4">
+    class="border-2 border-gray-300 rounded flex flex-col mx-8 sm:grid
+    sm:grid-flow-col space-y-4 custom-w">
 
     <div class="flex bg-gray-300">
 
-      <div class="flex flex-col w-full p-6 ">
+      <div class="flex flex-col w-full p-6 sm:p-8 sm:pt-12 sm:space-y-16">
 
-        <div class="flex items-center space-x-4">
+        <div
+          class="flex items-center space-x-4 sm:flex-col sm:items-start
+          sm:space-y-4 sm:space-x-2">
           <div
             class="flex h-24 w-24 bg-gray-100 p-2 rounded-full border-2
-            border-gray-100">
+            border-gray-100 sm:h-32 sm:w-32 ">
             <img src="#" class=" object-fill " alt="" />
           </div>
           <div class="flex flex-col text-gray-600">
-            <h1 class=" text-xl font-payTon">OMAR JAFF</h1>
-            <span class="font-SourceSans text-sm">Web Developer</span>
+            <h1 class=" text-xl font-payTon sm:text-2xl font-sans">
+              OMAR JAFF
+            </h1>
+            <span class="font-SourceSans text-sm sm:text-lg">
+              Full Stack Developer
+            </span>
           </div>
         </div>
 
-        <div class="flex flex-col space-y-2 mt-6 pl-2">
+        <div class="flex flex-col space-y-2 mt-6 pl-2 ">
 
           <PersonalInfo text="me@omarjaff.com">
             <svg
-              class="w-5 h-5 text-gray-500"
+              class="w-5 h-5 text-gray-600"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -61,7 +80,7 @@
 
           <PersonalInfo text="www.omarjaff.com">
             <svg
-              class="w-5 h-5 text-gray-500"
+              class="w-5 h-5 text-gray-600"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -97,7 +116,7 @@
 
           <PersonalInfo text="(+964) 750 349 1464">
             <svg
-              class="w-5 h-4 text-gray-500"
+              class="w-5 h-4 text-gray-600"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -118,7 +137,7 @@
 
           <PersonalInfo text="Erbil-Iraq">
             <svg
-              class="h-4 text-gray-500"
+              class="h-4 text-gray-600"
               width="18"
               height="22"
               viewBox="0 0 18 22"
@@ -140,7 +159,7 @@
           </PersonalInfo>
         </div>
 
-        <div class="hidden sm:flex flex-col font-roboto">
+        <div class="hidden sm:flex flex-col font-roboto px-2 space-y-2">
           <div class="flex items-center space-x-2">
             <svg
               class="w-5 h-5"
@@ -183,11 +202,47 @@
             </svg>
             <h1 class="text-gray-600 text-lg mt-1">LANGUAGES</h1>
           </div>
-          <div class="flex flex-col font-SourceSans text-gray-800 px-8">
-            <span>Kurdish (Native)</span>
-            <span>Arabic (Excellent)</span>
-            <span>English (Excellent)</span>
-            <span>Turkish (Good)</span>
+          <div class="flex flex-col font-SourceSans text-gray-800 px-8 ">
+            <ul class="space-y-3">
+              <li>
+                Kurdish
+                <ul class="flex">
+                  -
+                  <li class="text-gray-600 text-base px-1">
+                    Native Proficiency
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Arabic
+                <ul class="flex">
+                  -
+                  <li class="text-gray-600 text-base px-1">
+                    Full Professional Proficiency
+                  </li>
+                </ul>
+
+              </li>
+              <li>
+                English
+                <ul class="flex">
+                  -
+                  <li class="text-gray-600 text-base px-1">
+                    Professional Working Proficiency
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Turkish
+                <ul class="flex">
+                  -
+                  <li class="text-gray-600 text-base px-1">
+                    Limited Working Proficiency
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
           </div>
 
         </div>
@@ -195,7 +250,7 @@
 
     </div>
 
-    <div class="flex flex-col p-6 space-y-8">
+    <div class="flex flex-col p-6 space-y-8 col-span-4 lg:col-span-1">
       <div class="flex sm:hidden">
         <Container title="languages">
           <svg
@@ -244,21 +299,27 @@
 
             <li class="flex">
               Kurdish
-              <span class="text-gray-600 px-1">(Native)</span>
+              <span class="text-gray-600 px-1">- Native Proficiency</span>
             </li>
 
             <li class="flex">
               Arabic
-              <span class="text-gray-600 px-1">(Excellent)</span>
+              <span class="text-gray-600 px-1">
+                - Full Professional Proficiency
+              </span>
             </li>
 
             <li class="flex">
               English
-              <span class="text-gray-600 px-1">(Excellent)</span>
+              <span class="text-gray-600 px-1">
+                - Professional Working Proficiency
+              </span>
             </li>
             <li class="flex">
               Turkish
-              <span class="text-gray-600 px-1">(Good)</span>
+              <span class="text-gray-600 px-1">
+                - Limited Working Proficiency
+              </span>
             </li>
           </ul>
         </Container>
