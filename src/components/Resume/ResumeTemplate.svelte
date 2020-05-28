@@ -31,9 +31,11 @@
 
   <div
     class="border-2 border-gray-300 rounded flex flex-col mx-8 sm:grid
-    sm:grid-flow-col space-y-4 custom-w sm:border-l-0">
+    sm:grid-flow-col space-y-4 custom-w border-t-0 sm:border-l-0">
 
-    <div class="flex bg-gray-300 sm:border-l-4 sm:rounded sm:border-gray-600">
+    <div
+      class="flex bg-gray-300 border-t-4 border-gray-600 sm:border-t-0 rounded
+      sm:border-l-4 s ">
 
       <div class="flex flex-col w-full p-6 sm:p-8 sm:pt-12 sm:space-y-16">
 
@@ -200,11 +202,11 @@
                 8.99989ZM14.4268 17.9998H18.5728L16.4998 13.854L14.4268 17.9998Z"
                 fill="#718096" />
             </svg>
-            <h1 class="text-gray-600 text-lg mt-1">LANGUAGES</h1>
+            <h1 class="text-gray-600 text-xl mt-1 ">LANGUAGES</h1>
           </div>
           <div class="flex flex-col font-SourceSans text-gray-800 px-8 ">
-            <ul class="space-y-3">
-              <li>
+            <ul class="space-y-4">
+              <li class="text-lg">
                 Kurdish
                 <ul class="flex">
                   -
@@ -213,7 +215,7 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="text-lg">
                 Arabic
                 <ul class="flex">
                   -
@@ -223,7 +225,7 @@
                 </ul>
 
               </li>
-              <li>
+              <li class="text-lg">
                 English
                 <ul class="flex">
                   -
@@ -232,7 +234,7 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="text-lg">
                 Turkish
                 <ul class="flex">
                   -
@@ -331,7 +333,7 @@
         and I have worked on independent projects with other freelancer teams
         using the most efficient and modern web technologies">
         <svg
-          class="h-5 w-5"
+          class="h-5 w-5 xl:w-6 xl:h-6"
           width="28"
           height="28"
           viewBox="0 0 28 28"
@@ -358,7 +360,7 @@
       </Container>
       <Container title="work experience">
         <svg
-          class="h-5 w-5"
+          class="h-5 w-5 xl:w-6 xl:h-6"
           width="28"
           height="28"
           viewBox="0 0 28 28"
@@ -389,14 +391,14 @@
         <ul
           slot="custom"
           class="font-SourceSans flex flex-col list-inside list-disc p-2
-          text-gray-800 space-y-6 sm:space-y-8">
+          text-gray-800 space-y-6 sm:space-y-8 xl:text-lg">
 
           <li class="flex flex-col sm:space-y-2">
             Full stack web developer - Freelance
             <span class="text-teal-500 text-sm">| July-2018 - Present</span>
             <ul class="text-gray-600 hidden sm:flex">
               +
-              <li class="px-1">
+              <li class="px-1 xl:text-base">
                 Working on Web projects with other freelancer teams using
                 PHP/Laravel, Vue.Js or Dd svelte and TailwindCSS or Bootstrap
                 for designing purposes.
@@ -410,7 +412,7 @@
 
             <ul class="text-gray-600 hidden sm:flex">
               +
-              <li class="px-1">
+              <li class="px-1 xl:text-base">
                 Working on Web projects with other freelancer teams using
                 PHP/Laravel, Vue.Js or svelte and TailwindCSS or Bootstrap for
                 designing purposes.
@@ -424,7 +426,7 @@
 
             <ul class="text-gray-600 hidden sm:flex">
               +
-              <li class="px-1">
+              <li class="px-1 xl:text-base">
                 Teaching the fundamentals of Modern Web Development Including
                 Git, FlexBox, Responsive Design (bs4), Bundlers, JavaScript, and
                 Vuejs.
@@ -436,7 +438,7 @@
       </Container>
       <Container title="Skills">
         <svg
-          class="h-5 w-5"
+          class="h-5 w-5 xl:w-6 xl:h-6"
           width="28"
           height="21"
           viewBox="0 0 28 21"
@@ -465,7 +467,7 @@
         <ul
           slot="custom"
           class="font-SourceSans flex flex-col list-outside p-2 text-gray-800
-          space-y-6 list-color">
+          space-y-6 list-color xl:text-lg">
 
           <li>
             Front-End Web development:
@@ -532,13 +534,13 @@
         <ul
           slot="custom"
           class="font-SourceSans flex flex-col list-outside p-2 text-gray-800
-          space-y-2">
+          space-y-2 xl:text-lg">
           <li>
             Salahaddin University-Erbil
             <span class="text-teal-500 text-sm ml-1">| 2014 - 2018</span>
 
             <ul>
-              <li class="text-gray-600 list-none">
+              <li class="text-gray-600 list-none xl:text-base">
                 + Bachelor degree in Computer Science
                 <span class="text-gray-700">( Average grade: 77.38 )</span>
               </li>

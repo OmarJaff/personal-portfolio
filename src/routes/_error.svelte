@@ -190,7 +190,7 @@
     </h1>
   {/if}
   <div class="message text-gray-600 text-4xl px-4 py-2 break-all flex">
-    <p>Page not Found!</p>
+    <p>Oops! an error occured</p>
   </div>
   <p class="text-gray-600 my-2">
     Back to

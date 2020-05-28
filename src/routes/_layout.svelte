@@ -7,7 +7,7 @@
   import PageToggleLines from "../components/PageToggleLines.svelte";
   import MenuSpy from "menuspy";
   import Footer from "../components/sections/Footer.svelte";
-
+  import BackToTopArrow from "../components/BackToHomeArrow.svelte";
   import {
     disableBodyScroll,
     enableBodyScroll,
@@ -51,6 +51,7 @@
   });
 </script>
 
+<a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 <Nav />
 
 <main>
@@ -60,3 +61,5 @@
 <div class="flex justify-center ">
   <Footer />
 </div>
+
+<BackToTopArrow />

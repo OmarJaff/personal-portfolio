@@ -10,8 +10,6 @@
   import Skills from "../components/sections/Skills.svelte";
   import Projects from "../components/sections/Projects.svelte";
   import ContactForm from "../components/sections/ContactForm.svelte";
-
-  import BackToTopArrow from "../components/BackToHomeArrow.svelte";
   import Header from "../components/Header.svelte";
   import Saparator from "../components/utilities/Separator.svelte";
   let y = 0;
@@ -30,7 +28,6 @@
 
 <svelte:window bind:scrollY={y} bind:outerHeight />
 
-<a name="top" href="#top" rel="backtohome" class="sr-only target">home</a>
 <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
   <Header iscurrentPageHome={true} />
 </div>
@@ -62,7 +59,7 @@
 
   <ScrollIcon />
   <AboutMeFlag />
-  <BackToTopArrow />
+
 </div>
 
 <div class="flex flex-col justify-between relative">

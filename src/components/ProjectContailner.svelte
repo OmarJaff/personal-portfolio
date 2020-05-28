@@ -64,9 +64,14 @@
 
     {#if !techInfoExist}
       <div class="w-full">
-        <Button
-          on:click={() => (window.location.href = '/resume')}
-          title="check out my cv" />
+
+        <a
+          class="w-full rounded bg-gray-800 text-gray-200 focus:outline-none
+          outline-none text-lg py-1 text-md hover:bg-gray-900 relative flex
+          justify-center items-center"
+          href="/resume">
+          Check out my cv
+        </a>
       </div>
     {/if}
   </div>

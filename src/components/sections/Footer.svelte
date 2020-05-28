@@ -4,7 +4,6 @@
   let currentYear = new Date();
 </script>
 
-
 <div class="absolute flex justify-center h-2 flex-wrap w-full ">
 
   <div
