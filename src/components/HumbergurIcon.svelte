@@ -12,7 +12,7 @@
   let menuClass = "not-active";
 
   $: {
-    $isMenuOpen ? (menuClass = "active") : (menuClass = "not-active");
+    !$isMenuOpen ? (menuClass = "not-active") : (menuClass = "active");
   }
 </script>
 
