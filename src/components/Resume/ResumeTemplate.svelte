@@ -389,21 +389,47 @@
         <ul
           slot="custom"
           class="font-SourceSans flex flex-col list-inside list-disc p-2
-          text-gray-800 space-y-6">
+          text-gray-800 space-y-6 sm:space-y-8">
 
-          <li class="flex flex-col">
+          <li class="flex flex-col sm:space-y-2">
             Full stack web developer - Freelance
             <span class="text-teal-500 text-sm">| July-2018 - Present</span>
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1">
+                Working on Web projects with other freelancer teams using
+                PHP/Laravel, Vue.Js or Dd svelte and TailwindCSS or Bootstrap
+                for designing purposes.
+              </li>
+            </ul>
           </li>
 
-          <li class="flex flex-col">
+          <li class="flex flex-col sm:space-y-2">
             Front-End Web developer at a local company - Erbil
             <span class="text-teal-500 text-sm">| Sep-2019 - Feb-2020</span>
+
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1">
+                Working on Web projects with other freelancer teams using
+                PHP/Laravel, Vue.Js or svelte and TailwindCSS or Bootstrap for
+                designing purposes.
+              </li>
+            </ul>
           </li>
 
-          <li class="flex flex-col">
+          <li class="flex flex-col sm:space-y-2">
             Web development trainer at Rwanga foundation – Erbil
             <span class="text-teal-500 text-sm">| Feb-2019 - Aprl-2020</span>
+
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1">
+                Teaching the fundamentals of Modern Web Development Including
+                Git, FlexBox, Responsive Design (bs4), Bundlers, JavaScript, and
+                Vuejs.
+              </li>
+            </ul>
           </li>
 
         </ul>
