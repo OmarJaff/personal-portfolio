@@ -31,21 +31,21 @@
 
   <div
     class="border-2 border-gray-300 rounded flex flex-col mx-8 sm:grid
-    sm:grid-flow-col space-y-4 custom-w">
+    sm:grid-flow-col space-y-4 custom-w sm:border-l-0">
 
-    <div class="flex bg-gray-300">
+    <div class="flex bg-gray-300 sm:border-l-4 sm:rounded sm:border-gray-600">
 
       <div class="flex flex-col w-full p-6 sm:p-8 sm:pt-12 sm:space-y-16">
 
         <div
-          class="flex items-center space-x-4 sm:flex-col sm:items-start
-          sm:space-y-4 sm:space-x-2">
+          class="flex items-center space-x-4 sm:flex-col sm:space-y-4
+          sm:space-x-2">
           <div
             class="flex h-24 w-24 bg-gray-100 p-2 rounded-full border-2
             border-gray-100 sm:h-32 sm:w-32 ">
             <img src="#" class=" object-fill " alt="" />
           </div>
-          <div class="flex flex-col text-gray-600">
+          <div class="flex flex-col text-gray-600 sm:items-center">
             <h1 class=" text-xl font-payTon sm:text-2xl font-sans">
               OMAR JAFF
             </h1>
@@ -294,28 +294,27 @@
           </svg>
           <ul
             slot="custom"
-            class="font-SourceSans flex flex-col list-disc p-2 text-gray-800
-            space-y-2">
+            class="font-SourceSans flex flex-col p-2 text-gray-800 space-y-2 ">
 
-            <li class="flex">
+            <li>
               Kurdish
               <span class="text-gray-600 px-1">- Native Proficiency</span>
             </li>
 
-            <li class="flex">
+            <li>
               Arabic
               <span class="text-gray-600 px-1">
                 - Full Professional Proficiency
               </span>
             </li>
 
-            <li class="flex">
+            <li>
               English
               <span class="text-gray-600 px-1">
                 - Professional Working Proficiency
               </span>
             </li>
-            <li class="flex">
+            <li>
               Turkish
               <span class="text-gray-600 px-1">
                 - Limited Working Proficiency
@@ -394,17 +393,17 @@
 
           <li class="flex flex-col">
             Full stack web developer - Freelance
-            <span class="text-teal-400 text-sm">| July-2018 - Present</span>
+            <span class="text-teal-500 text-sm">| July-2018 - Present</span>
           </li>
 
           <li class="flex flex-col">
             Front-End Web developer at a local company - Erbil
-            <span class="text-teal-400 text-sm">| Sep-2019 - Feb-2020</span>
+            <span class="text-teal-500 text-sm">| Sep-2019 - Feb-2020</span>
           </li>
 
           <li class="flex flex-col">
             Web development trainer at Rwanga foundation – Erbil
-            <span class="text-teal-400 text-sm">| Feb-2019 - Aprl-2020</span>
+            <span class="text-teal-500 text-sm">| Feb-2019 - Aprl-2020</span>
           </li>
 
         </ul>
@@ -510,7 +509,7 @@
           space-y-2">
           <li>
             Salahaddin University-Erbil
-            <span class="text-teal-400 text-sm ml-1">| 2014 - 2018</span>
+            <span class="text-teal-500 text-sm ml-1">| 2014 - 2018</span>
 
             <ul>
               <li class="text-gray-600 list-none">
