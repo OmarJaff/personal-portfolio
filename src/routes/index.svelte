@@ -30,7 +30,7 @@
 
 <div
   class="flex w-fulL inset-0 bottom-auto fixed z-50"
-  style="clip-path: rect(auto, auto, auto, auto);">
+  style="clip: rect(auto, auto, auto, auto);">
   <Header iscurrentPageHome={true} />
 </div>
 
@@ -55,7 +55,7 @@
   <div
     class="hidden sm:flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0
     sm:h-full justify-center z-40"
-    style="clip-path: rect(auto, auto, auto, auto);">
+    style="clip: rect(auto, auto, auto, auto);">
     <PageToggleLines id={'togglepagelines'} />
   </div>
 
@@ -67,9 +67,9 @@
 <div class="flex flex-col justify-between relative">
   <div
     style="clip: rect(auto, auto, auto, auto);"
-    class="block absolute w-full justify-center inset-0">
+    class="block absolute w-full justify-center inset-0 z-50">
 
-    <div class="flex w-fulL inset-0 bottom-auto fixed z-50 ">
+    <div class="flex w-fulL inset-0 bottom-auto fixed ">
       <Header
         iscurrentPageHome={true}
         backgroundColor="gray-600"
