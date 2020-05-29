@@ -75,18 +75,20 @@
         backgroundColor="gray-600"
         mainLogoColor="gray-500" />
     </div>
+  </div>
+
 
     <div
+    style="clip: rect(auto);"
       class="sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
       justify-center z-40 hidden sm:flex ">
-
+      
       <PageToggleLines
         id={'togglepagelines2'}
         backgroundColor={'bg-gray-600'} />
 
     </div>
 
-  </div>
   <div class="container mx-auto z-30 mt-16">
 
     <div
