@@ -5,7 +5,7 @@
 </script>
 
 <svelte:window bind:innerWidth={x} />
-<div class="flex flex-col items-center ">
+<div class="flex ">
   <svg
     class="-my-1 text-{mainLogoColor}"
     width="46"

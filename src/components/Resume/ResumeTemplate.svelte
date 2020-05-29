@@ -31,7 +31,7 @@
 
   <div
     class="border-2 border-gray-300 rounded flex flex-col mx-8 sm:grid
-    sm:grid-flow-col space-y-4 custom-w border-t-0 sm:border-l-0">
+    sm:grid-flow-col space-y-4 custom-w border-t-0 sm:border-l-0 bg-gray-100">
 
     <div
       class="flex bg-gray-300 border-t-4 border-gray-600 sm:border-t-0 rounded

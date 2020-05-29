@@ -27,7 +27,7 @@
       <SiteLogo mainLogoColor={$isMenuOpen ? 'gray-100' : mainLogoColor} />
     </div>
 
-    <div class="flex flex-row-reverse items-baseline">
+    <div class="flex flex-row-reverse items-center">
       {#if iscurrentPageHome}
         <HumbergerIcon
           backgroundColor={$isMenuOpen ? 'gray-100' : backgroundColor}
