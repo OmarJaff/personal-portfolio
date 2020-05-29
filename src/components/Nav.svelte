@@ -1,14 +1,17 @@
 <script>
-  import { createEventDispatcher } from "svelte";
   import SocialIcons from "../components/SocialIcons.svelte";
   import jump from "jump.js";
   import { enableBodyScroll } from "body-scroll-lock";
-  import { isMenuOpen, slideUpClass } from "../store.js";
+  import { isMenuOpen, slideNavClass, menuClass } from "../store.js";
   import { fly } from "svelte/transition";
 
   const menueClosed = () => {
     isMenuOpen.update(m => (m = !m));
+    menuClass.update(() => "not-active");
+    slideNavClass.update(() => "slideOutUp");
   };
+
+  let navClass = "";
   let menuOpen = false;
 </script>
 
@@ -33,9 +36,8 @@
 
 <header id="main-header">
   <div
-    class:slideInDown={$isMenuOpen === true}
-    class="transform -translate-y-full animated faster gradiantStyle h-screen
-    w-screen fixed inset-0 z-50 font-roboto font-medium">
+    class="{$slideNavClass} transform -translate-y-full animated faster
+    gradiantStyle h-screen w-screen fixed inset-0 z-50 font-roboto font-medium">
     <nav
       class="flex w-full justify-center top-0 text-white text-4xl xl:text-5xl">
       <ul class="absolute flex flex-col items-center h-full justify-center">

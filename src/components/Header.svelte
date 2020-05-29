@@ -3,18 +3,11 @@
   export let mainLogoColor = "gray-100";
   export let iscurrentPageHome = false;
   import { isMenuOpen } from "../store.js";
-  import { createEventDispatcher } from "svelte";
   import SiteLogo from "./SiteLogo.svelte";
   import HumbergerIcon from "../components/HumbergurIcon.svelte";
   import SocialIcons from "../components/SocialIcons.svelte";
   import MenuSpy from "menuspy";
   import { onMount } from "svelte";
-
-  const dispatch = createEventDispatcher();
-
-  // const openMenue = () => {
-  //   dispatch("menuToggled");
-  // };
 
   let y = 0;
   let bgColor = "gray-100";

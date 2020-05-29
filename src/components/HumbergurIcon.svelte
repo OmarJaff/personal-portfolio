@@ -1,15 +1,19 @@
 <script>
   export let backgroundColor = "gray-100";
-  import { isMenuOpen } from "../store.js";
-  import { createEventDispatcher } from "svelte";
+  import { isMenuOpen, menuClass, slideNavClass } from "../store.js";
   import { onMount } from "svelte";
-  const dispatch = createEventDispatcher();
-
-  let menuClass = "";
 
   const toggleMenu = () => {
-    dispatch("toggleMenu");
-    $isMenuOpen ? (menuClass = "active") : (menuClass = "not-active");
+    isMenuOpen.update(function(m) {
+      if ($isMenuOpen) {
+        slideNavClass.update(() => "slideOutUp");
+        menuClass.update(() => "not-active");
+      } else {
+        slideNavClass.update(() => "slideInDown");
+        menuClass.update(() => "active");
+      }
+      return (m = !m);
+    });
   };
 </script>
 
@@ -18,7 +22,6 @@
     width: 100%;
     border-radius: 2px;
     height: 3px;
-    /* background: #edf2f7; */
     transition: all 0.2s;
     position: relative;
   }
@@ -110,7 +113,7 @@
 
 <div
   on:click={() => toggleMenu()}
-  class="{menuClass} btn w-10 sm:w-12 cursor-pointer flex-col ">
+  class="{$menuClass} btn w-10 sm:w-12 cursor-pointer flex-col ">
   <span class="flex bg-{backgroundColor}" />
 
   <span class="flex bg-{backgroundColor}" />
