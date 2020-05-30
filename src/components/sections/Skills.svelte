@@ -331,9 +331,7 @@
 
     </SkillsIconTemplate>
   </div>
-  <Saparator2
-    fontSize="text-base sm:text-lg lg:text-xl"
-    title="My web development skills chart" />
+  <Saparator2 fontSize="text-base sm:text-lg lg:text-xl" title="Web Skills" />
   <div class="flex w-full">
     <!-- <SkillsChart /> -->
     <div
