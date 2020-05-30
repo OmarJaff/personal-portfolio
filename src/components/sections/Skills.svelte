@@ -3,6 +3,7 @@
   import SkillsIconTemplate from "../SkillsIconTemplate.svelte";
   import SkillsChart from "../SkillsChart.svelte";
   import Saparator2 from "../utilities/Saparator2.svelte";
+  import SkillCard from "../utilities/SkillCard.svelte";
 </script>
 
 <div class="flex flex-col w-full space-y-4">
@@ -334,6 +335,33 @@
     fontSize="text-base sm:text-lg lg:text-xl"
     title="My web development skills chart" />
   <div class="flex w-full">
-    <SkillsChart />
+    <!-- <SkillsChart /> -->
+    <div class="grid relative w-full gap-2 grid-cols-12">
+      <div class="col-span-4 transform translate-x-6">
+        <SkillCard
+          title="Backend Development"
+          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Commodi maiores molestiae numquam dolorem enim expedita quae magni
+          sunt, illum recusandae. Totam consequatur odio ipsa nobis laborum!
+          Nesciunt dolor earum libero!" />
+      </div>
+      <div class="col-span-4 transform translate-y-6">
+        <SkillCard
+          title="Frontend Development"
+          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Commodi maiores molestiae numquam dolorem enim expedita quae magni
+          sunt, illum recusandae. Totam consequatur odio ipsa nobis laborum!
+          Nesciunt dolor earum libero!" />
+      </div>
+      <div class="-translate-x-6 col-span-4 transform translate-y-12 ">
+        <SkillCard
+          title="Web Desing"
+          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Commodi maiores molestiae numquam dolorem enim expedita quae magni
+          sunt, illum recusandae. Totam consequatur odio ipsa nobis laborum!
+          Nesciunt dolor earum libero!" />
+      </div>
+    </div>
+
   </div>
 </div>
