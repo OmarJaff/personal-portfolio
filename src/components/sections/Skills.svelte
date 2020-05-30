@@ -336,30 +336,29 @@
     title="My web development skills chart" />
   <div class="flex w-full">
     <!-- <SkillsChart /> -->
-    <div class="grid relative w-full gap-2 grid-cols-12">
-      <div class="col-span-4 transform translate-x-6">
+    <div
+      class="grid relative w-full flex lg:grid-cols-12 space-y-6 lg:space-y-0">
+      <div class="col-span-4 lg:transform lg:translate-x-6 ">
         <SkillCard
           title="Backend Development"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Commodi maiores molestiae numquam dolorem enim expedita quae magni
-          sunt, illum recusandae. Totam consequatur odio ipsa nobis laborum!
-          Nesciunt dolor earum libero!" />
+          description="I know php and laravel well enough, i have worked with
+          laravel framework and built API's for multi featured projects." />
       </div>
-      <div class="col-span-4 transform translate-y-6">
+      <div class="col-span-4 lg:transform lg:translate-y-6">
         <SkillCard
           title="Frontend Development"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Commodi maiores molestiae numquam dolorem enim expedita quae magni
-          sunt, illum recusandae. Totam consequatur odio ipsa nobis laborum!
-          Nesciunt dolor earum libero!" />
+          description="This is my actual career, iam a front-end guy who love to
+          use modren JS & CSS frameworks and libraries to make awesome, fast and
+          clean web projects. I have worked with Vue.js alot, i also used react,
+          and used svelte for my portfolio. For styling i prefere working with
+          tailwindCSS, but i know bootstrap too." />
       </div>
-      <div class="-translate-x-6 col-span-4 transform translate-y-12 ">
+      <div class="lg:-translate-x-6 col-span-4 lg:transform lg:translate-y-12 ">
         <SkillCard
-          title="Web Desing"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Commodi maiores molestiae numquam dolorem enim expedita quae magni
-          sunt, illum recusandae. Totam consequatur odio ipsa nobis laborum!
-          Nesciunt dolor earum libero!" />
+          title="UI/UX design"
+          description="I am a UI designer too! I always aim to create clean,
+          easy to use and beautiful designs. I have worked with both Adobe XD
+          and Figma for different projects." />
       </div>
     </div>
 
