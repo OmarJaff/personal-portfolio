@@ -12,7 +12,7 @@
   lg:grid-cols-3">
   <div
     class="flex border-b-2 border-gray-400 sm:border-b-0 sm:border-r-2
-    bg-gray-300 h-40 sm:h-auto sm:w-full relative">
+    bg-gray-300 h-40 sm:h-auto sm:w-full relative items-center">
     {#if techInfoExist}
       <div class="absolute inset-0 p-2 sm:px-4">
         <svg
