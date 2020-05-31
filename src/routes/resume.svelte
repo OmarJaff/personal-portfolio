@@ -3,7 +3,7 @@
   import ResumeTemplate from "../components/Resume/ResumeTemplate.svelte";
 </script>
 
-<div class="block absolute w-full justify-center inset-0 h-20">
+<div id="resume" class="block absolute w-full justify-center inset-0 h-20">
   <div
     class="flex w-fulL inset-0 bottom-auto fixed z-50 "
     style=" clip: rect(auto, auto, auto, auto);">
