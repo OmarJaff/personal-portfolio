@@ -28,9 +28,7 @@
 
 <svelte:window bind:scrollY={y} bind:outerHeight />
 
-<div
-  class="flex w-fulL inset-0 bottom-auto fixed z-50"
-  style="clip-path: inset(0 0 0 0);">
+<div class="flex w-fulL inset-0 bottom-auto fixed z-50">
   <Header iscurrentPageHome={true} />
 </div>
 
@@ -52,12 +50,12 @@
     </div>
   </section>
 
-  <div
+  <!-- <div
     class="hidden sm:flex mx-8 sm:flex-col absolute top-auto sm:top-0 inset-0
-    sm:h-full justify-center z-40"
-    style="clip-path: inset(0 0 0 0);">
+    sm:h-full justify-center "
+    style="-webkit-clip-path: inset(0 0 0 0); clip-path: inset(0 0 0 0);">
     <PageToggleLines id={'togglepagelines'} />
-  </div>
+  </div> -->
 
   <ScrollIcon />
   <AboutMeFlag />
@@ -85,8 +83,8 @@
 
 <div class="flex flex-col justify-between relative">
   <div
-    style="clip-path: inset(0 0 0 0);"
-    class="block absolute w-32 justify-center inset-0">
+    style="-webkit-clip-path: inset(0 0 0 0); clip-path: inset(0 0 0 0);"
+    class="block absolute w-32 justify-center inset-0 ">
 
     <div
       class="sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
