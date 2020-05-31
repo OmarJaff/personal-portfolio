@@ -92,7 +92,6 @@
       <PageToggleLines
         id={'togglepagelines2'}
         backgroundColor={'bg-gray-600'} />
-
     </div>
   </div>
 
@@ -103,7 +102,7 @@
       mainLogoColor="gray-500" />
   </div> -->
 
-  <div
+  <!-- <div
     style="-webkit-clip:rect(auto, auto, auto, auto); clip:rect(auto, auto,
     auto, auto);"
     class="block absolute w-32 justify-center inset-0 ">
@@ -117,7 +116,7 @@
         backgroundColor={'bg-gray-600'} />
 
     </div> -->
-  </div>
+  </div> -->
 
   <div class="container mx-auto z-30 mt-16">
 
