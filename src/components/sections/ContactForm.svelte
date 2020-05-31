@@ -159,8 +159,8 @@
           bind:value={formData.name}
           name="name"
           class="{violated.nameField ? ' animated fast shake border-2 border-red-500' : 'border-2 border-gray-400'}
-          bg-white placeholder-gray-600 text-gray-800 text-xs py-2 p-2 sm:p-3
-          w-full sm:text-base xl:text-lg sm:py-2 rounded"
+          bg-white placeholder-gray-600 text-gray-800 py-2 p-2 sm:p-3 w-full
+          text-base xl:text-lg sm:py-2 rounded"
           placeholder="Full Name" />
         {#if violated.nameField}
           <span
@@ -175,8 +175,8 @@
           name="email"
           bind:value={formData.email}
           class="{violated.emailField ? ' animated fast shake border-2 border-red-500' : 'border-2 border-gray-400'}
-          bg-white placeholder-gray-600 text-gray-800 text-xs py-2 p-2 sm:p-3
-          w-full sm:text-base xl:text-lg sm:py-2 rounded"
+          bg-white placeholder-gray-600 text-gray-800 text-base py-2 p-2 sm:p-3
+          w-full xl:text-lg sm:py-2 rounded"
           placeholder="Your Email" />
 
         {#if violated.emailField}
@@ -192,8 +192,8 @@
           name="subject"
           bind:value={formData.subject}
           class="border-2 border-gray-400 bg-white placeholder-gray-600
-          text-gray-800 text-xs py-2 p-2 sm:p-3 w-full sm:text-base xl:text-lg
-          sm:py-2 rounded"
+          text-gray-800 py-2 p-2 sm:p-3 w-full text-base xl:text-lg sm:py-2
+          rounded"
           placeholder="Subject" />
 
         <label for="message" class="sr-only">Message</label>
@@ -203,8 +203,8 @@
           name="message"
           bind:value={formData.message}
           class="{violated.message ? ' animated fast shake border-2 border-red-500' : 'border-2 border-gray-400'}
-          bg-white placeholder-gray-600 text-gray-800 text-xs py-2 p-2 sm:p-3
-          w-full h-24 sm:h-32 sm:text-base xl:text-lg sm:py-4 rounded"
+          bg-white placeholder-gray-600 text-gray-800 py-2 p-2 sm:p-3 w-full
+          h-24 sm:h-32 text-base xl:text-lg sm:py-4 rounded"
           placeholder="Your Message" />
         {#if violated.message}
           <span
@@ -252,8 +252,8 @@
           name="emailaddress"
           readonly
           value={'me@omarjaff.com'}
-          class="text-xs sm:text-base text-gray-600 w-auto border-l-4
-          border-teal-400 bg-white py-3 p-2 sm:p-3 rounded w-full" />
+          class=" text-base text-gray-600 w-auto border-l-4 border-teal-400
+          bg-white py-3 p-2 sm:p-3 rounded w-full" />
 
         <button
           data-clipboard-target="#emailaddress"

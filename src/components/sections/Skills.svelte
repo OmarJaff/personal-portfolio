@@ -330,8 +330,8 @@
   <Saparator2 fontSize="text-base sm:text-lg lg:text-xl" title="Web Skills" />
   <div class="flex w-full justify-center">
     <div
-      class="w-full sm:w-2/3 lg:w-full flex flex-col-reverse lg:grid
-      lg:grid-cols-12 space-y-6">
+      class="w-full sm:w-2/3 lg:w-full flex flex-col lg:grid lg:grid-cols-12
+      space-y-6">
       <div class="col-span-4 lg:transform lg:translate-x-6 mt-6">
         <SkillCard
           title="Backend Development"
