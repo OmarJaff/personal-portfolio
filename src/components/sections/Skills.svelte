@@ -10,9 +10,7 @@
   <div class="flex mb-4 justify-start">
     <PageTitle title="My Skills" />
   </div>
-  <div
-    class="flex justify-between flex-wrap sm:flex-no-wrap sm:overflow-auto
-    relative ">
+  <div class="flex justify-between flex-wrap sm:overflow-auto relative">
     <SkillsIconTemplate
       title="fast"
       description="Fast load times and lag free interaction is my priority">
@@ -328,15 +326,15 @@
           35.152 17.0827 36.8565 17.7247 38.5166Z"
           fill="#A0AEC0" />
       </svg>
-
     </SkillsIconTemplate>
   </div>
   <Saparator2 fontSize="text-base sm:text-lg lg:text-xl" title="Web Skills" />
-  <div class="flex w-full">
+  <div class="flex w-full justify-center">
     <!-- <SkillsChart /> -->
     <div
-      class="grid relative w-full flex lg:grid-cols-12 space-y-6 lg:space-y-0">
-      <div class="col-span-4 lg:transform lg:translate-x-6 ">
+      class="w-full sm:w-2/3 lg:w-full flex flex-col-reverse lg:grid
+      lg:grid-cols-12 space-y-6">
+      <div class="col-span-4 lg:transform lg:translate-x-6 mt-6">
         <SkillCard
           title="Backend Development"
           description="I know php and laravel well enough, i have worked with

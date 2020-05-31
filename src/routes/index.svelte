@@ -91,8 +91,8 @@
 
     <div
       id="about"
-      class="flex justify-center h-auto sm:items-center mx-10 xl:mx-32 w-auto
-      py-4 ">
+      class="flex justify-center h-auto sm:items-center mx-10 md:mx-24 xl:mx-32
+      w-auto py-4 ">
       <About />
     </div>
 
@@ -100,7 +100,8 @@
 
     <div
       id="skills"
-      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto ">
+      class="py-4 flex justify-center sm:items-center mx-10 md:mx-24 xl:mx-32
+      w-auto ">
       <Skills />
     </div>
 
@@ -108,7 +109,8 @@
 
     <div
       id="projects"
-      class=" py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto ">
+      class=" py-4 flex justify-center sm:items-center mx-10 md:mx-24 xl:mx-32
+      w-auto ">
       <Projects />
     </div>
 
@@ -116,7 +118,8 @@
 
     <div
       id="contact"
-      class="py-4 flex justify-center sm:items-center mx-10 xl:mx-32 w-auto">
+      class="py-4 flex justify-center sm:items-center mx-10 md:mx-24 xl:mx-32
+      w-auto">
 
       <ContactForm />
 
