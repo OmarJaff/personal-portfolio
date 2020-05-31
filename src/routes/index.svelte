@@ -17,9 +17,6 @@
   let outerHeight = 0;
   let ratio = 0;
   let ToggleLinevisible = false;
-  $: {
-    console.log(y);
-  }
 </script>
 
 <style>
@@ -114,9 +111,8 @@
       <PageToggleLines
         id={'togglepagelines2'}
         backgroundColor={'bg-gray-600'} />
-
+    <div>
     </div> -->
-  </div> -->
 
   <div class="container mx-auto z-30 mt-16">
 
