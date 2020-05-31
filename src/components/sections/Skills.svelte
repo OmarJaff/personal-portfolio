@@ -1,7 +1,6 @@
 <script>
   import PageTitle from "../PageTitle.svelte";
   import SkillsIconTemplate from "../SkillsIconTemplate.svelte";
-  import SkillsChart from "../SkillsChart.svelte";
   import Saparator2 from "../utilities/Saparator2.svelte";
   import SkillCard from "../utilities/SkillCard.svelte";
 </script>
@@ -330,7 +329,6 @@
   </div>
   <Saparator2 fontSize="text-base sm:text-lg lg:text-xl" title="Web Skills" />
   <div class="flex w-full justify-center">
-    <!-- <SkillsChart /> -->
     <div
       class="w-full sm:w-2/3 lg:w-full flex flex-col-reverse lg:grid
       lg:grid-cols-12 space-y-6">
@@ -343,18 +341,19 @@
       <div class="col-span-4 lg:transform lg:translate-y-6">
         <SkillCard
           title="Frontend Development"
-          description="This is my actual career, iam a front-end guy who love to
-          use modren JS & CSS frameworks and libraries to make awesome, fast and
-          clean web projects. I have worked with Vue.js alot, i also used react,
-          and used svelte for my portfolio. For styling i prefere working with
-          tailwindCSS, but i know bootstrap too." />
+          description="This is what i have done the most! Iam a front-end guy
+          who love to use modren JS & CSS frameworks and libraries to make
+          awesome, fast and clean web projects. I have worked with Vue.js alot,
+          i also used React, and used Svelte for my portfolio. For styling i
+          prefere working with tailwindCSS, but i know bootstrap too." />
       </div>
       <div class="lg:-translate-x-6 col-span-4 lg:transform lg:translate-y-12 ">
+
         <SkillCard
           title="UI/UX design"
-          description="I am a UI designer too! I always aim to create clean,
-          easy to use and beautiful designs. I have worked with both Adobe XD
-          and Figma for different projects." />
+          description="I am a UI designer aswell :) I always aim to create
+          clean, easy to use and beautiful designs. I use Figma for most of my
+          design projects and i used to work with Adobe XD too." />
       </div>
     </div>
 
