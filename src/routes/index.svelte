@@ -84,7 +84,7 @@
 
     <div
       class="sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
-      justify-center z-50 hidden sm:flex ">
+      justify-center z-40 hidden sm:flex ">
 
       <PageToggleLines
         id={'togglepagelines2'}
