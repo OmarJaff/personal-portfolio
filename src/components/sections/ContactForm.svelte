@@ -86,8 +86,8 @@
         })
         .catch(error => {
           errorLog = error;
-          openModal = true;
           errorMessage();
+          openModal = true;
         });
     }
   };

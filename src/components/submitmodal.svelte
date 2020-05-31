@@ -66,7 +66,7 @@
             <h1
               class="{openModal === true ? 'animated fadeIn ' : ''} text-lg
               sm:text-xl text-gray-100 justify-center text-center ">
-              <span class="text-red-500">Oops!</span>
+              <span class="text-teal-500">Oops!</span>
               Something went wrong! Please try again.
             </h1>
           {/if}
