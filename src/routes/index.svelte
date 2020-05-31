@@ -95,7 +95,8 @@
   </div> -->
 
   <div
-    style="-webkit-clip:inset(0 0 0 0); clip-path: inset(0 0 0 0);"
+    style="-webkit-clip:rect(auto, auto, auto, auto); clip:rect(auto, auto,
+    auto, auto);"
     class="block absolute w-32 justify-center inset-0 ">
 
     <div
