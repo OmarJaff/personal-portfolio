@@ -12,7 +12,7 @@
 
   <ProjectContainer
     techIconsPresent="false"
-    containerTitle="about omar"
+    containerTitle="about me"
     techInfoExist={false}
     containerDescription=" Hi ! I am a Full stack web developer and user
     interface (UI) designer. I have about two years of experience in web

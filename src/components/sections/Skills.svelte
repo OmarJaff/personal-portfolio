@@ -1,17 +1,15 @@
 <script>
   import PageTitle from "../PageTitle.svelte";
   import SkillsIconTemplate from "../SkillsIconTemplate.svelte";
-  import SkillsChart from "../SkillsChart.svelte";
   import Saparator2 from "../utilities/Saparator2.svelte";
+  import SkillCard from "../utilities/SkillCard.svelte";
 </script>
 
 <div class="flex flex-col w-full space-y-4">
   <div class="flex mb-4 justify-start">
     <PageTitle title="My Skills" />
   </div>
-  <div
-    class="flex justify-between flex-wrap sm:flex-no-wrap sm:overflow-auto
-    relative ">
+  <div class="flex justify-between flex-wrap sm:overflow-auto relative">
     <SkillsIconTemplate
       title="fast"
       description="Fast load times and lag free interaction is my priority">
@@ -327,13 +325,37 @@
           35.152 17.0827 36.8565 17.7247 38.5166Z"
           fill="#A0AEC0" />
       </svg>
-
     </SkillsIconTemplate>
   </div>
-  <Saparator2
-    fontSize="text-base sm:text-lg lg:text-xl"
-    title="My web development skills chart" />
-  <div class="flex w-full">
-    <SkillsChart />
+  <Saparator2 fontSize="text-base sm:text-lg lg:text-xl" title="Web Skills" />
+  <div class="flex w-full justify-center">
+    <div
+      class="w-full sm:w-2/3 lg:w-full flex flex-col-reverse lg:grid
+      lg:grid-cols-12 space-y-6">
+      <div class="col-span-4 lg:transform lg:translate-x-6 mt-6">
+        <SkillCard
+          title="Backend Development"
+          description="I know php and laravel well enough, i have worked with
+          laravel framework and built API's for multi featured projects." />
+      </div>
+      <div class="col-span-4 lg:transform lg:translate-y-6">
+        <SkillCard
+          title="Frontend Development"
+          description="This is what i have done the most! Iam a front-end guy
+          who love to use modren JS & CSS frameworks and libraries to make
+          awesome, fast and clean web projects. I have worked with Vue.js alot,
+          i also used React, and used Svelte for my portfolio. For styling i
+          prefere working with tailwindCSS, but i know bootstrap too." />
+      </div>
+      <div class="lg:-translate-x-6 col-span-4 lg:transform lg:translate-y-12 ">
+
+        <SkillCard
+          title="UI/UX design"
+          description="I am a UI designer aswell :) I always aim to create
+          clean, easy to use and beautiful designs. I use Figma for most of my
+          design projects and i used to work with Adobe XD too." />
+      </div>
+    </div>
+
   </div>
 </div>

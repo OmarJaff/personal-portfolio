@@ -11,7 +11,7 @@
 
     <ScoialIcons IconSize="h-4 sm:h-5 xl:h-8 my-3" IconColor="teal-400" />
 
-    <span class=" text-gray-500 text-xs sm:text-sm">
+    <span class=" text-gray-500 text-xs sm:text-sm capitalize">
       <span>&copy; {currentYear.getFullYear()}</span>
       Developed and designed by Omar S. Jaff
     </span>
