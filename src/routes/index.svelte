@@ -33,12 +33,12 @@
 <svelte:window bind:scrollY={y} bind:outerHeight />
 
 <div
-  style="-webkit-clip-path: inset(0 0 0 0); clip-path: inset(0 0 0 0);"
-  class="absolute w-full h-full inset-0 z-50">
+  class="absolute w-full h-full inset-0"
+  style="-webkit-clip:rect(auto, auto, auto, auto); clip:rect(auto, auto, auto,
+  auto);">
   <div class="fixed flex w-fulL inset-0 bottom-auto z-50">
     <Header iscurrentPageHome={true} />
   </div>
-
 </div>
 
 <div
@@ -73,19 +73,12 @@
 
 <div class="flex flex-col justify-between relative">
 
-  <!-- <div
-    class=" flex w-fulL inset-0 bottom-auto fixed z-50"
-    style="-webkit-clip-path:inset(0 0 0 0); clip-path: inset(0 0 0 0);">
-    <Header
-      iscurrentPageHome={true}
-      backgroundColor="gray-600"
-      mainLogoColor="gray-500" />
-  </div> -->
-
   <div
-    style="-webkit-clip-path: inset(0 0 0 0); clip-path: inset(0 0 0 0);"
-    class="absolute w-full h-full inset-0 z-50">
-    <div class="fixed flex w-fulL inset-0 bottom-auto z-50">
+    class="absolute inset-0"
+    style="-webkit-clip:rect(auto, auto, auto, auto); clip:rect(auto, auto,
+    auto, auto);">
+
+    <div class=" flex w-fulL inset-0 bottom-auto fixed z-50">
       <Header
         iscurrentPageHome={true}
         backgroundColor="gray-600"
@@ -94,8 +87,15 @@
 
   </div>
 
+  <!-- <div class="fixed flex w-fulL inset-0 bottom-auto z-50">
+    <Header
+      iscurrentPageHome={true}
+      backgroundColor="gray-600"
+      mainLogoColor="gray-500" />
+  </div> -->
+
   <div
-    style="-webkit-clip-path:inset(0 0 0 0); clip-path: inset(0 0 0 0);"
+    style="-webkit-clip:inset(0 0 0 0); clip-path: inset(0 0 0 0);"
     class="block absolute w-32 justify-center inset-0 ">
 
     <div

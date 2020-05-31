@@ -44,7 +44,7 @@
     {/if}
     <slot />
   </div>
-  <div class="flex-col p-4 space-y-4 sm:col-span-2">
+  <div class="flex-col p-4 space-y-4 sm:col-span-2 bg-white">
     <div class="flex justify-between">
 
       <div
