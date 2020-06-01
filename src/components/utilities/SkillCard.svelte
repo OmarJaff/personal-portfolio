@@ -15,9 +15,7 @@
   }
 </style>
 
-<div
-  class="flex bg-white rounded w-full h-custome border-2 lg:border-0
-  lg:shadow-md rounded-lg">
+<div class="flex bg-white rounded w-full h-custome lg:shadow-md rounded">
   <div class="flex flex-col w-full">
     <div class="flex p-2 font-roboto bg-gray-100">
       <span class=" px-1 p-2 capitalize">{title}</span>
