@@ -22,6 +22,7 @@
   let copyResponse = "";
   let targetElement;
   let openModal = false;
+  let submitButtonDisabled = false;
 
   let formData = {
     name: "",
@@ -73,6 +74,7 @@
       violated.emailField === false &&
       violated.message === false
     ) {
+      submitButtonDisabled = true;
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -90,6 +92,7 @@
           errorMessage();
           errorAnimation.setSpeed(2);
         });
+      submitButtonDisabled = false;
     }
   };
 
@@ -215,7 +218,10 @@
         {/if}
         <div class="w-full flex justify-between flex-row-reverse">
 
-          <Button title="Submit" on:click={() => handleSubmit()}>
+          <Button
+            {submitButtonDisabled}
+            title="Submit"
+            on:click={() => handleSubmit()}>
             <svg
               width="24"
               height="24"
