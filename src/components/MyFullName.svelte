@@ -64,9 +64,9 @@
   }
 </style>
 
-<div class="font-medium text-gray-200">
-  <div class="text-3xl sm:text-4xl lg:text-6xl px-3 md:px-6">OMAR</div>
+<div class=" text-gray-200">
+  <div class="text-3xl sm:text-4xl lg:text-6xl px-2">OMAR</div>
   <div>
-    <span class="text-3xl spananimation sm:text-4xl lg:text-6xl ">S. JAFF</span>
+    <span class="text-3xl spananimation sm:text-4xl lg:text-6xl">S. JAFF</span>
   </div>
 </div>
