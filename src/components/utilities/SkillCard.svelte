@@ -20,7 +20,7 @@
     <div class="flex p-2 font-roboto bg-gray-200">
       <span class=" px-1 p-2 capitalize">{title}</span>
     </div>
-    <div>
+    <div class="border-2 border-gray-200 border-t-0 lg:border-0">
       <p
         class="text-gray-600 text-base lg:text-lg text-justify px-6 py-4 lg:p-4
         lg:px-10 font-SourceSans">
