@@ -13,7 +13,7 @@
   <div
     class="flex border-b-2 border-gray-400 sm:border-b-0 sm:border-r-2
     bg-gray-300 h-40 sm:h-auto sm:w-full relative items-center">
-    {#if techInfoExist}
+    <!-- {#if techInfoExist}
       <div class="absolute inset-0 p-2 sm:px-4">
         <svg
           class="w-5 sm:w-6"
@@ -41,7 +41,7 @@
             fill="#4FD1C5" />
         </svg>
       </div>
-    {/if}
+    {/if} -->
     <slot />
   </div>
   <div class="flex-col p-4 space-y-4 sm:col-span-2 bg-white">

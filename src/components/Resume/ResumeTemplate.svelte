@@ -322,35 +322,42 @@
               8.99989ZM14.4268 17.9998H18.5728L16.4998 13.854L14.4268 17.9998Z"
               fill="#718096" />
           </svg>
+
           <ul
             slot="custom"
-            class="font-SourceSans flex flex-col p-2 text-gray-800 space-y-2 ">
+            class="font-SourceSans flex flex-col p-2 text-gray-800 space-y-3 ">
 
             <li>
               Kurdish
-              <span class="text-gray-600 px-1">- Native Proficiency</span>
+              <ul>
+                <li class="text-gray-600">- Native Proficiency</li>
+              </ul>
             </li>
 
             <li>
               Arabic
-              <span class="text-gray-600 px-1">
-                - Full Professional Proficiency
-              </span>
+              <ul>
+                <li class="text-gray-600">- Full Professional Proficiency</li>
+              </ul>
             </li>
 
             <li>
               English
-              <span class="text-gray-600 px-1">
-                - Professional Working Proficiency
-              </span>
+              <ul>
+                <li class="text-gray-600">
+                  - Professional Working Proficiency
+                </li>
+              </ul>
             </li>
+
             <li>
               Turkish
-              <span class="text-gray-600 px-1">
-                - Limited Working Proficiency
-              </span>
+              <ul>
+                <li class="text-gray-600">- Limited Working Proficiency</li>
+              </ul>
             </li>
           </ul>
+
         </Container>
       </div>
 
@@ -450,7 +457,7 @@
 
           <li class="flex flex-col sm:space-y-2">
             Web development trainer at Rwanga foundation – Erbil
-            <span class="text-teal-500 text-sm">| Feb-2019 - Aprl-2020</span>
+            <span class="text-teal-500 text-sm">| Feb-2019 - Aprl-2019</span>
 
             <ul class="text-gray-600 hidden sm:flex">
               +

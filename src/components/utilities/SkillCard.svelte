@@ -17,7 +17,7 @@
 
 <div class="flex bg-white rounded w-full h-custome lg:shadow-md rounded">
   <div class="flex flex-col w-full">
-    <div class="flex p-2 font-roboto bg-gray-100">
+    <div class="flex p-2 font-roboto bg-gray-200">
       <span class=" px-1 p-2 capitalize">{title}</span>
     </div>
     <div>
