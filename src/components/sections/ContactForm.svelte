@@ -106,17 +106,6 @@
     });
   };
 
-  const errorMessage = () => {
-    errorAnimation = bodymovin.loadAnimation({
-      container: document.getElementById("sendIcon"),
-      path: "error_animation.json",
-      renderer: "svg",
-      loop: false,
-      autoplay: true,
-      name: "error massage"
-    });
-  };
-
   const handleCloseModal = () => {
     openModal = false;
     successAnimation ? successAnimation.destroy() : errorAnimation.destroy();
