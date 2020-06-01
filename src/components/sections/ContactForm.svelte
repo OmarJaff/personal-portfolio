@@ -85,14 +85,13 @@
             (openModal = true),
             successMessage(),
             successAnimation.setSpeed(2);
+          submitButtonDisabled = false;
         })
         .catch(error => {
           errorLog = error;
           openModal = true;
-          errorMessage();
-          errorAnimation.setSpeed(2);
+          submitButtonDisabled = false;
         });
-      submitButtonDisabled = false;
     }
   };
 

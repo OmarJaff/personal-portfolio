@@ -52,10 +52,11 @@
       <!--Body-->
       <div class="my-5">
         <div class="flex flex-col w-full items-center ">
-          <div
-            id="sendIcon"
-            class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto my-4 font-SourceSans" />
+
           {#if !errorLog}
+            <div
+              id="sendIcon"
+              class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto my-4 font-SourceSans" />
             <h1
               class="{openModal === true ? 'animated fadeIn slow' : ''} text-lg
               sm:text-xl text-gray-100 justify-center text-center ">
@@ -63,9 +64,24 @@
               your message sent successfully.
             </h1>
           {:else}
+            <div class="flex items-center justify-center py-4 w-full">
+              <svg
+                class="text-red-500 w-64"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9
+                  0 0118 0z" />
+              </svg>
+            </div>
             <h1
               class="{openModal === true ? 'animated fadeIn ' : ''} text-lg
               sm:text-xl text-gray-100 justify-center text-center ">
+
               <span class="text-red-500">Oops!</span>
               Something went wrong! Please try again.
             </h1>
