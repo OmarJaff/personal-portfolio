@@ -48,7 +48,8 @@
         <Portfolio />
       </div>
       <div
-        class="flex flex-col w-full h-full items-center font-roboto -space-y-2">
+        class="flex flex-col w-full h-full items-center font-roboto -space-y-2
+        -ml-2">
         <MyFullName />
         <Title />
       </div>
