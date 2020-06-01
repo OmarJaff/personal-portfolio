@@ -80,20 +80,15 @@
       })
         .then(() => {
           clearFormData(),
-            // (openModal = true),
-            // successMessage(),
-            // successAnimation.setSpeed(2);
-
-            (errorLog = error);
-          errorMessage();
-          errorAnimation.setSpeed(2);
-          openModal = true;
+            (openModal = true),
+            successMessage(),
+            successAnimation.setSpeed(2);
         })
         .catch(error => {
           errorLog = error;
+          openModal = true;
           errorMessage();
           errorAnimation.setSpeed(2);
-          openModal = true;
         });
     }
   };
