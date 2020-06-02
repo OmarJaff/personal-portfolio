@@ -1,7 +1,7 @@
 <script>
   import { fade } from "svelte/transition";
   export let openModal = false;
-  export let errorLog;
+  export let errorLog = false;
   import bodymovin from "lottie-web";
   import { onMount } from "svelte";
   import Footer from "../components/sections/Footer.svelte";
@@ -53,7 +53,7 @@
       <div class="my-5">
         <div class="flex flex-col w-full items-center ">
 
-          {#if !errorLog}
+          {#if errorLog === false}
             <div
               id="sendIcon"
               class=" h-56 w-56 sm:h-64 sm:w-64 lg:h-auto my-4 font-SourceSans" />

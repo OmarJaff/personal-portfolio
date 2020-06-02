@@ -17,7 +17,7 @@
 
   let successAnimation;
   let errorAnimation;
-  let errorLog;
+  let errorLog = false;
   let isCopied = false;
   let copyResponse = "";
   let targetElement;
@@ -81,14 +81,12 @@
         body: encoder(formData)
       })
         .then(() => {
-          clearFormData(),
-            (openModal = true),
-            successMessage(),
-            successAnimation.setSpeed(2);
+          clearFormData(), (openModal = true), (errorLog = false);
+          successMessage(), successAnimation.setSpeed(2);
           submitButtonDisabled = false;
         })
         .catch(error => {
-          errorLog = error;
+          errorLog = true;
           openModal = true;
           submitButtonDisabled = false;
         });
