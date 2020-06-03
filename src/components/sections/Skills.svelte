@@ -351,9 +351,9 @@
 
         <SkillCard
           title="UI/UX design"
-          description="I am a UI designer aswell :) I always aim to create
+          description="I am a UI designer as well :) I always aim to create
           clean, easy to use and beautiful designs. I use Figma for most of my
-          design projects and i used to work with Adobe XD too." />
+          design projects and i used to work with Adobe XD." />
       </div>
     </div>
 

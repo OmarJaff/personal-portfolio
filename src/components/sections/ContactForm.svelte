@@ -91,7 +91,7 @@
           submitButtonDisabled = false;
         });
     }
-  };
+  };  
 
   const successMessage = () => {
     successAnimation = bodymovin.loadAnimation({
