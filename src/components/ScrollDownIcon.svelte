@@ -1,17 +1,18 @@
 <script>
   let y = 0;
+  import jump from "jump.js";
 </script>
 
 <style>
   .fadeOut {
     opacity: 1;
-    animation: faded-out 1s ease forwards;
-    -webkit-animation: faded-out 1s ease forwards;
+    animation: faded-out 0.3s ease forwards;
+    -webkit-animation: faded-out 0.3s ease forwards;
   }
   .fadeIn {
     opacity: 0;
-    animation: faded-in 1s ease forwards;
-    -webkit-animation: faded-in 1s ease forwards;
+    animation: faded-in 0.3s ease forwards;
+    -webkit-animation: faded-in 0.3s ease forwards;
   }
 
   @keyframes faded-in {
@@ -91,7 +92,13 @@
 <div
   class="{y > 0 ? ' fadeOut' : 'fadeIn'} sm:block flex font-col justify-center
   top-20 ">
-
-  <div class="arrow size" />
+  <a
+    class=" outline-none focus:outline-none"
+    href="#about"
+    on:click={() => {
+      jump('#about', { duration: 800, offset: 0, a11y: false });
+    }}>
+    <div class="arrow size" />
+  </a>
 
 </div>
