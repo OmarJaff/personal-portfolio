@@ -72,9 +72,7 @@ module.exports = {
         },
         {
           loader: "markdown-loader",
-          options: {
-            render: new Marked.Renderer(),
-          },
+          options: {},
         },
       ],
     },
