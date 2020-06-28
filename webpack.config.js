@@ -70,10 +70,6 @@ module.exports = {
           test: /\.css$/,
           use: ["style-loader", "css-loader"],
         },
-        {
-          loader: "markdown-loader",
-          options: {},
-        },
       ],
     },
     mode: process.env.NODE_ENV,
