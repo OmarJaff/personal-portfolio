@@ -68,7 +68,8 @@
 </svelte:head>
 
 <h1>{post.title}</h1>
-
+<img class="h-full w-full" src={post.thumbnail} alt="image" />
+<img src="images/uploads/stephen-leonardi-fmyaqwqrwwu-unsplash.jpg" alt="" />
 <div class="content">
   {@html post.html}
 </div>
