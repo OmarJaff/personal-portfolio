@@ -80,8 +80,6 @@
 
 </div>
 
-<h1>Recent posts</h1>
-
 <div class="flex flex-col justify-between relative">
 
   <div

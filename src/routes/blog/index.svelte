@@ -10,6 +10,7 @@
 
 <script>
   export let posts;
+  console.log(posts);
   import Header from "../../components/Header.svelte";
 </script>
 
