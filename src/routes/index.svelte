@@ -1,3 +1,13 @@
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch(`blog.json`)
+      .then(r => r.json())
+      .then(posts => {
+        return { posts };
+      });
+  }
+</script>
+
 <script>
   import { onMount } from "svelte";
   import Portfolio from "../components/PortfolioStyle.svelte";
@@ -17,6 +27,8 @@
   let outerHeight = 0;
   let ratio = 0;
   let ToggleLinevisible = false;
+
+  export let posts;
 </script>
 
 <style>
@@ -68,6 +80,20 @@
 
 </div>
 
+<h1>Recent posts</h1>
+
+<ul>
+  {#each posts as post}
+    <!-- we're using the non-standard `rel=prefetch` attribute to
+				tell Sapper to load the data for the page as soon as
+				the user hovers over the link or taps it, instead of
+				waiting for the 'click' event -->
+    <li>
+      <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
+    </li>
+  {/each}
+</ul>
+
 <div class="flex flex-col justify-between relative">
 
   <div
@@ -91,28 +117,6 @@
         backgroundColor={'bg-gray-600'} />
     </div>
   </div>
-
-  <!-- <div class="fixed flex w-fulL inset-0 bottom-auto z-50">
-    <Header
-      iscurrentPageHome={true}
-      backgroundColor="gray-600"
-      mainLogoColor="gray-500" />
-  </div> -->
-
-  <!-- <div
-    style="-webkit-clip:rect(auto, auto, auto, auto); clip:rect(auto, auto,
-    auto, auto);"
-    class="block absolute w-32 justify-center inset-0 ">
-
-    <!-- <div
-      class="sm:mx-8 sm:flex-col fixed top-auto sm:top-0 sm:h-full
-      justify-center z-40 hidden sm:flex ">
-
-      <PageToggleLines
-        id={'togglepagelines2'}
-        backgroundColor={'bg-gray-600'} />
-    <div>
-    </div> -->
 
   <div class="container mx-auto z-30 mt-16">
 
