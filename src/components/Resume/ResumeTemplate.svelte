@@ -434,9 +434,9 @@
             <ul class="text-gray-600 hidden sm:flex">
               +
               <li class="px-1 xl:text-base">
-                Working on Web projects with other freelancer teams using
-                PHP/Laravel, Vue.Js or Dd svelte and TailwindCSS or Bootstrap
-                for designing purposes.
+                Working on Web projects (single page applications) with other
+                freelancer teams using PHP/Laravel, Vue.Js or svelte and
+                TailwindCSS or Bootstrap for designing purposes.
               </li>
             </ul>
           </li>
