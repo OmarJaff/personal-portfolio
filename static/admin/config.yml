@@ -48,7 +48,7 @@ collections:
           name: "abouttheauthor",
           widget: "string",
           required: false,
-          default: "I am a full stack web developer and UI designer that loves to share what i learn with others, I have almost 3 years of experience in web development field",
+          default: "I am a full stack web developer and UI designer that loves to share what i learn with others, I have almost 3 years of experience in web development field.",
         }
       - {
           label: "Description",
@@ -62,7 +62,7 @@ collections:
           widget: "datetime",
           dateFormat: "DD.MM.YYYY",
           timeFormat: false,
-          format: "L",
+          format: "LL",
           pickerUtc: true,
         }
       - {
