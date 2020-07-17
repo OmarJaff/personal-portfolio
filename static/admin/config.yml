@@ -43,12 +43,12 @@ collections:
           required: false,
           default: "/static/logo-192.png",
         }
-        - {
+      - {
           label: "About The Author",
-          name: "about",
+          name: "abouttheauthor",
           widget: "string",
           required: false,
-          default: "I am a full stack web developer and UI designer that loves to share what i learn with others, I have almost 3 years of experience in programming field",
+          default: "I am a full stack web developer and UI designer that loves to share what i learn with others, I have almost 3 years of experience in web development field",
         }
       - {
           label: "Description",
