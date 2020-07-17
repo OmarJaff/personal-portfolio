@@ -71,6 +71,6 @@
 
 <img class="h-12 w-12" src={post.thumbnail} alt="image" />
 
-<div class="content">
+<div class="prose prose-2xl">
   {@html post.html}
 </div>
