@@ -11,6 +11,7 @@ description: 'To take advantage of these feature in your custom CSS (rather than
   using the plugin API), you can use a new `@layer` directive to explicitly tell
   Tailwind that your styles belong to the "components" bucket:'
 date: July 18, 2020
+thumbnail: images/uploads/stephen-leonardi-fmyaqwqrwwu-unsplash.jpg
 ---
 ## New Features
 
