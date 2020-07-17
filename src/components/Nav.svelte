@@ -112,6 +112,16 @@
             Contact Me
           </a>
         </li>
+        <li class="my-2 md:my-4 flex flex-col centerized ">
+          <a
+            class="flex flex-col hover-class "
+            href="/blogpage"
+            on:click={() => {
+              menueClosed();
+            }}>
+            Blog
+          </a>
+        </li>
         <div class=" mt-10 flex sm:hidden ">
           <SocialIcons />
         </div>

@@ -34,7 +34,7 @@
           on:toggleMenu={() => isMenuOpen.update(m => (m = !m))} />
 
         <div class="hidden sm:flex">
-          <div class="flex mx-8 ">
+          <div class="flex mx-8">
             <SocialIcons
               IconColor={$isMenuOpen ? 'gray-100' : backgroundColor} />
           </div>
