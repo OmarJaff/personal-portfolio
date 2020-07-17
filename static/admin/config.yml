@@ -31,6 +31,7 @@ collections:
           widget: "datetime",
           dateFormat: "DD.MM.YYYY",
           timeFormat: false,
+          format: "L"
           pickerUtc: true,
         }
       - {
