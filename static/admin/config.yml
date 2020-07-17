@@ -27,6 +27,7 @@ collections:
             - {label: "Full Name", name: "fname", widget: "string", default: "Omar Jaff"}
             - {label: "Title", name: "title", widget: "string", default: "Full Stack Developer"}
             - {label: "Avatar", name: "avatar", widget: "image", default: "/static/logo-192.png"}
+        }
       - {
           label: "Description",
           name: "description",
