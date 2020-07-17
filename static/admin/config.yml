@@ -22,11 +22,26 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "object", required: false, 
-          fields: 
-            - {label: "Full Name", name: "fname", widget: "string", default: "Omar Jaff"}
-            - {label: "Title", name: "title", widget: "string", default: "Full Stack Developer"}
-            - {label: "Avatar", name: "avatar", widget: "image", default: "/static/logo-192.png"}
+      - {
+          label: "Author",
+          name: "author",
+          widget: "string",
+          required: false,
+          default: "Omar Jaff",
+        }
+      - {
+          label: "Position",
+          name: "position",
+          widget: "string",
+          required: false,
+          default: "Full Stack Developer",
+        }
+      - {
+          label: "Avatar",
+          name: "avatar",
+          widget: "image",
+          required: false,
+          default: "/static/logo-192.png",
         }
       - {
           label: "Description",
@@ -40,7 +55,7 @@ collections:
           widget: "datetime",
           dateFormat: "DD.MM.YYYY",
           timeFormat: false,
-          format: "L"
+          format: "L",
           pickerUtc: true,
         }
       - {
