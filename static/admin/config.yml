@@ -9,9 +9,12 @@ public_folder: "images/uploads"
 
 logo_url: /mainicon.png
 
+display_url: https://www.omarjaff.com
+
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
+
     folder: "/static/_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -19,6 +22,11 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "object", required: false, 
+          fields: 
+            - {label: "Full Name", name: "fname", widget: "string", default: "Omar Jaff"}
+            - {label: "Title", name: "title", widget: "string", default: "Full Stack Developer"}
+            - {label: "Avatar", name: "avatar", widget: "image", default: "/static/logo-192.png"}
       - {
           label: "Description",
           name: "description",
