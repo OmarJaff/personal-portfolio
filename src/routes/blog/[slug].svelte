@@ -107,17 +107,20 @@
 
     <div />
   </div>
-  <div
-    class="flex flex-col container content-center p-6 pt-10 font-SourceSans
-    prose-lg ">
+  <div class="flex flex-col content-center p-6 pt-10 font-SourceSans">
 
-    {#if post.thumbnail}
-      <img src={post.thumbnail} alt="thubnail of the post" class="h-auto" />
-    {/if}
+    <div
+      class="divide-y-2 space-y-6 sm:mx-auto prose sm:prose-lg lg:prose-xl
+      xl:prose-2xl">
 
-    <div class="divide-y-2 space-y-6 mx-auto">
+      {#if post.thumbnail}
+        <img
+          src={post.thumbnail}
+          alt="thubnail of the post"
+          class="h-auto rounded-lg lg:w-2/3" />
+      {/if}
 
-      <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl">
+      <div class="">
         <em>{post.description}</em>
         {@html post.html}
       </div>
