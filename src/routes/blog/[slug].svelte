@@ -35,7 +35,7 @@
   class="w-full flex flex-col container mx-auto mt-10 mb-10 prose-sm md:prose-lg
   lg:prose-xl">
 
-  <div class=" flex flex-col w-full divide-y divide-teal-400">
+  <div class=" flex flex-col w-full lg:divide-y divide-teal-400">
 
     <div class="w-full flex justify-between items-baseline pb-8 px-4">
       <div>
@@ -81,9 +81,12 @@
     <div
       class="w-full flex flex-col self-center p-4 items-center font-roboto prose
       font-thin">
+      <div class=" border-t border-teal-400 w-1/2 py-2 lg:hidden" />
+      <div class="text-center items-center">
+        <span class="text-gray-600">{post.date}</span>
+        <h1>{post.title}</h1>
+      </div>
 
-      <span class="text-gray-600">{post.date}</span>
-      <h1>{post.title}</h1>
       <div class="flex w-full items-center justify-center space-x-3 -mt-8">
         <a href="https://twitter.com/omarjaff95" rel="noopener" target="_blank">
           <img
@@ -100,9 +103,8 @@
             {post.position}
           </span>
         </div>
-
       </div>
-
+      <div class=" border-t border-teal-400 w-11/12 py-2 lg:hidden" />
     </div>
 
     <div />
