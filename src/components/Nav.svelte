@@ -115,7 +115,7 @@
         <li class="my-2 md:my-4 flex flex-col centerized ">
           <a
             class="flex flex-col hover-class "
-            href="/blogpage"
+            href="/blog"
             on:click={() => {
               menueClosed();
             }}>

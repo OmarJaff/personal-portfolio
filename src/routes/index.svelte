@@ -17,8 +17,6 @@
   let outerHeight = 0;
   let ratio = 0;
   let ToggleLinevisible = false;
-
-  export let posts;
 </script>
 
 <style>
