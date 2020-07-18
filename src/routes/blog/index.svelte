@@ -18,7 +18,7 @@
   class="w-full flex container mx-auto mt-10 mb-10 prose-sm md:prose-lg
   lg:prose-xl">
 
-  <div class=" flex flex-col mb-10 w-full mx-10 divide-y">
+  <div class=" flex flex-col mb-10 w-full mx-10 divide-y-2">
 
     <div class="w-full flex justify-between items-baseline pb-8">
       <div>
@@ -61,11 +61,11 @@
       </div>
     </div>
 
-    <div class="w-full flex font-roboto flex-col pt-8">
-      <div class="flex flex-col space-y-16">
+    <div class="w-full flex font-roboto flex-col">
+      <div class="flex flex-col divide-y">
 
         {#each posts as post}
-          <div class="flex flex-col lg:flex-row w-full items-baseline">
+          <div class="flex flex-col lg:flex-row w-full items-baseline py-10">
             <div class="flex flex-col lg:w-1/4">
               <span class="text-sm sm:text-lg text-gray-600">{post.date}</span>
             </div>

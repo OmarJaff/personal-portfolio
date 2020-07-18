@@ -17,7 +17,7 @@
   import MarkdownIt from "markdown-it";
   import PageTitle from "../../components/PageTitle.svelte";
   export let postMd;
-
+  import Image from "svelte-image";
   const md = new MarkdownIt();
 
   $: frontMatter = fm(postMd);
@@ -39,7 +39,9 @@
 
     <div class="w-full flex justify-between items-baseline pb-8 px-4">
       <div>
-        <PageTitle title="Blog" />
+        <a href="/blog">
+          <PageTitle title="Blog" />
+        </a>
       </div>
       <div class="flex">
         <a
@@ -83,28 +85,64 @@
       <span class="text-gray-600">{post.date}</span>
       <h1>{post.title}</h1>
       <div class="flex w-full items-center justify-center space-x-3 -mt-8">
-        <img
-          src={post.avatar}
-          alt="author's avatra"
-          class="rounded-full w-10 h-10 items-stretch object-cover" />
+        <a href="https://twitter.com/omarjaff95" rel="noopener" target="_blank">
+          <img
+            src={post.avatar}
+            alt="author's avatra"
+            class="rounded-full w-10 h-10 lg:h-12 lg:w-12 items-stretch
+            object-cover" />
+        </a>
         <div class="flex flex-col font-roboto">
-          <span class="text-sm font-semibold text-teal-500">{post.author}</span>
-          <span class="text-xs text-gray-600">{post.position}</span>
+          <span class="text-sm lg:text-base font-semibold text-teal-500">
+            {post.author}
+          </span>
+          <span class="text-xs lg:text-base text-gray-600">
+            {post.position}
+          </span>
         </div>
+
       </div>
 
     </div>
 
     <div />
   </div>
-  <div class="flex flex-col container content-center p-8">
-    <p>{post.description}</p>
+  <div
+    class="flex flex-col container content-center p-6 pt-10 font-SourceSans
+    prose-lg ">
 
-    <img class="h-12 w-12" src={post.thumbnail} alt="a thumbnail of the page" />
+    {#if post.thumbnail}
+      <img src={post.thumbnail} alt="thubnail of the post" class="h-auto" />
+    {/if}
 
-    <div class="prose">
-      {@html post.html}
+    <div class="divide-y-2 space-y-6 mx-auto">
+
+      <div class="prose sm:prose-lg lg:prose-xl xl:prose-2xl">
+        <em>{post.description}</em>
+        {@html post.html}
+      </div>
+
+      <div
+        class="text-teal-500 flex justify-between space-x-2 items-center pt-10">
+
+        <div>
+
+          <a href="/blog" class="text-base lg:text-lg flex items-center">
+            <svg
+              fill="none"
+              class="w-6 h-6 mx-2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+            </svg>
+            Back to the blog
+          </a>
+
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
