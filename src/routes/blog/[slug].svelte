@@ -47,7 +47,7 @@
         <a
           href="/"
           class="font-roboto text-gray-600 hover:text-gray-800 flex space-x-2
-          items-center">
+          items-center no-underline">
           <svg
             width="25"
             height="25"
@@ -107,44 +107,46 @@
 
     <div />
   </div>
-  <div class="flex flex-col content-center p-6 pt-10 font-SourceSans">
+  <div
+    class="flex flex-col content-center p-6 pt-10 font-SourceSans divide-y-2">
 
     <div
-      class="divide-y-2 space-y-6 sm:mx-auto prose sm:prose-lg lg:prose-xl
-      xl:prose-2xl">
+      class="space-y-6 sm:mx-auto prose sm:prose-lg lg:prose-xl xl:prose-2xl">
 
       {#if post.thumbnail}
         <img
           src={post.thumbnail}
           alt="thubnail of the post"
-          class="h-auto rounded-lg lg:w-2/3" />
+          class="h-auto rounded-lg" />
+        <!-- <Image /> -->
       {/if}
 
       <div class="">
         <em>{post.description}</em>
         {@html post.html}
       </div>
+    </div>
+    <div class="flex justify-between space-x-2 items-center pt-10">
 
-      <div
-        class="text-teal-500 flex justify-between space-x-2 items-center pt-10">
+      <div>
 
-        <div>
+        <a
+          href="/blog"
+          class="text-base lg:text-lg flex items-center outline-none
+          focus:outline-none no-underline">
+          <svg
+            fill="none"
+            class="w-6 h-6 mx-2 text-teal-500"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+          </svg>
+          <span class="text-teal-500">Back to the blog</span>
+        </a>
 
-          <a href="/blog" class="text-base lg:text-lg flex items-center">
-            <svg
-              fill="none"
-              class="w-6 h-6 mx-2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path d="M7 16l-4-4m0 0l4-4m-4 4h18" />
-            </svg>
-            Back to the blog
-          </a>
-
-        </div>
       </div>
     </div>
   </div>
