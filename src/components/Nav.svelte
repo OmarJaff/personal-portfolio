@@ -116,6 +116,7 @@
           <a
             class="flex flex-col hover-class "
             href="/blog"
+            rel="prefetch"
             on:click={() => {
               menueClosed();
             }}>
@@ -131,3 +132,8 @@
 
   </div>
 </header>
+
+<!-- // 
+//0.27.13
+//svelte loader: 2.9.0
+//svelte preprosses: 3.7.4 -->

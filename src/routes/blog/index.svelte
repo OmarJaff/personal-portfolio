@@ -55,7 +55,7 @@
 
           <span class="flex">
             <span class="hidden sm:block mr-1">Back to</span>
-            home
+            Home
           </span>
         </a>
       </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="flex flex-col lg:w-3/4">
               <a
-                rel="prefetch"
+                rel="external"
                 href="blog/{post.slug}"
                 class="text-2xl sm:text-3xl text-gray-800">
                 {post.title}
@@ -82,6 +82,7 @@
               <div class="flex ">
                 <a
                   href="blog/{post.slug}"
+                  rel="external"
                   class="text-teal-400 text-base flex items-center
                   hover:text-teal-500">
                   Read more

@@ -42,6 +42,7 @@
       {:else}
         <a
           href="#about"
+          rel="prefetch"
           class="font-roboto text-gray-600 hover:text-gray-800 flex space-x-2
           items-center">
           <svg
