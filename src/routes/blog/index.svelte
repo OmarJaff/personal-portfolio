@@ -17,7 +17,7 @@
 <svelte:head>
   <title>Blog</title>
   <img
-    src="Optimized-blogthubnail.png"
+    src="logo-512.png"
     alt="thubnail of the post"
     class="h-auto rounded-lg sr-only" />
 </svelte:head>
