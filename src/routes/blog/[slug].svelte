@@ -39,8 +39,8 @@
 </svelte:head>
 
 <div
-  class="w-full flex flex-col container mx-auto mt-10 mb-10 prose-sm md:prose-lg
-  lg:prose-xl">
+  class="w-full flex flex-col container mx-auto mt-5 lg:mt-10 mb-10 prose-sm
+  md:prose-lg lg:prose-xl">
 
   <div class=" flex flex-col w-full lg:divide-y divide-teal-400">
 

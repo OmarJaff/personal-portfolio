@@ -14,8 +14,16 @@
   import Header from "../../components/Header.svelte";
 </script>
 
+<svelte:head>
+  <title>Blog</title>
+  <img
+    src="Optimized-blogthubnail.png"
+    alt="thubnail of the post"
+    class="h-auto rounded-lg sr-only" />
+</svelte:head>
+
 <div
-  class="w-full flex container mx-auto mt-10 mb-10 prose-sm md:prose-lg
+  class="w-full flex container mx-auto mt-5 lg:mt-10 mb-10 prose-sm md:prose-lg
   lg:prose-xl">
 
   <div class=" flex flex-col mb-10 w-full mx-10 divide-y-2">
