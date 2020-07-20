@@ -12,6 +12,11 @@
   export let posts;
   import PageTitle from "../../components/PageTitle.svelte";
   import Header from "../../components/Header.svelte";
+  const arabic = /[\u0600-\u06FF]/;
+  let readmore = "Read more";
+  if (arabic.test(posts.title)) {
+    readmore = "انقر للمزيد";
+  }
 </script>
 
 <svelte:head>
@@ -94,7 +99,7 @@
                   rel="external"
                   class="text-teal-400 text-base flex items-center
                   hover:text-teal-500">
-                  Read more
+                  {arabic.test(post.title) ? 'اقراء المزيد' : 'Read more'}
                   <svg
                     fill="none"
                     stroke-linecap="round"
