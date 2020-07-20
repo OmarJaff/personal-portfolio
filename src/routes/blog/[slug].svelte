@@ -29,6 +29,7 @@
 
 <svelte:head>
   <title>{post.title}</title>
+  <meta name="Description" content={post.description} />
 </svelte:head>
 
 {#if post.thumbnail}
