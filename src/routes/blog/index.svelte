@@ -16,11 +16,12 @@
 
 <svelte:head>
   <title>Blog</title>
-  <img
-    src="Optimized-blog-thubnail.png"
-    alt="thubnail of the post"
-    class="sr-only" />
 </svelte:head>
+
+<img
+  src="Optimized-blog-thubnail.png"
+  alt="thubnail of the post"
+  class="sr-only" />
 
 <div
   class="w-full flex container mx-auto mt-5 lg:mt-10 mb-10 prose-sm md:prose-lg

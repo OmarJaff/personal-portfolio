@@ -25,13 +25,15 @@
 
 <svelte:head>
   <title>Omar Jaff</title>
-  <img
-    src="Optimized-main site thubnail.png"
-    alt="thubnail of the post"
-    class="sr-only" />
+
 </svelte:head>
 
 <svelte:window bind:scrollY={y} bind:outerHeight />
+
+<img
+  src="Optimized-main site thubnail.png"
+  alt="thubnail of the post"
+  class="sr-only" />
 
 <div
   class="absolute w-full h-full inset-0"

@@ -29,14 +29,15 @@
 
 <svelte:head>
   <title>{post.title}</title>
-  {#if post.thumbnail}
-    <img
-      src={post.thumbnail}
-      alt="thubnail of the post"
-      class="h-auto rounded-lg sr-only" />
-    <!-- <Image /> -->
-  {/if}
 </svelte:head>
+
+{#if post.thumbnail}
+  <img
+    src={post.thumbnail}
+    alt="thubnail of the post"
+    class="h-auto rounded-lg sr-only" />
+  <!-- <Image /> -->
+{/if}
 
 <div
   class="w-full flex flex-col container mx-auto mt-5 lg:mt-10 mb-10 prose-sm
