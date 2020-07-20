@@ -12,6 +12,7 @@ description: Trust us, you don’t want Google to hate your website. Fortunately
   performance. One problem with formatting them is that modifications often
   reduce their quality (which in turn might make the visitor hate your website).
 date: July 19, 2020
+thumbnail: images/uploads/optimized-imageoptimization.png
 ---
 ### What does it mean to optimize an image anyway?
 
