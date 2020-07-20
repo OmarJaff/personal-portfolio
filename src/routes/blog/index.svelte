@@ -19,7 +19,7 @@
   <img
     src="logo-512.png"
     alt="thubnail of the post"
-    class="h-auto rounded-lg sr-only" />
+    class="Optimized-blog-thubnail.png" />
 </svelte:head>
 
 <div
