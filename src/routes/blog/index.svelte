@@ -78,7 +78,7 @@
             <div class="flex flex-col lg:w-1/4">
               <span class="text-sm sm:text-lg text-gray-600">{post.date}</span>
             </div>
-            <div class="flex flex-col lg:w-3/4">
+            <div class="flex flex-col lg:w-3/4" dir="auto">
               <a
                 rel="external"
                 href="blog/{post.slug}"

@@ -122,7 +122,8 @@
     class="flex flex-col content-center p-6 pt-10 font-SourceSans divide-y-2">
 
     <div
-      class="space-y-6 sm:mx-auto prose sm:prose-lg lg:prose-xl xl:prose-2xl">
+      class="space-y-6 sm:mx-auto prose sm:prose-lg lg:prose-xl xl:prose-2xl"
+      dir="auto">
 
       <div class="">
         <em>{post.description}</em>
