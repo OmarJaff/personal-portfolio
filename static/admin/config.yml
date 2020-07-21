@@ -11,11 +11,6 @@ logo_url: /mainicon.png
 
 display_url: https://www.omarjaff.com
 
-slug:
-  encoding: "ascii"
-  clean_accents: true
-  sanitize_replacement: "_"
-
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
