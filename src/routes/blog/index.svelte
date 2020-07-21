@@ -17,6 +17,10 @@
   if (arabic.test(posts.title)) {
     readmore = "انقر للمزيد";
   }
+
+  function decoder(slug) {
+    return decodeURI(slug);
+  }
 </script>
 
 <svelte:head>
@@ -86,7 +90,7 @@
             <div class="flex flex-col lg:w-3/4" dir="auto">
               <a
                 rel="external"
-                href="blog/{post.slug}"
+                href="blog/{`${decodeURI(post.slug)}`}"
                 class="text-2xl sm:text-3xl text-gray-800">
                 {post.title}
               </a>
@@ -95,7 +99,7 @@
               </p>
               <div class="flex ">
                 <a
-                  href="blog/{post.slug}"
+                  href="blog/{`${decodeURI(post.slug)}`}"
                   rel="external"
                   class="text-teal-400 text-base flex items-center
                   hover:text-teal-500">
