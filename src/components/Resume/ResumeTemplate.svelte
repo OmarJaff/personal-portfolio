@@ -518,7 +518,7 @@
           <li>
             Programming Languages:
             <span class="text-gray-600">
-              PHP, JavaScript, C++, Visual Basic.
+              PHP, JavaScript, Dart, C++, Visual Basic.
             </span>
           </li>
           <li>
@@ -527,7 +527,7 @@
           </li>
           <li>
             Mobile Development:
-            <span class="text-gray-600">NativeScript.</span>
+            <span class="text-gray-600">Flutter.</span>
           </li>
           <li>
             DataBase M. System:
