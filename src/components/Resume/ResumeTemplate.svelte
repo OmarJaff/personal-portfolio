@@ -507,8 +507,8 @@
           <li>
             Front-End Web development:
             <span class="text-gray-600">
-              HTML, CSS , Vuejs (vuex, Nuxt.js), Svelte, React, TailwindCSS,
-              Bootstrap.
+              HTML, CSS , Vuejs (vuex, Nuxt.js), Svelte, Alpine.js , React,
+              TailwindCSS, Bootstrap.
             </span>
           </li>
           <li>
@@ -525,9 +525,14 @@
             Desktop Development:
             <span class="text-gray-600">WPF.</span>
           </li>
+
           <li>
             Mobile Development:
             <span class="text-gray-600">Flutter.</span>
+          </li>
+          <li>
+            Version Control:
+            <span class="text-gray-600">Git, GitHub.</span>
           </li>
           <li>
             DataBase M. System:
