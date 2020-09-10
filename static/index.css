@@ -583,6 +583,18 @@ body {
   background-color: rgba(247, 250, 252, var(--bg-opacity));
 }
 
+@media screen and (min-width: 300px) and (max-width: 634px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
 .container {
   width: 100%;
 }
@@ -614,8 +626,6 @@ body {
 .prose {
   color: #4a5568;
   max-width: 65ch;
-  font-size: 1rem;
-  line-height: 1.75;
 }
 
 .prose [class~="lead"] {
@@ -828,6 +838,11 @@ body {
   padding-right: 0.5714286em;
   padding-bottom: 0.5714286em;
   padding-left: 0.5714286em;
+}
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .prose p {
@@ -15638,8 +15653,6 @@ body {
   .sm\:prose {
     color: #4a5568;
     max-width: 65ch;
-    font-size: 1rem;
-    line-height: 1.75;
   }
 
   .sm\:prose [class~="lead"] {
@@ -15852,6 +15865,11 @@ body {
     padding-right: 0.5714286em;
     padding-bottom: 0.5714286em;
     padding-left: 0.5714286em;
+  }
+
+  .sm\:prose {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .sm\:prose p {
@@ -30663,8 +30681,6 @@ body {
   .md\:prose {
     color: #4a5568;
     max-width: 65ch;
-    font-size: 1rem;
-    line-height: 1.75;
   }
 
   .md\:prose [class~="lead"] {
@@ -30877,6 +30893,11 @@ body {
     padding-right: 0.5714286em;
     padding-bottom: 0.5714286em;
     padding-left: 0.5714286em;
+  }
+
+  .md\:prose {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .md\:prose p {
@@ -45688,8 +45709,6 @@ body {
   .lg\:prose {
     color: #4a5568;
     max-width: 65ch;
-    font-size: 1rem;
-    line-height: 1.75;
   }
 
   .lg\:prose [class~="lead"] {
@@ -45902,6 +45921,11 @@ body {
     padding-right: 0.5714286em;
     padding-bottom: 0.5714286em;
     padding-left: 0.5714286em;
+  }
+
+  .lg\:prose {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .lg\:prose p {
@@ -60713,8 +60737,6 @@ body {
   .xl\:prose {
     color: #4a5568;
     max-width: 65ch;
-    font-size: 1rem;
-    line-height: 1.75;
   }
 
   .xl\:prose [class~="lead"] {
@@ -60927,6 +60949,11 @@ body {
     padding-right: 0.5714286em;
     padding-bottom: 0.5714286em;
     padding-left: 0.5714286em;
+  }
+
+  .xl\:prose {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .xl\:prose p {
@@ -75738,8 +75765,6 @@ body {
   .hover-hover\:prose {
     color: #4a5568;
     max-width: 65ch;
-    font-size: 1rem;
-    line-height: 1.75;
   }
 
   .hover-hover\:prose [class~="lead"] {
@@ -75952,6 +75977,11 @@ body {
     padding-right: 0.5714286em;
     padding-bottom: 0.5714286em;
     padding-left: 0.5714286em;
+  }
+
+  .hover-hover\:prose {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .hover-hover\:prose p {
