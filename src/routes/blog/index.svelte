@@ -14,6 +14,7 @@
   import Header from "../../components/Header.svelte";
   const arabic = /[\u0600-\u06FF]/;
   let readmore = "Read more";
+
   if (arabic.test(posts.title)) {
     readmore = "انقر للمزيد";
   }

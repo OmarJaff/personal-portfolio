@@ -583,7 +583,7 @@ body {
   background-color: rgba(247, 250, 252, var(--bg-opacity));
 }
 
-@media screen and (min-width: 300px) and (max-width: 634px) and (orientation: portrait) {
+@media screen and (min-width: 300px) and (max-width: 634px) and (orientation: landscape) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;

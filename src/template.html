@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, user-scalable=0"
+    />
+    <meta name="theme-color" content="#333333" />
+    <meta
+      name="Description"
+      content="omar jaff's personal portfolio, a full stack web developer and UI designer"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=0" />
-  <meta name="theme-color" content="#333333" />
-  <meta name="Description" content="omar jaff's personal portfolio, a full stack web developer and UI designer" />
-  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
-  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
 
+    %sapper.base%
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap"
+      rel="stylesheet"
+    />
 
-  %sapper.base%
+    <!--new fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!--new fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" />
 
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="mainicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
 
-  <link rel="manifest" href="manifest.json" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-  <link rel="icon" type="image/png" href="mainicon.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-  <!-- Sapper generates a <style> tag containing critical CSS
+    <!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
-  %sapper.styles%
+    %sapper.styles%
 
-  <!-- This contains the contents of the <svelte:head> component, if
+    <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
-  %sapper.head%
-</head>
+    %sapper.head%
+  </head>
 
-<body>
-  <!--[if IE]>
-    <div class="flex items-center w-full" style="MARGIN-TOP: 15em; TEXT-ALIGN: center; font-size:20px;">
-      <h1 class=" items-center w-full text-gray-700">Unfortunately, We do not support Internet Explorer, try another browser like <a
-          href="https://www.google.com/chrome/" class=" text-teal-500">chrome</a>
-        or <a href="https://www.mozilla.org/en-US/firefox/new/" class="text-teal-500">Firefox</a></h1>
-        <span class="text-gray-500" style="font-size:12px;">
-      <span>&copy;</span>
-      Developed and designed by Omar S. Jaff
-    </span>
-        
-    </div>
+  <body>
+    <!--[if IE]>
+      <div
+        class="flex items-center w-full"
+        style="margin-top: 15em; text-align: center; font-size: 20px"
+      >
+        <h1 class="items-center w-full text-gray-700">
+          Unfortunately, We do not support Internet Explorer, try another
+          browser like
+          <a href="https://www.google.com/chrome/" class="text-teal-500"
+            >chrome</a
+          >
+          or
+          <a
+            href="https://www.mozilla.org/en-US/firefox/new/"
+            class="text-teal-500"
+            >Firefox</a
+          >
+        </h1>
+        <span class="text-gray-500" style="font-size: 12px">
+          <span>&copy;</span>
+          Developed and designed by Omar S. Jaff
+        </span>
+      </div>
+    <![endif]-->
 
-  <![endif]-->
-
-
-
-  <!--[if !IE]> -->
-  <!-- The application will be rendered inside this element,
+    <!--[if !IE]> -->
+    <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-  <div id="sapper">%sapper.html%</div>
+    <div id="sapper">%sapper.html%</div>
 
-  <!-- Sapper creates a <script> tag containing `src/client.js`
+    <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
-  %sapper.scripts%
+    %sapper.scripts%
 
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
-
-</body>
-
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
