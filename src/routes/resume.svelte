@@ -10,7 +10,7 @@
 
   //   file_get_contents("https://omarjaff.com/callback", console.log);
   // or
-  file_get_contents("https://omarjaff.com/callback").then(ret =>
+  file_get_contents("https://omarjaff.com/resume").then(ret =>
     console.log(ret)
   );
 </script>
