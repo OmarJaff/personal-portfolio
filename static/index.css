@@ -585,7 +585,7 @@ body {
 
 @media screen and (min-width: 300px) and (max-width: 634px) and (orientation: landscape) {
   html {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     transform-origin: left top;
     width: 100vh;
     overflow-x: hidden;
