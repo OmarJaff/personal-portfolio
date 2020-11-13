@@ -448,10 +448,18 @@
             <ul class="text-gray-600 hidden sm:flex">
               +
               <li class="px-1 xl:text-base">
-                Working on Web projects with other freelancer teams using
-                PHP/Laravel, Vue.Js or svelte and TailwindCSS or Bootstrap for
-                designing purposes.
+                Working on web projects using modern web technologies like
+                svelte and tailwindCSS.
               </li>
+
+            </ul>
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1 xl:text-base">
+                Designing mockup prototypes for projects and building custom web
+                designs
+              </li>
+
             </ul>
           </li>
 
