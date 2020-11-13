@@ -80,7 +80,7 @@
               OMAR JAFF
             </h1>
             <span class="font-SourceSans text-sm sm:text-lg">
-              Full Stack Developer
+              Front end developer
             </span>
           </div>
         </div>
@@ -363,9 +363,8 @@
 
       <Container
         title="about me"
-        description=" I am a Full stack web developer and user interface (UI)
-        designer. I have about two years of experience in web development field
-        and I have worked on independent projects with other freelancer teams
+        description=" I am a Front end web developer with two years of
+        experience. I worked on independent projects with other freelancer teams
         using the most efficient and modern web technologies">
         <svg
           class="h-5 w-5 xl:w-6 xl:h-6"
@@ -427,10 +426,42 @@
           slot="custom"
           class="font-SourceSans flex flex-col list-inside list-disc p-2
           text-gray-800 space-y-6 sm:space-y-8 xl:text-lg">
+          <li class="flex flex-col sm:space-y-2">
+            Product support engineer - NassWallet – Erbil
+            <span class="text-teal-500 text-sm">| Oct-2020 - Present</span>
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1 xl:text-base">
+                Develop and support integration applications that integrate with
+                enterprise applications.
+              </li>
+            </ul>
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1 xl:text-base">
+                Design and develop integration between NassWallet systems and
+                other third parties based on business requirements.
+              </li>
+            </ul>
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1 xl:text-base">
+                Providing technical support to teams within the organization,
+                and to external clients.
+              </li>
+            </ul>
+            <ul class="text-gray-600 hidden sm:flex">
+              +
+              <li class="px-1 xl:text-base">
+                Manage and track the SLA for tickets and complains and ensure
+                all tracked and up to date with the vendors
+              </li>
+            </ul>
+          </li>
 
           <li class="flex flex-col sm:space-y-2">
             Full stack web developer - Freelance
-            <span class="text-teal-500 text-sm">| July-2018 - Present</span>
+            <span class="text-teal-500 text-sm">| Jul-2018 - Present</span>
             <ul class="text-gray-600 hidden sm:flex">
               +
               <li class="px-1 xl:text-base">
@@ -442,7 +473,7 @@
           </li>
 
           <li class="flex flex-col sm:space-y-2">
-            Front-End Web developer at a local company - Erbil
+            Front-End Web developer - High Tech Company – Erbil
             <span class="text-teal-500 text-sm">| Sep-2019 - Feb-2020</span>
 
             <ul class="text-gray-600 hidden sm:flex">
@@ -515,8 +546,7 @@
           <li>
             Front-End Web development:
             <span class="text-gray-600">
-              HTML, CSS , Vuejs (vuex, Nuxt.js), Svelte, Alpine.js , React,
-              TailwindCSS, Bootstrap.
+              HTML, CSS , Vuejs (vuex, Nuxt.js), Svelte, Alpine.js
             </span>
           </li>
           <li>

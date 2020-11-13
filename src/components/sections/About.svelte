@@ -14,13 +14,12 @@
     techIconsPresent="false"
     containerTitle="about me"
     techInfoExist={false}
-    containerDescription=" Hi ! I am a Full stack web developer and user
+    containerDescription=" Hi ! I am a Front end web developer and user
     interface (UI) designer. I have about two years of experience in web
     development field and I have worked on independent projects with other
-    freelancer teams using the most efficient and modern web technologies. I
-    love to work in a professional and accurate pattern, and always aim to
-    develop fast, beautiful and functional user interfaces and database
-    management systems.">
+    freelancer teams using efficient and modern web technologies. I love to work
+    in a professional and accurate pattern, and always aim to develop fast,
+    beautiful and functional user interfaces.">
 
     <div class="w-full flex justify-center p-4">
       <svg
