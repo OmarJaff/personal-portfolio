@@ -13,8 +13,6 @@ description: Reading online every day, I see people write about their wonderful
   in the world as developers.
 date: November 13, 2020
 ---
-<!--StartFragment-->
-
 Reading online every day, I see people write about their wonderful journey toward software development. About how they started from an impoverished situation and are now working in some of the best organizations in the world as developers.
 
 However, these developers often place more emphasis on the [technical stuff](https://simpleprogrammer.com/develop-technical-skills/) you need to know before you become a developer and less about what you need to know in terms of the reality of the everyday life of a developer on the job—issues like how to deal with team members, complete project deadlines, and communicate with your team when you have problems you cannot handle by yourself. These issues are fairly talked about, but more preparation can be done in this regard.
@@ -23,9 +21,7 @@ This article emphasizes some of what you need to know, not only before becoming 
 
 They say “Experience is the best teacher,” but sometimes learning before the experience will allow you to have a better overall experience.
 
-<!--EndFragment-->
 
-<!--StartFragment-->
 
 ## Programming Is a Team Game
 
@@ -45,9 +41,7 @@ Trying to understand your colleagues and knowing what they like best, and attemp
 
 In essence, being a team player is about victory for the team rather than for the individual. This means being able to always seek victory for every member of your team. Ensure that your task and the tasks of everyone on your team move the whole team forward.
 
-<!--EndFragment-->
 
-<!--StartFragment-->
 
 ## Knowledge Is Underrated
 
@@ -63,9 +57,7 @@ Consider a new programmer who has just joined the team; make sure the transition
 
 A lot of people have gone further in programming, not only because they tried, but because someone somewhere told them they could. In the end, none of us is smarter than all of us.
 
-<!--EndFragment-->
 
-<!--StartFragment-->
 
 ## Remember: No One Was Born a Programmer
 
@@ -77,9 +69,7 @@ It might take them a while, but that does not in any way mean they are not smart
 
 Saying things like, “This is simple, why can you not get it?” should be avoided at all costs when trying to show another programmer how to perform some tasks. Relate to when you started and discuss some of the challenges you had. This makes everyone feel less afraid to make mistakes and also allows them to learn from their mistakes.
 
-<!--EndFragment-->
 
-<!--StartFragment-->
 
 ## Is Programming Right for You?
 
@@ -90,5 +80,3 @@ This involves working together as a team, sharing what you feel everyone should 
 In the end, we all want to be better at our job and we can all achieve that if we seek to make others better by sharing feedback and also helping when others are in trouble. We all have been there and we realize how annoying and tiring it can be to be stuck.
 
 These are the realities of being a programmer. Are you ready to accept the challenge?
-
-<!--EndFragment-->
