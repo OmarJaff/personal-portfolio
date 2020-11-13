@@ -15,6 +15,8 @@ date: November 13, 2020
 ---
 <!--StartFragment-->
 
+Reading online every day, I see people write about their wonderful journey toward software development. About how they started from an impoverished situation and are now working in some of the best organizations in the world as developers.
+
 However, these developers often place more emphasis on the [technical stuff](https://simpleprogrammer.com/develop-technical-skills/) you need to know before you become a developer and less about what you need to know in terms of the reality of the everyday life of a developer on the job—issues like how to deal with team members, complete project deadlines, and communicate with your team when you have problems you cannot handle by yourself. These issues are fairly talked about, but more preparation can be done in this regard.
 
 This article emphasizes some of what you need to know, not only before becoming a developer, but also those things you need to know and have available when you are working on a team as a developer.
