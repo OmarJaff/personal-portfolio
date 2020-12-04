@@ -111,7 +111,7 @@
   </ProjectContainer>
 
   <ProjectContainer
-    containerTitle="online shopping system"
+    containerTitle="order tracking system"
     techNames="Bootstrap, Vue.js, Laravel"
     containerDescription="This is an online system for ordering items from other
     global shopping systems such as amazone and ebay. The main goal of this
@@ -238,7 +238,7 @@
 
   </ProjectContainer>
 
-  <ProjectContainer
+  <!-- <ProjectContainer
     containerTitle="Administrator Dashboard"
     techNames="tailwindcss, Svelte, Figma"
     containerDescription="Designing a responsive, multilingual, and functional
@@ -428,7 +428,7 @@
 
     </div>
 
-  </ProjectContainer>
+  </ProjectContainer> -->
 
   <ProjectContainer
     containerTitle="Handicap support system"
