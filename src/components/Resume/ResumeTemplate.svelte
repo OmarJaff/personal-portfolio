@@ -80,7 +80,7 @@
               OMAR JAFF
             </h1>
             <span class="font-SourceSans text-sm sm:text-lg">
-              Front end developer
+              Web Developer
             </span>
           </div>
         </div>
@@ -363,9 +363,9 @@
 
       <Container
         title="about me"
-        description=" I am a Front end web developer with two years of
+        description=" I am a web developer with three years of
         experience. I worked on independent projects with other freelancer teams
-        using the most efficient and modern web technologies">
+        using efficient and modern web technologies">
         <svg
           class="h-5 w-5 xl:w-6 xl:h-6"
           width="28"
@@ -460,14 +460,14 @@
           </li>
 
           <li class="flex flex-col sm:space-y-2">
-            Full stack web developer - Freelance
+            Web developer - Freelance
             <span class="text-teal-500 text-sm">| Jul-2018 - Present</span>
             <ul class="text-gray-600 hidden sm:flex">
               +
               <li class="px-1 xl:text-base">
                 Working on Web projects (single page applications) with other
                 freelancer teams using PHP/Laravel, Vue.Js or svelte and
-                TailwindCSS or Bootstrap for designing purposes.
+                TailwindCSS or Bootstrap.
               </li>
             </ul>
           </li>
@@ -546,17 +546,17 @@
           <li>
             Front-End Web development:
             <span class="text-gray-600">
-              HTML, CSS , Vuejs (vuex, Nuxt.js), Svelte, Alpine.js
+              HTML, CSS , React, Vuejs, Svelte, Alpine.js
             </span>
           </li>
           <li>
             Back-End Web Development:
-            <span class="text-gray-600">PHP, Laravel Framework.</span>
+            <span class="text-gray-600">Ruby, PHP, Laravel Framework.</span>
           </li>
           <li>
             Programming Languages:
             <span class="text-gray-600">
-              PHP, JavaScript, Dart, C++, Visual Basic.
+              Ruby, PHP, JavaScript, Dart.
             </span>
           </li>
           <li>
@@ -578,7 +578,7 @@
           </li>
           <li>
             Web Design:
-            <span class="text-gray-600">Adobe XD, Figma.</span>
+            <span class="text-gray-600">Figma.</span>
           </li>
           <li>
             Video Editing and montage:
