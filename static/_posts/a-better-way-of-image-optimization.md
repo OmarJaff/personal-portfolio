@@ -4,7 +4,7 @@ title: A better way of Image Optimization
 author: Omar Jaff
 position: Full Stack Developer
 avatar: images/uploads/omarsimkojaff.jpg
-abouttheauthor: I am a full stack web developer and UI designer that loves to
+abouttheauthor: I am a front end web developer and UI designer that loves to
   share what i learn with others, I have almost 3 years of experience in web
   development field.
 description: Trust us, you don’t want Google to hate your website. Fortunately,
