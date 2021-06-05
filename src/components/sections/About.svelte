@@ -14,8 +14,8 @@
     techIconsPresent="false"
     containerTitle="about me"
     techInfoExist={false}
-    containerDescription=" Hi ! I am a Front end web developer and user
-    interface (UI) designer. I have about two years of experience in web
+    containerDescription=" Hi ! I am a web developer and user
+    interface (UI) designer. I have about three years of experience in web
     development field and I have worked on independent projects with other
     freelancer teams using efficient and modern web technologies. I love to work
     in a professional and accurate pattern, and always aim to develop fast,
